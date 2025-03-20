@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Investering og finansiering</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="favicon.png">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:300i&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+</head>
+
+<body>
+
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand navbar-light transparent-navbar fixed-top">
+        <div class="container-fluid">
+            <!-- Left-aligned Home Icon -->
+            <a class="navbar-brand" href="index.html">
+                <i class="bi bi-house-door"></i>
+            </a>
+
+            <!-- Right-aligned Navbar Items -->
+            <ul class="navbar-nav ml-auto align-items-center">
+                <!-- Dropdown Menu for Pages -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="bi bi-list icon-margin"></i>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
+                        <!-- <a class="dropdown-item" href="index.html">Investering og Finansiering</a> -->
+                        <a class="dropdown-item" href="renter.html">Renter</a>
+                        <a class="dropdown-item" href="renterexcel.html">Rentesregning Excel</a>
+                        <a class="dropdown-item" href="investering.html">Investering</a>
+                        <a class="dropdown-item" href="investering_2.html">Investering Følsomhedsanalyse</a>
+                        <a class="dropdown-item" href="annuitet.html">Annuitetslån</a>
+                        <a class="dropdown-item" href="serie.html">Serielån</a>
+                        <a class="dropdown-item" href="afdragsfrit.html">Stående lån</a>
+                        <a class="dropdown-item" href="kassekredit.html">Kassekredit</a>
+                        <a class="dropdown-item" href="leverandorkredit.html">Leverandørkredit</a>
+                        <a class="dropdown-item" href="leasing.html">Leasing</a>
+                    </div>
+                </li>
+
+                <!-- Left Arrow Icon (Previous Page) -->
+                <li class="nav-item">
+                    <a class="nav-link" id="prev-page-link" href="#">
+                        <i class="bi bi-arrow-left"></i>
+                    </a>
+                </li>
+
+                <!-- Right Arrow Icon (Next Page) -->
+                <li class="nav-item">
+                    <a class="nav-link" id="next-page-link" href="#">
+                        <i class="bi bi-arrow-right"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+
+    <!-- Menu Icon (visible when menu is hidden) -->
+    <div id="menu-icon">
+        <i class="bi bi-list"></i>
+    </div>
+
+    <!-- Page Menu -->
+    <div id="page-menu">
+        <!-- The menu will be dynamically generated here -->
+    </div>
+
+    <!-- Page Content -->
+    <div class="content">
+        <div class="container mt-4">
+
+
+            <article>
+
+                <img src="images/invest.jpg" width="100%">
+
+
+                <br><br>
+                <h2>Hvad er investering?</h2>
+
+                <p>Investering drejer sig om at bruge penge med det formål at skabe mere værdi over tid. Når du
+                    investerer, placerer du
+                    dine penge i forskellige aktiver i forventning om, at de vil give dig et afkast. Det handler
+                    grundlæggende om at få
+                    dine penge til at arbejde for dig, så du kan opbygge velstand og nå dine økonomiske mål.</p>
+
+                <div class="info-box">
+                    <p>Der er flere grunde til at investere:</p>
+                    <ul>
+                        <li><strong>Inflationsbeskyttelse:</strong> Ved at investere kan du beskytte dine penge mod
+                            inflation, som ellers
+                            ville udhuler pengenes købekraft over tid.</li>
+                        <li><strong>Formueopbygning:</strong> Gennem investering kan du opbygge en formue til fremtidige
+                            mål
+                            som pension,
+                            boligkøb eller børnenes uddannelse.</li>
+                        <li><strong>Passiv indkomst:</strong> Investeringer kan give dig løbende indtægter i form af
+                            renter,
+                            udbytter eller
+                            lejeindtægter.</li>
+                        <li><strong>Skattefordele:</strong> Visse investeringsformer giver skattemæssige fordele,
+                            særligt
+                            ved
+                            pensionsopsparing.</li>
+                    </ul>
+                </div>
+                <div class="info-box">
+                    <p>Når du investerer, er der flere vigtige faktorer at overveje:</p>
+                    <ul>
+                        <li><strong>Tidshorisont:</strong> Hvor længe kan du undvære pengene? Længere
+                            investeringsperioder
+                            giver typisk
+                            bedre muligheder for at håndtere markedsudsving.</li>
+                        <li><strong>Risikoprofil:</strong> Hvor meget risiko er du villig til at påtage dig? Højere
+                            potentielt afkast følges
+                            ofte af højere risiko.</li>
+                        <li><strong>Diversificering:</strong> Ved at sprede dine investeringer på forskellige aktiver og
+                            markeder kan du
+                            reducere risikoen.</li>
+                        <li><strong>Omkostninger:</strong> Gebyrer, handelsomkostninger og skatter påvirker dit reelle
+                            afkast.</li>
+                        <li><strong>Likviditet:</strong> Hvor hurtigt kan du få adgang til dine penge igen hvis
+                            nødvendigt?
+                        </li>
+                    </ul>
+                </div>
+                <div class="info-box">
+                    <p>Moderne investeringer kan foregå på mange måder:</p>
+                    <ul>
+                        <li><strong>Digitale platforme:</strong> Gør det nemt at komme i gang med investering, selv med
+                            små
+                            beløb.</li>
+                        <li><strong>Automatiserede løsninger:</strong> Robotrådgivere kan hjælpe med at sammensætte og
+                            vedligeholde en
+                            portefølje.</li>
+                        <li><strong>Bæredygtige investeringer:</strong> Mulighed for at investere med fokus på miljø,
+                            sociale forhold og god
+                            selskabsledelse (ESG).</li>
+                        <li><strong>Fælles investeringer:</strong> Gennem investeringsforeninger kan du få adgang til
+                            professionel
+                            forvaltning og bred diversificering.</li>
+                    </ul>
+                </div>
+                <div class="info-box">
+                    <p>Succes med investering kræver ofte:</p>
+                    <ul>
+                        <li><strong>Tålmodighed:</strong> De bedste resultater opnås typisk gennem langsigtet
+                            investering.
+                        </li>
+                        <li><strong>Disciplin:</strong> Fast investeringsstrategi og regelmæssige indbetalinger.</li>
+                        <li><strong>Viden:</strong> Grundlæggende forståelse af markeder og investeringsprodukter.</li>
+                        <li><strong>Overblik:</strong> Løbende opfølgning på investeringer og tilpasning efter behov.
+                        </li>
+                    </ul>
+                </div>
+
+
+
+
+
+                <div class="container">
+                    <h3 class="mb-4">Eksempler på Investering</h3>
+                    <table class="table table-bordered table-striped table-hover">
+                        <thead class="thead-dark">
+                            <tr>
+                                <th>Investeringstype</th>
+                                <th>Investor/Långiver</th>
+                                <th>Modtager/Låntager</th>
+                                <th>Uddybende forklaring</th>
+                                <th>Risikoprofil</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Enkeltaktier - Large Cap</td>
+                                <td>Private investorer, institutionelle investorer, pensionskasser</td>
+                                <td>Børsnoterede virksomheder</td>
+                                <td>Ved køb af aktier bliver man medejer af virksomheden. Afkast kommer både fra
+                                    kursstigninger og
+                                    udbytte. Large Cap-aktier er typisk mere stabile grundet deres størrelse og
+                                    markedsposition. De har
+                                    ofte en lang historik og betaler regelmæssigt udbytte.</td>
+                                <td>Moderat til høj</td>
+                            </tr>
+                            <tr>
+                                <td>Enkeltaktier - Small Cap</td>
+                                <td>Private investorer, specialiserede fonde</td>
+                                <td>Mindre børsnoterede virksomheder</td>
+                                <td>Small Cap-aktier er mindre virksomheder med stort vækstpotentiale. De er ofte mere
+                                    volatile og har
+                                    mindre handelsvolumen, hvilket kan gøre dem sværere at købe og sælge. Til gengæld
+                                    kan
+                                    afkastpotentialet være større end ved Large Cap.</td>
+                                <td>Høj</td>
+                            </tr>
+                            <tr>
+                                <td>Statsobligationer</td>
+                                <td>Pensionskasser, banker, private investorer</td>
+                                <td>Stater (fx Danmark, Tyskland, USA)</td>
+                                <td>Statsobligationer anses for meget sikre investeringer, særligt fra lande med høj
+                                    kreditværdighed.
+                                    Afkastet er forudbestemt gennem kuponrenter og indfrielseskurs. Løbetider varierer
+                                    typisk fra 2-30
+                                    år. God til risikospredning i en portefølje.</td>
+                                <td>Lav</td>
+                            </tr>
+                            <tr>
+                                <td>Virksomhedsobligationer</td>
+                                <td>Institutionelle investorer, private investorer</td>
+                                <td>Større private virksomheder</td>
+                                <td>Virksomhedsobligationer giver typisk højere rente end statsobligationer grundet
+                                    højere risiko.
+                                    Obligationerne kan være både sikrede og usikrede. Investment grade obligationer er
+                                    sikrere end high
+                                    yield (junk) bonds. Virksomheden forpligter sig til at betale renter og hovedstol
+                                    tilbage.</td>
+                                <td>Moderat</td>
+                            </tr>
+                            <tr>
+                                <td>ETF'er</td>
+                                <td>Alle typer investorer</td>
+                                <td>ETF-udbyder (fx iShares, Vanguard)</td>
+                                <td>ETF'er følger et specifikt indeks eller sektor. De handles som aktier på børsen men
+                                    giver
+                                    eksponering mod mange forskellige værdipapirer på én gang. Har typisk lave
+                                    omkostninger sammenlignet
+                                    med aktivt forvaltede fonde. Findes både med og uden gearing.</td>
+                                <td>Varierende</td>
+                            </tr>
+                            <tr>
+                                <td>Investeringsforeninger</td>
+                                <td>Private og professionelle investorer</td>
+                                <td>Investeringsforeningen</td>
+                                <td>Aktivt forvaltede fonde hvor professionelle forvaltere udvælger investeringer.
+                                    Højere omkostninger
+                                    end ETF'er, men mulighed for at slå markedet. Både danske og udenlandske foreninger
+                                    tilbyder
+                                    forskellige risikoprofiler og investeringsstrategier.</td>
+                                <td>Varierende</td>
+                            </tr>
+                            <tr>
+                                <td>Erhvervsejendomme</td>
+                                <td>Professionelle investorer, ejendomsselskaber, velhavende private</td>
+                                <td>Ejendomsmarkedet</td>
+                                <td>Investering i fysiske erhvervsejendomme giver både løbende lejeindtægter og mulighed
+                                    for
+                                    værdistigning. Kræver stort startindskud og aktiv forvaltning. Beliggenheden er
+                                    afgørende for både
+                                    udlejningspotentiale og værdiudvikling.</td>
+                                <td>Moderat til høj</td>
+                            </tr>
+                            <tr>
+                                <td>Boligudlejning</td>
+                                <td>Private investorer, ejendomsselskaber</td>
+                                <td>Boligmarkedet</td>
+                                <td>Investering i udlejningsboliger giver stabile lejeindtægter og potentiel
+                                    værdistigning. Reguleret af
+                                    lejelov og andre regler. Kræver vedligeholdelse og administration. Kan finansieres
+                                    delvist gennem
+                                    realkreditlån.</td>
+                                <td>Moderat</td>
+                            </tr>
+                            <tr>
+                                <td>Råvarer</td>
+                                <td>Spekulanter, industrielle brugere</td>
+                                <td>Råvaremarkedet</td>
+                                <td>Handel med fysiske råvarer eller råvarekontrakter (futures). Priserne påvirkes af
+                                    global
+                                    efterspørgsel, geopolitik og vejrforhold. Kan bruges som inflationssikring. Kræver
+                                    ofte
+                                    specialiseret viden om de specifikke markeder.</td>
+                                <td>Høj</td>
+                            </tr>
+                            <tr>
+                                <td>P2P-udlån</td>
+                                <td>Private investorer</td>
+                                <td>Private eller virksomheder der søger lån</td>
+                                <td>Direkte udlån gennem online platforme. Højere renter end traditionelle
+                                    investeringer, men også
+                                    højere risiko for tab. Mulighed for at sprede risiko over mange små lån. Platformen
+                                    håndterer typisk
+                                    administration og inkasso.</td>
+                                <td>Høj</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p>Investering adskiller sig fra almindelig opsparing ved, at du påtager dig en vis risiko i håb om
+                    at opnå et højere
+                    afkast. Værdien af investeringer kan svinge op og ned på kort sigt, men målet er typisk at øge
+                    din formue over
+                    længere tid. Der vil altid være en risiko for tab ved investering, højere potentielt
+                    afkast betyder alt andet lige højere risiko.</p>
+
+
+                <h2>Hvad er finansiering?</h2>
+
+                <p>Finansiering handler grundlæggende om at skaffe penge til at gennemføre projekter eller aktiviteter.
+                    Det drejer sig
+                    om at finde måder at få adgang til kapital på, når du har brug for mere, end du har til rådighed
+                    lige nu.
+                    Finansiering er en central del af både privat og professionel økonomisk aktivitet og er afgørende
+                    for vækst og
+                    udvikling.</p>
+                <div class="info-box">
+                    <p>Der er flere grundlæggende årsager til at søge finansiering:</p>
+                    <ul>
+                        <li><strong>Investeringer:</strong> Finansiering af større køb som bolig, maskiner eller
+                            virksomhedsopkøb.</li>
+                        <li><strong>Drift:</strong> Dækning af løbende udgifter og arbejdskapital i virksomheder.</li>
+                        <li><strong>Udvikling:</strong> Finansiering af nye projekter, produktudvikling eller
+                            markedsexpansion.</li>
+                        <li><strong>Likviditetsstyring:</strong> Håndtering af tidsmæssige forskydninger mellem
+                            indtægter og
+                            udgifter.</li>
+                        <li><strong>Risikostyring:</strong> Spredning af økonomisk risiko gennem forskellige
+                            finansieringskilder.</li>
+                    </ul>
+                </div>
+                <div class="info-box">
+                    <p>Ved valg af finansiering er der flere vigtige faktorer at overveje:</p>
+                    <ul>
+                        <li><strong>Omkostninger:</strong> Renter, gebyrer, provisioner og andre løbende udgifter.</li>
+                        <li><strong>Løbetid:</strong> Kort- eller langfristet finansiering afhængig af formålet.</li>
+                        <li><strong>Sikkerhedsstillelse:</strong> Krav om pant, kaution eller andre former for
+                            sikkerhed.
+                        </li>
+                        <li><strong>Fleksibilitet:</strong> Mulighed for førtidig indfrielse, afdragsfrihed eller
+                            ændring af
+                            vilkår.</li>
+                        <li><strong>Skatteforhold:</strong> Skattemæssig behandling af renter og andre
+                            finansieringsomkostninger.</li>
+                    </ul>
+                </div>
+                <div class="info-box">
+                    <p>Moderne finansiering omfatter mange forskellige muligheder:</p>
+                    <ul>
+                        <li><strong>Traditionel finansiering:</strong> Banklån, realkreditlån og andre klassiske
+                            låneformer.
+                        </li>
+                        <li><strong>Alternative finansieringsformer:</strong> Crowdfunding, P2P-lån og andre nyere
+                            finansieringsformer.</li>
+                        <li><strong>Offentlige ordninger:</strong> Forskellige støtteordninger, garantier og tilskud fra
+                            det
+                            offentlige.
+                        </li>
+                        <li><strong>Internationale muligheder:</strong> EU-finansiering, eksportfinansiering og
+                            internationale
+                            lånemuligheder.</li>
+                        <li><strong>Bæredygtig finansiering:</strong> Grønne lån og klimavenlige finansieringsløsninger.
+                        </li>
+                    </ul>
+                </div>
+                <div class="info-box">
+                    <p>God finansiering kræver forståelse af:</p>
+                    <ul>
+                        <li><strong>Kapitalbehov:</strong> Præcis vurdering af hvor meget kapital der er behov for og
+                            hvornår.</li>
+                        <li><strong>Finansiel planlægning:</strong> Langsigtet plan for anvendelse og tilbagebetaling af
+                            finansiering.</li>
+                        <li><strong>Risikoprofil:</strong> Vurdering af egen økonomisk situation og risikovillighed.
+                        </li>
+                        <li><strong>Markedsforhold:</strong> Kendskab til forskellige finansieringsmuligheder og
+                            aktuelle
+                            markedsvilkår.
+                        </li>
+                    </ul>
+                </div>
+                <div class="info-box">
+                    <p>Centrale begreber i finansiering omfatter:</p>
+                    <ul>
+                        <li><strong>Rente og ÅOP:</strong> De samlede årlige omkostninger ved finansieringen.</li>
+                        <li><strong>Kreditvurdering:</strong> Vurdering af låntagers evne til at tilbagebetale.</li>
+                        <li><strong>Sikkerhed:</strong> Aktiver der stilles som garanti for finansieringen.</li>
+                        <li><strong>Likviditet:</strong> Evnen til at betale løbende ydelser og afdrag.</li>
+                        <li><strong>Gearing:</strong> Forholdet mellem egen- og fremmedkapital i finansieringen.</li>
+                    </ul>
+                </div>
+
+
+                <div class="container">
+                    <h3 class="mb-4">Eksempler på Finansiering</h3>
+                    <table class="table table-bordered table-striped table-hover">
+                        <thead class="thead-dark">
+                            <tr>
+                                <th>Finansieringstype</th>
+                                <th>Investor/Långiver</th>
+                                <th>Modtager/Låntager</th>
+                                <th>Uddybende forklaring</th>
+                                <th>Karakteristika</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Realkreditlån</td>
+                                <td>Realkreditinstitutter (fx Nykredit, Realkredit Danmark)</td>
+                                <td>Boligejere, erhvervsejendomme</td>
+                                <td>Realkreditlån er den mest almindelige finansieringsform ved køb af fast ejendom i
+                                    Danmark. Lånet har
+                                    pant i ejendommen og finansieres gennem obligationer. Forskellige lånetyper
+                                    tilbydes:
+                                    fastforrentede, flexlån, etc. Løbetid op til 30 år er mulig.</td>
+                                <td>Lang løbetid, lav rente, krav om min. 20% egenfinansiering</td>
+                            </tr>
+                            <tr>
+                                <td>Banklån</td>
+                                <td>Banker og sparekasser</td>
+                                <td>Private, virksomheder</td>
+                                <td>Traditionelle banklån kan bruges til mange formål. Renten afhænger af formål,
+                                    sikkerhed og låntagers
+                                    økonomi. Kan være både med og uden sikkerhed. Banken vurderer låntagers
+                                    kreditværdighed og
+                                    fastsætter vilkår derefter.</td>
+                                <td>Fleksible løbetider, varierende renter</td>
+                            </tr>
+                            <tr>
+                                <td>Kassekredit</td>
+                                <td>Banker</td>
+                                <td>Virksomheder og selvstændige</td>
+                                <td>En fleksibel kreditramme tilknyttet virksomhedens driftskonto. Man betaler renter af
+                                    det brugte beløb plus en
+                                    løbende provision af hele rammen (typisk 0,5-2% årligt af maksimum). Provisionen
+                                    betales uanset om kreditten
+                                    bruges eller ej, da banken skal holde beløbet tilgængeligt. Bruges til at håndtere
+                                    udsving i likviditet, særligt
+                                    i forbindelse med sæsonudsving eller når der er forskel mellem indtægter og
+                                    udgifters forfaldstid. Kræver ofte
+                                    sikkerhedsstillelse eller personlig kaution fra ejere. Rammen genforhandles typisk
+                                    årligt, hvor banken vurderer
+                                    virksomhedens drift og økonomiske nøgletal.</td>
+                                <td>Høj fleksibilitet, variabel rente plus provision af rammen, løbende kredittilsagn
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Leverandørkredit</td>
+                                <td>Leverandører/handelspartnere</td>
+                                <td>Virksomheder</td>
+                                <td>En mere uformel kredit der opstår når leverandører tillader udskudt betaling af
+                                    varer
+                                    eller services. Typisk 30-60
+                                    dages betalingsfrist. Vigtig finansieringskilde for mange virksomheder da den er
+                                    fleksibel. Er der rabat ved hurtig betaling bør kunden udregne og sammenholde
+                                    omkostningen ved at benytte kreditten.
+                                    Kræver god relation til leverandører og solid betalingshistorik. Kan være afgørende
+                                    for likviditetsstyring i
+                                    sæsonbetonede brancher.</td>
+                                <td>Kort løbetid, ofte gratis, kræver tillid mellem parterne</td>
+                            </tr>
+                            <tr>
+                                <td>Erhvervsobligationer</td>
+                                <td>Investorer, pensionskasser</td>
+                                <td>Større virksomheder</td>
+                                <td>Virksomheder kan udstede obligationer som alternativ til banklån. Kræver ofte
+                                    kreditrating.
+                                    Obligationerne kan handles på børsen. Forskellige typer findes: konvertible,
+                                    efterstillede, green
+                                    bonds etc. God mulighed for at låne store beløb.</td>
+                                <td>Fast rente, typisk 3-10 års løbetid</td>
+                            </tr>
+                            <tr>
+                                <td>Kommunal finansiering</td>
+                                <td>KommuneKredit</td>
+                                <td>Kommuner, regioner, offentlige institutioner</td>
+                                <td>KommuneKredit er kommunernes og regionernes eget finansieringsinstitut. Tilbyder
+                                    fordelagtige lån
+                                    til offentlige formål. Alle lån er garanteret af kommunerne i fællesskab. Bruges til
+                                    både anlæg og
+                                    drift.</td>
+                                <td>Fordelagtige vilkår, statsgaranti</td>
+                            </tr>
+                            <tr>
+                                <td>Venturekapital</td>
+                                <td>Venturekapitalfonde, business angels</td>
+                                <td>Startups, vækstvirksomheder</td>
+                                <td>Risikovillig kapital til nye virksomheder med stort vækstpotentiale. Investor får
+                                    typisk en
+                                    betydelig ejerandel og ofte plads i bestyrelsen. Fokus på skalering og exit inden
+                                    for 5-7 år.
+                                    Omfattende due diligence proces.</td>
+                                <td>Høj risiko, potentielt højt afkast</td>
+                            </tr>
+                            <tr>
+                                <td>Leasingaftaler</td>
+                                <td>Leasingselskaber, banker</td>
+                                <td>Virksomheder, offentlige institutioner</td>
+                                <td>Alternativ til køb af udstyr og maskiner. Både operationel og finansiel leasing er
+                                    mulig. Giver
+                                    mulighed for at skifte udstyr løbende. Leasingydelser kan ofte fratrækkes
+                                    skattemæssigt. God til at
+                                    bevare likviditet.</td>
+                                <td>Ingen stor startinvestering, fleksibilitet</td>
+                            </tr>
+                            <tr>
+                                <td>Factoring</td>
+                                <td>Factoringselskaber, banker</td>
+                                <td>Små og mellemstore virksomheder</td>
+                                <td>Virksomheden sælger sine fakturaer til factoringselskabet og får likviditet med det
+                                    samme.
+                                    Factoringselskabet overtager kreditstyring og inkasso. Dyrere end traditionel
+                                    finansiering, men
+                                    giver hurtig adgang til likviditet.</td>
+                                <td>Hurtig likviditet, højere omkostninger</td>
+                            </tr>
+                            <tr>
+                                <td>Offentlige puljer</td>
+                                <td>Staten, regioner, kommuner</td>
+                                <td>Startups, forskningsprojekter, kulturinstitutioner</td>
+                                <td>Forskellige puljer målrettet specifikke formål som innovation, forskning, kultur
+                                    eller regional
+                                    udvikling. Ofte krav om medfinansiering og detaljeret ansøgning. Kan være både
+                                    tilskud og lån med
+                                    favorable vilkår.</td>
+                                <td>Ofte målrettet specifikke formål</td>
+                            </tr>
+                            <tr>
+                                <td>EU-finansiering</td>
+                                <td>EU's forskellige programmer</td>
+                                <td>Virksomheder, organisationer, institutioner</td>
+                                <td>EU tilbyder både direkte støtte gennem programmer som Horizon Europe og indirekte
+                                    støtte gennem
+                                    strukturfonde. Kompliceret ansøgningsproces men mulighed for betydelig støtte. Ofte
+                                    krav om
+                                    internationalt samarbejde.</td>
+                                <td>Kompleks ansøgning, store beløb</td>
+                            </tr>
+                            <tr>
+                                <td>Forbrugslån</td>
+                                <td>Banker, finansieringsselskaber</td>
+                                <td>Privatpersoner</td>
+                                <td>Usikrede lån til forbrug. Hurtig udbetaling men høje renter. Forskellige udbydere
+                                    konkurrerer på
+                                    rente og vilkår. Vigtigt at sammenligne ÅOP. Ofte brugt til køb af forbrugsgoder
+                                    eller til at samle
+                                    dyrere lån.</td>
+                                <td>Høj rente, kort til mellemlang løbetid</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <p>Når vi taler om finansiering, ser vi på, hvordan pengene skaffes, hvilke omkostninger der er
+                    forbundet med det
+                    (f.eks. renter eller gebyrer), og hvordan tilbagebetalingen skal foregå. God finansiering
+                    handler om at finde den
+                    mest hensigtsmæssige måde at skaffe de nødvendige midler på, under hensyntagen til risiko,
+                    omkostninger og
+                    fleksibilitet.</p>
+            </article>
+
+
+
+
+
+        </div>
+    </div>
+
+    <!-- jQuery and Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- External JavaScript File -->
+    <script src="script.js"></script>
+</body>
+
+</html>

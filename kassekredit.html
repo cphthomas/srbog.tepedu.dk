@@ -1,0 +1,440 @@
+<!-- subpage2.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Investering og finansiering</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:300i&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+</head>
+
+<body>
+
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand navbar-light transparent-navbar fixed-top">
+        <div class="container-fluid">
+            <!-- Left-aligned Home Icon -->
+            <a class="navbar-brand" href="index.html">
+                <i class="bi bi-house-door"></i>
+            </a>
+
+            <!-- Right-aligned Navbar Items -->
+            <ul class="navbar-nav ml-auto align-items-center">
+                <!-- Dropdown Menu for Pages -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="bi bi-list icon-margin"></i>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
+                        <!-- <a class="dropdown-item" href="index.html">Investering og Finansiering</a> -->
+                        <a class="dropdown-item" href="renter.html">Renter</a>
+                        <a class="dropdown-item" href="renterexcel.html">Rentesregning Excel</a>
+                        <a class="dropdown-item" href="investering.html">Investering</a>
+                        <a class="dropdown-item" href="investering_2.html">Investering Følsomhedsanalyse</a>
+                        <a class="dropdown-item" href="annuitet.html">Annuitetslån</a>
+
+                        <a class="dropdown-item" href="afdragsfrit.html">Stående lån</a>
+                        <a class="dropdown-item" href="serie.html">Serielån</a>
+                        <a class="dropdown-item" href="kassekredit.html">Kassekredit</a>
+                        <a class="dropdown-item" href="leverandorkredit.html">Leverandørkredit</a>
+                        <a class="dropdown-item" href="leasing.html">Leasing</a>
+                    </div>
+                </li>
+
+                <!-- Left Arrow Icon (Previous Page) -->
+                <li class="nav-item">
+                    <a class="nav-link" id="prev-page-link" href="#">
+                        <i class="bi bi-arrow-left"></i>
+                    </a>
+                </li>
+
+                <!-- Right Arrow Icon (Next Page) -->
+                <li class="nav-item">
+                    <a class="nav-link" id="next-page-link" href="#">
+                        <i class="bi bi-arrow-right"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <!-- Menu Icon (visible when menu is hidden) -->
+    <div id="menu-icon">
+        <i class="bi bi-list"></i>
+    </div>
+
+    <!-- Page Menu -->
+    <div id="page-menu">
+        <!-- The menu will be dynamically generated here -->
+    </div>
+
+    <!-- Page Content -->
+    <div class="content">
+        <div class="container mt-4">
+
+            <article>
+                <h2>Kassekredit</h2>
+                <p>En kassekredit er en fleksibel låneform, hvor virksomheden får stillet et maksimumbeløb til
+                    rådighed, som den
+                    kan trække på efter behov. Kassekreditten fungerer som en økonomisk stødpude, der kan hjælpe med at
+                    dække
+                    kortsigtede likviditetsbehov.</p>
+
+                <h3>Sådan fungerer en kassekredit</h3>
+
+                <p>Når en bank bevilger en kassekredit, fastsættes typisk følgende:</p>
+
+                <ul>
+                    <li>Maksimumbeløb: Det højeste beløb, virksomheden kan trække på kreditten</li>
+                    <li>Rente: Den årlige rente, der betales af det udnyttede beløb</li>
+                    <li>Provision: Et gebyr, der beregnes af hele maksimumbeløbet der må trækkes på kassekreditten</li>
+                </ul>
+
+                <h4>Kassekredit uden provision</h4>
+                <table class="table table-hover table-bordered">
+                    <tr>
+                        <th>Tekst</th>
+                        <th>Værdier</th>
+                        <th>Beregning</th>
+                        <th>Rentebeløb</th>
+                    </tr>
+                    <tr>
+                        <td>En virksomhed har en kassekredit på 500.000 kr. med en rente på 5% p.a. og udnytter 300.000
+                            kr. i et år
+                        </td>
+                        <td>Udnyttet beløb = 300.000<br>Rente = 5%</td>
+                        <td>300.000 * 5%</td>
+                        <td>15.000 kr.</td>
+                    </tr>
+                </table>
+
+                <h4>Kassekredit med provision</h4>
+                <table class="table table-hover table-bordered">
+                    <tr>
+                        <th>Tekst</th>
+                        <th>Værdier</th>
+                        <th>Beregning</th>
+                        <th>Rentebeløb</th>
+                    </tr>
+                    <tr>
+                        <td>Samme kassekredit som ovenfor, men med en provision på 1% af maksimumbeløbet</td>
+                        <td>Udnyttet beløb = 300.000<br>Rente = 5%<br>Maksimumbeløb = 500.000<br>Provision = 1%</td>
+                        <td>Renteomkostning: 300.000 * 5% = 15.000<br>Provision: 500.000 * 1% = 5.000<br>Samlet: 15.000
+                            + 5.000</td>
+                        <td>20.000 kr.</td>
+                    </tr>
+                </table>
+
+                <h3>Udnyttelsesgrad og effektiv rente</h3>
+
+                <p>Udnyttelsesgraden har stor betydning for den effektive rente på kassekreditten. Jo lavere
+                    udnyttelsesgrad, desto
+                    højere bliver den effektive rente. Dette er et værktøj der gør banken i stand til at sikre en vis
+                    indtjening på den likviditet der stilles til rådighed. Samtidig sikrer provisionen at låntager har
+                    et incitament til at tilpasse kassekreditten til det faktiske livkiditetsbehov. <br>
+                    Vi kan generelt bestemme den effektive rente pr. termin som nominel rente pr. termin plus provision
+                    pr. termin
+                    divideret med udnyttelsesgrad: <br>
+                <div style="text-align: center;"><strong>rente+provision/udnyttelsesgrad</strong></div>
+                <br>
+                <br><br>
+                <div style="padding:56.25% 0 0 0;position:relative;"><iframe
+                        src="https://player.vimeo.com/video/1021387288?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+                        frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write"
+                        style="position:absolute;top:0;left:0;width:100%;height:100%;" title="fin2"></iframe></div>
+                <script src="https://player.vimeo.com/api/player.js"></script><br>
+                <br>
+
+                <h4>App til kassekredit</h4>
+                <p>Du kan udregne ÅOP for en kassekredit i Excel eller i en app, herunder er link til App til
+                    kassekredit</p>
+
+                <a href="https://apps.tepedu.dk/kassekredit" class="effectLinks" data-replace="Åben app"
+                    target="_blank">
+
+                    <span>App til kassekredit</span>
+                </a>
+                <br><br>
+                </p>
+                <h4>Eksempler</h4>
+                <h5>Scenarie 1: Høj udnyttelsesgrad (80%)</h5>
+                <table class="table table-hover table-bordered">
+                    <tr>
+                        <th>Tekst</th>
+                        <th>Værdier</th>
+                        <th>Beregning</th>
+                        <th>ÅOP</th>
+                    </tr>
+                    <tr>
+                        <td>Kassekredit med maksimum på 500.000 kr.,<br> rente 5% p.a., provision 1%,<br> udnyttet beløb
+                            400.000
+                            kr.</td>
+                        <td>Maksimumbeløb = 500.000<br>Rente = 5%<br>Provision = 1%<br>Udnyttet beløb = 400.000</td>
+                        <td>Renteomkostning: 400.000 * 5% = 20.000<br>Provision: 500.000 * 1% = 5.000<br>Samlet
+                            omkostning: 20.000 +
+                            5.000 = 25.000<br>Effektiv rente: (25.000 / 400.000) * 100 <br>
+                            Alternativt kan den effektive rente beregnes som: <br>nominel rente + provision
+
+                            divideret med udnyttelsesgrad: <br>
+                            rente+provision/udnyttelsesgrad = 5% + 1%/0,80 </td>
+                        <td>6,25%</td>
+                    </tr>
+                    <tr>
+
+                        <td colspan="4">Med app: <br><br>
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-12 mb-4">
+                                        <div class="card no-rounded-corners">
+
+                                            <div class="card-body">
+                                                <h7 class="card-title">Input</h7><br>
+                                                <img src="images/kass1.png" class="card-img-top img-fluid">
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <div class="col-md-12 mb-6">
+                                        <div class="card no-rounded-corners">
+
+                                            <div class="card-body">
+                                                <h7 class="card-title">Resultat</h7><br>
+                                                <img src="images/kass2.png" class="card-img-top img-fluid">
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+
+                    </tr>
+                </table>
+
+                <h5>Scenarie 2: Lav udnyttelsesgrad (20%)</h5>
+                <table class="table table-hover table-bordered">
+                    <tr>
+                        <th>Tekst</th>
+                        <th>Værdier</th>
+                        <th>Beregning</th>
+                        <th>ÅOP</th>
+                    </tr>
+                    <tr>
+                        <td>Samme kassekredit som ovenfor, <br>men med udnyttet beløb på 100.000 kr.</td>
+                        <td>Maksimumbeløb = 500.000<br>Rente = 5%<br>Provision = 1%<br>Udnyttet beløb = 100.000</td>
+                        <td>Renteomkostning: 100.000 * 5% = 5.000<br>Provision: 500.000 * 1% = 5.000<br>Samlet
+                            omkostning: 5.000 +
+                            5.000 = 10.000<br>Effektiv rente: (10.000 / 100.000) * 100
+                            <br>
+                            Alternativt kan den effektive rente beregnes som: <br>nominel rente + provision
+
+                            divideret med udnyttelsesgrad: <br>
+                            rente+provision/udnyttelsesgrad = 5% + 1%/0,20
+                        </td>
+                        <td>10%</td>
+                    </tr>
+                    <tr>
+
+                        <td colspan="4">Med app: <br><br>
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-12 mb-4">
+                                        <div class="card no-rounded-corners">
+
+                                            <div class="card-body">
+                                                <h7 class="card-title">Input</h7><br>
+                                                <img src="images/kass3.png" class="card-img-top img-fluid">
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <div class="col-md-12 mb-6">
+                                        <div class="card no-rounded-corners">
+
+                                            <div class="card-body">
+                                                <h7 class="card-title">Resultat</h7><br>
+                                                <img src="images/kass4.png" class="card-img-top img-fluid">
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+
+                    </tr>
+                </table>
+
+                <h5>Scenarie 3: meget lav udnyttelsesgrad (2%)</h5>
+                <table class="table table-hover table-bordered">
+                    <tr>
+                        <th>Tekst</th>
+                        <th>Værdier</th>
+                        <th>Beregning</th>
+                        <th>ÅOP</th>
+                    </tr>
+                    <tr>
+                        <td>Samme kassekredit som ovenfor, <br>men med udnyttet beløb på 10.000 kr.</td>
+                        <td>Maksimumbeløb = 500.000<br>Rente = 5%<br>Provision = 1%<br>Udnyttet beløb = 10.000</td>
+                        <td>Renteomkostning: 10.000 * 5% = 500<br>Provision: 500.000 * 1% = 5.000<br>Samlet
+                            omkostning: 5.000 +
+                            500 = 5.500<br>Effektiv rente: (5.500 / 10.000) * 100
+                            <br>
+                            Alternativt kan den effektive rente beregnes som: <br>nominel rente + provision
+
+                            divideret med udnyttelsesgrad: <br>
+                            rente+provision/udnyttelsesgrad = 5% + 1%/0,02
+                        </td>
+                        <td>55%</td>
+                    </tr>
+                    <tr>
+
+                        <td colspan="4">Med app: <br><br>
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-12 mb-4">
+                                        <div class="card no-rounded-corners">
+
+                                            <div class="card-body">
+                                                <h7 class="card-title">Input</h7><br>
+                                                <img src="images/kass5.png" class="card-img-top img-fluid">
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <div class="col-md-12 mb-6">
+                                        <div class="card no-rounded-corners">
+
+                                            <div class="card-body">
+                                                <h7 class="card-title">Resultat</h7><br>
+                                                <img src="images/kass6.png" class="card-img-top img-fluid">
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+
+                    </tr>
+                </table>
+
+                <h5>Scenarie 4: Halvårlig rentetilskrivning udnyttelsesgrad (80%)</h5>
+                <table class="table table-hover table-bordered">
+                    <tr>
+                        <th>Tekst</th>
+                        <th>Værdier</th>
+                        <th>Beregning</th>
+                        <th>ÅOP</th>
+                    </tr>
+                    <tr>
+                        <td>Kassekredit med maksimum på 500.000 kr.,<br> rente 5% p.a., provision 1%,<br> udnyttet beløb
+                            400.000
+                            kr. <br>
+                            Rentetilskrivning halvårligt
+                        </td>
+                        <td>Maksimumbeløb = 500.000<br>Rente = 2,5%<br>Provision = 0,5%<br>Udnyttet beløb = 400.000</td>
+                        <td>Renteomkostning: 400.000 * 2,5% = 10.000<br>Provision: 500.000 * 0,5% = 2.500<br>Samlet
+                            omkostning: 10.000 +
+                            2.500 = 12.500<br>Effektiv terminsrente: (12.500 / 400.000) * 100 <br>
+                            Alternativt kan den effektive terminsrente beregnes som: <br>nominel terminsrente +
+                            provision pr. termin
+
+                            divideret med udnyttelsesgrad: <br>
+                            terminsrente+provision pr. termin/udnyttelsesgrad = <br>
+                            2,5% + 0,5%/0,80 = 3,125% <br>
+                            Omregnet til ÅOP <br>
+                            (1+3,125%)^2-1 = 6,35%
+
+                        </td>
+
+                        <td>6,35%</td>
+                    </tr>
+                    <tr>
+
+                        <td colspan="4">Med app: <br><br>
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-12 mb-4">
+                                        <div class="card no-rounded-corners">
+
+                                            <div class="card-body">
+                                                <h7 class="card-title">Input</h7><br>
+                                                <img src="images/kass7.png" class="card-img-top img-fluid">
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <div class="col-md-12 mb-6">
+                                        <div class="card no-rounded-corners">
+
+                                            <div class="card-body">
+                                                <h7 class="card-title">Resultat</h7><br>
+                                                <img src="images/kass8.png" class="card-img-top img-fluid">
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+
+                    </tr>
+                </table>
+                <p>Som det ses, bliver den effektive rente markant højere ved lav udnyttelsesgrad. Derfor er det vigtigt
+                    for
+                    virksomheder at vurdere deres reelle behov, når de fastsætter maksimumbeløbet for en kassekredit.
+                </p>
+
+                <h3>Quiz</h3>
+
+                <a href="https://fin.tepedu.dk/if13" class="effectLinks" data-replace="Åben Quiz" target="_blank">
+
+                    <span>Quiz kassekredit</span>
+                </a>
+                <br>
+                <br>
+                <a href="https://fin.tepedu.dk/if14" class="effectLinks" data-replace="Åben Quiz" target="_blank">
+
+                    <span>Quiz kassekredit</span>
+                </a>
+                <br>
+
+
+
+                <br>
+            </article>
+
+
+        </div>
+    </div>
+
+    <!-- jQuery and Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- External JavaScript File -->
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,825 @@
+<!-- subpage2.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Investering og finansiering</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:300i&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+</head>
+
+<body>
+
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand navbar-light transparent-navbar fixed-top">
+        <div class="container-fluid">
+            <!-- Left-aligned Home Icon -->
+            <a class="navbar-brand" href="index.html">
+                <i class="bi bi-house-door"></i>
+            </a>
+
+            <!-- Right-aligned Navbar Items -->
+            <ul class="navbar-nav ml-auto align-items-center">
+                <!-- Dropdown Menu for Pages -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="bi bi-list icon-margin"></i>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
+                        <!-- <a class="dropdown-item" href="index.html">Investering og Finansiering</a> -->
+                        <a class="dropdown-item" href="renter.html">Renter</a>
+                        <a class="dropdown-item" href="renterexcel.html">Rentesregning Excel</a>
+                        <a class="dropdown-item" href="investering.html">Investering</a>
+                        <a class="dropdown-item" href="investering_2.html">Investering Følsomhedsanalyse</a>
+                        <a class="dropdown-item" href="annuitet.html">Annuitetslån</a>
+
+                        <a class="dropdown-item" href="afdragsfrit.html">Stående lån</a>
+                        <a class="dropdown-item" href="serie.html">Serielån</a>
+                        <a class="dropdown-item" href="kassekredit.html">Kassekredit</a>
+                        <a class="dropdown-item" href="leverandorkredit.html">Leverandørkredit</a>
+                        <a class="dropdown-item" href="leasing.html">Leasing</a>
+                    </div>
+                </li>
+
+                <!-- Left Arrow Icon (Previous Page) -->
+                <li class="nav-item">
+                    <a class="nav-link" id="prev-page-link" href="#">
+                        <i class="bi bi-arrow-left"></i>
+                    </a>
+                </li>
+
+                <!-- Right Arrow Icon (Next Page) -->
+                <li class="nav-item">
+                    <a class="nav-link" id="next-page-link" href="#">
+                        <i class="bi bi-arrow-right"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <!-- Menu Icon (visible when menu is hidden) -->
+    <div id="menu-icon">
+        <i class="bi bi-list"></i>
+    </div>
+
+    <!-- Page Menu -->
+    <div id="page-menu">
+        <!-- The menu will be dynamically generated here -->
+    </div>
+
+    <!-- Page Content -->
+    <div class="content">
+        <div class="container mt-4">
+            <div class="page">
+                <article>
+                    <h2>Serielån</h2>
+
+                    <p>Et serielån er en type lån, hvor låntager betaler et fast afdrag på hovedstolen ved hver termin.
+                        Dette betyder,
+                        at den samlede ydelse falder over tid, da rentebetalingen bliver mindre i takt med, at
+                        restgælden reduceres.</p>
+
+                    <h3>Kendetegn ved serielån:</h3>
+                    <ul>
+                        <li>Fast afdrag ved hver termin</li>
+                        <li>Faldende ydelse over tid</li>
+                        <li>Hurtigere nedbringelse af gæld sammenlignet med annuitetslån</li>
+                        <li>Højere ydelser i starten af lånets løbetid</li>
+                    </ul>
+
+                    <h5>Låneprofiler</h5>
+                    <p>Herunder er profiler for de 3 lånetyper annuitets- serie- og stående lån. <br>
+                        Bemærk serielånet har
+                        den mest agressive afdragsprofil, afdrag markeret med røde lige store stolper, sker tidligst i
+                        forløbet. <br>
+                        Låntagers likviditet vil alt andet lige belastes mest af serielånet, da ydelserne er størst i
+                        starten. <br>
+                        Alt andet lige vil långiver prissætte et serielån billigst pga. af den lavere risiko,
+                        restgælden nedbringes hurtigst for denne lånetype.</p>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-4 mb-4">
+                                <div class="card no-rounded-corners">
+
+                                    <div class="card-body">
+                                        <h7 class="card-title">Annuitetslån cashflows</h7><br>
+                                        <img src="images/ann.png" class="card-img-top img-fluid">
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <div class="card no-rounded-corners">
+
+                                    <div class="card-body">
+                                        <h7 class="card-title">Stående lån cashflows</h7><br>
+                                        <img src="images/staa.png" class="card-img-top img-fluid">
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <div class="card no-rounded-corners">
+
+                                    <div class="card-body">
+                                        <h7 class="card-title">Serielån cashflows</h7><br>
+                                        <img src="images/serie.png" class="card-img-top img-fluid">
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-4 mb-4">
+                                <div class="card no-rounded-corners">
+
+                                    <div class="card-body">
+                                        <h7 class="card-title">Restgæld Annuitetslån</h7><br>
+                                        <img src="images/annurest.png" class="card-img-top img-fluid">
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <div class="card no-rounded-corners">
+
+                                    <div class="card-body">
+                                        <h7 class="card-title">Restgæld Stående lån</h7><br>
+                                        <img src="images/staarest.png" class="card-img-top img-fluid">
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <div class="card no-rounded-corners">
+
+                                    <div class="card-body">
+                                        <h7 class="card-title">Restgæld Serielån</h7><br>
+                                        <img src="images/serierest.png" class="card-img-top img-fluid">
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <br><br>
+                    <div style="padding:56.25% 0 0 0;position:relative;"><iframe
+                            src="https://player.vimeo.com/video/1021397037?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+                            frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write"
+                            style="position:absolute;top:0;left:0;width:100%;height:100%;" title="fin2"></iframe></div>
+                    <script src="https://player.vimeo.com/api/player.js"></script><br>
+                    <br>
+
+                    <h4>Fordele og ulemper ved de 3 forskellige lånetyper</h4>
+                    <div class="info-box">
+                        <h5>Serielån</h5>
+                        <ul>
+                            <li>Fordele:
+                                <ul>
+                                    <li>Hurtigere nedbringelse af gæld</li>
+                                    <li>Lavere samlede renteomkostninger over lånets løbetid</li>
+                                </ul>
+                            </li>
+                            <li>Ulemper:
+                                <ul>
+                                    <li>Højere ydelser i starten af låneperioden</li>
+                                    <li>Er likviditetsmæssigt tungere end de øvrige lånetyper</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="info-box">
+                        <h5>Annuitetslån</h5>
+                        <ul>
+                            <li>Fordele:
+                                <ul>
+                                    <li>Fast ydelse gennem hele lånets løbetid</li>
+                                    <li>Forudsigelighed i budgetplanlægning</li>
+                                </ul>
+                            </li>
+                            <li>Ulemper:
+                                <ul>
+                                    <li>Langsom nedbringing af gæld i starten</li>
+                                    <li>Højere samlede renteomkostninger end serielån</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="info-box">
+
+                        <h5>Stående lån</h5>
+                        <ul>
+                            <li>Fordele:
+                                <ul>
+                                    <li>Lave løbende ydelser</li>
+                                    <li>God til kortsigtede investeringer eller ved forventning om værdistigning</li>
+                                </ul>
+                            </li>
+                            <li>Ulemper:
+                                <ul>
+                                    <li>Kræver stor likviditet ved lånets udløb</li>
+                                    <li>Ingen løbende nedbringing af gæld</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <p>Valget mellem de forskellige lånetyper afhænger af låntagers økonomiske og likviditetsmæssige
+                        situation, forventninger til
+                        fremtiden og
+                        formålet med lånet.</p>
+
+                    <h4>App til Serielån</h4>
+                    <p>Du kan udregne låneforløbet i Excel eller i en app, herunder er link til App for serielån</p>
+
+                    <a href="https://apps.tepedu.dk/serie" class="effectLinks" data-replace="Åben app" target="_blank">
+
+                        <span>App til serielån</span>
+                    </a>
+                    <br><br>
+
+                    <h4>Beregninger for serielån</h4>
+                    <p>For et serielån er det relativt simpelt at beregne afdrag, ydelser og restgæld ved hver
+                        termin:</p>
+
+
+
+                    <ul>
+                        <li>Fast afdrag = Hovedstol / Antal terminer</li>
+                        <li>Rentesats pr. termin = Årlig rente / Antal terminer pr. år</li>
+                        <li>Restgæld = Oprindelig hovedstol - (Antal betalte terminer * Fast afdrag)</li>
+                        <li>Ydelse = Fast afdrag + (Restgæld * Rentesats pr. termin)</li>
+
+
+                    </ul>
+
+                    <h4>Eksempel: Serielån</h4>
+                    <ul></ul>
+                    <li>Type: Serielån</li>
+                    <li>Hovedstol: 1.000.000 kr.</li>
+                    <li>Løbetid: 5 år</li>
+                    <li>Nominel Rente: 4% p.a.</li>
+                    <li>Terminsrente: 4%/1 = 4%</li>
+                    <li>Terminer: Årlige</li>
+                    <li>Kurs: 100</li>
+                    <li>Omkostninger: 0 kr.</li>
+                    </ul>
+                    <br>
+                    <table class="table table-hover table-bordered">
+                        <tr>
+                            <th>År</th>
+                            <th>Fast Afdrag</th>
+                            <th>Ydelse</th>
+                            <th>Restgæld efter ydelse</th>
+
+
+                        </tr>
+                        <tr>
+                            <td>
+                                1
+                            </td>
+                            <td>
+                                Hovedstol / Antal terminer <br>
+                                1.000.000/5 = 200.000
+                            </td>
+                            <td>
+                                Fast afdrag + (Restgæld * Rentesats pr. termin)<br>
+                                200.000 + 1.000.000*4% = 240.000
+                            </td>
+                            <td>
+                                Oprindelig hovedstol - (Antal betalte terminer * Fast afdrag)<br>
+                                1.000.000 - 1*200.000 = 800.000 kr.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                2
+                            </td>
+                            <td>
+                                Hovedstol / Antal terminer <br>
+                                1.000.000/5 = 200.000
+                            </td>
+                            <td>
+                                Fast afdrag + (Restgæld * Rentesats pr. termin)<br>
+                                200.000 + 800.000*4% = 232.000
+                            </td>
+                            <td>
+                                Oprindelig hovedstol - (Antal betalte terminer * Fast afdrag)<br>
+                                1.000.000 - 2*200.000 = 600.000 kr.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                3
+                            </td>
+                            <td>
+                                Hovedstol / Antal terminer <br>
+                                1.000.000/5 = 200.000
+                            </td>
+                            <td>
+                                Fast afdrag + (Restgæld * Rentesats pr. termin)<br>
+                                200.000 + 600.000*4% = 224.000
+                            </td>
+                            <td>
+                                Oprindelig hovedstol - (Antal betalte terminer * Fast afdrag)<br>
+                                1.000.000 - 3*200.000 = 400.000 kr.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                4
+                            </td>
+                            <td>
+                                Hovedstol / Antal terminer <br>
+                                1.000.000/5 = 200.000
+                            </td>
+                            <td>
+                                Fast afdrag + (Restgæld * Rentesats pr. termin)<br>
+                                200.000 + 400.000*4% = 216.000
+                            </td>
+                            <td>
+                                Oprindelig hovedstol - (Antal betalte terminer * Fast afdrag)<br>
+                                1.000.000 - 4*200.000 = 200.000 kr.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                5
+                            </td>
+                            <td>
+                                Hovedstol / Antal terminer <br>
+                                1.000.000/5 = 200.000
+                            </td>
+                            <td>
+                                Fast afdrag + (Restgæld * Rentesats pr. termin)<br>
+                                200.000 + 200.000*4% = 208.000
+                            </td>
+                            <td>
+                                Oprindelig hovedstol - (Antal betalte terminer * Fast afdrag)<br>
+                                1.000.000 - 5*200.000 = 0 kr.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="4">Med app: <br><br>
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-md-12 mb-4">
+                                            <div class="card no-rounded-corners">
+
+                                                <div class="card-body">
+                                                    <h7 class="card-title">Serielån input</h7><br>
+                                                    <img src="images/serie_1.png" class="card-img-top img-fluid">
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <br>
+                                        <div class="col-md-6 mb-6">
+                                            <div class="card no-rounded-corners">
+
+                                                <div class="card-body">
+                                                    <h7 class="card-title">Serielån cashflows</h7><br>
+                                                    <img src="images/serie_2.png" class="card-img-top img-fluid">
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 mb-6">
+                                            <div class="card no-rounded-corners">
+
+                                                <div class="card-body">
+                                                    <h7 class="card-title">Serielån restgæld</h7><br>
+                                                    <img src="images/serie_3.png" class="card-img-top img-fluid">
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <br><br>
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-md-12 mb-4">
+                                            <div class="card no-rounded-corners">
+
+                                                <div class="card-body">
+                                                    <h7 class="card-title">Serielån cashflows</h7><br>
+                                                    <img src="images/serie_4.png" class="card-img-top img-fluid">
+
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </td>
+
+                        </tr>
+                    </table>
+
+
+                </article>
+
+                <article>
+                    <h5>Sammenligning af ydelser over tid</h5>
+
+
+
+
+                    <p>For at forstå forskellen mellem et serie- afdragsfrit- og et annuitetslån, kan vi sammenligne
+                        ydelserne for
+                        de 3 forskellige lånetyper når vi fastholder de samme betingelser som ovenfor: <br>
+                    <ul>
+                        <li>Hovedstol: 1.000.000 kr.</li>
+                        <li>Løbetid: 5 år</li>
+                        <li>Nominel Rente: 4% p.a.</li>
+                        <li>Terminsrente: 4%/1 = 4%</li>
+                        <li>Terminer: Årlige</li>
+                        <li>Kurs: 100</li>
+                        <li>Omkostninger: 0 kr.</li>
+                    </ul>
+                    </p>
+
+                    <table class="table table-striped table-hover">
+                        <thead>
+                            <tr>
+                                <th>År</th>
+                                <th>Ydelse serielån</th>
+                                <th>Ydelse annuitetslån</th>
+                                <th>Ydelse stående lån</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>240.000 kr.</td>
+                                <td>224.627,11 kr.</td>
+                                <td>40.000 kr.</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>232.000 kr.</td>
+                                <td>224.627,11 kr.</td>
+                                <td>40.000 kr.</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>224.000 kr.</td>
+                                <td>224.627,11 kr.</td>
+                                <td>40.000 kr.</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>216.000 kr.</td>
+                                <td>224.627,11 kr.</td>
+                                <td>40.000 kr.</td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>208.000 kr.</td>
+                                <td>224.627,11 kr.</td>
+                                <td>1.040.000 kr.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <p>En af de største fordele ved serielån er de lavere samlede renteudgifter over lånets løbetid. Lad
+                        os sammenligne
+                        de samlede renteudgifter for henholdsvis serielån, annuitetslån og stående
+                        lån:</p>
+
+                    <table class="table table-striped table-hover">
+                        <thead>
+                            <tr>
+                                <th>Låntype</th>
+                                <th>Samlet renteudgift</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Serielån</td>
+                                <td>40.000 + 32.000 + 24.000 + 16.000 + 8.000 = 120.000,00
+                                    kr.</td>
+                            </tr>
+                            <tr>
+                                <td>Annuitetslån</td>
+                                <td>5 * 224.627,11 - 1.000.000 = 123.135,55 kr.</td>
+                            </tr>
+
+                            <tr></tr>
+                            <td>Stående lån</td>
+                            <td>5 * 40.000 = 200.000,00 kr.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <p>Som det fremgår af tabellerne, er ydelserne for serielånet højere i starten, men falder over tid,
+                        de høje afdrag gør at den samlede rentebetaling kun er 120.000 kr.
+                        Annuitetslånet har derimod en fast ydelse gennem hele lånets løbetid, her er de totale renter
+                        123.135,55 kr.
+                        Det afdragsfrie lån har de
+                        laveste ydelser frem til lånets udløb. De totale renter på 200.000 kr. er højest for det
+                        afdragsfrie
+                        lån, hvilket giver god mening da hovedstolen der beregnes renter af er højest for dette lån.
+                        <br><strong>Bemærk:</strong> normalt vil långiver tilbyde lavest rente ved serielånet, da man på
+                        grund af de
+                        konstante relativt høje afdrag har mindst risiko på dette lån.
+                    </p>
+
+                    <h5>Opsamling</h5>
+                    <p>Serielån kan være fordelagtige for låntagere, der ønsker at nedbringe deres gæld hurtigt og har
+                        råd til de højere ydelser i starten af låneperioden. Det er særligt attraktivt for dem, der
+                        forventer en stabil
+                        eller stigende indkomst over tid. På den anden side kan annuitetslån være mere passende for
+                        låntagere, der foretrækker faste,
+                        forudsigelige ydelser gennem hele lånets løbetid.</p>
+                </article>
+
+
+                <article>
+                    <h2>Finansieringscase: Serielån til virksomhedsudvidelse</h2>
+
+                    <p>Virksomheden DanTech Solutions ApS ønsker at udvide deres produktionsfaciliteter. De har brug
+                        for at låne
+                        5.000.000 kr. til indkøb af nyt produktionsudstyr og ombygning af deres eksisterende lokaler.
+                    </p>
+
+                    <p>Banken tilbyder følgende lånebetingelser for et serielån:</p>
+                    <ul>
+                        <li>Hovedstol: 5.000.000 kr.</li>
+                        <li>Løbetid: 10 år</li>
+                        <li>Nominel rente: 4,5% p.a.</li>
+                        <li>Terminer: Halvårlige</li>
+                        <li>Kurs: 99</li>
+                        <li>Stiftelsesomkostninger: 25.000 kr.</li>
+                    </ul>
+
+                    <h5>Dantech Solutions ønsker svar på følgende:</h5>
+                    <ol>
+                        <li>Beregn det halvårlige afdrag</li>
+                        <li>Beregn den første halvårlige ydelse</li>
+                        <li>Udregn kurstabet i kroner</li>
+                        <li>Beregn det faktiske provenu, som DanTech Solutions ApS modtager efter kurstab og
+                            stiftelsesomkostninger</li>
+                        <li>Beregn ÅOP</li>
+                        <li>Lav en oversigt over de første 3 års ydelser</li>
+                    </ol>
+
+                    <h5>Løsninger:</h5>
+
+                    <h5>1. Beregning af halvårligt afdrag</h5>
+                    <table class="table table-bordered table-hover">
+                        <tr>
+                            <th>Beregning</th>
+                            <th>Resultat</th>
+                        </tr>
+                        <tr>
+                            <td>Halvårligt afdrag = Hovedstol / (Løbetid * 2)</td>
+                            <td>5.000.000 / (10 * 2) = 250.000 kr.</td>
+                        </tr>
+                    </table>
+
+                    <h5>2. Beregning af første halvårlige ydelse</h5>
+                    <table class="table table-bordered table-hover">
+                        <tr>
+                            <th>Beregning</th>
+                            <th>Resultat</th>
+                        </tr>
+                        <tr>
+                            <td>Halvårlig rente = Årlig rente / 2</td>
+                            <td>4,5% / 2 = 2,25%</td>
+                        </tr>
+                        <tr>
+                            <td>Rentebeløb = Hovedstol * Halvårlig rente</td>
+                            <td>5.000.000 * 0,0225 = 112.500 kr.</td>
+                        </tr>
+                        <tr>
+                            <td>Første ydelse = Afdrag + Rentebeløb</td>
+                            <td>250.000 + 112.500 = 362.500 kr.</td>
+                        </tr>
+                    </table>
+
+                    <h5>3. Beregning af kurstab</h5>
+                    <table class="table table-bordered table-hover">
+                        <tr>
+                            <th>Beregning</th>
+                            <th>Resultat</th>
+                        </tr>
+                        <tr>
+                            <td>Kurstab = Hovedstol * (1 - Kurs/100)</td>
+                            <td>5.000.000 * (1 - 99/100) = 50.000 kr.</td>
+                        </tr>
+                    </table>
+
+                    <h5>4. Beregning af faktisk provenu</h5>
+                    <table class="table table-bordered table-hover">
+                        <tr>
+                            <th>Beregning</th>
+                            <th>Resultat</th>
+                        </tr>
+                        <tr>
+                            <td>Provenu = (Hovedstol * Kurs/100) - Stiftelsesomkostninger</td>
+                            <td>(5.000.000 * 99/100) - 25.000 = 4.925.000 kr.</td>
+                        </tr>
+                    </table>
+
+                    <h5>5. Beregning ÅOP</h5>
+                    <p>For at beregne den effektive rente, bruger vi IA (intern rente) funktionen i Excel med de
+                        beregnede
+                        pengestrømme. Vi får en halvårlig effektiv rente på cirka 2,4191%.</p>
+
+                    <table class="table table-bordered table-hover">
+                        <tr>
+                            <th>Beregning</th>
+                            <th>Resultat</th>
+                        </tr>
+                        <tr>
+                            <td>ÅOP = (1 + Halvårlig rente)^2 - 1</td>
+                            <td>(1 + 0,024191)^2 - 1 = 4,90%</td>
+                        </tr>
+                    </table>
+
+                    <h5>6. Oversigt over de første 3 års ydelser</h5>
+                    <table class="table table-striped table-hover">
+                        <thead>
+                            <tr>
+                                <th>Termin</th>
+                                <th>Restgæld start</th>
+                                <th>Afdrag</th>
+                                <th>Rente</th>
+                                <th>Ydelse</th>
+                                <th>Restgæld slut</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>5.000.000 kr.</td>
+                                <td>250.000 kr.</td>
+                                <td>112.500 kr.</td>
+                                <td>362.500 kr.</td>
+                                <td>4.750.000 kr.</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>4.750.000 kr.</td>
+                                <td>250.000 kr.</td>
+                                <td>106.875 kr.</td>
+                                <td>356.875 kr.</td>
+                                <td>4.500.000 kr.</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>4.500.000 kr.</td>
+                                <td>250.000 kr.</td>
+                                <td>101.250 kr.</td>
+                                <td>351.250 kr.</td>
+                                <td>4.250.000 kr.</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>4.250.000 kr.</td>
+                                <td>250.000 kr.</td>
+                                <td>95.625 kr.</td>
+                                <td>345.625 kr.</td>
+                                <td>4.000.000 kr.</td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>4.000.000 kr.</td>
+                                <td>250.000 kr.</td>
+                                <td>90.000 kr.</td>
+                                <td>340.000 kr.</td>
+                                <td>3.750.000 kr.</td>
+                            </tr>
+                            <tr>
+                                <td>6</td>
+                                <td>3.750.000 kr.</td>
+                                <td>250.000 kr.</td>
+                                <td>84.375 kr.</td>
+                                <td>334.375 kr.</td>
+                                <td>3.500.000 kr.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <h5>Konklusion</h5>
+                    <p>DanTech Solutions ApS vil modtage et provenu på 4.925.000 kr. for deres serielån. Den første
+                        halvårlige ydelse
+                        vil være 362.500 kr., og denne vil falde over tid, da rentebeløbet reduceres i takt med, at
+                        hovedstolen
+                        afdrages. Den effektive årlige rente på lånet er 4,90%, hvilket er højere end den nominelle
+                        rente på 4,5% på
+                        grund af kurstab, stiftelsesomkostninger og den halvårlige rentetilskrivning. Serielånet giver
+                        virksomheden en
+                        forudsigelig gældsafvikling og faldende ydelser over tid.</p>
+                    <table class="table table-hover table-bordered">
+
+                        <tr>
+                            <td colspan="4">Løsning med app: <br><br>
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-md-12 mb-4">
+                                            <div class="card no-rounded-corners">
+
+                                                <div class="card-body">
+                                                    <h7 class="card-title">Serielån input</h7><br>
+                                                    <img src="images/serie_5.png" class="card-img-top img-fluid">
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <br>
+                                        <div class="col-md-6 mb-6">
+                                            <div class="card no-rounded-corners">
+
+                                                <div class="card-body">
+                                                    <h7 class="card-title">Serielån cashflows</h7><br>
+                                                    <img src="images/serie_6.png" class="card-img-top img-fluid">
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 mb-6">
+                                            <div class="card no-rounded-corners">
+
+                                                <div class="card-body">
+                                                    <h7 class="card-title">Serielån restgæld</h7><br>
+                                                    <img src="images/serie_7.png" class="card-img-top img-fluid">
+
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <br>
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-md-12 mb-4">
+                                            <div class="card no-rounded-corners">
+
+                                                <div class="card-body">
+                                                    <h7 class="card-title">Serielån cashflows</h7><br>
+                                                    <img src="images/serie_8.png" class="card-img-top img-fluid">
+
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </td>
+
+                        </tr>
+                    </table>
+                    <br><br>
+                    <h3>Quiz</h3>
+
+                    <a href="https://fin.tepedu.dk/if9" class="effectLinks" data-replace="Åben Quiz" target="_blank">
+
+                        <span>Quiz serielån</span>
+                    </a>
+                    <br>
+                    <br>
+                    <a href="https://fin.tepedu.dk/if10" class="effectLinks" data-replace="Åben Quiz" target="_blank">
+
+                        <span>Quiz serielån</span>
+                    </a>
+                    <br>
+
+
+
+                    <br>
+                </article>
+
+            </div>
+
+        </div>
+    </div>
+
+    <!-- jQuery and Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- External JavaScript File -->
+    <script src="script.js"></script>
+</body>
+
+</html>

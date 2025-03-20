@@ -1,0 +1,528 @@
+<!-- subpage2.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Investering og finansiering</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:300i&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+</head>
+
+<body>
+
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand navbar-light transparent-navbar fixed-top">
+        <div class="container-fluid">
+            <!-- Left-aligned Home Icon -->
+            <a class="navbar-brand" href="index.html">
+                <i class="bi bi-house-door"></i>
+            </a>
+
+            <!-- Right-aligned Navbar Items -->
+            <ul class="navbar-nav ml-auto align-items-center">
+                <!-- Dropdown Menu for Pages -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="bi bi-list icon-margin"></i>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
+                        <!-- <a class="dropdown-item" href="index.html">Investering og Finansiering</a> -->
+                        <a class="dropdown-item" href="renter.html">Renter</a>
+                        <a class="dropdown-item" href="renterexcel.html">Rentesregning Excel</a>
+                        <a class="dropdown-item" href="investering.html">Investering</a>
+                        <a class="dropdown-item" href="investering_2.html">Investering Følsomhedsanalyse</a>
+                        <a class="dropdown-item" href="annuitet.html">Annuitetslån</a>
+
+                        <a class="dropdown-item" href="afdragsfrit.html">Stående lån</a>
+                        <a class="dropdown-item" href="serie.html">Serielån</a>
+                        <a class="dropdown-item" href="kassekredit.html">Kassekredit</a>
+                        <a class="dropdown-item" href="leverandorkredit.html">Leverandørkredit</a>
+                        <a class="dropdown-item" href="leasing.html">Leasing</a>
+                    </div>
+                </li>
+
+                <!-- Left Arrow Icon (Previous Page) -->
+                <li class="nav-item">
+                    <a class="nav-link" id="prev-page-link" href="#">
+                        <i class="bi bi-arrow-left"></i>
+                    </a>
+                </li>
+
+                <!-- Right Arrow Icon (Next Page) -->
+                <li class="nav-item">
+                    <a class="nav-link" id="next-page-link" href="#">
+                        <i class="bi bi-arrow-right"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <!-- Menu Icon (visible when menu is hidden) -->
+    <div id="menu-icon">
+        <i class="bi bi-list"></i>
+    </div>
+
+    <!-- Page Menu -->
+    <div id="page-menu">
+        <!-- The menu will be dynamically generated here -->
+    </div>
+
+    <!-- Page Content -->
+    <div class="content">
+        <div class="container mt-4">
+
+            <article>
+                <h2>Leverandørkredit</h2>
+
+                <p>Leverandørkredit er en form for kortfristet finansiering, hvor en leverandør giver sin kunde mulighed
+                    for at
+                    udskyde betalingen for varer eller tjenester. Dette er en almindelig praksis i mange brancher og kan
+                    være en
+                    vigtig del af en virksomheds arbejdskapitalstyring.</p>
+
+                <h3>Fordele ved leverandørkredit</h3>
+
+                <ul>
+                    <li>Forbedret likviditet for kunden</li>
+                    <li>Mulighed for at sælge større mængder for leverandøren</li>
+                    <li>Styrket forretningsforhold mellem leverandør og kunde</li>
+                </ul>
+
+                <h3>Eksempler på leverandørkredit</h3>
+
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>Branche</th>
+                            <th>Typisk kredittid</th>
+                            <th>Eksempel</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Detailhandel</td>
+                            <td>30-60 dage</td>
+                            <td>En tøjbutik køber varer fra en producent og får 45 dages kredit til at betale fakturaen.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Byggebranchen</td>
+                            <td>60-90 dage</td>
+                            <td>En entreprenør køber byggematerialer og får 90 dages kredit fra leverandøren.</td>
+                        </tr>
+                        <tr>
+                            <td>IT-branchen</td>
+                            <td>14-30 dage</td>
+                            <td>Et softwarefirma køber hardware og får 30 dages kredit fra leverandøren.</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h3>Beregning af leverandørkredit</h3>
+
+                <p>Lad os se på et eksempel, hvor en virksomhed overvejer at acceptere leverandørkredit:</p>
+
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th>Parameter</th>
+                            <th>Værdi</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Fakturabeløb</td>
+                            <td>100.000 kr.</td>
+                        </tr>
+                        <tr>
+                            <td>Kredittid</td>
+                            <td>30 dage</td>
+                        </tr>
+                        <tr>
+                            <td>Kontantrabat</td>
+                            <td>2% ved betaling inden for 10 dage</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                Når man skal beregne ÅOP for leverandørkredit, er det nemmeste at forudsætte man køber
+                                for 100 kroner. <br>
+                                Så kan man opfatte senere betaling af de 100 kroner som en lån man får, og
+                                tidsforskellen mellem hurtig
+                                og senere betaling som terminen. <br>
+                                Hvis man køber for 100 kr. kan man betale 98 kr. efter 10 dage eller 100 kr. efter 30
+                                dage. <br>Tidsforskellen 30 - 10 = 20 dages kredit koster altså 2 kr for hver 100 kr.
+                                man køber for.
+                                Dette kan vi opfatte som betalingsstrømme og udregne terminsrenten i Excel med IA (IRR
+                                engelsk)
+                                formlen: <br><br>
+                                <img src="images/lev1.png" width="50%"><br>
+                                <br>
+                                Terminsrenten er altså 2,04%, når vi skal finde ÅOP skal vi opløfte i antal terminer pr.
+                                år. For at finde dette tal kan vi antage der er 365 dage på et år, dvs. antallet af
+                                terminer pr. år er 365/20 = 18,25 terminer pr. år.
+                                <br>
+                                <img src="images/lev2.png" width="50%"><br>
+                                <br>Det er altså relativt dyrt at benytte leverandørkreditten da ÅOP bliver 44,59%,
+                                således bør man i dette tilfælde betale inden 10 dage og ikke udnytte kreditten, hvis
+                                man har rimeligere finansieringsmuligheder.
+
+
+                            </td>
+                        <tr>
+                            <td colspan="2">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-md-12 mb-4">
+                                            <div class="card no-rounded-corners">
+
+                                                <div class="card-body">
+                                                    <h7 class="card-title">Leverandørkredit input</h7><br>
+                                                    <img src="images/lev3.png" class="card-img-top img-fluid">
+
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-md-12 mb-6">
+                                            <div class="card no-rounded-corners">
+
+                                                <div class="card-body">
+                                                    <h7 class="card-title">Leverandørkredit cashflows</h7><br>
+                                                    <img src="images/lev4.png" class="card-img-top img-fluid">
+
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <br><br>
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-md-12 mb-4">
+                                            <div class="card no-rounded-corners">
+
+                                                <div class="card-body">
+                                                    <h7 class="card-title">Leverandørkredit ÅOP</h7><br>
+                                                    <img src="images/lev5.png" class="card-img-top img-fluid">
+
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+
+                            </td>
+                        </tr>
+
+                    </tbody>
+                </table>
+
+
+
+
+
+                <p>Leverandørkredit kan være et værdifuldt værktøj for virksomheder til at styre deres likviditet og
+                    vækst. Det er
+                    dog vigtigt at sammenholde omkostningerne ved leverandørkredit med de alternative
+                    finansieringsmuligheder virksomheden har, den bedste løsning er alt andet lige finansieringen med
+                    den laveste ÅOP.</p>
+
+                <br>
+                <div style="padding:56.25% 0 0 0;position:relative;"><iframe
+                        src="https://player.vimeo.com/video/1021385554?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+                        frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write"
+                        style="position:absolute;top:0;left:0;width:100%;height:100%;" title="fin2"></iframe></div>
+                <script src="https://player.vimeo.com/api/player.js"></script><br>
+                <br>
+
+
+                <h4>App til leverandørkredit</h4>
+                <p>Du kan udregne ÅOP for leverandørkredit i Excel eller i en app, herunder er link til App til
+                    leverandørkredit</p>
+
+                <a href="https://apps.tepedu.dk/kredit" class="effectLinks" data-replace="Åben app" target="_blank">
+
+                    <span>App til leverandørkredit</span>
+                </a>
+                <br><br>
+            </article>
+            <article>
+                <h4>3 Leverandørers kreditvilkår</h4>
+                <p>Herunder er betalingsbetingelserne for 3 leverandører til virksomheden Dragør Brugskunst angivet. Ved
+                    at udregne ÅOP kan man bestemme hvilke leverandører, der tilbyder den billigste kredit. Dragør
+                    Brugskunst har en kassekredit med luft, hvor ÅOP er 13%. <br>Bør virksomheden betale tidligt eller
+                    sent
+                    til sine leverandører?</p>
+                <table class="table table-bordered table-hover">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th colspan="4">
+                                <h5 style="text-align: center;">Leverandør A</h5>
+                            </th>
+                        </tr>
+                        <tr>
+
+                            <th>Kredittid</th>
+                            <th>Kontantrabat</th>
+                            <th>Terminsrente</th>
+                            <th>ÅOP</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+
+                            <td>30 dage</td>
+                            <td>-2% ved betaling inden 8 dage</td>
+                            <td>Terminsrente <br>(termin 30 - 8 = 22 dage) <br>Excel IA eller App <br>
+                                2,04% <br>
+                            <td>(1+2,04%)^(365/22)-1 = <br>
+                                39,82%</td>
+                            </td>
+
+                        </tr>
+                        <tr>
+                            <td colspan="4">
+                                Excel <br>
+                                <img src="images/lev6.png" width="50%">
+
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="4">
+                                APP <br>
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-md-12 mb-4">
+                                            <div class="card no-rounded-corners">
+
+                                                <div class="card-body">
+                                                    <h7 class="card-title">Leverandørkredit input</h7><br>
+                                                    <img src="images/lev9.png" class="card-img-top img-fluid">
+
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-md-12 mb-6">
+                                            <div class="card no-rounded-corners">
+
+                                                <div class="card-body">
+                                                    <h7 class="card-title">Leverandørkredit ÅOP</h7><br>
+                                                    <img src="images/lev10.png" class="card-img-top img-fluid">
+
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+
+
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <br>
+                <table class="table table-bordered table-hover">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th colspan="4">
+                                <h5 style="text-align: center;">Leverandør B</h5>
+                            </th>
+                        </tr>
+                        <tr>
+
+                            <th>Kredittid</th>
+                            <th>Kontantrabat</th>
+                            <th>Terminsrente</th>
+                            <th>ÅOP</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+
+                            <td>45 dage</td>
+                            <td>1.5% kontantrabat ved betaling inden 15 dage</td>
+                            <td>Terminsrente <br>(termin 45 - 15 = 30 dage) <br>Excel IA eller App <br>
+                                1,52% <br>
+                            <td>(1+1,52%)^(365/30)-1 = <br>
+                                20,19%</td>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="4">
+                                Excel <br>
+                                <img src="images/lev7.png" width="50%">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="4">
+                                APP <br>
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-md-12 mb-4">
+                                            <div class="card no-rounded-corners">
+
+                                                <div class="card-body">
+                                                    <h7 class="card-title">Leverandørkredit input</h7><br>
+                                                    <img src="images/lev11.png" class="card-img-top img-fluid">
+
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-md-12 mb-6">
+                                            <div class="card no-rounded-corners">
+
+                                                <div class="card-body">
+                                                    <h7 class="card-title">Leverandørkredit ÅOP</h7><br>
+                                                    <img src="images/lev12.png" class="card-img-top img-fluid">
+
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+
+
+                            </td>
+                        </tr>
+                    </tbody>
+
+                </table>
+                <br>
+                <table class="table table-bordered table-hover">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th colspan="4">
+                                <h5 style="text-align: center;">Leverandør C</h5>
+                            </th>
+                        </tr>
+                        <tr>
+
+                            <th>Kredittid</th>
+                            <th>Kontantrabat</th>
+                            <th>Terminsrente</th>
+                            <th>ÅOP</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+
+                            <td>60 dage</td>
+                            <td>-3% ved betaling inden 20 dage</td>
+                            <td>Terminsrente <br>(termin 60 - 20 = 40 dage) <br>Excel IA eller App <br>
+                                3,09% <br>
+                            <td>(1+3,09%)^(365/40)-1 = <br>
+                                32,04%</td>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="4">
+                                Excel <br>
+                                <img src="images/lev8.png" width="50%">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="4">
+                                APP <br>
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-md-12 mb-4">
+                                            <div class="card no-rounded-corners">
+
+                                                <div class="card-body">
+                                                    <h7 class="card-title">Leverandørkredit input</h7><br>
+                                                    <img src="images/lev13.png" class="card-img-top img-fluid">
+
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-md-12 mb-6">
+                                            <div class="card no-rounded-corners">
+
+                                                <div class="card-body">
+                                                    <h7 class="card-title">Leverandørkredit ÅOP</h7><br>
+                                                    <img src="images/lev14.png" class="card-img-top img-fluid">
+
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+
+
+                            </td>
+                        </tr>
+                    </tbody>
+
+                </table>
+
+
+                <p>Der er relativt høj forrentning hos de 3 leverandører, dvs. man belønnes for at betale hurtigt. Her
+                    bør Dragør Brugskunst benytte kassekreditten.
+                    Hvis man rammer maksimum på kassekreditten og ikke kan udvide denne på fornuftige konditioner
+                    og ikke har alternative bedre kreditmuligheder, er leverandør B's kredit mest attraktiv da ÅOP her
+                    'kun'
+                    er 20,19% p.a., denne mulighed vil være mest attraktiv for virksomheden.</p>
+
+                <h3>Quiz</h3>
+
+                <a href="https://fin.tepedu.dk/if15" class="effectLinks" data-replace="Åben Quiz" target="_blank">
+
+                    <span>Quiz leverandørkredit</span>
+                </a>
+                <br>
+                <br>
+
+            </article>
+        </div>
+    </div>
+
+    <!-- jQuery and Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- External JavaScript File -->
+    <script src="script.js"></script>
+</body>
+
+</html>

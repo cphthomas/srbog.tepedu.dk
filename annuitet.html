@@ -1,0 +1,892 @@
+<!-- subpage2.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Investering og finansiering</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:300i&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+    <!-- MathJax Configuration -->
+    <script type="text/javascript">
+        window.MathJax = {
+            tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']],
+                displayMath: [['$$', '$$'], ['\\[', '\\]']],
+                processEscapes: true
+            },
+            svg: {
+                fontCache: 'global'
+            }
+        };
+    </script>
+    <!-- MathJax Script -->
+    <script type="text/javascript" id="MathJax-script" async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.0/es5/tex-svg.min.js">
+        </script>
+
+</head>
+
+<body>
+
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand navbar-light transparent-navbar fixed-top">
+        <div class="container-fluid">
+            <!-- Left-aligned Home Icon -->
+            <a class="navbar-brand" href="index.html">
+                <i class="bi bi-house-door"></i>
+            </a>
+
+            <!-- Right-aligned Navbar Items -->
+            <ul class="navbar-nav ml-auto align-items-center">
+                <!-- Dropdown Menu for Pages -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="bi bi-list icon-margin"></i>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
+                        <!-- <a class="dropdown-item" href="index.html">Investering og Finansiering</a> -->
+                        <a class="dropdown-item" href="renter.html">Renter</a>
+                        <a class="dropdown-item" href="renterexcel.html">Rentesregning Excel</a>
+                        <a class="dropdown-item" href="investering.html">Investering</a>
+                        <a class="dropdown-item" href="investering_2.html">Investering Følsomhedsanalyse</a>
+                        <a class="dropdown-item" href="annuitet.html">Annuitetslån</a>
+
+                        <a class="dropdown-item" href="afdragsfrit.html">Stående lån</a>
+                        <a class="dropdown-item" href="serie.html">Serielån</a>
+                        <a class="dropdown-item" href="kassekredit.html">Kassekredit</a>
+                        <a class="dropdown-item" href="leverandorkredit.html">Leverandørkredit</a>
+                        <a class="dropdown-item" href="leasing.html">Leasing</a>
+                    </div>
+                </li>
+
+                <!-- Left Arrow Icon (Previous Page) -->
+                <li class="nav-item">
+                    <a class="nav-link" id="prev-page-link" href="#">
+                        <i class="bi bi-arrow-left"></i>
+                    </a>
+                </li>
+
+                <!-- Right Arrow Icon (Next Page) -->
+                <li class="nav-item">
+                    <a class="nav-link" id="next-page-link" href="#">
+                        <i class="bi bi-arrow-right"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <!-- Menu Icon (visible when menu is hidden) -->
+    <div id="menu-icon">
+        <i class="bi bi-list"></i>
+    </div>
+
+    <!-- Page Menu -->
+    <div id="page-menu">
+        <!-- The menu will be dynamically generated here -->
+    </div>
+
+    <!-- Page Content -->
+    <div class="content">
+        <div class="container mt-4">
+            <article>
+                <h2>Annuitetslån</h2>
+                <p>En annuitet er en serie af lige store betalinger, der foretages med faste intervaller over en bestemt
+                    periode.
+                    Annuiteter anvendes ofte i finansielle sammenhænge, såsom ved afbetaling af huslån, billån,
+                    pensionsopsparinger etc.</p>
+                <h3>Kendetegn ved en annuitet:</h3>
+                <ul>
+                    <li>Faste betalinger/ydelser: Hver ydelse i en annuitet er af samme størrelse.</li>
+                    <li>Regelmæssige intervaller: Betalingerne sker med faste mellemrum, f.eks. månedligt, kvartalsvist
+                        eller
+                        årligt.</li>
+                    <li>Bestemt tidsperiode: Annuiteten har en fastlagt start- og slutdato.</li>
+                </ul>
+
+                <h3>Anvendelser af annuiteter:</h3>
+                <ul>
+                    <li>Lånafbetaling: F.eks. realkreditlån eller billån.</li>
+                    <li>Pensionsudbetalinger: Regelmæssige udbetalinger fra en pensionsopsparing.</li>
+                    <li>Investeringer: Strukturerede investeringsprodukter med faste udbetalinger.</li>
+                    <li>Lejeindtægter: Faste månedlige lejebetalinger.</li>
+                </ul>
+
+
+                <h4>Låneprofil</h4>
+                <p>Herunder er profiler for betalingstrømmene og restgælden for et annuitetslån over 10 terminer, der er
+                    genereret i finansappen.<br>
+                    Bemærk annuitetslånet har
+                    lige store ydelser summen af afdrag (røde stolper) og renter (orange stolper), men afdragsdelen
+                    (røde stolper) vokser over tid, mens rentedelen (orange stolper) falder over tid. <br>
+                    Låntagers betaler samme beløb som vi kalder ydelsen ved hver termin. Bemærk restgælden i den anden
+                    figur falder kun lidt i starten, mens restgælden falder mere til sidst i låneperioden. Hvis man
+                    opfatter restgælden som en nedadgående trappe, bliver trinnene større over tid.</p>
+                <div class="container">
+                    <div class="row row-eq-height">
+                        <div class="col-md-6 mb-4">
+                            <div class="card no-rounded-corners h-100">
+                                <div class="card-body d-flex flex-column">
+                                    <h6 class="card-title">Annuitetslån cashflows</h6>
+                                    <div class="flex-grow-1">
+                                        <img src="images/ann.png" class="card-img-top img-fluid"
+                                            alt="Annuitetslån cashflows">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-4">
+                            <div class="card no-rounded-corners  h-100">
+                                <div class="card-body d-flex flex-column">
+                                    <h6 class="card-title">Annuitetslån restgæld</h6>
+                                    <div class="flex-grow-1">
+                                        <img src="images/annurest.png" class="card-img-top img-fluid"
+                                            alt="Annuitetslån restgæld">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div style="padding:56.25% 0 0 0;position:relative;"><iframe
+                        src="https://player.vimeo.com/video/1017846797?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+                        frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write"
+                        style="position:absolute;top:0;left:0;width:100%;height:100%;" title="annuitet"></iframe></div>
+                <script src="https://player.vimeo.com/api/player.js"></script>
+                <br><br>
+                <h4>App beregning af annuiteter</h4>
+
+                <a href="https://apps.tepedu.dk/ann" class="effectLinks" data-replace="Åben app" target="_blank">
+
+                    <span>App til annuiteter</span>
+                </a>
+                <br>
+
+                <br>
+                <div style="padding:56.25% 0 0 0;position:relative;"><iframe
+                        src="https://player.vimeo.com/video/1017852412?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+                        frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write"
+                        style="position:absolute;top:0;left:0;width:100%;height:100%;" title="ann2"></iframe></div>
+                <script src="https://player.vimeo.com/api/player.js"></script>
+                <br>
+                <h4>Begrebsoversigt finansiering</h4>
+                <table class="table table-striped table-hover">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th>Begreb</th>
+                            <th>Forklaring</th>
+                            <th>Eksempel</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Hovedstol</td>
+                            <td>Det oprindelige lånebeløb, som låntager officielt låner, renteberegning sker af
+                                hovedstolen. Debitor (låntager) skal tilbagebetale hele hovedstolen til kreditor
+                                (långiver).</td>
+                            <td>Et lån på 100.000 kr.</td>
+                        </tr>
+                        <tr>
+                            <td>Ydelse</td>
+                            <td>Det beløb, låntager betaler regelmæssigt for at afdrage på lånet og betale renter. <br>
+                                For et annuitetslån består ydelsen af afdrag som nedbringer restgælden og renter som
+                                beregnes af restgælden. <br>
+                                Annuitetslån er opbygget således at man betaler samme ydelse ved
+                                hver termin, afdragsdelen af ydelsen er lille rentedelen af ydelsen er stor i starten,
+                                under afviklingen af lånet stiger afdragsdelen og rentedelen falder.</td>
+                            <td>En månedlig betaling på 2.500 kr.</td>
+                        </tr>
+
+                        <tr>
+                            <td>Nominel rente p.a.</td>
+                            <td>Den årlige rente, der er angivet på lånet, uden hensyn til gebyrer kurstab og renters
+                                rente, den effektive rente p.a. vil ofte være højere end den nominelle rente pga. af
+                                renters rente. </td>
+                            <td>En lånerente på 12% p.a.</td>
+                        </tr>
+                        <tr>
+                            <td>Terminsrente</td>
+                            <td>Beregning af terminsrenten:
+                                Terminsrenten er den nominelle rente divideret med antal terminer per år.
+                            </td>
+                            <td>Nominel rente på 12% p.a. på et lån med månedlig rentetilskrivning giver en terminsrente
+                                = 12% / 12 måneder = 1% per måned</td>
+                        </tr>
+
+
+
+                        <tr>
+                            <td>Stiftelsesomkostninger</td>
+                            <td>Oprettelsen af et lån, ofte forbundet med gebyrer</td>
+                            <td>Et stiftelsesgebyr på 2.000 kr. for at oprette lånet</td>
+                        </tr>
+                        <tr>
+                            <td>Kurs</td>
+                            <td>Den pris, obligationer eller lån handles til i procent af pålydende værdi eller
+                                hovedstol. Huslån gennem realkredit samles i store grupper af huslån kaldet
+                                obligationsserier, obligationerne sælges til
+                                investorer . Prisen investorer betaler for hver 100 kr., der officielt lånes er kursen.
+                                Er obligationen attraktiv er kursen høj.</td>
+                            <td>En lån med hovedstol på 100.000 kr. til kurs 98 betyder debitor (låneren) reelt får
+                                98.000 kr. udbetalt minus eventuelle stiftelsesomkostninger/gebyrer.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Provenu</td>
+                            <td>Det nettobeløb, låntager modtager, efter eventuelt fradrag af gebyrer og kurstab, dette
+                                beløb er altså oftest mindre end hovedstolen, som er det officielle lånebeløb. <br>
+                                provenuet
+                                er det beløb man rent faktisk får udbetalt, hovedstolen er beløbet der skal
+                                tilbagebetales, og renteberegningen foretages af hovedstolen ikke provenuet.</td>
+                            <td>Ved et lån på 100.000 kr. med kurs 99 og gebyrer på 2.000 kr. er provenuet 100.000*0,99
+                                - 2.000 = 97.000 kr.</td>
+                        </tr>
+                        <tr></tr>
+                        <td>ÅOP (Årlige Omkostninger i Procent)</td>
+                        <td>Den samlede årlige omkostning ved lånet, inkl. renter og gebyrer, hvis man tager højde for
+                            renters rente samt gebyrer og kurstab. ÅOP vil være højere end den effektive rente p.a., da
+                            man indregner kurstab, stiftelse og eventuelle øvrige omkostninger i ÅOP. <br>
+                            ÅOP er det mest retvisende tal, når man skal danne sig et overblik over låneomkostningerne.
+                        </td>
+                        <td>Et lån med 12% nominel rente p.a. kan f.eks. have en effektiv rente p.a. på 14,32% og ÅOP på
+                            15,21%</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </article>
+            <article>
+                <h2>Nutidsværdi af annuitet</h2>
+
+                <p>Nutidsværdi af en annuitet viser den aktuelle værdi af en række fremtidige, regelmæssige betalinger,
+                    når man
+                    tager højde for en given diskonteringsrente. <br> Dette koncept er vigtigt i mange finansielle
+                    beslutninger,
+                    såsom vurdering af investeringer eller lån. Her ser vi på eksempler med forskellige
+                    rentetilskrivningsperioder.
+                </p>
+
+                <h6>Eksempel NV 1: Årlig rentetilskrivning</h6>
+                <table class="table table-hover table-bordered">
+                    <tr>
+                        <th>Tekst</th>
+                        <th>Værdier</th>
+                        <th>Excel uden NV</th>
+                        <th>Excel med NV</th>
+                        <th>Resultat</th>
+                    </tr>
+                    <tr>
+                        <td>Nutidsværdien af en årlig indbetaling på 10.000 kr. over 5 år med en årlig
+                            nominel rente på 4%</td>
+                        <td>Indbetaling = 10000<br>Rente = 4%<br>År = 5</td>
+                        <td>=10000*((1-(1+4%)^-5)/4%)</td>
+                        <td>=NV(4%;5;-10000)</td>
+                        <td>44.518,22 kr.</td>
+                    </tr>
+                    <tr>
+                        <td colspan="5">
+                            <h6>Løsning Excel</h6>
+                            <img src="images/ann1.png" width="50%">
+                        </td>
+                    </tr>
+
+
+                </table>
+
+                <h6>Eksempel NV 2: Kvartalsvis rentetilskrivning</h6>
+                <table class="table table-hover table-bordered">
+                    <tr>
+                        <th>Tekst</th>
+                        <th>Værdier</th>
+                        <th>Excel uden NV</th>
+                        <th>Excel med NV</th>
+                        <th>Resultat</th>
+                    </tr>
+                    <tr>
+                        <td>Nutidsværdien af en kvartalsvis indbetaling på 2.500 kr. over 5 år med en årlig
+                            nominel rente på 4%
+                        </td>
+                        <td>Indbetaling = 2500<br>Rente = 4%/4<br>År = 5*4</td>
+                        <td>=2500*((1-(1+4%/4)^-(5*4))/(4%/4))</td>
+                        <td>=NV(4%/4;5*4;-2500)</td>
+                        <td>45.113,88 kr.</td>
+                    </tr>
+                    <tr>
+                        <td colspan="5">
+                            <h6>Løsning Excel</h6>
+                            <img src="images/ann2.png" width="50%">
+                        </td>
+                    </tr>
+                </table>
+
+                <h6>Eksempel NV 3: Månedlig rentetilskrivning</h6>
+                <table class="table table-hover table-bordered">
+                    <tr>
+                        <th>Tekst</th>
+                        <th>Værdier</th>
+                        <th>Excel uden NV</th>
+                        <th>Excel med NV</th>
+                        <th>Resultat</th>
+                    </tr>
+                    <tr>
+                        <td>Nutidsværdien af en månedlig indbetaling på 833,33 kr. over 5 år med en årlig
+                            nominel rente på 4%
+                        </td>
+                        <td>Indbetaling = 833,33<br>Rente = 4%/12<br>År = 5*12</td>
+                        <td>=833,33*((1-(1+4%/12)^-(5*12))/(4%/12))</td>
+                        <td>=NV(4%/12;5*12;-833,33)</td>
+                        <td>45793,00 kr.</td>
+                    </tr>
+                    <tr>
+                        <td colspan="5">
+                            <h6>Løsning Excel</h6>
+                            <img src="images/nv3.png" width="50%">
+                        </td>
+                    </tr>
+                </table>
+
+
+                <p>Disse eksempler illustrerer, hvordan man beregner nutidsværdien af regelmæssige fremtidige
+                    indbetalinger over
+                    forskellige rentetilskrivningsperioder. Bemærk, at jo hyppigere rentetilskrivningen er, desto højere
+                    bliver
+                    nutidsværdien af de fremtidige betalinger, selv når den samlede årlige indbetaling er den samme.</p>
+
+                <p>Excel's NV-funktion gør beregningerne enklere, især for annuiteter med forskellige
+                    rentetilskrivningsperioder,
+                    men det er også muligt at udføre beregningerne uden denne funktion ved at bruge formlen for
+                    nutidsværdi af en
+                    annuitet: <br>
+                    NV = PMT * ((1 - (1 + r)^-n) / r) <br>
+                    Hvor PMT er den regelmæssige indbetaling, r er
+                    diskonteringsrenten
+                    pr. periode, og n er antallet af perioder.</p>
+            </article>
+            <article>
+                <h2>Fremtidsværdi af annuitet</h2>
+
+                <p>Fremtidig værdi af en annuitet viser den akkumulerede værdi af en række regelmæssige indbetalinger
+                    over tid, når
+                    man tager højde for en given rente. <br> Dette koncept er vigtigt i mange finansielle situationer,
+                    såsom
+                    opsparingsplaner eller investeringsstrategier. Her ser vi på eksempler med forskellige
+                    rentetilskrivningsperioder.</p>
+
+                <h6>Eksempel FV 1: Årlig rentetilskrivning</h6>
+                <table class="table table-hover table-bordered">
+                    <tr>
+                        <th>Tekst</th>
+                        <th>Værdier</th>
+                        <th>Excel uden FV</th>
+                        <th>Excel med FV</th>
+                        <th>Resultat</th>
+                    </tr>
+                    <tr>
+                        <td>Fremtidig værdi af en årlig indbetaling på 10.000 kr. over 5 år med en årlig rente på 4%
+                        </td>
+                        <td>Indbetaling = 10000<br>Rente = 4%<br>År = 5</td>
+                        <td>=10000*((1+4%)^5-1)/4%</td>
+                        <td>=FV(4%;5;-10000)</td>
+                        <td>54.163,23 kr.</td>
+                    </tr>
+                    <tr>
+                        <td colspan="5">
+                            <h6>Løsning Excel</h6>
+                            <img src="images/fv1.png" width="50%">
+                        </td>
+                    </tr>
+                </table>
+
+                <h6>Eksempel FV 2: Kvartalsvis rentetilskrivning</h6>
+                <table class="table table-hover table-bordered">
+                    <tr>
+                        <th>Tekst</th>
+                        <th>Værdier</th>
+                        <th>Excel uden FV</th>
+                        <th>Excel med FV</th>
+                        <th>Resultat</th>
+                    </tr>
+                    <tr>
+                        <td>Fremtidig værdi af en kvartalsvis indbetaling på 2.500 kr. over 5 år med en årlig rente på
+                            4%</td>
+                        <td>Indbetaling = 2500<br>Rente = 4%/4<br>År = 5*4</td>
+                        <td>=2500*((1+4%/4)^(5*4)-1)/(4%/4)</td>
+                        <td>=FV(4%/4;5*4;-2500)</td>
+                        <td>55.047,51 kr.</td>
+                    </tr>
+                    <tr>
+                        <td colspan="5">
+                            <h6>Løsning Excel</h6>
+                            <img src="images/fv2.png" width="50%">
+                        </td>
+                    </tr>
+                </table>
+
+                <h6>Eksempel FV 3: Månedlig rentetilskrivning</h6>
+                <table class="table table-hover table-bordered">
+                    <tr>
+                        <th>Tekst</th>
+                        <th>Værdier</th>
+                        <th>Excel uden FV</th>
+                        <th>Excel med FV</th>
+                        <th>Resultat</th>
+                    </tr>
+                    <tr>
+                        <td>Fremtidig værdi af en månedlig indbetaling på 833,33 kr. over 5 år med en årlig rente på 4%
+                        </td>
+                        <td>Indbetaling = 833,33<br>Rente = 4%/12<br>År = 5*12</td>
+                        <td>=833,33*((1+4%/12)^(5*12)-1)/(4%/12)</td>
+                        <td>=FV(4%/12;5*12;-833,33)</td>
+                        <td>55.248,93 kr.</td>
+                    </tr>
+                    <tr>
+                        <td colspan="5">
+                            <h6>Løsning Excel</h6>
+                            <img src="images/fv3.png" width="50%">
+                        </td>
+                    </tr>
+                </table>
+
+
+
+                <p>Disse eksempler illustrerer, hvordan man beregner den fremtidige værdi af regelmæssige indbetalinger
+                    over
+                    forskellige rentetilskrivningsperioder. Bemærk, at jo hyppigere rentetilskrivningen er, desto højere
+                    bliver den
+                    fremtidige værdi af indbetalingerne, selv når den samlede årlige indbetaling er den samme.</p>
+
+                <p>Excel's FV-funktion gør beregningerne enklere, især for annuiteter med forskellige
+                    rentetilskrivningsperioder,
+                    men det er også muligt at udføre beregningerne uden denne funktion ved at bruge formlen for
+                    fremtidig værdi af
+                    en annuitet: <br>
+                    FV = PMT * ((1 + r)^n - 1) / r <br>
+                    Hvor PMT er den regelmæssige indbetaling, r er renten
+                    pr. periode,
+                    og n er antallet af perioder.</p>
+            </article>
+            <article>
+                <h2>Rente for annuitet</h2>
+
+                <p>Renteberegning for en annuitet er en vigtig del af mange finansielle beslutninger. Det involverer
+                    både den
+                    nominelle rente (den angivne rente) og den effektive årlige rente, som tager højde for renters rente
+                    effekten
+                    ved hyppigere rentetilskrivninger. <br> Her ser vi på eksempler med forskellige
+                    rentetilskrivningsperioder og
+                    beregner både den effektive terminsrente og effektive årlige rente.</p>
+
+                <h6>Eksempel RENTE 1: Årlig rentetilskrivning</h6>
+                <table class="table table-hover table-bordered">
+                    <tr>
+                        <th>Tekst</th>
+                        <th>Værdier</th>
+                        <th>Excel RENTE</th>
+                        <th>Effektiv terminsrente</th>
+                        <th>Effektiv årlig rente beregning</th>
+                        <th>Effektiv årlig rente</th>
+                    </tr>
+                    <tr>
+                        <td>Find renten for en annuitet med årlige indbetalinger på 10.000 kr. over 5 år, der giver en
+                            slutværdi på
+                            54.163,22 kr.</td>
+                        <td>Indbetaling = 10000<br>Perioder = 5<br>Slutværdi = 54163,22</td>
+                        <td>=RENTE(5;-10000;0;54163,22)</td>
+                        <td>4,00%</td>
+                        <td>=(1 + 4%)^1 - 1</td>
+                        <td>4,00%</td>
+                    </tr>
+                    <tr>
+
+                        <td colspan="6">
+                            <h6>Terminsrente Excel</h6><img src="images/rate1.png" width="50%">
+                        </td>
+                    </tr>
+                </table>
+                <br>
+
+                <h6>Eksempel RENTE 2: Halvårlig rentetilskrivning</h6>
+                <table class="table table-hover table-bordered">
+                    <tr>
+                        <th>Tekst</th>
+                        <th>Værdier</th>
+                        <th>Excel RENTE</th>
+                        <th>Effektiv terminsrente</th>
+                        <th>Effektiv årlig rente beregning</th>
+                        <th>Effektiv årlig rente</th>
+                    </tr>
+                    <tr>
+                        <td>Find renten for en annuitet med halvårlige indbetalinger på 5.000 kr. over 5 år (10
+                            perioder), der giver
+                            en slutværdi på 55.000 kr.</td>
+                        <td>Indbetaling = 5.000<br>Perioder = 10<br>Slutværdi = 55000</td>
+                        <td>=RENTE(10;-5.000;0;55000)</td>
+                        <td>2,10%</td>
+                        <td>=(1 + 2,1%)^2 - 1</td>
+                        <td>4,24%</td>
+                    </tr>
+                    <tr>
+
+                        <td colspan="6">
+                            <h6>Terminsrente Excel</h6><img src="images/rate2.png" width="50%">
+                        </td>
+                    </tr>
+                </table>
+
+
+                <h6>Eksempel RENTE 3: Kvartalsvis rentetilskrivning</h6>
+                <table class="table table-hover table-bordered">
+                    <tr>
+                        <th>Tekst</th>
+                        <th>Værdier</th>
+                        <th>Excel RENTE</th>
+                        <th>Effektiv terminsrente</th>
+                        <th>Effektiv årlig rente beregning</th>
+                        <th>Effektiv årlig rente</th>
+                    </tr>
+                    <tr>
+                        <td>Find renten for en annuitet med kvartalsvise indbetalinger på 2.500 kr. over 5 år (20
+                            perioder), der
+                            giver en slutværdi på 55.000 kr.</td>
+                        <td>Indbetaling = 2500<br>Perioder = 20<br>Slutværdi = 55000</td>
+                        <td>=RENTE(20;-2500;0;55000)</td>
+                        <td>0,99%</td>
+                        <td>=(1 + 0,99%)^4 - 1</td>
+                        <td>4,02%</td>
+                    </tr>
+                    <tr>
+
+                        <td colspan="6">
+                            <h6>Terminsrente Excel</h6><img src="images/rate3.png" width="50%">
+                        </td>
+                    </tr>
+                </table>
+
+
+                <h6>Eksempel RENTE 4: Månedlig rentetilskrivning</h6>
+                <table class="table table-hover table-bordered">
+                    <tr>
+                        <th>Tekst</th>
+                        <th>Værdier</th>
+                        <th>Excel RENTE</th>
+                        <th>Effektiv terminsrente</th>
+                        <th>Effektiv årlig rente beregning</th>
+                        <th>Effektiv årlig rente</th>
+                    </tr>
+                    <tr>
+                        <td>Find renten for en annuitet med månedlige indbetalinger på 833,33 kr. over 5 år (60
+                            perioder), der giver
+                            en slutværdi på 55.000 kr.</td>
+                        <td>Indbetaling = 833,33<br>Perioder = 60<br>Slutværdi = 55000</td>
+                        <td>=RENTE(60;-833,33;0;55000)</td>
+                        <td>0,32%</td>
+                        <td>=(1 + 0,32%)^12 - 1</td>
+                        <td>3,91%</td>
+                    </tr>
+                    <tr>
+
+                        <td colspan="6">
+                            <h6>Terminsrente Excel</h6><img src="images/rate4.png" width="50%">
+                        </td>
+                    </tr>
+                </table>
+
+
+                <p>Disse eksempler illustrerer, hvordan man beregner renten for annuiteter med forskellige
+                    rentetilskrivningsperioder.
+                </p>
+
+                <p>Excel's RENTE-funktion beregner den effektive rente pr. periode (terminsrenten).</p>
+
+                <p>Den effektive årlige rente beregnes ved hjælp af formlen:<br>
+                    Effektiv årlig rente = (1 + r)^n - 1<br>
+                    hvor r er den effektive terminsrente, og n er antallet af rentetilskrivninger pr. år.</p>
+            </article>
+            <article>
+                <h2>Ydelse for annuitet</h2>
+
+                <p>YDELSE-funktionen i Excel beregner den periodiske betaling for en annuitet baseret på konstante
+                    betalinger og en
+                    konstant rente. Funktionen benyttes til beregning af låneydelser eller faste opsparingsbeløb.
+                    <br> Her ser
+                    vi på eksempler med forskellige rentetilskrivningsperioder.
+                </p>
+
+                <h6>Eksempel YDELSE 1: Årlig ydelse</h6>
+                <table class="table table-hover table-bordered">
+                    <tr>
+                        <th>Tekst</th>
+                        <th>Værdier</th>
+                        <th>Excel YDELSE</th>
+                        <th>Resultat</th>
+                    </tr>
+                    <tr>
+                        <td>Beregn den årlige ydelse for et lån på 100.000 kr. over 5 år med en årlig rente på 4%</td>
+                        <td>Hovedstol = 100000<br>Løbetid = 5<br>Rente = 4%</td>
+                        <td>=YDELSE(4%;5;100000)</td>
+                        <td>-22.462,71 kr.</td>
+                    </tr>
+                    <tr>
+                        <td colspan="4">
+                            <h6>YDELSE Excel</h6><img src="images/pmt1.png" width="50%">
+                        </td>
+                    </tr>
+                </table>
+
+                <h6>Eksempel YDELSE 2: Halvårlig ydelse</h6>
+                <table class="table table-hover table-bordered">
+                    <tr>
+                        <th>Tekst</th>
+                        <th>Værdier</th>
+                        <th>Excel YDELSE</th>
+                        <th>Resultat</th>
+                    </tr>
+                    <tr>
+                        <td>Beregn den halvårlige ydelse for et lån på 100.000 kr. over 5 år med en årlig rente på 4%
+                        </td>
+                        <td>Hovedstol = 100000<br>Løbetid = 5*2<br>Rente = 4%/2</td>
+                        <td>=YDELSE(4%/2;5*2;100000)</td>
+                        <td>-11.132,65 kr.</td>
+                    </tr>
+                    <tr>
+                        <td colspan="4">
+                            <h6>YDELSE Excel</h6><img src="images/pmt2.png" width="50%">
+                        </td>
+                    </tr>
+                </table>
+
+                <h6>Eksempel YDELSE 3: Kvartalsvis ydelse</h6>
+                <table class="table table-hover table-bordered">
+                    <tr>
+                        <th>Tekst</th>
+                        <th>Værdier</th>
+                        <th>Excel YDELSE</th>
+                        <th>Resultat</th>
+                    </tr>
+                    <tr>
+                        <td>Beregn den kvartalsvise ydelse for et lån på 100.000 kr. over 5 år med en årlig rente på 4%
+                        </td>
+                        <td>Hovedstol = 100000<br>Løbetid = 5*4<br>Rente = 4%/4</td>
+                        <td>=YDELSE(4%/4;5*4;100000)</td>
+                        <td>-5.541,53 kr.</td>
+                    </tr>
+                    <tr>
+                        <td colspan="4">
+                            <h6>YDELSE Excel</h6><img src="images/pmt3.png" width="50%">
+                        </td>
+                    </tr>
+                </table>
+
+                <h6>Eksempel YDELSE 4: Månedlig ydelse</h6>
+                <table class="table table-hover table-bordered">
+                    <tr>
+                        <th>Tekst</th>
+                        <th>Værdier</th>
+                        <th>Excel YDELSE</th>
+                        <th>Resultat</th>
+                    </tr>
+                    <tr>
+                        <td>Beregn den månedlige ydelse for et lån på 100.000 kr. over 5 år med en årlig rente på 4%
+                        </td>
+                        <td>Hovedstol = 100000<br>Løbetid = 5*12<br>Rente = 4%/12</td>
+                        <td>=YDELSE(4%/12;5*12;100000)</td>
+                        <td>-1.841,65 kr.</td>
+                    </tr>
+                    <tr>
+                        <td colspan="4">
+                            <h6>YDELSE Excel</h6><img src="images/pmt4.png" width="50%">
+                        </td>
+                    </tr>
+                </table>
+
+                <p>Disse eksempler illustrerer, hvordan man beregner ydelsen for annuiteter med forskellige
+                    betalingsfrekvenser.
+                    Bemærk, at jo hyppigere betalingerne er, desto mindre bliver den enkelte ydelse, men summen af alle
+                    ydelser over
+                    lånets løbetid vil være lidt højere på grund af renters rente effekten.</p>
+
+                <p>Excel's YDELSE-funktion gør beregningerne enkle, men det er også muligt at udføre beregningerne uden
+                    denne
+                    funktion ved at bruge formlen for annuitetsydelse:</p>
+
+                <p>YDELSE = Hovedstol * (r * (1 + r)^n) / ((1 + r)^n - 1)</p>
+
+                <p>hvor r er renten pr. periode, og n er det totale antal perioder.</p>
+
+                <p>Ved brug af YDELSE-funktionen i Excel er det vigtigt at huske:</p>
+                <ol>
+                    <li>Renten skal angives pr. periode (årlig rente divideret med antal perioder pr. år for ikke-årlige
+                        betalinger).</li>
+                    <li>Antal perioder skal være det totale antal over lånets løbetid.</li>
+                    <li>Et positivt resultat indikerer en betaling, mens et negativt resultat indikerer en modtagelse.
+                    </li>
+                </ol>
+            </article>
+            <article>
+                <h3>Finansiering bestemt provenu</h3>
+                <p>Ofte vil låntager have et ønske om at få overført et bestemt lånebeløb, således er der ønske om et
+                    bestemt provenu. <br>
+                    Normalt vil man beregne provenu ved at gange hovedstolen med kursen (herunder som
+                    decimaltal dvs f.eks. 0,99 i stedet for 99) og fratrække
+                    stiftelsesomkostninger. <br>
+                    Formlen er normalt:<br>
+                    provenu = Hovedstol*kurs - stiftelsesomkostninger
+                    <br>Vi ønsker nu i stedet at finde en ukendt hovedstol (vi kalder hovedstolen X herunder) ud fra et
+                    kendt provenu. <br>
+                    Vi løser ligningen herunder ved at isolere hovedstolen X:
+                <div style="text-align: center;">
+                    provenu = X * kurs - stiftelsesomkostninger &#8660; <br>
+                    provenu + stiftelsesomkostninger = X * kurs &#8660; <br>
+                    (provenu + stiftelsesomkostninger) / kurs = X <br><br>
+                </div>
+                Vi kan altså altid finde den hovedstol låntager skal tilbydes, når der ønskes et bestemt provenu,
+                ved først at tillægge stiftelsesomkostninger til provenuet og bagefter dividere med kursen.
+                <br><br>
+
+                <h6>Eksempel</h6>
+                <p>Alexander ønsker at låne 1.000.000,- til køb af ejerbolig, han ønsker at have hele beløbet til
+                    rådighed. <br>
+                    Han har fået tilbudt lånet til kurs 98, og der vil være stiftelsesomkostninger på 10.000. <br>
+                    For at provenuet er præcis 1 mio. kan vi beregne hovedstolen til: <br>
+                <div style="text-align: center;">
+                    (provenu + stiftelsesomkostninger) / kurs = <br>
+                    (1.000.000+10.000)/0,98 = <br>
+                    1.030.612,24 kr.
+                </div> <br>
+                <p>Alternativt kan hovedstolen findes vha. målsøgning i Excel, som vist herunder:</p>
+                <p><img src="images/anngoal.png" width="80%"></p><br>
+                </p>
+                </p>
+
+            </article>
+
+            <article>
+                <h2>Finansieringscase: Boliglån</h2>
+                <p>Sarah og Aksel ønsker at købe deres drømmehus. De har fundet det perfekte hjem, som koster 2.500.000
+                    kr. De har
+                    opsparet lidt over 500.000 kr. til udbetaling og skal derfor låne omkring 2.000.000 kr.</p>
+                <p>Banken tilbyder dem følgende lånebetingelser:</p>
+                <ul>
+                    <li>Hovedstol: 2.000.000 kr.</li>
+                    <li>Løbetid: 30 år</li>
+                    <li>Nominel rente: 4% p.a.</li>
+                    <li>Rentetilskrivning: kvartalsvis</li>
+                    <li>Kurs: 99</li>
+                    <li>Stiftelsesomkostninger: 12.000 kr.</li>
+
+                </ul>
+                <p>Opgaver:</p>
+                <ol>
+                    <li>Beregn den effektive rente per år, når der tages højde for den månedlige rentetilskrivning.</li>
+                    <li>Udregn kurstabet i kroner.</li>
+                    <li>Beregn det faktiske provenu, som Sarah og Aksel modtager efter kurstab og
+                        stiftelsesomkostninger.</li>
+                    <li>Bestem den månedlige ydelse på lånet</li>
+                    <li>Beregn ÅOP (Årlige Omkostninger i Procent) for lånet, når alle omkostninger inkluderes.</li>
+                </ol>
+                <br>
+                <div style="padding:56.25% 0 0 0;position:relative;"><iframe
+                        src="https://player.vimeo.com/video/1017864444?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+                        frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write"
+                        style="position:absolute;top:0;left:0;width:100%;height:100%;" title="ann3"></iframe></div>
+                <script src="https://player.vimeo.com/api/player.js"></script>
+                <br>
+                <h6>Løsningsforslag Excel</h6>
+
+                <a href="files/Finansieringscase.xlsx" class="effectLinks"
+                    data-replace="Hent Excel Finansieringscase løsningsforslag" target="_blank">
+
+                    <span>Excel Finansieringscase løsningsforslag</span>
+                </a>
+                <br><br>
+
+
+                <h5>Løsning med app</h5>
+
+                <div class="container">
+                    <div class="row row-eq-height">
+                        <div class="col-md-12 mb-6">
+                            <div class="card no-rounded-corners">
+                                <div class="card-body d-flex flex-column">
+                                    <h6 class="card-title">Annuitetslån input app</h6>
+                                    <div class="flex-grow-1">
+                                        <img src="images/anninput.png" class="card-img-top img-fluid"
+                                            alt="Annuitetslån input">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <br>
+
+                <div class="container">
+                    <div class="row row-eq-height">
+                        <div class="col-md-6 mb-4">
+                            <div class="card no-rounded-corners">
+                                <div class="card-body d-flex flex-column">
+                                    <h6 class="card-title">Annuitetslån cashflows</h6>
+                                    <div class="flex-grow-1">
+                                        <img src="images/annydelser.png" class="card-img-top img-fluid"
+                                            alt="Annuitetslån cashflows">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-4">
+                            <div class="card no-rounded-corners">
+                                <div class="card-body d-flex flex-column">
+                                    <h6 class="card-title">Annuitetslån restgæld</h6>
+                                    <div class="flex-grow-1">
+                                        <img src="images/annrest.png" class="card-img-top img-fluid"
+                                            alt="Annuitetslån restgæld">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <br><br>
+                <h3>Quiz</h3>
+
+                <a href="https://fin.tepedu.dk/if7" class="effectLinks" data-replace="Åben Quiz" target="_blank">
+
+                    <span>Quiz annuiteter</span>
+                </a>
+                <br>
+                <br>
+                <a href="https://fin.tepedu.dk/if8" class="effectLinks" data-replace="Åben Quiz" target="_blank">
+
+                    <span>Quiz annuiteter</span>
+                </a>
+                <br>
+                <br>
+            </article>
+
+        </div>
+    </div>
+
+    <!-- jQuery and Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- External JavaScript File -->
+    <script src="script.js"></script>
+</body>
+
+</html>
