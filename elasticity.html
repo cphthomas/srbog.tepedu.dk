@@ -66,95 +66,616 @@
     <div class="content">
         <div class="container mt-4">
             <article>
-                <h2>Elasticitet</h2>
+                <h1>Elasticitet</h1>
                 <img src="images/elas0.jpg" alt="Elasticitet" class="img-fluid" width="100%">
+                <br>
+                <br>
                 <h2>Priselasticitet</h2>
+                <p>
+                    Priselasticitet er et tal, der fortæller os, hvor meget salget af et produkt ændrer sig, når vi ændrer prisen. Det hjælper virksomheder med at forstå:
+                </p>
+                <ul>
+                    <li><strong>Hvor følsomme kunderne er over for prisændringer</strong> - Vil de stadig købe produktet, hvis prisen stiger?</li>
+                    <li><strong>Om det kan betale sig at sætte prisen op eller ned</strong> - Hvad giver den højeste omsætning?</li>
+                    <li><strong>Hvordan forskellige produkttyper reagerer forskelligt på prisændringer</strong> - Nødvendige varer vs. luksusvarer</li>
+                </ul>
                 <p>
                     Priselasticiteten måler, hvor følsom efterspørgslen er over for prisændringer. Den beregnes som:
                 </p>
 
                 <div class="formula-box">
-                    <p>ε = (ΔX/X) / (ΔP/P)</p>
+                    <p>ε = -(ΔX/X) / (ΔP/P)</p>
                     <p>hvor:</p>
                     <ul>
-                        <li>ε er priselasticiteten</li>
-                        <li>ΔX er ændringen i afsætning</li>
-                        <li>ΔP er ændringen i pris</li>
+                        <li>ε er priselasticiteten (altid negativ, da prisstigninger altid leder til fald i afsætningen)</li>
+                        <li>ΔX er ændringen i afsætning (hvor mange flere eller færre enheder vi sælger)</li>
+                        <li>X er den oprindelige afsætning (hvor mange enheder vi solgte før prisændringen)</li>
+                        <li>ΔP er ændringen i pris (hvor meget prisen stiger eller falder)</li>
+                        <li>P er den oprindelige pris (hvad prisen var før ændringen)</li>
+                    </ul>
+                    <p>Forklaret med ord: Priselasticiteten fortæller os, hvor mange procent afsætningen ændrer sig, når prisen ændres med 1%.</p>
+                </div>
+                 <div class="example-box">
+                    <h4>Eksempel med is:</h4>
+                    <p>Lad os se på en isbod, hvor:</p>
+                    <ul>
+                        <li>Ved ε = -2: 1% prisstigning giver 2% fald i afsætningen (2 × 1% = 2%)</li>
+                        <li>Ved ε = -1: 1% prisstigning giver 1% fald i afsætningen (1 × 1% = 1%)</li>
+                        <li>Ved ε = -0,5: 1% prisstigning giver 0,5% fald i afsætningen (0,5 × 1% = 0,5%)</li>
+                    </ul>
+                    <p>Dette betyder at:</p>
+                    <ul>
+                        <li>Ved ε = -2 er efterspørgslen elastisk - en 1% prisstigning giver et 2% fald i afsætningen</li>
+                        <li>Ved ε = -1 er efterspørgslen enhedselastisk, eller neutralelastisk - en 1% prisstigning giver et 1% fald i afsætningen</li>
+                        <li>Ved ε = -0,5 er efterspørgslen uelastisk - en 1% prisstigning giver kun et 0,5% fald i afsætningen</li>
                     </ul>
                 </div>
+                <h3>Eksempel isboden app</h3>
+                <img src="images/elas1.png" alt="Elasticitet" class="img-fluid" width="100%"> <br>
+                Du kan hente appen til at beregne priselasticiteten for en given pris og afsætning herunder: <br>
+                   <a href="https://optimer.tepedu.dk/pris" class="effectLinks" data-replace="Åben app" target="_blank">
+
+                    <span>App til prisafsætningsfunktion</span>
+                </a>
+                <br>
+                Hvis vi har samme prisafsætningsfunktion for isboden for hver time, a = -0,5 og b = 50 i appen, for at se priselasticiteten for en given pris og afsætning, indsættes pris P ovenfor er denne sat til 40 kr. <br>
+                Husk at klikke på "VIS PRISELASTICITET" for at se priselasticiteten. <br>
+                Ved en pris på 40 kr. er afsætningen 20 is. <br>
+                Ved en pris på 40 kr. er priselasticiteten -4, hvilket betyder at en 1% prisstigning giver et 4% fald i afsætningen, eller omvendt en 1% prisfald giver et 4% stigning i afsætningen. <br>
+                Det vil sige at hvis prisen stiger med 1% til 44 kr., vil afsætningen ca. falde 4% fra 20 til 19,2 eller ca. 19 is, vil betyde omsætningen vil falde.<br>
+                (vi sælger jo ikke halve is, så ændringerne er omtrentlige). <br>
+                Hvis prisen sænkes med 1% til 36 kr., vil afsætningen stige 4% til 20,8 eller ca. 21 is, hvilket vil betyde at omsætningen vil stige. <br>
+                <hr>
+                Man kan hurtigt bestemme ved hvilken pris der er enhedselasticitet dvs &epsilon; = -1. <br>
+                For en lineær prisafsætningsfunktion P = a - bX er der enhedselasticitet ved prisen P = b/2 = 50/2 = 25 kr. <br>
+                Ved prisen b/2 = 25 kr. er efterspørgslen enhedselastisk dvs. &epsilon; = -1, det er også ved denne pris at omsætningen er maksimal. <br>
+                På figuren ovenfor er prisafsætningsfunktionen farvet grøn når prisen er over 25 kr. her er efterspørgslen elastisk dvs. &epsilon; < -1. <br>
+                
+                På figuren ovenfor er prisafsætningsfunktionen farvet rød når prisen er under 25 kr. her er efterspørgslen uelastisk dvs. 0 > &epsilon; > -1. <br>
+                <hr>
+                Man kan i appen også se hvordan man udregner priselasticiteten for en given pris f.eks. 40 kr. formlen er: <br>
+                 &epsilon; = -P/(b-P) = nedre/øvre = gul/orange = -40/(50-40) = -40/10 = -4 <br>
+               Dette er også vist i appen under figurerne nederst i skemaet - husk at klikke på "VIS PRISELASTICITET" for at se priselasticiteten: <br>
+               <br>
+               <img src="images/elas2.png" alt="Elasticitet" class="img-fluid" width="100%"> <br>
+
+               <br>
+
+                
+                <hr>
 
                 <table class="table table-striped table-hover">
                     <thead class="table-dark">
                         <tr>
                             <th>Priselasticitet</th>
                             <th>Betydning</th>
-                            <th>Eksempel</th>
+                            <th>Eksempler</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td>|ε| > 1</td>
-                            <td>Elastisk efterspørgsel</td>
-                            <td>Luksusvarer, ferier</td>
+                            <td>ε < -1</td>
+                            <td>Elastisk efterspørgsel - en 1% prisstigning giver mere end 1% fald i afsætningen. Ved elastisk efterspørgsel vil en prisstigning føre til faldende omsætning, mens en prisreduktion vil øge omsætningen.</td>
+                            <td>
+                                <ul>
+                                    <li>Luksusvarer (smykker, designertøj)</li>
+                                    <li>Rejser og ferier</li>
+                                    <li>Restaurant- og cafébesøg</li>
+                                    <li>Varer med gode substitutter (fx specifikt sodavandsmærke)</li>
+                                    <li>Elektronik (især ikke-nødvendige gadgets)</li>
+                                </ul>
+                            </td>
                         </tr>
                         <tr>
-                            <td>|ε| < 1</td>
-                            <td>Uelastisk efterspørgsel</td>
-                            <td>Medicin, dagligvarer</td>
+                            <td>0 > ε > -1</td>
+                            <td>Uelastisk efterspørgsel - en 1% prisstigning giver mindre end 1% fald i afsætningen. Ved uelastisk efterspørgsel vil en prisstigning føre til stigende omsætning, mens en prisreduktion vil reducere omsætningen.</td>
+                            <td>
+                                <ul>
+                                    <li>Medicin og sundhedspleje (livsnødvendige produkter)</li>
+                                    <li>Basale dagligvarer (brød, mælk, æg)</li>
+                                    <li>Brændstof til transport til arbejde</li>
+                                    <li>Varer med lille budgetandel (salt, tandpasta)</li>
+                                    <li>Vanedannende produkter (cigaretter, kaffe)</li>
+                                    <li>Produkter uden gode substitutter (elektricitet, vand)</li>
+                                </ul>
+                            </td>
                         </tr>
                         <tr>
-                            <td>|ε| = 1</td>
-                            <td>Enhedselastisk efterspørgsel</td>
-                            <td>Teoretisk tilfælde</td>
+                            <td>ε = -1</td>
+                            <td>Enhedselastisk efterspørgsel - en 1% prisstigning giver præcis 1% fald i afsætningen. Ved denne elasticitet vil omsætningen være uændret uanset prisændring, da ændring i pris og mængde udligner hinanden præcist. Dette er punktet hvor omsætningen er maksimal.</td>
+                            <td>
+                                <ul>
+                                    <li>Sjældent præcist tilfælde i praksis, men kan observeres når:</li>
+                                    <li>Middelklasse-forbrugsgoder med moderat budgetandel</li>
+                                    <li>Ved overgangen mellem elastisk og uelastisk efterspørgsel</li>
+                                    <li>Ved pris lig med halv maksimalpris i en lineær prisafsætningsfunktion</li>
+                                </ul>
+                            </td>
                         </tr>
                     </tbody>
                 </table>
 
-                <h4>Omsætning og optimal pris</h4>
+                <h4>Priselasticitet i Praksis - Eksempler fra Virkelige Virksomheder</h4>
+                <table class="table table-striped table-hover">
+                    <thead class="table-dark">
+                        <tr>
+                            <th>Virksomhed</th>
+                            <th>Produkt</th>
+                            <th>Priselasticitet</th>
+                            <th>Prisændring</th>
+                            <th>Effekt på Afsætning</th>
+                            <th>Effekt på Omsætning</th>
+                            <th>Forklaring</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Netflix</td>
+                            <td>Premium Abonnement</td>
+                            <td>-0,4</td>
+                            <td>+12,5%</td>
+                            <td>-5%</td>
+                            <td>Omsætning stiger</td>
+                            <td>Uelastisk efterspørgsel (0 > ε > -1): -0,4 × 12,5% = -5% (fald i afsætning). Prisstigningen på 12,5% giver kun 5% fald i afsætningen, hvilket resulterer i øget omsætning</td>
+                        </tr>
+                        <tr>
+                            <td>Spotify</td>
+                            <td>Student Abonnement</td>
+                            <td>-2,5</td>
+                            <td>-29%</td>
+                            <td>+72,5%</td>
+                            <td>Omsætning stiger</td>
+                            <td>Elastisk efterspørgsel (ε < -1): -2,5 × -29% = +72,5% (stigning i afsætning). Prisreduktionen på 29% giver 72,5% stigning i afsætningen, hvilket resulterer i øget omsætning</td>
+                        </tr>
+                        <tr>
+                            <td>Apple</td>
+                            <td>iPhone 15 Pro</td>
+                            <td>-0,3</td>
+                            <td>+8,3%</td>
+                            <td>-2,5%</td>
+                            <td>Omsætning stiger</td>
+                            <td>Uelastisk efterspørgsel (0 > ε > -1): -0,3 × 8,3% = -2,5% (fald i afsætning). Prisstigningen på 8,3% giver kun 2,5% fald i afsætningen, hvilket resulterer i øget omsætning</td>
+                        </tr>
+                        <tr>
+                            <td>McDonald's</td>
+                            <td>Big Mac Menu</td>
+                            <td>-0,8</td>
+                            <td>+5,9%</td>
+                            <td>-4,7%</td>
+                            <td>Omsætning stiger</td>
+                            <td>Moderat uelastisk efterspørgsel (0 > ε > -1): -0,8 × 5,9% = -4,7% (fald i afsætning). Prisstigningen på 5,9% giver kun 4,7% fald i afsætningen, hvilket resulterer i øget omsætning</td>
+                        </tr>
+                        <tr>
+                            <td>Zalando</td>
+                            <td>Standard Levering</td>
+                            <td>-3,0</td>
+                            <td>+20%</td>
+                            <td>-60%</td>
+                            <td>Omsætning falder</td>
+                            <td>Meget elastisk efterspørgsel (ε < -1): -3,0 × 20% = -60% (fald i afsætning). Prisstigningen på 20% giver 60% fald i afsætningen, hvilket resulterer i faldende omsætning</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="info-box">
+                    <p><b>Vigtige observationer:</b></p>
+                    <ul>
+                        <li>Netflix og Apple viser uelastisk efterspørgsel (0 > ε > -1) - prisstigninger giver øget omsætning fordi faldet i afsætningen er mindre end prisstigningen</li>
+                        <li>Spotify viser elastisk efterspørgsel (ε < -1) - prisreduktion giver en markant stigning i afsætningen, hvilket resulterer i øget omsætning</li>
+                        <li>Zalando viser elastisk efterspørgsel (ε < -1) - prisstigning giver et stort fald i afsætningen, hvilket resulterer i faldende omsætning</li>
+                        <li>McDonald's viser moderat elasticitet (ε ≈ -1) - prisændringer har næsten proportionel effekt på afsætningen</li>
+                        <li>Priselasticiteten er altid negativ, fordi prisstigninger altid leder til fald i afsætningen - dette er en grundlæggende lov i økonomi</li>
+                    </ul>
+                </div>
+                
+            </article>
+        </div>
+        <div class="container mt-4">
+            <article>
+                <h2>Krydspriselasticitet</h2>
                 <p>
-                    Omsætningen (R) beregnes som:
+                    Krydspriselasticitet er et tal, der fortæller os, hvordan salget af ét produkt ændrer sig, når prisen på et andet produkt ændres. Det hjælper virksomheder med at forstå:
+                </p>
+                <ul>
+                    <li><strong>Hvilke produkter der er substitutter</strong> - Stiger salget af dit produkt, når konkurrentens pris stiger?</li>
+                    <li><strong>Hvilke produkter der er komplementære</strong> - Falder salget af dit produkt, når prisen på et tilhørende produkt stiger?</li>
+                    <li><strong>Hvor tæt konkurrencen er mellem produkter</strong> - Er der mange alternativer på markedet?</li>
+                </ul>
+                <p>
+                    Krydspriselasticiteten beregnes som:
                 </p>
 
                 <div class="formula-box">
-                    <p>R = P × X</p>
+                    <p>ε<sub>AB</sub> = (ΔB/B) / (ΔP<sub>A</sub>/P<sub>A</sub>)</p>
                     <p>hvor:</p>
                     <ul>
-                        <li>R er omsætningen</li>
-                        <li>P er prisen</li>
-                        <li>X er afsætningsmængden</li>
+                        <li>ε<sub>AB</sub> er krydspriselasticiteten mellem produkt A og produkt B</li>
+                        <li>ΔB er ændringen i afsætning af produkt B (hvor mange flere eller færre enheder vi sælger af B)</li>
+                        <li>B er den oprindelige afsætning af produkt B</li>
+                        <li>ΔP<sub>A</sub> er ændringen i pris på produkt A (hvor meget prisen på A stiger eller falder)</li>
+                        <li>P<sub>A</sub> er den oprindelige pris på produkt A</li>
+                    </ul>
+                    <p>Forklaret med ord: Krydspriselasticiteten fortæller os, hvor mange procent afsætningen af ét produkt (B) ændrer sig, når prisen på et andet produkt (A) ændres med 1%.</p>
+                </div>
+
+                <div class="example-box">
+                    <h4>Eksempel med kaffe og te:</h4>
+                    <p>Lad os se på forholdet mellem kaffe (A) og te (B):</p>
+                    <ul>
+                        <li>Positiv krydspriselasticitet (ε<sub>AB</sub> = +2): Hvis prisen på kaffe (A) stiger med 1%, stiger salget af te (B) med 2%. Dette indikerer at produkterne er substitutter - folk skifter fra kaffe til te når kaffe bliver dyrere.</li>
+                        <li>Negativ krydspriselasticitet (ε<sub>AB</sub> = -1,5): Hvis prisen på kaffemaskiner (A) stiger med 1%, falder salget af kaffe (B) med 1,5%. Dette indikerer at produkterne er komplementære - folk køber færre kaffemaskiner, hvilket fører til lavere kaffesalg.</li>
+                        <li>Krydspriselasticitet tæt på nul (ε<sub>AB</sub> = 0,1): Hvis prisen på vand (A) stiger med 1%, ændrer salget af kaffe (B) sig kun marginalt (0,1% stigning). Dette indikerer at produkterne er uafhængige.</li>
                     </ul>
                 </div>
 
-                <p>
-                    Den optimale pris er den pris, der giver den højeste omsætning. Denne kan findes ved at:
-                </p>
-                <ul>
-                    <li>Differentiere omsætningsfunktionen</li>
-                    <li>Sætte den afledte lig med 0</li>
-                    <li>Løse ligningen for P</li>
-                </ul>
+                <table class="table table-striped table-hover">
+                    <thead class="table-dark">
+                        <tr>
+                            <th>Krydspriselasticitet</th>
+                            <th>Betydning</th>
+                            <th>Eksempler</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>ε<sub>AB</sub> > 0</td>
+                            <td>Substitutter - produkter der kan erstatte hinanden. Når prisen på produkt A stiger, stiger efterspørgslen efter produkt B, da forbrugerne skifter til alternativet.</td>
+                            <td>
+                                <ul>
+                                    <li>Smør og margarine</li>
+                                    <li>Coca Cola og Pepsi</li>
+                                    <li>Netflix og HBO</li>
+                                    <li>iPhone og Samsung Galaxy</li>
+                                    <li>Tog og bus til samme destination</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>ε<sub>AB</sub> < 0</td>
+                            <td>Komplementære produkter - produkter der bruges sammen. Når prisen på produkt A stiger, falder efterspørgslen efter produkt B, da de to produkter typisk købes sammen.</td>
+                            <td>
+                                <ul>
+                                    <li>Printere og blækpatroner</li>
+                                    <li>Mobiltelefoner og mobilabonnementer</li>
+                                    <li>Kaffemaskiner og kaffebønner</li>
+                                    <li>Biler og benzin</li>
+                                    <li>Barbermaskiner og barberblade</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>ε<sub>AB</sub> ≈ 0</td>
+                            <td>Uafhængige produkter - produkter uden relation. Når prisen på produkt A ændres, har det minimal eller ingen effekt på efterspørgslen efter produkt B.</td>
+                            <td>
+                                <ul>
+                                    <li>Tandpasta og bøger</li>
+                                    <li>Kartofler og tøj</li>
+                                    <li>Cykler og mælk</li>
+                                    <li>Sko og elektronik</li>
+                                    <li>Biografbilletter og møbler</li>
+                                </ul>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <hr>
+                <h3>Krydspriselasticitet app</h3>
+                  Du kan hente appen til at beregne krydspriselasticiteten for 2 varer A og B, hvor prisen på A ændres hvilket påvirker afsætningen af vare B: <br>
+                   <a href="https://optimer.tepedu.dk/elasticitet2" class="effectLinks" data-replace="Åben app" target="_blank">
+
+                    <span>App til krydspriselasticitet</span>
+                </a>
+                <br>
+                Herunder kan du se et eksempel på hvordan man kan bruge appen til at beregne krydspriselasticiteten for vare A, hvor prisen stiger fra 160 til 200, hvilket påvirker afsætningen af vare B afsætningen stiger fra 200 til 225 enheder: 
+                <br>
+                <img src="images/elas3.png" alt="Krydspriselasticitet app" class="img-fluid" style="width: 100%;">
+                <br>
+                Prisen på vare A stiger fra 160 til  hvilket betyder en prisstigning på 25%, dette medfører atafsætningen af vare B afsætningen stiger fra 200 til 225 enheder hvilket er en stigning på 12,5%. <br>
+                Appen beregner så krydspriselasticiteten til ε<sub>AB</sub> = 12,5% / 25% = 0,5. <br>
+                Så når vare A stiger med 1% så stiger afsætningen af vare B med 0,5%. <br>
+                Derfor er vare A og B substitutter, som f.eks. Coca Cola og Pepsi hvis prisen på Coca Cola stiger, så stiger salget af Pepsi. <br>
+                <br>
+                <h4>Krydspriselasticitet i Praksis - Eksempler fra Virkelige Virksomheder</h4>
+                <table class="table table-striped table-hover">
+                    <thead class="table-dark">
+                        <tr>
+                            <th>Produkt A</th>
+                            <th>Produkt B</th>
+                            <th>Krydspriselasticitet</th>
+                            <th>Prisændring på A</th>
+                            <th>Effekt på B's Afsætning</th>
+                            <th>Relation</th>
+                            <th>Forklaring</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>iPhone</td>
+                            <td>Android-telefoner</td>
+                            <td>+1,2</td>
+                            <td>+10%</td>
+                            <td>+12%</td>
+                            <td>Substitutter</td>
+                            <td>Når iPhone-prisen (A) stiger med 10%, stiger salget af Android-telefoner (B) med 12% (ε<sub>AB</sub> = +1,2 × 10% = +12%). Dette viser at folk betragter dem som alternativer.</td>
+                        </tr>
+                        <tr>
+                            <td>PlayStation konsol</td>
+                            <td>PlayStation spil</td>
+                            <td>-2,5</td>
+                            <td>+15%</td>
+                            <td>-37,5%</td>
+                            <td>Komplementære</td>
+                            <td>Når prisen på PlayStation konsollen (A) stiger med 15%, falder salget af PlayStation spil (B) med 37,5% (ε<sub>AB</sub> = -2,5 × 15% = -37,5%). Dette viser at produkterne bruges sammen.</td>
+                        </tr>
+                        <tr>
+                            <td>Discount kaffe</td>
+                            <td>Mærkevare kaffe</td>
+                            <td>+3,0</td>
+                            <td>-20%</td>
+                            <td>-60%</td>
+                            <td>Nære substitutter</td>
+                            <td>Når prisen på discount kaffe (A) falder med 20%, falder salget af mærkevare kaffe (B) med 60% (ε<sub>AB</sub> = +3,0 × -20% = -60%). Dette viser høj prisfølsomhed mellem kaffetyperne.</td>
+                        </tr>
+                        <tr>
+                            <td>Fly</td>
+                            <td>Højhastighedstog</td>
+                            <td>+2,4</td>
+                            <td>+15%</td>
+                            <td>+36%</td>
+                            <td>Substitutter</td>
+                            <td>Når priserne på flyrejser (A) stiger med 15%, stiger antallet af togrejsende (B) med 36% (ε<sub>AB</sub> = +2,4 × 15% = +36%). Dette viser at forbrugere betragter tog som et godt alternativ til fly på korte til mellemlange distancer.</td>
+                        </tr>
+                        <tr>
+                            <td>Smør</td>
+                            <td>Margarine</td>
+                            <td>+1,8</td>
+                            <td>+22%</td>
+                            <td>+39,6%</td>
+                            <td>Substitutter</td>
+                            <td>Når prisen på smør (A) stiger med 22%, stiger salget af margarine (B) med 39,6% (ε<sub>AB</sub> = +1,8 × 22% = +39,6%). Dette viser et klassisk eksempel på substitution mellem lignende dagligvarer.</td>
+                        </tr>
+                        <tr>
+                            <td>Popcorn</td>
+                            <td>Biografbilletter</td>
+                            <td>-0,8</td>
+                            <td>+25%</td>
+                            <td>-20%</td>
+                            <td>Komplementære</td>
+                            <td>Når prisen på popcorn (A) stiger med 25%, falder salget af biografbilletter (B) med 20% (ε<sub>AB</sub> = -0,8 × 25% = -20%). Dette viser at den samlede biografoplevelse påvirkes af snackpriserne.</td>
+                        </tr>
+                        <tr>
+                            <td>Printer</td>
+                            <td>Blækpatroner</td>
+                            <td>-1,8</td>
+                            <td>+18%</td>
+                            <td>-32,4%</td>
+                            <td>Komplementære</td>
+                            <td>Når prisen på printere (A) stiger med 18%, falder salget af blækpatroner (B) med 32,4% (ε<sub>AB</sub> = -1,8 × 18% = -32,4%). Dette viser at produkterne er stærkt komplementære, da færre printere fører til mindre behov for blæk.</td>
+                        </tr>
+                        <tr>
+                            <td>Benzin</td>
+                            <td>Bilvask</td>
+                            <td>-1,2</td>
+                            <td>+15%</td>
+                            <td>-18%</td>
+                            <td>Komplementære</td>
+                            <td>Når benzinprisen (A) stiger med 15%, falder salget af bilvask (B) med 18% (ε<sub>AB</sub> = -1,2 × 15% = -18%). Dette viser at forbrugere sparer på relaterede bilservices når brændstofprisen stiger.</td>
+                        </tr>
+                        <tr>
+                            <td>Hoteller</td>
+                            <td>Restaurantbesøg</td>
+                            <td>-1,5</td>
+                            <td>+12%</td>
+                            <td>-18%</td>
+                            <td>Komplementære</td>
+                            <td>Når hotelpriserne (A) stiger med 12%, falder antallet af restaurantbesøg i området (B) med 18% (ε<sub>AB</sub> = -1,5 × 12% = -18%). Dette viser at turisme og lokale spisesteder har en komplementær relation.</td>
+                        </tr>
+                        <tr>
+                            <td>Pasta</td>
+                            <td>Sodavand</td>
+                            <td>+0,05</td>
+                            <td>+30%</td>
+                            <td>+1,5%</td>
+                            <td>Uafhængige</td>
+                            <td>Når prisen på pasta (A) stiger med 30%, ændrer salget af sodavand (B) sig næsten ikke (ε<sub>AB</sub> = +0,05 × 30% = +1,5%). Dette viser at produkterne er uafhængige.</td>
+                        </tr>
+                    </tbody>
+                </table>
 
                 <div class="info-box">
-                    <h4>Vigtige overvejelser:</h4>
+                    <p><b>Vigtige observationer om krydspriselasticitet:</b></p>
                     <ul>
-                        <li>Den optimale pris er ikke nødvendigvis den højeste pris</li>
-                        <li>Ved elastisk efterspørgsel kan en prisnedsættelse øge omsætningen</li>
-                        <li>Ved uelastisk efterspørgsel kan en prisstigning øge omsætningen</li>
-                        <li>Virksomheden skal også tage højde for omkostningerne</li>
+                        <li>Jo højere den positive krydspriselasticitet er, jo tættere substitutter er produkterne (iPhone og Android-telefoner med ε<sub>AB</sub> = +1,2)</li>
+                        <li>Jo lavere den negative krydspriselasticitet er, jo stærkere er den komplementære relation (PlayStation konsoller og spil med ε<sub>AB</sub> = -2,5)</li>
+                        <li>Produkter i samme kategori har typisk højere krydspriselasticitet (discount og mærkevare kaffe med ε<sub>AB</sub> = +3,0)</li>
+                        <li>Krydspriselasticitet kan hjælpe virksomheder med at identificere deres nærmeste konkurrenter og justere prisstrategier</li>
+                        <li>Krydspriselasticitet kan også afsløre uventede relationer mellem produkter, som kan udnyttes i markedsføring og produktbundtning</li>
+                    </ul>
+                </div>
+            </article>
+        </div>
+        <div class="container mt-4">
+            <article>
+                <h2>Indkomstelasticitet</h2>
+                <p>
+                    Indkomstelasticitet er et tal, der fortæller os, hvordan efterspørgslen efter et produkt ændrer sig, når forbrugernes indkomst ændrer sig. Det hjælper virksomheder med at forstå:
+                </p>
+                <ul>
+                    <li><strong>Hvordan salget vil udvikle sig i perioder med økonomisk vækst eller recession</strong> - Vil salget stige når forbrugerne får flere penge mellem hænderne?</li>
+                    <li><strong>Hvilke produkter der betragtes som luksusvarer og hvilke der er nødvendighedsvarer</strong> - Hvad prioriterer forbrugerne når deres økonomi ændrer sig?</li>
+                    <li><strong>Hvordan markedsføringen bør tilpasses forskellige indkomstgrupper</strong> - Skal produktet positioneres som premium eller budget?</li>
+                </ul>
+                <p>
+                    Indkomstelasticiteten beregnes som:
+                </p>
+
+                <div class="formula-box">
+                    <p>η<sub>I</sub> = (ΔX/X) / (ΔI/I)</p>
+                    <p>hvor:</p>
+                    <ul>
+                        <li>η<sub>I</sub> er indkomstelasticiteten</li>
+                        <li>ΔX er ændringen i efterspørgsel/afsætning (hvor mange flere eller færre enheder der efterspørges)</li>
+                        <li>X er den oprindelige efterspørgsel/afsætning</li>
+                        <li>ΔI er ændringen i indkomst</li>
+                        <li>I er den oprindelige indkomst</li>
+                    </ul>
+                    <p>Forklaret med ord: Indkomstelasticiteten fortæller os, hvor mange procent efterspørgslen ændrer sig, når indkomsten ændres med 1%.</p>
+                </div>
+
+                <div class="example-box">
+                    <h4>Eksempel: Beregning af indkomstelasticitet</h4>
+                    <p>Lad os se på efterspørgslen efter forskellige produkter når den gennemsnitlige husstandsindkomst stiger fra 400.000 kr. til 440.000 kr. (en stigning på 10%):</p>
+                    
+                    <p><strong>Eksempel 1: Restaurant-middage</strong></p>
+                    <ul>
+                        <li>Oprindelig efterspørgsel: 20 restaurantbesøg per år</li>
+                        <li>Ny efterspørgsel efter indkomststigning: 26 restaurantbesøg per år (stigning på 30%)</li>
+                        <li>Indkomstelasticitet beregning: η<sub>I</sub> = 30% / 10% = 3,0</li>
+                        <li>Tolkning: For hver 1% stigning i indkomst, stiger efterspørgslen efter restaurantbesøg med 3%. Dette er en luksusvare.</li>
+                    </ul>
+                    
+                    <p><strong>Eksempel 2: Brød</strong></p>
+                    <ul>
+                        <li>Oprindelig efterspørgsel: 100 brød per år</li>
+                        <li>Ny efterspørgsel efter indkomststigning: 102 brød per år (stigning på 2%)</li>
+                        <li>Indkomstelasticitet beregning: η<sub>I</sub> = 2% / 10% = 0,2</li>
+                        <li>Tolkning: For hver 1% stigning i indkomst, stiger efterspørgslen efter brød kun med 0,2%. Dette er en nødvendighedsvare.</li>
+                    </ul>
+                    
+                    <p><strong>Eksempel 3: Offentlig transport</strong></p>
+                    <ul>
+                        <li>Oprindelig efterspørgsel: 200 rejser per år</li>
+                        <li>Ny efterspørgsel efter indkomststigning: 180 rejser per år (fald på 10%)</li>
+                        <li>Indkomstelasticitet beregning: η<sub>I</sub> = -10% / 10% = -1,0</li>
+                        <li>Tolkning: For hver 1% stigning i indkomst, falder efterspørgslen efter offentlig transport med 1%. Dette er en inferiør vare.</li>
                     </ul>
                 </div>
 
-                <img src="images/price1.png" alt="Prisafsætningskurve og omsætning" class="img-fluid" width="100%">
-                <hr>
-                <p>
-                    I figuren ovenfor kan vi se:
-                </p>
-                <ul>
-                    <li>Den lineære prisafsætningskurve (P = aX + b)</li>
-                    <li>Omsætningskurven (R = P × X)</li>
-                    <li>Det punkt hvor omsætningen er maksimal</li>
-                </ul>
+                <table class="table table-striped table-hover">
+                    <thead class="table-dark">
+                        <tr>
+                            <th>Indkomstelasticitet</th>
+                            <th>Betydning</th>
+                            <th>Eksempler</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>η<sub>I</sub> > 1</td>
+                            <td>Luksusvarer - efterspørgslen stiger procentvis mere end indkomsten. Når forbrugerne får flere penge mellem hænderne, bruger de en større andel på disse varer.</td>
+                            <td>
+                                <ul>
+                                    <li>Udenlandsrejser (η<sub>I</sub> ≈ 4,0)</li>
+                                    <li>Designertøj og -accessories (η<sub>I</sub> ≈ 3,5)</li>
+                                    <li>Restaurant- og cafébesøg (η<sub>I</sub> ≈ 3,0)</li>
+                                    <li>Wellness og spa-behandlinger (η<sub>I</sub> ≈ 2,8)</li>
+                                    <li>Elektroniske gadgets (η<sub>I</sub> ≈ 2,5)</li>
+                                    <li>Kvalitetsvine og spiritus (η<sub>I</sub> ≈ 1,5)</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>0 < η<sub>I</sub> < 1</td>
+                            <td>Nødvendighedsvarer - efterspørgslen stiger, men procentvis mindre end indkomsten. Når forbrugernes indkomst stiger, bruger de en mindre andel på disse varer.</td>
+                            <td>
+                                <ul>
+                                    <li>Basisfødevarer (brød, mælk, æg) (η<sub>I</sub> ≈ 0,2-0,3)</li>
+                                    <li>Elektricitet og opvarmning (η<sub>I</sub> ≈ 0,5)</li>
+                                    <li>Basalt tøj (η<sub>I</sub> ≈ 0,7)</li>
+                                    <li>Basale sundhedsydelser (η<sub>I</sub> ≈ 0,8)</li>
+                                    <li>Mobiltelefon-abonnementer (η<sub>I</sub> ≈ 0,6)</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>η<sub>I</sub> < 0</td>
+                            <td>Inferiøre varer - efterspørgslen falder når indkomsten stiger. Folk køber mindre af disse varer, når de får råd til bedre alternativer.</td>
+                            <td>
+                                <ul>
+                                    <li>Discount/lavpris-mærker (η<sub>I</sub> ≈ -0,5)</li>
+                                    <li>Offentlig transport (η<sub>I</sub> ≈ -1,0)</li>
+                                    <li>Instant nudler/billig fastfood (η<sub>I</sub> ≈ -0,8)</li>
+                                    <li>Brugte varer (η<sub>I</sub> ≈ -1,2)</li>
+                                    <li>Billige vin i karton (η<sub>I</sub> ≈ -1,5)</li>
+                                </ul>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
 
+                <h4>Indkomstelasticitet i Praksis - Eksempler fra Virkelige Virksomheder</h4>
+                <table class="table table-striped table-hover">
+                    <thead class="table-dark">
+                        <tr>
+                            <th>Virksomhed</th>
+                            <th>Produkt</th>
+                            <th>Indkomstelasticitet</th>
+                            <th>Indkomstændring</th>
+                            <th>Effekt på Afsætning</th>
+                            <th>Kategori</th>
+                            <th>Forklaring</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Louis Vuitton</td>
+                            <td>Designer-tasker</td>
+                            <td>3,8</td>
+                            <td>+5%</td>
+                            <td>+19%</td>
+                            <td>Luksusvare</td>
+                            <td>Ved 5% indkomststigning steg salget af Louis Vuitton-tasker med 19% (η<sub>I</sub> = 3,8). Dette er typisk for luksusmærker, hvor efterspørgslen stiger markant når forbrugernes indkomst øges.</td>
+                        </tr>
+                        <tr>
+                            <td>Arla</td>
+                            <td>Basis-mælk</td>
+                            <td>0,3</td>
+                            <td>+8%</td>
+                            <td>+2,4%</td>
+                            <td>Nødvendighedsvare</td>
+                            <td>Ved 8% indkomststigning steg forbruget af basis-mælk kun med 2,4% (η<sub>I</sub> = 0,3). Dette viser at mælk er en nødvendighedsvare, hvor forbruget er relativt stabilt uanset indkomstændringer.</td>
+                        </tr>
+                        <tr>
+                            <td>Ryanair</td>
+                            <td>Lavpris-flybilletter</td>
+                            <td>-0,7</td>
+                            <td>+6%</td>
+                            <td>-4,2%</td>
+                            <td>Inferiør vare</td>
+                            <td>Ved 6% indkomststigning faldt efterspørgslen efter lavpris-flybilletter med 4,2% (η<sub>I</sub> = -0,7). Dette indikerer at forbrugere skifter til dyrere flyselskaber når deres indkomst stiger.</td>
+                        </tr>
+                        <tr>
+                            <td>Irma</td>
+                            <td>Premium fødevarer</td>
+                            <td>1,8</td>
+                            <td>+4%</td>
+                            <td>+7,2%</td>
+                            <td>Luksusvare</td>
+                            <td>Ved 4% indkomststigning steg salget af premium fødevarer med 7,2% (η<sub>I</sub> = 1,8). Dette viser at kvalitetsfødevarer betragtes som luksusvarer, hvor forbruget stiger mere end proportionalt med indkomsten.</td>
+                        </tr>
+                        <tr>
+                            <td>Netto</td>
+                            <td>Discount-fødevarer</td>
+                            <td>-0,4</td>
+                            <td>+7%</td>
+                            <td>-2,8%</td>
+                            <td>Inferiør vare</td>
+                            <td>Ved 7% indkomststigning faldt salget af discount-fødevarer med 2,8% (η<sub>I</sub> = -0,4). Dette viser at forbrugere skifter til dyrere mærker og butikker når deres indkomst stiger.</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="info-box">
+                    <p><b>Vigtige observationer om indkomstelasticitet:</b></p>
+                    <ul>
+                        <li>Indkomstelasticiteten varierer ikke kun mellem produktkategorier men også inden for kategorier - f.eks. har gourmet-kaffe højere indkomstelasticitet end standardkaffe</li>
+                        <li>Mange virksomheder har produktlinjer i forskellige indkomstelasticitets-segmenter for at kunne tiltrække forskellige kundegrupper og tilpasse sig økonomiske cyklusser</li>
+                        <li>Under økonomiske nedgange klarer producenter af nødvendighedsvarer sig typisk bedre end virksomheder der fokuserer på luksusvarer</li>
+                        <li>Under økonomiske opsving ser luksusmærker typisk kraftigere vækst end producenter af nødvendighedsvarer</li>
+                        <li>Virksomheder kan bruge viden om indkomstelasticitet til at forudsige salgstrends og planlægge deres produktionskapacitet og markedsføring</li>
+                    </ul>
+                </div>
             </article>
         </div>
     </div>
