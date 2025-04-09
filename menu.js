@@ -3,10 +3,13 @@ const menuItems = [
     { href: 'index.html', text: 'Virksomhedens Målsætning' },
     { href: 'costs.html', text: 'Omkostninger' },
     { href: 'price.html', text: 'Prisafsætningsfunktionen' },
-    { href: 'elasticity.html', text: 'Elasticitet' }
-
-    
-    
+    { href: 'elasticity.html', text: 'Elasticitet' },
+    { href: 'market.html', text: 'Markedsformer' },
+    { href: 'fuld.html', text: 'Fuldkommen Konkurrence' },
+    { href: 'monopol.html', text: 'Monopol' },
+    { href: 'monopolistisk.html', text: 'Monopolistisk Konkurrence' },
+    { href: 'oligopol.html', text: 'Oligopol' },
+    { href: 'ordre.html', text: 'Ordre og Marked' }
 ];
 
 // Function to generate dropdown menu HTML
