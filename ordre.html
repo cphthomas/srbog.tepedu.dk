@@ -105,7 +105,15 @@
                         <li>To gennemgående beregningseksempler med begrænsede og ubegrænsede ordrer</li>
                     </ul>
                 </div>
-
+                <br>
+                <div style="padding:56.25% 0 0 0;position:relative;"><iframe
+                    src="https://player.vimeo.com/video/1074339994?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+                    frameborder="0"
+                    allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media"
+                    style="position:absolute;top:0;left:0;width:100%;height:100%;" title="costs"></iframe></div>
+            <script src="https://player.vimeo.com/api/player.js"></script>
+            <br>
+            <br>
                 <h2>Grundlæggende principper for optimering med ordre og marked</h2>
                 <p>
                     Når en virksomhed kan afsætte både på et marked med faldende pris og gennem faste ordrer, gælder
@@ -146,11 +154,11 @@
                 <div class="info-box">
                     <p><strong>Forudsætninger:</strong></p>
                     <ul>
-                        <li>Efterspørgselsfunktion på marked: P = -2X + 400</li>
-                        <li>Ordrepris: P<sub>o</sub> = 80 kr. (fast pris uanset mængde)</li>
-                        <li>Maksimal ordremængde: X<sub>max</sub> = 20 enheder</li>
+                        <li>Efterspørgselsfunktion på marked: P = -X + 100</li>
+                        <li>Ordrepris: P<sub>o</sub> = 50 kr. (fast pris uanset mængde)</li>
+                        <li>Maksimal ordremængde: X<sub>max</sub> = 30 enheder (ordren behøver ikke at blive leveret fuldt ud)</li>
                         <li>Faste omkostninger (FO) = 1.500 kr.</li>
-                        <li>Variable enhedsomkostninger (VE) = 40 kr. pr. enhed (konstant)</li>
+                        <li>Grænseomkostninger (GROMK) = 20 kr. (konstant)</li>
                     </ul>
                 </div>
                 <br>
@@ -173,78 +181,77 @@
                     <p><strong>Analyse:</strong></p>
 
                     <p>Vi beregner først grænseomsætningen på markedet:</p>
-                    <p>Omsætning på marked: OMS<sub>marked</sub> = P × X = (-2X + 400) × X = -2X² + 400X</p>
-                    <p>GROMS = den afledte af OMS<sub>marked</sub> med hensyn til X = -4X + 400</p>
+                    <p>Omsætning på marked: OMS<sub>marked</sub> = P × X = (-X + 100) × X = -X² + 100X</p>
+                    <p>GROMS = den afledte af OMS<sub>marked</sub> med hensyn til X = -2X + 100</p>
 
-                    <p>Ved X = 0 (startpunkt) er GROMS = 400 kr., hvilket er betydeligt højere end ordreprisen på 80 kr.
-                    </p>
+                    <p>Ved X = 0 (startpunkt) er GROMS = 100 kr., hvilket er højere end ordreprisen på 50 kr.</p>
                     <p>Dette betyder, at virksomheden først bør sælge på markedet, indtil GROMS falder til samme niveau
                         som P<sub>o</sub>.</p>
 
                     <p>Vi finder den mængde, hvor GROMS = P<sub>o</sub>:</p>
-                    <p>-4X + 400 = 80</p>
-                    <p>-4X = -320</p>
-                    <p>X = 80 enheder</p>
+                    <p>-2X + 100 = 50</p>
+                    <p>-2X = -50</p>
+                    <p>X = 25 enheder</p>
 
-                    <p>Ved X = 80 enheder vil prisen på markedet være:</p>
-                    <p>P = -2X + 400 = -2 × 80 + 400 = -160 + 400 = 240 kr.</p>
+                    <p>Ved X = 25 enheder vil prisen på markedet være:</p>
+                    <p>P = -X + 100 = -25 + 100 = 75 kr.</p>
 
-                    <p>Da P (240 kr.) > P<sub>o</sub> (80 kr.) = GROMS (80 kr.), bør virksomheden:</p>
+                    <p>Da P (75 kr.) > P<sub>o</sub> (50 kr.) = GROMS (50 kr.), bør virksomheden:</p>
                     <ol>
-                        <li>Sælge 80 enheder på markedet til 240 kr. pr. enhed</li>
-                        <li>Derefter opfylde ordren på 20 enheder til 80 kr. pr. enhed</li>
+                        <li>I hvert fald sælge 25 enheder på markedet til 75 kr. pr. enhed, efter ordren eventuelt er opfyldt, bør man muligvis sælge flere enheder på markedet, så det er ikke sikkert at denne pris og afsætning på markedet er optimal.</li>
+                        <li>Derefter se på muligheden for at levere ordren på 30 enheder til 50 kr. pr. enhed</li>
                     </ol>
                 </div>
 
                 <h3>Trin 2: Beregning af grænseomkostningerne</h3>
-                <p>Da vi har konstante variable enhedsomkostninger (VE = 40), er GROMK = VE = 40 kr.</p>
+                <p>Vi har fået oplyst at grænseomkostningerne (GROMK) er konstante 20 kr.</p>
 
                 <h3>Trin 3: Tjek om samlet løsning er optimal</h3>
                 <div class="example-box">
                     <p><strong>Analyse:</strong></p>
-                    <p>For at optimeringsreglen skal være opfyldt, skal GROMS = GROMK. Vi har:</p>
-                    <p>GROMS ved X = 80: -4 × 80 + 400 = -320 + 400 = 80 kr.</p>
-                    <p>GROMK ved X = 80: 2 × 80 + 40 = 160 + 40 = 200 kr.</p>
+                    <p>For at optimeringsreglen skal være opfyldt, skal GROMS = GROMK, hvis markedet optimeres fuldt ud, eller P<sub>o</sub> = GROMK, hvis ordren kan leveres delvist.</p>
+                    
+                    <p>Vi har:</p>
+                    <p>GROMS ved X = 25: -2 × 25 + 100 = -50 + 100 = 50 kr.</p>
+                    <p>P<sub>o</sub> = 50 kr.</p>
+                    <p>GROMK = 20 kr.</p>
 
-                    <p>Da GROMS (80 kr.) < GROMK (200 kr.), er vi faktisk over den optimale produktionsmængde for
-                            markedet. Vi finder den korrekte optimale mængde:</p>
-                            <p>-4X + 400 = 2X + 40</p>
-                            <p>-4X - 2X = 40 - 400</p>
-                            <p>-6X = -360</p>
-                            <p>X = 60 enheder</p>
+                    <p>Da både GROMS og P<sub>o</sub> (50 kr.) > GROMK (20 kr.), er det profitabelt at producere både til markedet og til ordren.</p>
+                    
+                    <p>Lad os tjekke optimal mængde på markedet ved at finde, hvor GROMS = GROMK:</p>
+                    <p>-2X + 100 = 20</p>
+                    <p>-2X = -80</p>
+                    <p>X = 40 enheder</p>
 
-                            <p>Ved X = 60 enheder vil prisen på markedet være:</p>
-                            <p>P = -2X + 400 = -2 × 60 + 400 = -120 + 400 = 280 kr.</p>
+                    <p>Ved X = 40 enheder vil prisen på markedet være:</p>
+                    <p>P = -X + 100 = -40 + 100 = 60 kr.</p>
 
-                            <p>Den optimale strategi er derfor:</p>
-                            <ol>
-                                <li>Sælge 60 enheder på markedet til 280 kr. pr. enhed</li>
-                                <li>Opfylde ordren på 20 enheder til 80 kr. pr. enhed</li>
-                            </ol>
+                    <p>Da P<sub>o</sub> (50 kr.) < P (60 kr.) og P<sub>o</sub> (50 kr.) > GROMK (20 kr.), bør vi:</p>
+                    <ol>
+                        <li>Sælge 40 enheder på markedet til 60 kr. pr. enhed</li>
+                        <li>Derudover sælge 30 enheder på ordren til 50 kr. pr. enhed</li>
+                    </ol>
                 </div>
 
                 <h3>Trin 4: Beregn overskud ved optimal produktion</h3>
                 <div class="example-box">
                     <p><strong>Beregning af resultat:</strong></p>
-                    <p>X<sub>marked</sub> = 60 enheder</p>
-                    <p>P<sub>marked</sub> = 280 kr.</p>
-                    <p>X<sub>ordre</sub> = 20 enheder</p>
-                    <p>P<sub>ordre</sub> = 80 kr.</p>
-                    <p>X<sub>total</sub> = 60 + 20 = 80 enheder</p>
+                    <p>X<sub>marked</sub> = 40 enheder</p>
+                    <p>P<sub>marked</sub> = 60 kr.</p>
+                    <p>X<sub>ordre</sub> = 30 enheder</p>
+                    <p>P<sub>ordre</sub> = 50 kr.</p>
+                    <p>X<sub>total</sub> = 40 + 30 = 70 enheder</p>
 
-                    <p>Omsætning på marked: 60 × 280 = 16.800 kr.</p>
-                    <p>Omsætning på ordre: 20 × 80 = 1.600 kr.</p>
-                    <p>Total omsætning: 16.800 + 1.600 = 18.400 kr.</p>
+                    <p>Omsætning på marked: 40 × 60 = 2.400 kr.</p>
+                    <p>Omsætning på ordre: 30 × 50 = 1.500 kr.</p>
+                    <p>Total omsætning: 2.400 + 1.500 = 3.900 kr.</p>
 
-                    <p>GROMK ved X = 60: 2 × 60 + 40 = 160 kr.</p>
-                    <p>Variable omkostninger ved 60 enheder: (∫ (2X + 40) dX fra 0 til 60) = X² + 40X|₀⁶⁰ = 60² + 40 ×
-                        60 = 3.600 + 2.400 = 6.000 kr.</p>
-                    <p>Variable omkostninger ved 80 enheder: 6.000 + (80 - 60) × 40 = 6.000 + 800 = 6.800 kr.</p>
-                    <p>Dækningsbidrag: 18.400 - 6.800 = 11.600 kr.</p>
-                    <p>Resultat: 11.600 - 1.500 = 10.100 kr.</p>
+                    <p>Variable omkostninger ved 70 enheder: 20 × 70 = 1.400 kr.</p>
+                    <p>Dækningsbidrag: 3.900 - 1.400 = 2.500 kr.</p>
+                    <p>Resultat: 2.500 - 1.500 = 1.000 kr.</p>
                 </div>
 
-                <h3>Opsummering af eksempel med begrænset ordremængde</h3>
+                <h3>Opsummering af eksempel med mulighed for delleverance af ordre</h3>
                 <div class="table-responsive">
                     <table class="table table-striped table-hover">
                         <thead class="table-dark">
@@ -258,39 +265,39 @@
                         <tbody>
                             <tr>
                                 <td>Mængde (X)</td>
-                                <td>60 enheder</td>
-                                <td>20 enheder</td>
-                                <td>80 enheder</td>
+                                <td>40 enheder</td>
+                                <td>30 enheder</td>
+                                <td>70 enheder</td>
                             </tr>
                             <tr>
                                 <td>Pris (P)</td>
-                                <td>280 kr.</td>
-                                <td>80 kr.</td>
+                                <td>60 kr.</td>
+                                <td>50 kr.</td>
                                 <td>-</td>
                             </tr>
                             <tr>
                                 <td>Omsætning (OMS)</td>
-                                <td>16.800 kr.</td>
-                                <td>1.600 kr.</td>
-                                <td>18.400 kr.</td>
+                                <td>2.400 kr.</td>
+                                <td>1.500 kr.</td>
+                                <td>3.900 kr.</td>
                             </tr>
                             <tr>
                                 <td>GROMS</td>
-                                <td>160 kr.</td>
-                                <td>80 kr.</td>
+                                <td>20 kr.</td>
+                                <td>50 kr.</td>
                                 <td>-</td>
                             </tr>
                             <tr>
                                 <td>Variable omkostninger (VO)</td>
-                                <td>6.000 kr.</td>
                                 <td>800 kr.</td>
-                                <td>6.800 kr.</td>
+                                <td>600 kr.</td>
+                                <td>1.400 kr.</td>
                             </tr>
                             <tr>
                                 <td>Dækningsbidrag (DB)</td>
-                                <td>10.800 kr.</td>
-                                <td>800 kr.</td>
-                                <td>11.600 kr.</td>
+                                <td>1.600 kr.</td>
+                                <td>900 kr.</td>
+                                <td>2.500 kr.</td>
                             </tr>
                             <tr>
                                 <td>Faste omkostninger (FO)</td>
@@ -302,17 +309,16 @@
                                 <td>Resultat</td>
                                 <td>-</td>
                                 <td>-</td>
-                                <td>10.100 kr.</td>
+                                <td>1.000 kr.</td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
 
                 <p><strong>Fortolkning:</strong> I dette eksempel er det optimalt for virksomheden at sælge både på
-                    markedet og gennem ordre. Markedssalget (60 enheder til 280 kr.) giver et betydeligt højere
-                    dækningsbidrag end
-                    ordresalget (20 enheder til 80 kr.), og kombinationen af begge giver det højeste samlede resultat på
-                    10.100 kr.</p>
+                    markedet og gennem ordre. Markedssalget (40 enheder til 60 kr.) giver et dækningsbidrag på 1.600 kr., mens
+                    ordresalget (30 enheder til 50 kr.) giver et dækningsbidrag på 900 kr. Kombinationen af begge giver det højeste samlede resultat på
+                    1.000 kr.</p>
 
                 <h2>Alternativt eksempel: Begrænset produktionskapacitet</h2>
                 <p>Nu ser vi på en situation, hvor virksomheden kan modtage flere ordrer, men har en begrænset
@@ -321,19 +327,17 @@
                 <div class="info-box">
                     <p><strong>Forudsætninger:</strong></p>
                     <ul>
-                        <li>Efterspørgselsfunktion på marked: P = -2X + 400</li>
-                        <li>Ordrepris: P<sub>o</sub> = 80 kr. (fast pris uanset mængde)</li>
-                        <li>Ordreefterspørgsel: Stor (mere end virksomheden kan producere)</li>
-                        <li>Total produktionskapacitet: 100 enheder</li>
+                        <li>Efterspørgselsfunktion på marked: P = -X + 100</li>
+                        <li>Ordrepris: P<sub>o</sub> = 50 kr. (fast pris uanset mængde)</li>
+                        <li>Ordreefterspørgsel: 30 enheder</li>
+                        <li>Total produktionskapacitet: 50 enheder</li>
                         <li>Faste omkostninger (FO) = 1.500 kr.</li>
-                        <li>Variable enhedsomkostninger (VE) = 40 kr. pr. enhed (konstant)</li>
+                        <li>Grænseomkostninger (GROMK) = 20 kr. (konstant)</li>
                     </ul>
                 </div>
                 <br>
                 <img src="images/ordre2.png" alt="Ordre og Marked" class="img-fluid" width="100%">
-                <small>Figur 10.2: Efterspørgselsfunktion på markedet og ordre beregnet i appen, bemærk vi har ikke fået
-                    oplyst en mængde på ordren, hvorfor vi blot skal sætte antallet tilstrækkeligt højt, sammenlign
-                    resultaterne i eksemplet med Forklaringen på variable i appen.</small>
+                <small>Figur 10.2: Efterspørgselsfunktion på markedet og ordre beregnet i appen med begrænset produktionskapacitet. Her kan vi se, at den totale mængde er begrænset til 50 enheder.</small>
 
                 <br>
                 <br>
@@ -348,51 +352,51 @@
                 <div class="example-box">
                     <p><strong>Analyse:</strong></p>
                     <p>Vi beregner først grænseomsætningen på markedet:</p>
-                    <p>GROMS = -4X + 400</p>
+                    <p>GROMS = -2X + 100</p>
 
                     <p>Lad os sammenligne indtjeningen marginalt mellem marked og ordre:</p>
                     <ul>
-                        <li>Ordreprisen (P<sub>o</sub>) er konstant 80 kr.</li>
-                        <li>Grænseomkostningerne (GROMK) er konstante 40 kr.</li>
+                        <li>Ordreprisen (P<sub>o</sub>) er konstant 50 kr.</li>
+                        <li>Grænseomkostningerne (GROMK) er konstante 20 kr.</li>
                     </ul>
 
-                    <p>Vi finder igen den mængde, hvor GROMS = P<sub>o</sub>:</p>
-                    <p>-4X + 400 = 80</p>
-                    <p>-4X = -320</p>
-                    <p>X = 80 enheder</p>
+                    <p>I første eksempel fandt vi, at optimal markedsmængde er 40 enheder, og optimal ordremængde er 30 enheder, hvilket giver en total produktion på 70 enheder. Men nu har vi en produktionskapacitet på kun 50 enheder.</p>
 
-                    <p>Ved X = 80 enheder vil prisen på markedet være:</p>
-                    <p>P = -2X + 400 = -2 × 80 + 400 = -160 + 400 = 240 kr.</p>
+                    <p>Da P<sub>o</sub> (50 kr.) > GROMK (20 kr.), er det profitabelt at sælge på både marked og ordre, men vi skal fordele de 50 enheder optimalt mellem de to kanaler.</p>
 
-                    <p>Da P<sub>o</sub> (80 kr.) > GROMK (40 kr.), bør virksomheden:</p>
-                    <ol>
-                        <li>Sælge 80 enheder på markedet til 240 kr. pr. enhed</li>
-                        <li>Derefter sælge så meget som muligt på ordre til 80 kr. pr. enhed</li>
-                    </ol>
+                    <p>For at optimere fordelingen skal vi sammenligne grænseomsætningen på markedet med ordreprisen:</p>
+                    <ul>
+                        <li>For markedet: GROMS = -2X + 100</li>
+                        <li>For ordren: P<sub>o</sub> = 50 kr.</li>
+                    </ul>
 
-                    <p>Med en total produktionskapacitet på 100 enheder og 80 enheder allerede allokeret til markedet,
-                        kan virksomheden producere yderligere 20 enheder til ordrer.</p>
+                    <p>Ved hvilken mængde på markedet er GROMS = P<sub>o</sub>?</p>
+                    <p>-2X + 100 = 50</p>
+                    <p>-2X = -50</p>
+                    <p>X = 25 enheder</p>
+
+                    <p>Dette betyder, at vi bør sælge 25 enheder på markedet og de resterende 25 enheder (af vores kapacitet på 50 enheder) på ordren.</p>
+
+                    <p>Ved X = 25 enheder vil prisen på markedet være:</p>
+                    <p>P = -X + 100 = -25 + 100 = 75 kr.</p>
                 </div>
 
                 <h3>Trin 2: Beregn overskud ved optimal produktion</h3>
                 <div class="example-box">
                     <p><strong>Beregning af resultat med fuld udnyttelse af produktionskapaciteten:</strong></p>
-                    <p>X<sub>marked</sub> = 80 enheder</p>
-                    <p>P<sub>marked</sub> = 240 kr.</p>
-                    <p>X<sub>ordre</sub> = 20 enheder</p>
-                    <p>P<sub>ordre</sub> = 80 kr.</p>
-                    <p>X<sub>total</sub> = 80 + 20 = 100 enheder</p>
+                    <p>X<sub>marked</sub> = 25 enheder</p>
+                    <p>P<sub>marked</sub> = 75 kr.</p>
+                    <p>X<sub>ordre</sub> = 25 enheder</p>
+                    <p>P<sub>ordre</sub> = 50 kr.</p>
+                    <p>X<sub>total</sub> = 25 + 25 = 50 enheder</p>
 
-                    <p>Omsætning på marked: 80 × 240 = 19.200 kr.</p>
-                    <p>Omsætning på ordre: 20 × 80 = 1.600 kr.</p>
-                    <p>Total omsætning: 19.200 + 1.600 = 20.800 kr.</p>
+                    <p>Omsætning på marked: 25 × 75 = 1.875 kr.</p>
+                    <p>Omsætning på ordre: 25 × 50 = 1.250 kr.</p>
+                    <p>Total omsætning: 1.875 + 1.250 = 3.125 kr.</p>
 
-                    <p>GROMK ved X = 80: 2 × 80 + 40 = 200 kr.</p>
-                    <p>Variable omkostninger ved 80 enheder: (∫ (2X + 40) dX fra 0 til 80) = X² + 40X|₀⁸⁰ = 80² + 40 ×
-                        80 = 6.400 + 3.200 = 9.600 kr.</p>
-                    <p>Variable omkostninger ved 100 enheder: 9.600 + (100 - 80) × 40 = 9.600 + 800 = 10.400 kr.</p>
-                    <p>Dækningsbidrag: 20.800 - 10.400 = 10.400 kr.</p>
-                    <p>Resultat: 10.400 - 1.500 = 8.900 kr.</p>
+                    <p>Variable omkostninger ved 50 enheder: 20 × 50 = 1.000 kr.</p>
+                    <p>Dækningsbidrag: 3.125 - 1.000 = 2.125 kr.</p>
+                    <p>Resultat: 2.125 - 1.500 = 625 kr.</p>
                 </div>
 
                 <h3>Opsummering af eksempel med begrænset produktionskapacitet</h3>
@@ -409,39 +413,39 @@
                         <tbody>
                             <tr>
                                 <td>Mængde (X)</td>
-                                <td>80 enheder</td>
-                                <td>20 enheder</td>
-                                <td>100 enheder</td>
+                                <td>25 enheder</td>
+                                <td>25 enheder</td>
+                                <td>50 enheder</td>
                             </tr>
                             <tr>
                                 <td>Pris (P)</td>
-                                <td>240 kr.</td>
-                                <td>80 kr.</td>
+                                <td>75 kr.</td>
+                                <td>50 kr.</td>
                                 <td>-</td>
                             </tr>
                             <tr>
                                 <td>Omsætning (OMS)</td>
-                                <td>19.200 kr.</td>
-                                <td>1.600 kr.</td>
-                                <td>20.800 kr.</td>
+                                <td>1.875 kr.</td>
+                                <td>1.250 kr.</td>
+                                <td>3.125 kr.</td>
                             </tr>
                             <tr>
                                 <td>GROMS</td>
-                                <td>160 kr.</td>
-                                <td>80 kr.</td>
+                                <td>50 kr.</td>
+                                <td>50 kr.</td>
                                 <td>-</td>
                             </tr>
                             <tr>
                                 <td>Variable omkostninger (VO)</td>
-                                <td>9.600 kr.</td>
-                                <td>800 kr.</td>
-                                <td>10.400 kr.</td>
+                                <td>500 kr.</td>
+                                <td>500 kr.</td>
+                                <td>1.000 kr.</td>
                             </tr>
                             <tr>
                                 <td>Dækningsbidrag (DB)</td>
-                                <td>9.600 kr.</td>
-                                <td>800 kr.</td>
-                                <td>10.400 kr.</td>
+                                <td>1.375 kr.</td>
+                                <td>750 kr.</td>
+                                <td>2.125 kr.</td>
                             </tr>
                             <tr>
                                 <td>Faste omkostninger (FO)</td>
@@ -453,18 +457,18 @@
                                 <td>Resultat</td>
                                 <td>-</td>
                                 <td>-</td>
-                                <td>8.900 kr.</td>
+                                <td>625 kr.</td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
 
-                <p><strong>Fortolkning:</strong> I dette eksempel med begrænset produktionskapacitet på 100 enheder
-                    opnår virksomheden et betydeligt højere resultat (8.900 kr. vs. 10.100 kr.) end i det første
-                    eksempel uden kapacitetsbegrænsning. Dette skyldes, at virksomheden nu sælger mere på markedet (80
-                    enheder)
-                    til en høj pris (240 kr.) og mindre gennem ordrer (20 enheder til 80 kr.).
-                    Markedssalget giver i dette tilfælde langt større dækningsbidrag pr. enhed end ordresalget.</p>
+                <p><strong>Fortolkning:</strong> I dette eksempel med begrænset produktionskapacitet på 50 enheder
+                    er det optimalt for virksomheden at fordele produktion ligeligt mellem marked og ordre. 
+                    Markedssalget (25 enheder til 75 kr.) giver et højere dækningsbidrag pr. enhed end
+                    ordresalget (25 enheder til 50 kr.). 
+                    På grund af kapacitetsbegrænsningen opnås et lavere resultat (625 kr.) end i det første eksempel 
+                    uden kapacitetsbegrænsning (1.000 kr.), hvor virksomheden kunne producere og sælge flere enheder i alt (70 enheder).</p>
 
                 <h2>Sammenligning af de to eksempler</h2>
                 <div class="table-responsive">
@@ -472,59 +476,59 @@
                         <thead class="table-dark">
                             <tr>
                                 <th>Parameter</th>
-                                <th>Eksempel 1: Begrænset ordre</th>
+                                <th>Eksempel 1: Mulighed for delleverance af ordre</th>
                                 <th>Eksempel 2: Begrænset produktionskapacitet</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
                                 <td>Markedssalg</td>
-                                <td>60 enheder til 280 kr.</td>
-                                <td>80 enheder til 240 kr.</td>
+                                <td>40 enheder til 60 kr.</td>
+                                <td>25 enheder til 75 kr.</td>
                             </tr>
                             <tr>
                                 <td>Ordresalg</td>
-                                <td>20 enheder til 80 kr.</td>
-                                <td>20 enheder til 80 kr.</td>
+                                <td>30 enheder til 50 kr.</td>
+                                <td>25 enheder til 50 kr.</td>
                             </tr>
                             <tr>
                                 <td>Total produktion</td>
-                                <td>80 enheder</td>
-                                <td>100 enheder</td>
+                                <td>70 enheder</td>
+                                <td>50 enheder</td>
                             </tr>
                             <tr>
                                 <td>Produktionskapacitet</td>
-                                <td>Ikke relevant (ordrebegrænsning)</td>
-                                <td>100 enheder (fuldt udnyttet)</td>
+                                <td>Ubegrænset</td>
+                                <td>50 enheder (fuldt udnyttet)</td>
                             </tr>
                             <tr>
                                 <td>Total omsætning</td>
-                                <td>18.400 kr.</td>
-                                <td>20.800 kr.</td>
+                                <td>3.900 kr.</td>
+                                <td>3.125 kr.</td>
                             </tr>
                             <tr>
                                 <td>Variable omkostninger</td>
-                                <td>6.800 kr.</td>
-                                <td>10.400 kr.</td>
+                                <td>1.400 kr.</td>
+                                <td>1.000 kr.</td>
                             </tr>
                             <tr>
                                 <td>Dækningsbidrag</td>
-                                <td>11.600 kr.</td>
-                                <td>10.400 kr.</td>
+                                <td>2.500 kr.</td>
+                                <td>2.125 kr.</td>
                             </tr>
                             <tr>
                                 <td>Resultat</td>
-                                <td>10.100 kr.</td>
-                                <td>8.900 kr.</td>
+                                <td>1.000 kr.</td>
+                                <td>625 kr.</td>
                             </tr>
                             <tr>
                                 <td>GROMS ved optimal markedsmængde</td>
-                                <td>160 kr. = GROMK</td>
-                                <td>80 kr. = P<sub>ordre</sub></td>
+                                <td>20 kr. = GROMK</td>
+                                <td>50 kr. = P<sub>ordre</sub></td>
                             </tr>
                             <tr>
                                 <td>Optimeringsregel</td>
-                                <td>GROMS = GROMK, ordrekapacitet udnyttet</td>
+                                <td>GROMS = GROMK, optimal markedsafsætning</td>
                                 <td>GROMS = P<sub>ordre</sub>, produktionskapacitet udnyttet</td>
                             </tr>
                         </tbody>
@@ -539,15 +543,13 @@
                     <p>Nøgleobservationer:</p>
                     <ul>
                         <li>Virksomheden bør allokere produktion til den kanal, der giver højest grænseomsætning</li>
-                        <li>Optimal markedsmængde opnås når GROMS = P<sub>o</sub> (hvis P<sub>o</sub> > GROMK)</li>
-                        <li>Hvis P<sub>o</sub> > GROMK, bør virksomheden udnytte ordremuligheden fuldt ud</li>
-                        <li>Hvis ordrekapaciteten er begrænset, optimeres yderligere produktion til markedet, så GROMS =
-                            GROMK</li>
-                        <li>Markedssalg giver typisk højere pris pr. enhed, men mængden er begrænset af
-                            efterspørgselskurven</li>
-                        <li>Ordresalg kan give mere stabil afsætning, men typisk til en lavere pris</li>
-                        <li>Kombination af begge afsætningskanaler giver mulighed for at maksimere den samlede profit
-                        </li>
+                        <li>Optimal markedsmængde opnås når GROMS = GROMK (hvis der ikke er kapacitetsbegrænsninger)</li>
+                        <li>Hvis P<sub>o</sub> > GROMK, bør virksomheden producere til ordren, hvis der er kapacitet til at levere ordren.</li>
+                        
+                        <li>Markedssalg giver typisk højere pris pr. enhed ved lavere mængder, men prisen falder ved øget afsætning</li>
+                        <li>Ordresalg giver stabil afsætning til en fast pris</li>
+                        <li>Ved mulighed for delleverance af ordrer, optimeres markedsafsætningen efter GROMS = GROMK princippet</li>
+                        <li>Kombination af begge afsætningskanaler giver mulighed for at maksimere den samlede profit</li>
                     </ul>
                 </div>
 
