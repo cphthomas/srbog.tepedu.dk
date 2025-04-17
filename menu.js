@@ -9,7 +9,13 @@ const menuItems = [
     { href: 'monopol.html', text: 'Monopol' },
     { href: 'monopolistisk.html', text: 'Monopolistisk Konkurrence' },
     { href: 'oligopol.html', text: 'Oligopol' },
-    { href: 'ordre.html', text: 'Ordre og Marked' }
+    { href: 'ordre.html', text: 'Ordre og Marked' },
+    { href: 'mfb.html', text: 'Markedsføring' },
+    { href: 'knapkapacitet.html', text: 'Knap Kapacitet' },
+    { href: 'bidragskalkulation.html', text: 'Bidragskalkulation' },
+    { href: 'fordelingskalkulation.html', text: 'Fordelingskalkulation' },
+    { href: 'ABC.html', text: 'Activity Based Costing ABC' },
+    { href: 'video.html', text: 'Video' }
 ];
 
 // Function to generate dropdown menu HTML

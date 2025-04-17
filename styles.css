@@ -3,6 +3,8 @@ body {
     font-family: 'Open Sans', sans-serif;
     font-weight: 100;
     font-style: italic;
+    line-height: 1.6;
+    color: #333;
     margin-top: 56px;
     /* Adjust for fixed navbar height */
 }
@@ -137,10 +139,15 @@ body.menu-hidden .content {
 }
 
 /* Adjust scroll position for headings to account for fixed navbar */
-h1,
-h2,
-h3,
-h4 {
+.content h1,
+.content h2,
+.content h3,
+.content h4,
+.content h5,
+.content h6 {
+    font-family: 'Open Sans', sans-serif; /* Ensure consistent font family */
+    font-weight: 100 !important; /* Match body font weight */
+    font-style: italic; /* Restore italic */
     scroll-margin-top: 70px;
     /* Adjust this value as needed */
 }
@@ -376,4 +383,10 @@ kbd {
     padding: .75rem;
     vertical-align: top;
     border-top: 1px solid #dee2e6;
+}
+
+/* Custom styles for square corners on cards */
+.card,
+.card-body {
+    border-radius: 0 !important; /* Override default Bootstrap/MDB styles */
 }

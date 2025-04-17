@@ -1,0 +1,1646 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kapitel 8 - Activity Based Costing (ABC)</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,100&display=swap" rel="stylesheet">
+    <!-- MDB CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+
+    <!-- Page 1 -->
+    <section>
+        <h1>8. Kalkuler og Activity Based Costing</h1>
+        <p class="breadcrumb">HR driftsoekonomi-4udg.digi.hansreitzel.dk</p>
+        <h2>1. Driftsøkonomi</h2>
+
+        <p>Når du har studeret dette kapitel, er du i stand til at:</p>
+        <ul>
+            <li>Redegøre for omkostningsbaseret priskalkulation og prisfastsættelse</li>
+            <li>Redegøre for baggrunden for og opbygningen af et Activity Based Costing-kalkulationssystem</li>
+            <li>Opbygge en ABC-omkostningskalkulation</li>
+            <li>Anvende aktivitetstankegangen i relation til produkter</li>
+            <li>Gennemføre en kunderentabilitetsanalyse og illustrere denne ved hjælp af en Whalecurve</li>
+            <li>Kende til target costing/pricing</li>
+            <li>Redegøre for forskellen mellem traditionel omkostningsfordeling og fordeling af omkostninger i et ABC-system og herunder fordele og ulemper ved de to fordelingsmetoder</li>
+        </ul>
+
+        <p>Kapitlet omfatter dels en gennemgang af forskellige priskalkulationer baseret på traditionelle fordelingsprincipper, dels en gennemgang af Activity Based Costing, der tager afsæt i et mere avanceret fordelingsprincip. Anvendelsen af Activity Based Costing gennemgås med en case om Eltron A/S, der omlægger sin økonomistyring til Activity Based Costing.</p>
+        <p class="page-ref">1/1</p>
+    </section>
+    <hr>
+
+    <!-- Page 2 -->
+    <section>
+        <h2>8.1. Priskalkulation</h2>
+        <p class="breadcrumb">HR driftsoekonomi-4udg.digi.hansreitzel.dk</p>
+        <p class="breadcrumb">
+            1. Driftsøkonomi &gt; <br>
+            2. 8. Kalkuler og Activity Based Costing
+        </p>
+
+        <p>I <a href="#chapter7">kapitel 7</a> blev der fokuseret på, hvordan virksomheden i teorien kan finde den optimale pris for sine varer. Som nævnt bygger metoden på nogle forenklede forudsætninger. En af disse forudsætninger er, at virksomheden har fuldt kendskab til sine fremtidige afsætnings- og omkostningsforhold. Der kan og bør altid stilles spørgsmål til, hvor realistisk denne forudsætning er i praksis.</p>
+        <p class="page-ref">1/1</p>
+    </section>
+    <hr>
+
+    <!-- Page 3 -->
+    <section>
+        <h3>8.1.1 Omkostningsbaseret priskalkulation</h3>
+        <p class="breadcrumb">HR driftsoekonomi-4udg.digi.hansreitzel.dk</p>
+
+        <p>Ses der på virksomhedens omkostninger, vil virksomheden som regel have viden om omkostningernes størrelse ved fremstilling af eksisterende produkter. En kalkulation af omkostninger ved fremstilling af nye produkter er derimod typisk behæftet med større usikkerhed.</p>
+
+        <p>På samme måde vil der ved vurdering af virksomhedens afsætningsforhold ofte være betydelig usikkerhed om, hvor stor afsætningen vil være ved alternative priser. Usikkerheden er også her størst, når det drejer sig om nye produkter.</p>
+
+        <p>I det følgende gennemgås nogle af de kalkulationsmetoder, som anvendes ved fastsættelsen af virksomhedens salgspriser i praksis. Metoderne er vist i figur 8.1.</p>
+
+        <figure>
+             <div style="text-align: center; border: 1px solid black; padding: 10px; margin-bottom: 10px; background-color: #e0f2f7;">
+                Kalkulation
+            </div>
+            <div style="display: flex; justify-content: space-around; text-align: center;">
+                <div style="border: 1px solid black; padding: 10px; width: 45%; background-color: #e0f7e0;">
+                    <strong>Bidragskalkulation</strong><br>
+                    Variable<br>
+                    omkostninger
+                </div>
+                <div style="border: 1px solid black; padding: 10px; width: 45%; background-color: #e0e0f7;">
+                    <strong>Fordelingskalkulation</strong><br>
+                    Variable og faste<br>
+                    omkostninger
+                </div>
+            </div>
+            <figcaption>Figur 8.1 Kalkulationsmetoder</figcaption>
+        </figure>
+
+
+        <h4>Bidragskalkulation</h4>
+        <p>Ved bidragskalkulation beregnes salgsprisen ud fra de variable omkostninger, som tillægges et krav til dækningsbidrag.</p>
+        <p>Kravet til dækningsbidrag kan angives i kr. pr. stk. eller som en procentsats af de variable omkostninger.</p>
+        <p>En bidragskalkulation for et produkt kan principielt opstilles sådan:</p>
+        <p>
+            Variable enhedsomkostninger<br>
+            + Dækningsbidrag pr. enhed<br>
+            = Salgspris pr. enhed
+        </p>
+        <p class="page-ref">1/6</p>
+    </section>
+    <hr>
+
+    <!-- Page 4 -->
+    <section>
+        <p>Når en virksomhed kalkulerer sine priser med udgangspunkt i en bidragskalkulation, siger man, at bidragsmetoden anvendes. Det følgende er et eksempel fra en handelsvirksomhed.</p>
+
+        <p><strong>Eksempel på bidragskalkulation pr. enhed</strong></p>
+        <table class="calc-table">
+            <tbody>
+                <tr><td>Indkøbspris</td><td>100</td></tr>
+                <tr><td>+ Fragtomkostninger</td><td>10</td></tr>
+                <tr><td>= Anskaffelsespris</td><td>110</td></tr>
+                <tr><td>+ Øvrige variable omkostninger (provisioner mv.)</td><td>24</td></tr>
+                <tr><td>= Variable enhedsomkostninger</td><td>134</td></tr>
+                <tr><td>+ Dækningsbidrag</td><td>50</td></tr>
+                <tr><td>= Salgspris</td><td>184</td></tr>
+            </tbody>
+        </table>
+        <p>Bemærk, at det kun er de variable omkostninger, der medtages.</p>
+
+        <p>I en produktionsvirksomhed kan en bidragskalkulation principielt se således ud:</p>
+
+        <p><strong>Eksempel på bidragskalkulation pr. stk.</strong></p>
+        <table class="calc-table">
+             <tbody>
+                <tr><td>Råvarer</td><td>360</td></tr>
+                <tr><td>+ Operatørløn</td><td>160</td></tr>
+                <tr><td>+ Øvrige variable produktionsomkostninger (forbrug af el m.m.)</td><td>20</td></tr>
+                <tr><td>= Variable produktionsomkostninger</td><td>540</td></tr>
+                <tr><td>+ Variable salgsomkostninger (provisioner)</td><td>60</td></tr>
+                <tr><td>= Variable omkostninger i alt</td><td>600</td></tr>
+                <tr><td>+ Dækningsbidrag</td><td>150</td></tr>
+                <tr><td>= Salgspris</td><td>750</td></tr>
+            </tbody>
+        </table>
+
+        <p>Det fremgår af ovenstående eksempler, at beregningen af salgsprisen efter bidragsmetoden tager udgangspunkt i de variable enhedsomkostninger. Enhedsomkostningen viser, hvor meget det koster virksomheden at producere og sælge én enhed af produktet eller ydelsen.</p>
+        <p>Hvor stort et dækningsbidrag, virksomheden lægger oven på de variable omkostninger for at nå frem til salgsprisen, afhænger af en vurdering af afsætningsforholdene og dermed produktets prisfølsomhed (priselasticitet). Er produktet prisfølsomt, taler det for,</p>
+        <p class="page-ref">2/6</p>
+    </section>
+    <hr>
+
+    <!-- Page 5 -->
+    <section>
+        <p>at virksomheden skal kalkulere med et mindre dækningsbidrag pr. enhed, og vice versa ved et prisufølsomt produkt.</p>
+        <p>Når de faste omkostninger ikke indgår i en bidragskalkulation, skyldes det, at de ikke påvirkes af produktionen og salgets omfang. Dette forudsætter naturligvis, at produktionen kan ske inden for virksomhedens nuværende kapacitet. Den salgspris, der resulterer i det største totale dækningsbidrag, vil derfor også give det største totale overskud.</p>
+
+        <h4>Fordelingskalkulation</h4>
+        <p>Tankegangen bag fordelingskalkulation er, at varens pris skal dække samtlige produktets variable og faste omkostninger plus en vis avance. Det giver retfærdige priser over for kunderne, da prisen afspejler virksomhedens omkostninger ved at frembringe produktet.</p>
+        <p>Ved fordelingskalkulation beregnes salgsprisen ud fra variable og faste omkostninger, som tillægges et krav til avance.</p>
+        <p>Med baggrund i varens samlede produktomkostninger, også kaldet egenprisen, plus et avancetillæg fremkommer således produktets salgspris.</p>
+        <p>Egenprisen vil typisk indeholde både de variable omkostninger plus tillæg til dækning af indirekte variable omkostninger samt faste omkostninger. Dertil kommer til sidst et avancetillæg, som ideelt bør indrettes efter, hvad markedet kan bære, dvs. efter afsætningsforholdene.</p>
+        <p>Fordelingsprincippet kaldes også full cost-princippet, da princippet er, at samtlige omkostninger skal fordeles fuldt ud på produkterne. I praksis kan dette princip udformes på mange forskellige måder. I <a href="#tabel8.1">tabel 8.1</a> er vist et eksempel fra en maskinfabrik.</p>
+
+        <p><strong>Kalkulation: En maskinfabriks produktion af måleinstrument type XX-A</strong></p>
+        <table id="tabel8.1" class="cost-table">
+             <thead>
+                <tr>
+                    <th>Omkostningsarter</th>
+                    <th>Kr. pr. stk.</th>
+                    <th>Variabel</th>
+                    <th>Fast</th>
+                    <th>I alt</th>
+                </tr>
+            </thead>
+             <tbody>
+                <tr><td colspan="5"><strong>Materialeomkostninger</strong></td></tr>
+                <tr>
+                    <td>Variable materialeomkostninger (ifølge styklister)</td>
+                    <td>200,00</td>
+                    <td>200,00</td>
+                    <td></td>
+                    <td>200,00</td>
+                </tr>
+                <tr>
+                    <td>Tillæg for indirekte materialeomkostninger i % af variable materialeomkostninger</td>
+                    <td>3%</td>
+                    <td>6,00</td>
+                    <td></td>
+                    <td>6,00</td>
+                    <td>6,00</td>
+                 </tr>
+                 <tr>
+                    <td><strong>Materialeomkostninger i alt</strong></td>
+                    <td><strong>206,00</strong></td>
+                    <td><strong>200,00</strong></td>
+                    <td><strong>6,00</strong></td>
+                    <td><strong>206,00</strong></td>
+                 </tr>
+                 <tr><td colspan="5"><strong>Forarbejdningsomkostninger</strong></td></tr>
+                 <tr>
+                    <td>Variable lønomkostninger (if. operationslister)</td>
+                    <td>50,00</td>
+                    <td>50,00</td>
+                    <td></td>
+                    <td>50,00</td>
+                 </tr>
+        <!-- Table continues on next page -->
+         <p class="page-ref">3/6</p>
+    </section>
+    <hr>
+
+    <!-- Page 6 -->
+    <section>
+        <!-- Continuation of Tabel 8.1 -->
+                 <tr>
+                    <td>Indirekte forarbejdningsomkostninger i % variable lønomkostninger</td>
+                    <td>2%</td>
+                    <td>1,00</td>
+                    <td></td>
+                    <td>1,00</td>
+                    <td>1,00</td>
+                 </tr>
+                 <tr>
+                    <td>Tillæg for faste maskinomkostninger (afskrivninger)</td>
+                    <td></td>
+                    <td>20,00</td>
+                    <td></td>
+                    <td>20,00</td>
+                    <td>20,00</td>
+                 </tr>
+                 <tr>
+                    <td><strong>Forarbejdningsomkostninger i alt</strong></td>
+                    <td><strong>71,00</strong></td>
+                    <td><strong>50,00</strong></td>
+                    <td><strong>21,00</strong></td>
+                    <td><strong>71,00</strong></td>
+                 </tr>
+                 <tr>
+                    <td><strong>Produktionsomkostninger i alt</strong></td>
+                    <td><strong>277,00</strong></td>
+                    <td><strong>250,00</strong></td>
+                    <td><strong>27,00</strong></td>
+                    <td><strong>277,00</strong></td>
+                 </tr>
+                 <tr>
+                    <td>Administrative og øvrige kapacitetsomkostninger i % af produktionsomkostninger</td>
+                    <td>10%</td>
+                    <td>27,70</td>
+                    <td></td>
+                    <td>27,70</td>
+                    <td>27,70</td>
+                 </tr>
+                 <tr>
+                    <td><strong>Samlede omkostninger (egenprisen)</strong></td>
+                    <td><strong>304,70</strong></td>
+                    <td><strong>250,00</strong></td>
+                    <td><strong>54,70</strong></td>
+                    <td><strong>304,70</strong></td>
+                 </tr>
+                 <tr>
+                    <td>Avance/risikotillæg i % af egenpris</td>
+                    <td>10%</td>
+                    <td>30,47</td>
+                    <td>0,00</td>
+                    <td>0,00</td>
+                    <td>30,47</td>
+                 </tr>
+                 <tr>
+                    <td><strong>Salgspris i alt</strong></td>
+                    <td><strong>335,17</strong></td>
+                    <td><strong>250,00</strong></td>
+                    <td><strong>54,70</strong></td>
+                    <td><strong>335,17</strong></td>
+                 </tr>
+            </tbody>
+        </table>
+        <p class="caption">Tabel 8.1 Full cost-kalkulation</p>
+
+        <p>Til planlægningsformål er full cost-kalkulationer ikke egnede. Det skyldes, at de faste omkostninger indgår som en gennemsnitlig omkostning pr. stk., og denne stykomkostning er kun gyldig ved det produktionsniveau, som kalkulationen bygger på. Bruger man stykomkostningen ved et andet produktionsniveau, behandler man de faste omkostninger, som om de var proportionale med produktionens størrelse, og det er naturligvis forkert.</p>
+        <p>Lønsomhedsanalyser skal foretages ud fra dækningsbidragsovervejelser. Det betyder, at opbygger man en full cost-kalkulation, bør det være muligt at skelne imellem, hvad der er faste, og hvad der er variable omkostninger. Dette er vist i fordelingskalkulationsskemaet nedenfor i <a href="#tabel8.1">tabel 8.1</a>.</p>
+        <p>Her kan man se, at den kortsigtede prisundergrænse er 250 kr. pr. enhed, idet dette beløb svarer til summen af produktets variable omkostninger. Tilbyder en kunde nu fx 300 kr. pr. enhed, vil man ud fra en dækningsbidragstankegang acceptere ordren, idet dækningsbidraget er positivt. Ud fra en full cost-tankegang vil man afslå ordren ud fra det synspunkt, at man ikke får dækket alle omkostninger.</p>
+        <p>Spørgsmålet er så, hvad der i det lange løb er bedst. Det kan man ikke give noget generelt svar på. Under specielle omstændigheder kan det være forsvarligt at acceptere en pris under den annoncerede listepris.</p>
+        <p>Som tidligere nævnt kan den optimale salgspris ikke fastsættes alene ud fra omkostningsberegninger. Den optimale pris er et samspil mellem omkostningssiden og afsætningssiden. Her vil også eventuelle afsmittende virkninger på andre af virksomhedens produkter skulle iagttages.</p>
+        <p class="page-ref">4/6</p>
+    </section>
+    <hr>
+
+    <!-- Page 7 -->
+    <section>
+        <p>Problemet med full cost-metoden er, at tillægssatser skal fastsættes. Disse satser må baseres på nogle forventninger med hensyn til kapacitetsudnyttelsen. Kapacitetsudnyttelsen er afhængig af prisen, da prisen har betydning for den afsatte mængde. Så problemet bider sig selv i halen. Der er derfor ikke tale om nogen objektiv metode.</p>
+        <p>Nedenfor vises et eksempel på full cost-kalkulation, hvor konsekvenserne af ændringer i den afsatte mængde inddrages.</p>
+
+        <h4>Eksempel</h4>
+        <p>I <a href="#figur8.2">figur 8.2</a> er vist en model for en full cost-beregning fra vognmandsbranchen.</p>
+
+        <figure id="figur8.2">
+            <!-- Simplified textual representation of the flowchart -->
+            <p><strong>Input Ressourcer:</strong> Biler, værksted, bygninger, personale m.m.</p>
+            <p><strong>Omkostningskategorier:</strong></p>
+            <ul>
+                <li>Variable omk. (brændstof, chaufførløn, dæk, reparation) -> 5,26</li>
+                <li>Vogndirekte omkostninger (vægtafgift, forsikring, forrentning, afskrivninger) -> 1,93</li>
+                <li>Indirekte omk. -> 0,83</li>
+            </ul>
+            <p><strong>Fordelingsnøgle:</strong> Km</p>
+            <p><strong>Beregning:</strong> (5,26 + 1,93 + 0,83) + Avancetillæg 5% (0,40) = Vognmandskørsel (pris pr. km) -> 8,42 kr./km</p>
+            <figcaption>Figur 8.2 Full cost-kalkulationsmodel i vognmandsbranchen</figcaption>
+        </figure>
+
+        <p>Modellen opdeler bilomkostningerne i tre grupper: variable omkostninger, direkte faste omkostninger pr. vogn samt indirekte faste omkostninger, der omfatter administrationsomkostninger mv. Omkostningerne er anført pr. km.</p>
+        <p>De variable omkostninger opgøres pr. km direkte ud fra ressourceforbruget, mens de faste omkostninger omregnes til en enhedspris med kilometertallet som fordelingsnøgle. Det er i eksemplet forudsat, at de samlede faste omkostninger pr. vogn er 308.800 kr. pr. år. Der budgetteres med 160.000 kørte km pr. år. De vogndirekte omkostninger pr. km bliver således 308.800/160.000 = 1,93 kr. pr. km. De indirekte faste omkostninger pr. km er beregnet på samme måde.</p>
+        <p>Modellen skal give vognmanden indblik i de reelle kørselsomkostninger og mulighed for at sikre, at hans priser dækker alle omkostninger.</p>
+        <p class="page-ref">5/6</p>
+    </section>
+    <hr>
+
+     <!-- Page 8 -->
+    <section>
+        <p>I det viste eksempel er den gennemsnitlige omkostning (pris) pr. kørt kilometer beregnet til 8,42 kr. ved et budgetteret årligt kilometertal på 160.000. Når en vognmand bruger en sådan sats i sine tilbudsberegninger, opstår der efterfølgende problemer med over- eller underdækning af de faste omkostninger, hvis han kører mere eller mindre end de budgetterede 160.000 km i løbet af året. Kører han mere, får han overdækning, idet de ekstra km giver dækning af flere faste omkostninger, selvom de faste omkostninger ikke stiger ved øget antal km. Kører han mindre, får han underdækning. Dette forhold er illustreret i <a href="#tabel8.2">tabel 8.2</a>.</p>
+
+        <table id="tabel8.2" class="cost-table">
+             <caption>Tabel 8.2 Eksempel på over-/underdækning ved full cost-metoden</caption>
+             <thead>
+                <tr>
+                    <th></th>
+                    <th>Sats kr.pr.km</th>
+                    <th>Km 160.000<br>Kørt = budget</th>
+                    <th>Km 200.000<br>Kørt &gt; budget</th>
+                    <th>Km 120.000<br>Kørt &lt; budget</th>
+                 </tr>
+            </thead>
+             <tbody>
+                <tr>
+                    <td>Variable omkostninger</td>
+                    <td>5,26</td>
+                    <td>841.600</td>
+                    <td>1.052.000</td>
+                    <td>631.200</td>
+                 </tr>
+                 <tr>
+                    <td>Vogndirekte faste omkostninger</td>
+                    <td>1,93</td>
+                    <td>308.800</td>
+                    <td>386.000</td>
+                    <td>231.600</td>
+                 </tr>
+                 <tr>
+                    <td>Indirekte faste omkostninger</td>
+                    <td>0,83</td>
+                    <td>132.800</td>
+                    <td>166.000</td>
+                    <td>99.600</td>
+                 </tr>
+                 <tr>
+                    <td>Avance</td>
+                    <td>0,40</td>
+                    <td>64.000</td>
+                    <td>80.000</td>
+                    <td>48.000</td>
+                 </tr>
+                 <tr>
+                    <td><strong>I alt (= salgspris)</strong></td>
+                    <td><strong>8,42</strong></td>
+                    <td><strong>1.347.200</strong></td>
+                    <td><strong>1.684.000</strong></td>
+                    <td><strong>1.010.400</strong></td>
+                 </tr>
+                 <tr>
+                    <td>Overskud</td>
+                    <td></td>
+                    <td>64.000</td>
+                    <td>190.400</td>
+                    <td>-62.400</td>
+                 </tr>
+                 <tr>
+                    <td><strong>Over-/underdækning</strong></td>
+                    <td></td>
+                    <td><strong>0</strong></td>
+                    <td><strong>110.400</strong></td>
+                    <td><strong>-110.400</strong></td>
+                 </tr>
+            </tbody>
+        </table>
+
+        <p>Forenklede gennemsnitsberegninger i full cost-metoden foretaget ved et bestemt aktivitetsniveau kan føre til vildledende konklusioner, hvis de ukritisk anvendes på et andet aktivitetsniveau.</p>
+        <p class="page-ref">6/6</p>
+    </section>
+    <hr>
+
+    <!-- Page 9 -->
+    <section>
+        <h3>8.1.2 Konkurrentbaserede priser og den retrograde kalkulation</h3>
+         <p class="breadcrumb">HR driftsoekonomi-4udg.digi.hansreitzel.dk</p>
+         <p class="breadcrumb">
+             1. Driftsøkonomi &gt; <br>
+             2. 8. Kalkuler og Activity Based Costing &gt; <br>
+             3. 8.1. Priskalkulation
+         </p>
+
+        <p>Ofte er virksomheden i den situation, at den kender konkurrenternes priser og dermed det prisniveau, den må holde sig inden for. Tager virksomheden en pris, der er højere end konkurrenterne, falder kunderne væk. Man taler her om konkurrentbaseret eller markedsbestemt prisfastsættelse.</p>
+        <p>Interessen samler sig om, hvorvidt virksomheden ved den givne pris kan få dækket sine omkostninger og opnå en acceptabel fortjeneste. Dette spørgsmål afklares ved en retrograd kalkulation. En slags baglæns kalkulation ud fra den forventede salgspris. Dette står i modsætning til bidragskalkulationen og fordelingskalkulationen, hvor man ud fra omkostningerne og ved hjælp af diverse tillæg regner sig frem til en salgspris – en slags forlæns kalkulation.</p>
+        <p>Ved retrograd kalkulation beregnes virksomhedens maksimale indkøbspris ud fra den salgspris, der kan opnås på markedet.</p>
+
+        <h4>Eksempel</h4>
+        <p>En virksomhed overvejer at flytte sin produktion af surfbrætter til Taiwan. Surfbrætterne skal afsættes i Danmark, hvor markedsprisen ligger omkring 1.000 kr. pr. bræt.</p>
+        <p>Fragt i forbindelse med hjemtagning fra udlandet er 100 kr. pr. bræt. Hertil kommer en forventet told på 50 kr. pr. bræt. Virksomheden, som i øvrigt anvender bidragsmodellen, ønsker en dækningsgrad på 40 %.</p>
+
+        <table class="calc-table">
+            <thead>
+                <tr><th></th><th></th><th>Kr./stk.</th></tr>
+            </thead>
+            <tbody>
+                <tr><td>Salgspris</td><td></td><td>1.000</td></tr>
+                <tr><td>- Krav til dækningsbidrag</td><td>40 %</td><td>400</td></tr>
+                <tr><td>= Til dækning af variable stk. omkostninger</td><td></td><td>600</td></tr>
+                <tr><td>- Fragt</td><td></td><td>100</td></tr>
+                <tr><td>- Told</td><td></td><td>50</td></tr>
+                <tr><td>= Maksimal indkøbspris</td><td></td><td><strong>450</strong></td></tr>
+            </tbody>
+        </table>
+        <p class="page-ref">1/2</p>
+    </section>
+    <hr>
+
+    <!-- Page 10 -->
+    <section>
+        <p>I forbindelse med prisforhandlinger med den taiwanesiske producent skal virksomheden have fastlagt den maksimale indkøbspris, den vil betale. Dette kan gøres ved ovenstående retrograde kalkulation.</p>
+        <p>Som det fremgår, skal man ikke lade sig presse længere op end til 450 kr. pr. stk.</p>
+        <p>Til gengæld vil en indkøbspris under 450 kr. forøge dækningsbidraget.</p>
+        <p>Full cost-metoden og den markedsbestemte metode kan medføre vidt forskellige priser og vidt forskellige reaktionsmønstre. I perioder med svag kapacitetsudnyttelse vil full cost-metoden via sine tillægssatser skrue prisen op, hvis metoden bruges ukritisk. De faste omkostninger skal fordeles ud over færre produkter.</p>
+        <p>Den markedsbestemte metode tager udgangspunkt i markedssituationen. Typisk vil gælde, at dårlige tider kræver prisnedsættelser for at sætte gang i aktiviteten, hvilket er det modsatte af, hvad full cost-metoden vil plædere. Ukritisk anvendelse af full cost imod markedskræfterne vil kunne medføre, at man prissætter sig selv ud af markedet, idet priserne sættes for højt.</p>
+        <p class="page-ref">2/2</p>
+    </section>
+    <hr>
+
+    <!-- Page 11 -->
+    <section>
+        <h3>8.1.3 Åbne kalkulationer</h3>
+        <p class="breadcrumb">HR driftsoekonomi-4udg.digi.hansreitzel.dk</p>
+        <p class="breadcrumb">
+            1. Driftsøkonomi &gt; <br>
+            2. 8. Kalkuler og Activity Based Costing &gt; <br>
+            3. 8.1. Priskalkulation
+        </p>
+
+        <p>For mange produktionsvirksomheder gælder, at materialer og komponenter udgør hovedparten af de samlede omkostninger. I forbindelse med mange virksomheders fokus på kernekompetencer anskaffes en større og større del af de nødvendige materialer og komponenter via underleverandører. En vigtig opgave inden for virksomhedsdrift og økonomistyring er derfor aftalerne med underleverandørerne. Ses disse aftaler i et forsyningskædeperspektiv, vil der være basis for at arbejde med åbne kalkulationer.</p>
+        <p>Mange virksomheder indgår forpligtende samarbejdsaftaler i form af partnerskaber og alliancer, fx i forbindelse med outsourcing af delleverancer. Disse samarbejder kan blive så tætte, at der etableres fuld åbenhed mellem parterne. Kalkulationer og beregninger af salgspriser, omkostninger og indtjening bliver tilgængelige for de andre virksomheder i samarbejdet. På denne måde opnås der stor indsigt i samarbejdspartnernes interne forhold. Dette kræver selvsagt stor tillid mellem virksomhederne.</p>
+        <p>Åbne kalkulationer betyder, at der er fuld åbenhed mellem aftaleparterne om de reelle omkostninger i forbindelse med indkøb og fremstilling af komponenter og produkter i forsyningskæden. Dette inkluderer også åbenhed om dækningsbidrag og realiserede omkostningsbesparelser.</p>
+        <p class="page-ref">1/1</p>
+    </section>
+    <hr>
+
+     <!-- Page 12 -->
+    <section>
+        <h2>8.2. Activity Based Costing</h2>
+        <p class="breadcrumb">HR driftsoekonomi-4udg.digi.hansreitzel.dk</p>
+
+        <p>Indledningsvis er det værd at bemærke, at Activity Based Costing, også kaldet ABC, ikke er at forveksle med ABC-analyser i supply chain management. Her klassificerer man blandt andet varerne i A, B eller C-varer afhængig af, hvilken leveringstid eller service der knytter sig til den pågældende vare. Activity Based Costing er derimod en del af økonomistyringen, hvor man beregner indtjeningen pr. produkt.</p>
+        <p>Anvendelsen af ABC er gennem de senere år blevet mere udbredt, fordi der gennem de senere år er sket en væsentlig ændring i virksomhedernes omkostningsstruktur. Flere og flere omkostninger optræder nu som indirekte faste omkostninger, hvor de tidligere var direkte variable i forhold til omsætningen og de tilhørende produkter. Således har den øgede automatisering medført, at mange direkte lønomkostninger er erstattet af indirekte omkostninger til maskiner og deres overvågning og vedligeholdelse.</p>
+        <p>De indirekte faste produktionsomkostninger, der består af maskinafskrivninger, værkførerløn, omstillingsomkostninger, husleje, vedligeholdelse m.m., er svære at styre samlet. En direkte sammenhæng til virksomhedens aktivitet i form af salg og produktion kan være vanskelig at etablere. Samtidig med den nævnte udvikling i omkostningsstrukturen er priskonkurrencen i markedet vokset. Tilsammen stiller disse udviklinger skærpede krav til virksomhedens kalkulationssystem.</p>
+        <p>For at kunne være konkurrencedygtig må virksomheden hele tiden have rigtige informationer om, hvad produktionen koster, og hvad man tjener. Uden et sikkert omkostnings- og priskalkulationssystem kan man ikke styre virksomheden på en effektiv måde. Activity Based Costing eller ABC-costing er en kalkulationsmetode, som skal imødekomme disse krav. Metoden er oprindeligt udviklet af professor R.S. Kaplan, Harvard University, i begyndelsen af 1990'erne.</p>
+        <p>I forhold til dækningsbidragsmetoden og fuldfordelingsmetoden er ABC en alternativ metode til fordeling af omkostningerne. ABC er samtidig et væsentligt mere detaljeret omkostningssystem.</p>
+
+        <h3>8.2.1 Formål med Activity Based Costing</h3>
+        <p>Formålet med et Activity Based Costing-system er at skabe gennemsigtighed i sammenhængen mellem aktiviteternes ressourcetræk og deres omkostningsforbrug. Sammenhængen kan anvendes til at belyse sammensætningen af omkostningerne for virksomhedens produkter eller til at vise de omkostninger, som en virksomheds kunder trækker på, når de afgiver en ordre på et produkt eller en serviceydelse.</p>
+        <p>Med et ABC-system opnår ledelsen et bedre oplyst grundlag at træffe beslutning på. Det gælder fx i forbindelse med:</p>
+        <p class="page-ref">1/4</p>
+    </section>
+    <hr>
+
+    <!-- Page 13 -->
+    <section>
+        <ul>
+            <li>prisfastsættelse af produkter</li>
+            <li>tilbudsgivning til kunder</li>
+            <li>omkostningsstyring</li>
+            <li>vurdering af budgetsatser contra realiseret omkostningsforbrug</li>
+            <li>rentabilitetsvurdering af produkter og kunder</li>
+            <li>budgetkontrol</li>
+        </ul>
+        <p>Derudover kan ledelsen anvende systemet i mere strategiske sammenhænge, herunder ved valg af markeder, produktmiks, distributionskanaler, outsourcing etc.</p>
+
+        <h3>8.2.2 Grundelementer i Activity Based Costing</h3>
+        <p>I ABC-systemet indgår følgende grundlæggende begreber:</p>
+        <ul>
+            <li><strong>Omkostningsobjekter:</strong><br>
+                De produkter eller serviceydelser, som kunderne efterspørger.</li>
+            <li><strong>Aktivitetsområder:</strong><br>
+                De aktiviteter, som en kundeordre afføder. Det kan fx være ordregivning, produktion, test, emballering og levering.</li>
+            <li><strong>Ressourcer:</strong><br>
+                De omkostninger, der opstår som følge af aktiviteterne. Omkostningerne betegnes også ressourcer. Det kan være lønomkostninger, maskinomkostninger, markedsføringsomkostninger mv.</li>
+            <li><strong>Cost drivere:</strong><br>
+                En cost driver (omkostningsdriver) er en faktor, der forårsager eller 'driver' omkostningerne i en bestemt aktivitet. Det er den måleenhed, der bedst forklarer, hvorfor omkostningerne i et aktivitetsområde ændrer sig. Cost drivere bruges som fordelingsnøgler til at allokere de indirekte omkostninger (ressourcer) fra et aktivitetsområde til de omkostningsobjekter (fx produkter, kunder, ordrer), der har forbrugt aktiviteten. Valget af den rigtige cost driver er afgørende for at opnå en nøjagtig omkostningsfordeling. Eksempelvis kan antallet af maskintimer være en god cost driver for omkostninger relateret til maskindrift, mens antallet af kundeordrer kan drive omkostningerne i ordrebehandlingsafdelingen.</p>
+
+                <p>Her er nogle eksempler på cost drivere fra forskellige virksomheder:</p>
+                <table class="table table-striped table-bordered caption-top">
+                    <caption>Tabel 8.A: Eksempler på Cost Drivere</caption>
+                    <thead>
+                        <tr>
+                            <th>Virksomhedstype</th>
+                            <th>Aktivitetsområde</th>
+                            <th>Cost Driver (Eksempel)</th>
+                            <th>Ressource/Omkostning (Eksempel)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Produktionsvirksomhed (Møbler)</td>
+                            <td>Maskinbearbejdning</td>
+                            <td>Antal maskintimer</td>
+                            <td>Afskrivning på maskiner, elforbrug, vedligeholdelse</td>
+                        </tr>
+                        <tr>
+                            <td>Produktionsvirksomhed (Elektronik)</td>
+                            <td>Kvalitetskontrol</td>
+                            <td>Antal tests udført</td>
+                            <td>Løn til testpersonale, omkostninger til testudstyr</td>
+                        </tr>
+                        <tr>
+                            <td>Servicevirksomhed (Software)</td>
+                            <td>Kundesupport</td>
+                            <td>Antal supportopkald</td>
+                            <td>Løn til supportmedarbejdere, omkostninger til supportsystem</td>
+                        </tr>
+                         <tr>
+                            <td>Handelsvirksomhed (Supermarked)</td>
+                            <td>Vareopfyldning</td>
+                            <td>Antal vareleverancer modtaget</td>
+                            <td>Løn til lagerpersonale, omkostninger til lagerfaciliteter</td>
+                        </tr>
+                        <tr>
+                            <td>Logistikvirksomhed (Transport)</td>
+                            <td>Distribution</td>
+                            <td>Antal kørte kilometer / Antal leverancer</td>
+                            <td>Brændstof, chaufførløn, vedligehold af lastbiler</td>
+                        </tr>
+                         <tr>
+                            <td>Hospital</td>
+                            <td>Røntgenafdeling</td>
+                            <td>Antal røntgenbilleder taget</td>
+                            <td>Afskrivning på røntgenudstyr, løn til radiografer</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            <li><strong>Transaktionsbaserede cost drivere:</strong><br>
+                Transaktionsbaserede drivere tæller, hvor ofte en aktivitet udføres. Denne cost driver måles typisk i antal (stk.). Det kan fx være en omkostning, der opstår, hver gang der modtages en ordre, foretages en maskinomstilling, eller udføres en kvalitetstest.</li>
+            <li><strong>Varighedsbaserede cost drivere:</strong><br>
+                Varighedsbaserede drivere opstår, når cost driveren måler den tid, en konkret aktivitet varer. Det kan fx være den produktionstid eller maskintid, det tager at producere et bestemt produkt.</li>
+        </ul>
+       <p class="page-ref">2/4</p>
+    </section>
+    <hr>
+
+    <!-- Page 14 -->
+    <section>
+        <ul>
+           <li><strong>Intensitetsbaserede cost drivere:</strong><br>
+                Intensitetsbaserede cost drivere opstår, når der anvendes særlig kostbart produktionsudstyr eller andre processer, hvor tiden alene ikke angiver ressourcetrækket. Det kan fx være brug af et sterilt rent-rum eller dyr rådgivning fra en advokat eller revisor.</li>
+        </ul>
+        <p>Ovenstående begreber er byggestenene i et ABC-system. Den designmæssige opbygning afhænger herefter af den konkrete virksomheds interne forhold.</p>
+
+        <h3>8.2.3 Den grundlæggende opbygning af et ABC-system</h3>
+        <p>Hensigten med ABC-systemet er, at omkostningsobjekterne skal belastes med nøjagtig de ressourcer, som de trækker på. Dette er illustreret i <a href="#figur8.3">figur 8.3</a>.</p>
+
+        <figure id="figur8.3">
+            <!-- Simplified textual representation of the flowchart -->
+            <p><strong>Fase 1: Træk på direkte ressourcer</strong></p>
+            <ul>
+                <li>Direkte lønomk. ---&gt; Omkostningsobjekt (Fx produkter og serviceydelser)</li>
+                <li>Direkte materialeomk. ---&gt; Omkostningsobjekt</li>
+            </ul>
+             <p><strong>Fase 2 & 3: Træk på indirekte ressourcer</strong></p>
+            <ul>
+                 <li>Indirekte produktionsomkostninger ---&gt; [Fase 2: Aktivitetsområder] ---&gt; [Fase 3: Omkostningsobjekt]</li>
+            </ul>
+             <figcaption>Figur 8.3 Omkostningsfordeling i et ABC-system</figcaption>
+        </figure>
+
+        <p>Af figuren fremgår, at omkostningsfordelingen sker i tre faser. I fase 1 fordeles de direkte omkostninger ud på omkostningsobjekterne, typisk produkter og serviceydelser. I fase 2 fordeles de indirekte omkostninger ud på de aktiviteter, som forårsager omkostningerne. I fase 3 fordeles omkostningerne fra aktiviteterne ud på de omkostningsobjekter (produkter og serviceydelser), som trækker på aktiviteterne.</p>
+        <p>Omkostningsfordelingerne sker på basis af de cost drivere, som er knyttet til de enkelte aktiviteter. Ofte vil man i modsætning til traditionelle fordelingsmetoder anvende en række forskellige cost drivere. Dette vil blive vist i en efterfølgende case om Eltron A/S i afsnit 8.3.</p>
+        <p class="page-ref">3/4</p>
+    </section>
+    <hr>
+
+     <!-- Page 15 -->
+    <section>
+        <p>Et ABC-system adskiller sig grundlæggende fra et traditionelt fordelingssystem. I et traditionelt omkostningssystem fordeles de indirekte omkostninger direkte ud på omkostningsobjekterne ud fra én eller flere simple fordelingsnøgler. Der tages ikke tilstrækkeligt hensyn til de ressourcer, som omkostningsobjekterne rent faktisk trækker på. Dermed opstår ofte vilkårlige fordelinger, og anvendeligheden af kalkulationerne bliver ret begrænsede.</p>
+        <p>Problemet med de vilkårlige fordelinger er løst i ABC-systemet, hvor fordelingerne af de indirekte omkostninger sker på grundlag af de ressourcer, som omkostningsobjekterne trækker på. Dermed opnås langt større gennemsigtighed med hensyn til ressourcetræk.</p>
+        <p>Nedenfor er vist et eksempel på udviklingen fra et traditionelt omkostningskalkulationssystem til et nyt ABC-system hos virksomheden Eltron A/S.</p>
+        <p class="page-ref">4/4</p>
+    </section>
+    <hr>
+
+    <!-- Page 16 -->
+    <section>
+        <h2>8.3. ABC og produktrentabilitet hos Eltron A/S – en konkret case</h2>
+        <p class="breadcrumb">HR driftsoekonomi-4udg.digi.hansreitzel.dk</p>
+
+        <p>Casen tager afsæt i elektronikfabrikken Eltron A/S, der omlægger deres kalkulationssystem til et Activity Based Costing-system.</p>
+        <p>Eltron A/S er en elektronikfabrik, som producerer elektroniske måleinstrumenter til medicinalbranchen, bl.a. apparater til måling af blodsukker.</p>
+        <p>Produktsortimentet består (for nemheds skyld) af to produkter, A og B, som typisk produceres i serier af varierende størrelse.</p>
+        <p>I forbindelse med tilbudsgivning og omkostningskontrol bruger man et fordelingskalkulationssystem som vist i <a href="#figur8.4">figur 8.4</a>.</p>
+
+        <figure id="figur8.4">
+             <!-- Simplified textual representation of the flowchart -->
+            <p><strong>Træk på direkte ressourcer:</strong></p>
+             <ul><li>Direkte lønomk. ---&gt; Omkostningsobjekt (Ordrenr. 777, 1 stk. Produkt A)</li>
+                 <li>Direkte materialeomk. ---&gt; Omkostningsobjekt</li>
+             </ul>
+            <p><strong>Træk på indirekte ressourcer:</strong></p>
+             <p><em>Indirekte produktionsomkostninger (Gager, Bygninger, Maskiner, It, El/vand, Forbrugsstoffer, Konsulenter m.m.)</em> ---&gt;</p>
+             <ul>
+                 <li><strong>Omkostningsområde:</strong> Materialestyringsområdet
+                     <ul><li><strong>Fordelingsnøgle:</strong> 50% af direkte materialeomkostninger ---&gt; Omkostningsobjekt</li></ul>
+                 </li>
+                 <li><strong>Omkostningsområde:</strong> Produktionsområdet
+                     <ul><li><strong>Fordelingsnøgle:</strong> 500% af direkte lønomkostninger ---&gt; Omkostningsobjekt</li></ul>
+                 </li>
+            </ul>
+             <figcaption>Figur 8.4 Det nuværende kalkulationssystem for en given ordre</figcaption>
+        </figure>
+
+        <p>Det direkte forbrug af materialer og lønomkostninger henføres til den enkelte produktionsordre (fx ordrenummer 777, der består af 1 stk. af produkt A) på baggrund af timeforbrugssedler og materialerekvisitioner til lageret.</p>
+        <p class="page-ref">1/11</p>
+    </section>
+    <hr>
+
+    <!-- Page 17 -->
+    <section>
+        <p>De indirekte produktionsomkostninger, som gennem de senere år er vokset meget og efterhånden udgør en meget stor andel af en ordres samlede omkostninger, henføres til ordren med baggrund i fordelingsnøgler, som man etablerede for en del år siden. De indirekte omkostninger omfatter omkostninger til gager, bygnings- og maskinafskrivninger og vedligeholdelse, el og vand, forbrugsstoffer, it, konsulentassistance m.m. Disse omkostninger er blevet opdelt på to omkostningsområder:</p>
+        <p><strong>1. Materialehåndteringsområdet</strong></p>
+        <p>Disse omkostninger fordeles i forhold til den værdi, de håndterede materialer har. Her som et 50-procenttillæg til de direkte materialeomkostninger, hvilket betyder, at en råvare med en indkøbspris på 1.000 kroner forventes at forbruge indirekte omkostninger for 500 kroner.</p>
+        <p><strong>2. Produktionsområdet</strong></p>
+        <p>Disse omkostninger fordeles som et procenttillæg til de direkte lønomkostninger. Her som et 500-procenttillæg til de direkte lønomkostninger. Det vil sige, at hver gang et produkt bruger 100 kroner i direkte løn, forventes det at trække på de indirekte omkostninger med 500 kroner.</p>
+        <p>Det samlede resultat for Eltron A/S vises i <a href="#tabel8.3">tabel 8.3</a>. Det fremgår, at dækningsbidraget det forgangne år totalt var på 2.238.000 kr. Det samlede dækningsbidrag er med det nuværende kalkulationssystem blevet fordelt på de to produkter A og B, således at produkt A bidrager med størsteparten, nemlig 1.905.000 kr. Procentvis er produkt B imidlertid det mest rentable produkt med en dækningsgrad på 37% mod produkt A's dækningsgrad på 31,8 %.</p>
+
+        <table id="tabel8.3" class="cost-table">
+            <thead>
+                <tr>
+                    <th rowspan="2">Det gamle kalkulationssystem</th>
+                    <th colspan="2">Stykkalkulation</th>
+                    <th colspan="3">Hele virksomheden gennem året</th>
+                </tr>
+                <tr>
+                    <th>Prod. A</th>
+                    <th>Prod. B</th>
+                    <th>Prod. A</th>
+                    <th>Prod. B</th>
+                    <th>Året i alt</th>
+                </tr>
+            </thead>
+             <tbody>
+                 <tr>
+                    <td>Afsætning (stk.)</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>5.000</td>
+                    <td>1.000</td>
+                    <td></td>
+                 </tr>
+                 <tr><td colspan="6"><strong>Direkte produktionsomkostninger</strong></td></tr>
+                 <tr>
+                    <td>Direkte materialer</td>
+                    <td>450</td>
+                    <td>210</td>
+                    <td>2.250.000</td>
+                    <td>210.000</td>
+                    <td>2.460.000</td>
+                 </tr>
+                 <tr>
+                    <td>Direkte løn</td>
+                    <td>24</td>
+                    <td>42</td>
+                    <td>120.000</td>
+                    <td>42.000</td>
+                    <td>162.000</td>
+                 </tr>
+                 <tr>
+                    <td><strong>I alt direkte produktionsomkostninger</strong></td>
+                    <td><strong>474</strong></td>
+                    <td><strong>252</strong></td>
+                    <td><strong>2.370.000</strong></td>
+                    <td><strong>252.000</strong></td>
+                    <td><strong>2.622.000</strong></td>
+                 </tr>
+                 <tr><td colspan="6"><strong>Indirekte produktionsomkostninger</strong></td></tr>
+        <!-- Table continues on next page -->
+         <p class="page-ref">2/11</p>
+    </section>
+    <hr>
+
+     <!-- Page 18 -->
+    <section>
+        <!-- Continuation of Tabel 8.3 -->
+                 <tr>
+                    <td>Materialestyringsområdets omk. %-tillæg til mat.omk. 50%</td>
+                    <td>225</td>
+                    <td>105</td>
+                    <td>1.125.000</td>
+                    <td>105.000</td>
+                    <td>1.230.000</td>
+                </tr>
+                <tr>
+                    <td>Produktionsområdet omk. %-tillæg til lønomk. 500%</td>
+                    <td>120</td>
+                    <td>210</td>
+                    <td>600.000</td>
+                    <td>210.000</td>
+                    <td>810.000</td>
+                </tr>
+                <tr>
+                    <td><strong>I alt indirekte produktionsomkostninger</strong></td>
+                    <td><strong>345</strong></td>
+                    <td><strong>315</strong></td>
+                    <td><strong>1.725.000</strong></td>
+                    <td><strong>315.000</strong></td>
+                    <td><strong>2.040.000</strong></td>
+                </tr>
+                <tr>
+                    <td><strong>I alt produktionsomkostninger</strong></td>
+                    <td><strong>819</strong></td>
+                    <td><strong>567</strong></td>
+                    <td><strong>4.095.000</strong></td>
+                    <td><strong>567.000</strong></td>
+                    <td><strong>4.662.000</strong></td>
+                </tr>
+                <tr>
+                    <td>Salgspris</td>
+                    <td>1200</td>
+                    <td>900</td>
+                    <td>6.000.000</td>
+                    <td>900.000</td>
+                    <td>6.900.000</td>
+                </tr>
+                <tr>
+                    <td>Dækningsbidrag-I</td>
+                    <td>381</td>
+                    <td>333</td>
+                    <td>1.905.000</td>
+                    <td>333.000</td>
+                    <td>2.238.000</td>
+                </tr>
+                <tr>
+                    <td>Dækningsgrad-I (DG-I)</td>
+                    <td>31,8%</td>
+                    <td>37,0%</td>
+                    <td>31,8%</td>
+                    <td>37,0%</td>
+                    <td>32,4%</td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="caption">Tabel 8.3 Rentabilitet ifølge det nuværende kalkulationssystem <sup>fn17</sup></p>
+
+
+        <p>I takt med at konkurrencen gennem de senere år er steget, er man imidlertid internt i virksomheden kommet mere og mere i tvivl om kalkulationens rigtighed.</p>
+        <p>Produkt A er simpelt i sin konstruktion og har været produceret og solgt i stort antal gennem mange år. Det fremgår af ovenstående kalkulation for Eltron, at produkt A er relativt mindre rentabelt end produkt B, som er et relativt nyt og komplekst produkt, der endnu kun er solgt i begrænsede mængder.</p>
+        <p>Den store erfaring, virksomheden efterhånden har fået i produktionen af produkt A, viser sig ikke i den samlede opgørelse af virksomhedens rentabilitet. I Eltron mener man, at produktet pålignes for mange indirekte omkostninger i forhold til det faktiske ressourceforbrug og derfor fremstår mindre rentabelt.</p>
+
+        <h4>Kritik 1</h4>
+        <p>Hvordan kan det eksempelvis gå til, at en lille elektronisk komponent til produkt B, som koster 10 kroner, pålignes 5 kroner i indirekte omkostninger, mens en næsten tilsvarende komponent til produkt A, som er lige så stor og vejer lige så meget, men koster 100 kroner, skal pålignes 50 kroner? Arbejdet med at bestille, plukke og transportere m.m. er jo det samme. Arbejdet er i alt fald ikke ti gange så krævende!</p>
+        <p>Også andre situationer har fremkaldt kritik af det gamle system.</p>
+
+        <h4>Kritik 2</h4>
+        <!-- Text for Kritik 2 starts on next page -->
+        <p class="page-ref">3/11</p>
+    </section>
+    <hr>
+
+    <!-- Page 19 -->
+    <section>
+        <p>Virksomheden har været igennem en række krav om omkostningsbesparelser. Her har man brugt mange kræfter på at reducere de direkte lønomkostninger, fordi man hver gang, der spares en direkte lønkrone, reducerer de samlede omkostninger i kalkulationen med 6 kroner, nemlig 1 lønkrone plus de tilsvarende indirekte omkostninger på 5 kroner. Ressourceforbruget til vedligeholdelse, afskrivninger m.m. reduceres imidlertid ikke automatisk tilsvarende.</p>
+        <p>Denne kritik har affødt et ønske i Eltron om et ABC-projekt, der kan tage højde for de ovenstående problemstillinger.</p>
+
+        <h3>8.3.2 Udvikling af et ABC-system i Eltron</h3>
+        <p>En arbejdsgruppe bestående af medarbejdere fra produktion, design, indkøb, lager, salg og økonomi får til opgave at følge et produkts vej gennem de primære aktiviteter i virksomhedens værdikæde: fra indkøb over varemodtagelse, lager og produktion til færdigvarelager og levering til kunden.</p>
+        <p>Det skal kortlægges, hvilke aktiviteter produktet gennemgår på sin vej gennem virksomheden. Disse aktiviteter kræver ressourcer og udgør omkostninger ved produktets fremstilling.</p>
+
+        <h4>Opbygning af abc-kalkulationen</h4>
+        <p>Et ABC-projekt består af følgende dele:</p>
+        <ol>
+            <li>Fastlæg omkostningsformålet, som her en produktionsordre, fx ordrenummer 777 bestående af 1 stk. produkt A.</li>
+            <li>Fastlæg, hvilke omkostninger der direkte kan henføres til formålet. Her direkte materialer og direkte produktionsløn.</li>
+            <li>Identificer de indirekte aktivitetsområder, som produktet påvirkes af. I <a href="#figur8.5">figur 8.5</a> vises Eltrons fem væsentlige aktivitetsområder:</li>
+        </ol>
+        <!-- List continues on next page -->
+         <p class="page-ref">4/11</p>
+    </section>
+    <hr>
+
+     <!-- Page 20 -->
+    <section>
+        <ol start="4">
+            <li><strong>Fastlæg cost drivere.</strong><br>
+                Med baggrund i en årsags-virknings-vurdering fastlægges de faktorer, som driver omkostningerne inden for de enkelte aktivitetsområder.
+                <p>I aktivitetsområdet materialehåndtering har man gennem interviews med de berørte ansatte i lager og indkøb fundet frem til, at det, som for alvor påvirker omkostningerne, dvs. kan få omkostningerne til at stige eller falde, er antallet af dele, der indgår i det enkelte produkt. Et komplekst produkt med mange dele trækker således flere indirekte ressourcer/omkostninger end et simpelt produkt bestående af få dele.</p>
+                <p>Tilsvarende er de øvrige områder undersøgt. Resultaterne heraf fremgår af <a href="#tabel8.4">tabel 8.4</a>, kolonne 1 og 2, hvor cost drivere er angivet for de forskellige aktivitetsområder.</p>
+                <p>Materialehåndtering, automatisk produktion og emballering er alle transaktionsbaserede cost drivere, mens manuel montage og test er varighedsbaserede cost drivere.</p>
+            </li>
+            <li><strong>Fastlæg omkostningssatser pr. cost driver.</strong><br>
+                Disse fremgår af <a href="#tabel8.4">tabel 8.4</a>, kolonne 3-5. For aktivitetsområdet materialehåndtering er de samlede årlige indirekte omkostninger anslået til 1.230.000 kr. Dette er et budgetteret tal, som indeholder bl.a. gager til de ansatte inden for området, omkostninger til administration, husleje, afskrivning på lagerinventar osv. Cost driveren for området er antal dele, der indgår i produkterne. På årsbasis anslås det, at det samlede antal dele, som skal håndteres, er 330.000 stk. Omkostning pr. del bliver således 3,73 kroner.
+                <p>Tilsvarende har man gået de øvrige områder igennem. De 810.000 kr., der i det tidligere kalkulationssystem gik til produktionsområdet, er nu fordelt på automatisk produktion med 243.000 kr., manuel montage ligeledes med 243.000 kr. samt test og emballering med hver 162.000 kr. For manuel montage bliver satsen eksempelvis 405 kr. pr. montagetime, mens emballering koster 27 kr. pr. produceret enhed.</p>
+                <p>De indirekte omkostninger på 2.040.000 kr., som tidligere var fordelt på to områder, er nu delt ud på fem aktivitetsområder.</p>
+                <p>De direkte produktionsomkostninger er de samme som under den oprindelige kalkulationsmetode.</p>
+            </li>
+        </ol>
+         <p class="page-ref">5/11</p>
+    </section>
+    <hr>
+
+     <!-- Page 21 -->
+    <section>
+        <ol start="6">
+            <li><strong>Henfør omkostninger til omkostningsformålet.</strong><br>
+                Virksomheden er nu klar til at beregne omkostningsformålets – altså produkternes - omkostninger med baggrund i en model, som alle i arbejdsgruppen synes er rimelig, forstået på den måde, at produkternes forskelligheder med hensyn til ressourcetræk afspejles direkte i omkostningerne.
+            </li>
+        </ol>
+        <p><a href="#figur8.6">Figur 8.6</a> viser omkostningsfordelingen på en given ordre efter den nye ABC-model i eksemplet.</p>
+
+        <figure id="figur8.5">
+             <!-- Simple flow representation -->
+             <p style="text-align: center; font-weight: bold;">
+                 Materiale-håndtering &rarr; Automatisk produktion &rarr; Manuel montage &rarr; Test &rarr; Emballering
+             </p>
+             <figcaption>Figur 8.5 Aktivitetsområder i Eltron A/S</figcaption>
+        </figure>
+
+        <table id="tabel8.4" class="cost-table">
+             <caption>Tabel 8.4 Aktivitetsområder, cost drivere og satser</caption>
+             <thead>
+                 <tr>
+                    <th>Aktivitetsområder:</th>
+                    <th>Cost driver</th>
+                    <th>Årlig omkostning</th>
+                    <th>Årligt forbrug af cost driver</th>
+                    <th>Sats</th>
+                 </tr>
+             </thead>
+             <tbody>
+                 <tr>
+                     <td>Materialehåndtering</td>
+                     <td>Antal dele</td>
+                     <td>1.230.000</td>
+                     <td>330.000</td>
+                     <td>3,73</td>
+                 </tr>
+                 <tr>
+                     <td>Automatisk produktion</td>
+                     <td>Antal dele</td>
+                     <td>243.000</td>
+                     <td>210.000</td>
+                     <td>1,16</td>
+                 </tr>
+                 <tr>
+                     <td>Manuel montage</td>
+                     <td>Montagetimer</td>
+                     <td>243.000</td>
+                     <td>600</td>
+                     <td>405,00</td>
+                 </tr>
+                 <tr>
+                     <td>Test</td>
+                     <td>Testtid</td>
+                     <td>162.000</td>
+                     <td>700</td>
+                     <td>231,43</td>
+                 </tr>
+                 <tr>
+                     <td>Emballering</td>
+                     <td>Antal enheder</td>
+                     <td>162.000</td>
+                     <td>6.000</td>
+                     <td>27,00</td>
+                 </tr>
+                 <tr>
+                     <td><strong>Indirekte produktionsomk. i alt</strong></td>
+                     <td></td>
+                     <td><strong>2.040.000</strong></td>
+                     <td></td>
+                     <td></td>
+                 </tr>
+             </tbody>
+        </table>
+        <p class="page-ref">6/11</p>
+    </section>
+    <hr>
+
+    <!-- Page 22 -->
+    <section>
+        <figure id="figur8.6">
+            <!-- Simplified textual representation of the flowchart -->
+            <p><strong>Træk på direkte ressourcer:</strong></p>
+            <ul>
+                <li>Direkte lønomk. ---&gt; Omkostningsobjekt (Produkt A, 1 stk.)</li>
+                <li>Direkte materialeomk. ---&gt; Omkostningsobjekt</li>
+            </ul>
+            <p><strong>Træk på indirekte ressourcer:</strong></p>
+            <p><em>Indirekte produktionsomkostninger (Gager, Bygninger, Maskiner, It, El/vand, Forbrugsstoffer, Konsulenter m.m.)</em> ---&gt;</p>
+            <ul>
+                 <li><strong>Aktivitetsområde:</strong> Materialehåndtering
+                     <ul><li><strong>Fordelingsnøgle (Cost driver):</strong> Antal dele ---&gt; Omkostningsobjekt</li></ul>
+                 </li>
+                 <li><strong>Aktivitetsområde:</strong> Automatisk produktion
+                     <ul><li><strong>Fordelingsnøgle (Cost driver):</strong> Antal dele ---&gt; Omkostningsobjekt</li></ul>
+                 </li>
+                 <li><strong>Aktivitetsområde:</strong> Manuel montage
+                     <ul><li><strong>Fordelingsnøgle (Cost driver):</strong> Montagetimer ---&gt; Omkostningsobjekt</li></ul>
+                 </li>
+                 <li><strong>Aktivitetsområde:</strong> Test
+                     <ul><li><strong>Fordelingsnøgle (Cost driver):</strong> Antal testtimer ---&gt; Omkostningsobjekt</li></ul>
+                 </li>
+                 <li><strong>Aktivitetsområde:</strong> Emballering
+                     <ul><li><strong>Fordelingsnøgle (Cost driver):</strong> Antal prod. enheder ---&gt; Omkostningsobjekt</li></ul>
+                 </li>
+            </ul>
+            <figcaption>Figur 8.6 Den nye ABC-kalkulationsmodel for en given ordre</figcaption>
+        </figure>
+
+        <p>Det ses i <a href="#tabel8.5">tabel 8.5</a> på næste side, at det samlede dækningsbidrag ikke er ændret ved overgang til ABC-systemet.</p>
+        <p class="page-ref">7/11</p>
+    </section>
+    <hr>
+
+    <!-- Page 23 -->
+    <section>
+        <table id="tabel8.5" class="cost-table">
+             <caption>Tabel 8.5 Rentabilitet ifølge ABC-modellen</caption>
+             <thead>
+                <tr>
+                    <th></th><th></th><th></th>
+                    <th colspan="2">Stykkalkulation</th>
+                    <th colspan="3">Hele virksomheden</th>
+                </tr>
+                <tr>
+                     <th></th><th>Cost driver</th><th>Sats pr. enhed</th>
+                     <th>Forbrug Produkt A</th><th>Forbrug Produkt B</th>
+                     <th>Produkt A</th><th>Produkt B</th><th>Året i alt</th>
+                </tr>
+             </thead>
+             <tbody>
+                <tr><td>Afsætning i stk.</td><td></td><td></td><td>1</td><td>1</td><td>5.000</td><td>1.000</td><td></td></tr>
+                <tr><td colspan="8"><strong>Direkte produktionsomkostninger</strong></td></tr>
+                <tr><td>Direkte materialer</td><td></td><td></td><td>450,00</td><td>210,00</td><td>2.250.000</td><td>210.000</td><td>2.460.000</td></tr>
+                <tr><td>Direkte løn</td><td></td><td></td><td>24,00</td><td>42,00</td><td>120.000</td><td>42.000</td><td>162.000</td></tr>
+                <tr><td><strong>Direkte produktionsomkostninger i alt</strong></td><td></td><td></td><td><strong>474,00</strong></td><td><strong>252,00</strong></td><td><strong>2.370.000</strong></td><td><strong>252.000</strong></td><td><strong>2.622.000</strong></td></tr>
+                <tr><td colspan="8"><strong>Indirekte produktionsomkostninger</strong></td></tr>
+                <tr><td>Materialehåndtering</td><td>Antal dele</td><td>3,73</td><td>50</td><td>80</td><td>186,36</td><td>298,18</td><td>931.818</td><td>298.182</td><td>1.230.000</td></tr>
+                <tr><td>Automatisk produktion</td><td>Antal dele</td><td>1,16</td><td>30</td><td>60</td><td>34,71</td><td>69,43</td><td>173.571</td><td>69.429</td><td>243.000</td></tr>
+                <tr><td>Manuel montage</td><td>Montagetimer</td><td>405,00</td><td>0,1</td><td>0,1</td><td>40,50</td><td>40,50</td><td>202.500</td><td>40.500</td><td>243.000</td></tr>
+                <tr><td>Test</td><td>Testtid</td><td>231,43</td><td>0,1</td><td>0,2</td><td>23,14</td><td>46,29</td><td>115.714</td><td>46.286</td><td>162.000</td></tr>
+                <tr><td>Emballering</td><td>Antal enheder</td><td>27,00</td><td>1</td><td>1</td><td>27,00</td><td>27,00</td><td>135.000</td><td>27.000</td><td>162.000</td></tr>
+                <tr><td><strong>Indirekte produktionsomkostninger i alt</strong></td><td></td><td></td><td></td><td></td><td><strong>311,72</strong></td><td><strong>481,40</strong></td><td><strong>1.558.604</strong></td><td><strong>481.396</strong></td><td><strong>2.040.000</strong></td></tr>
+                <tr><td><strong>Produktionsomkostninger i alt</strong></td><td></td><td></td><td></td><td></td><td><strong>785,72</strong></td><td><strong>733,40</strong></td><td><strong>3.928.604</strong></td><td><strong>733.396</strong></td><td><strong>4.662.000</strong></td></tr>
+                <tr><td>Salgspris</td><td></td><td></td><td></td><td></td><td>1.200,00</td><td>900,00</td><td>6.000.000</td><td>900.000</td><td>6.900.000</td></tr>
+                <tr><td>Dækningsbidrag</td><td></td><td></td><td></td><td></td><td>414,28</td><td>166,60</td><td>2.071.396</td><td>166.604</td><td>2.238.000</td></tr>
+                <tr><td>Dækningsgrad (DG)</td><td></td><td></td><td></td><td></td><td>34,5%</td><td>18,5%</td><td>34,5%</td><td>18,5%</td><td>32,4%</td></tr>
+            </tbody>
+        </table>
+
+        <p>Sammenligner man den traditionelle situation med ABC-modellen, ses det, at de direkte og de indirekte produktionsomkostninger og dermed også dækningsbidraget totalt set er uændrede. Men fordelingen på de to produkter er ændret. Der er således flyttet indirekte produktionsomkostninger fra produkt A til produkt B, således at A nu fremtræder mere rentabelt end tidligere, mens produkt B har fået en lavere dækningsgrad.</p>
+        <p>Virksomheden har således ikke forøget sin indtjening her og nu. Men den har forbedret sin viden om, hvordan aktiviteten i virksomheden påvirker omkostningerne. Denne viden kan på længere sigt føre til en forbedring i indtjeningen.</p>
+        <p>I eksemplet ses det, at formodningen om, at produkt A er mere profitabelt, end det kom til udtryk i den tidligere rapportering, viste sig at holde stik. Årsagerne kan findes ved at studere produkternes cost drivere i <a href="#tabel8.6">tabel 8.6</a> nedenfor.</p>
+
+        <table id="tabel8.6" class="cost-table comparison-table">
+             <caption>Tabel 8.6 Sammenligning mellem det gamle kalkulationssystem og ABC-modellen</caption>
+             <thead>
+                <tr><th></th><th>Produkt A</th><th>Produkt B</th></tr>
+             </thead>
+             <tbody>
+                <tr><td>Omkostning pr. stk. i det gamle system</td><td>819,00</td><td>567,00</td></tr>
+                <tr><td>Omkostning pr. stk. i ABC-systemet</td><td>785,72</td><td>733,40</td></tr>
+                <tr><td>Salgspris</td><td>1.200,00</td><td>900,00</td></tr>
+                <tr><td>Dækningsbidrag pr. stk. i det gamle system</td><td>381,00</td><td>333,00</td></tr>
+                <tr><td>Dækningsbidrag pr. stk. i ABC-systemet</td><td>414,28</td><td>166,60</td></tr>
+                <tr><td>Dækningsgrad i det gamle system</td><td>31,8%</td><td>37,0%</td></tr>
+                <tr><td>Dækningsgrad i ABC-systemet</td><td>34,5%</td><td>18,5%</td></tr>
+            </tbody>
+        </table>
+        <p class="page-ref">8/11</p>
+    </section>
+    <hr>
+
+    <!-- Page 24 -->
+    <section>
+        <p>ABC-systemet skaber synlighed og giver informationer, som gør det lettere at fokusere på forbedringsmuligheder.</p>
+
+        <h4>Synliggørelse i design</h4>
+        <p>Designafdelingen kan her se, at hvis antallet af dele i nye produkter kan reduceres, kan mange omkostninger spares i materialehåndtering, montage og test.</p>
+        <p>En mulig løsning kunne være at få flere dele samlet til underkomponenter allerede hos leverandørerne (outsourcing). Det er måske dyrere i indkøb, men det kan give en besparelse internt.</p>
+
+        <h4>Synliggørelse i emballering</h4>
+        <p>Emballering koster 27 kroner pr. enhed. Den ansvarlige for denne aktivitet vil være interesseret i at finde ud af, om dette tal kan nedbringes. Dette kan ske ved at undersøge den tid og de aktiviteter, der gennemføres i forbindelse med emballering (rengøring, hente emballage, emballere mv.).</p>
+        <p>Bemærk, hvordan ABC-systemet inddrager ikke-finansielle variable i styringen som antal dele, testtimer, montagetimer osv., altså de fysiske forhold, som ligger bag omkostningsskabelsen, og som ofte er mere synlige og forståelige for medarbejderne i produktionen.</p>
+        <p>ABC-systemet består hos Eltron af flere indirekte fordelingsnøgler, nemlig fem mod tidligere to. Systemet er derfor ikke blevet lettere at administrere. Men ved at gå fra to til fem aktivitetsområder har virksomheden opnået, at de enkelte aktivitetsområder er mere homogene, så de består af omkostninger, som på mere ensartet måde varierer med de fastlagte cost drivere. Dermed bliver kalkulationen alt andet lige mere præcis.</p>
+
+        <h3>8.3.3 Tilbudskalkulation med en ABC-model</h3>
+        <p>At afgive tilbud til potentielle kunder er ofte en meget omfattende opgave. Man skal have en specifikation af leverancens art og omfang, og man skal have beregnet det forventede omkostningsforbrug, inden en pris kan afgives med baggrund i virksomhedens pris og avancepolitik.</p>
+        <p>Her er en ABC-regnearksmodel meget anvendelig. I <a href="#tabel8.7">tabel 8.7</a> er vist et udkast til en sådan. Efter indtastning beregnes tilbudsprisen til kunden.</p>
+        <p class="page-ref">9/11</p>
+    </section>
+    <hr>
+
+    <!-- Page 25 -->
+    <section>
+        <table id="tabel8.7" class="cost-table">
+            <!-- Table header structure based on layout -->
+            <thead>
+                <tr>
+                    <th colspan="2">Ordrenr. 1265 Produkt X102<br>Kunde: Firma Hansen A/S<br>Udført af salgskonsulent H. Nielsen</th>
+                    <th colspan="2">120 stk.<br>Lev. 23. januar</th>
+                    <th>Produkt X102</th>
+                    <th>Produkt X102</th>
+                </tr>
+                <tr>
+                    <th colspan="4"></th>
+                    <th>1</th>
+                    <th>120</th>
+                 </tr>
+             </thead>
+             <tbody>
+                 <tr><td>Afsætning i stk.</td><td></td><td></td><td></td><td></td><td></td></tr>
+                 <tr><td colspan="6"><strong>Direkte produktionsomkostninger</strong></td></tr>
+                 <tr><td>Direkte materialer</td><td></td><td></td><td></td><td>600,00</td><td>72.000</td></tr>
+                 <tr><td>Direkte løn</td><td></td><td></td><td></td><td>32,00</td><td>3.840</td></tr>
+                 <tr><td><strong>Direkte produktionsomkostninger i alt</strong></td><td></td><td></td><td></td><td><strong>632,00</strong></td><td><strong>75.840</strong></td></tr>
+                 <tr><td>.</td><td></td><td></td><td></td><td></td><td></td></tr>
+                 <tr><td colspan="6"><strong>Indirekte produktionsomkostninger</strong></td></tr>
+                 <tr><th></th><th>Cost driver</th><th>Sats pr. enhed</th><th>Forbrug Produkt</th><th></th><th></th></tr>
+                 <tr><td>Materialehåndtering</td><td>Antal dele</td><td>3,73</td><td>55</td><td>205,00</td><td>24.600</td></tr>
+                 <tr><td>Automatisk produktion</td><td>Antal dele</td><td>1,16</td><td>30</td><td>34,71</td><td>4.166</td></tr>
+                 <tr><td>Manuel montage</td><td>Montagetimer</td><td>405,00</td><td>0,1</td><td>40,50</td><td>4.860</td></tr>
+                 <tr><td>Test</td><td>Testtid</td><td>231,43</td><td>0,1</td><td>23,14</td><td>2.777</td></tr>
+                 <tr><td>Emballering</td><td>Antal enheder</td><td>27,00</td><td>1</td><td>27,00</td><td>3.240</td></tr>
+                 <tr><td><strong>Indirekte produktionsomkostninger i alt</strong></td><td></td><td></td><td></td><td><strong>330,36</strong></td><td><strong>39.643</strong></td></tr>
+                 <tr><td>.</td><td></td><td></td><td></td><td></td><td></td></tr>
+                 <tr><td><strong>Produktionsomkostninger i alt</strong></td><td></td><td></td><td></td><td><strong>962,36</strong></td><td><strong>115.482,86</strong></td></tr>
+                 <tr><td>.</td><td></td><td></td><td></td><td></td><td></td></tr>
+                 <tr><td>Avancetillæg i % af omkostninger i alt</td><td></td><td></td><td>33 %</td><td>317,58</td><td>38.109,34</td></tr>
+            <!-- Table continues on next page -->
+            <p class="page-ref">10/11</p>
+    </section>
+    <hr>
+
+    <!-- Page 26 -->
+    <section>
+        <!-- Continuation of Tabel 8.7 -->
+                 <tr><td>.</td><td></td><td></td><td></td><td></td><td></td></tr>
+                 <tr><td><strong>Tilbudspris</strong></td><td></td><td></td><td></td><td><strong>1.279,94</strong></td><td><strong>153.592,20</strong></td></tr>
+            </tbody>
+        </table>
+        <p class="caption">Tabel 8.7 Model til tilbudskalkulation ud fra ABC-modellen</p>
+        <p class="page-ref">11/11</p>
+    </section>
+    <hr>
+
+     <!-- Page 27 -->
+    <section>
+        <h2>8.4. Kunderentabilitet</h2>
+         <p class="breadcrumb">HR driftsoekonomi-4udg.digi.hansreitzel.dk</p>
+
+        <p><strong>Sidens indhold</strong></p>
+        <ul>
+            <li>8.4.1 Kundernes lønsomhedsprofiler</li>
+            <li>8.4.2 Kunderentabilitet og 80/20-reglen</li>
+        </ul>
+
+        <p>Ligesom produkter kan have forskellig lønsomhedsprofil, kan kunder også have det. Selvom kunderne køber de samme produkter og i samme mængder, vil måden, hvorpå det sker, ofte give anledning til et forskelligt ressourceforbrug og dermed forskellige omkostninger. Nedenfor vises i <a href="#figur8.7">figur 8.7</a> et eksempel på to kundeprofiler. Kunde X er en god og let kunde, mens Kunde Y er en vanskelig og dyr kunde. Sidstnævnte er et forhold, der kendes i alle brancher og ofte benævnes tidsrøver.</p>
+
+        <figure id="figur8.7">
+             <table class="comparison-table">
+                 <caption>Figur 8.7 Eksempel på forskellige kundeprofiler</caption>
+                 <thead>
+                     <tr>
+                        <th>Egenskaber</th>
+                        <th>Kunde X</th>
+                        <th>Kunde Y</th>
+                    </tr>
+                 </thead>
+                 <tbody>
+                     <tr>
+                        <td>Leveringssted</td>
+                        <td>Centralt lager</td>
+                        <td>Individuelle butikker</td>
+                    </tr>
+                    <tr>
+                        <td>Leveringstid</td>
+                        <td>Krav om 14 dages leveringstid</td>
+                        <td>Krav om 7 dages leveringstid</td>
+                    </tr>
+                    <tr>
+                        <td>Ordrestørrelse</td>
+                        <td>Få, relativt store og sjældne leverancer</td>
+                        <td>Mange, relativt små og hyppige leverancer</td>
+                    </tr>
+                    <tr>
+                        <td>Salgspersonale</td>
+                        <td>Ordreafgivelse sker elektronisk til central salgsafdeling</td>
+                        <td>Hyppige besøg hos individuelle butikker, hvor der tages individuelle ordrer</td>
+                    </tr>
+                    <tr>
+                        <td>Produktmiks</td>
+                        <td>Etablerede produkter med relativt høje dækningsgrader</td>
+                        <td>Nye produkter med relativt lave dækningsgrader</td>
+                    </tr>
+                    <tr>
+                        <td>Marketing</td>
+                        <td>Ingen udstillinger hos kunden</td>
+                        <td>Hyppige udstillinger i de enkelte butikker</td>
+                    </tr>
+                    <tr>
+                        <td>Betaling</td>
+                        <td>Kontant og til tiden</td>
+                        <td>På kredit og ofte for sent</td>
+                    </tr>
+                </tbody>
+             </table>
+        </figure>
+
+
+        <h3>8.4.1 Kundernes lønsomhedsprofiler</h3>
+        <p>Når det samlede overskud er opgjort i Eltron A/S, begynder et større arbejde med at udrede, hvor i virksomheden man har tjent, og hvor man har tabt penge.</p>
+        <p>I et tidligere afsnit blev produkternes lønsomhedsprofil undersøgt. Tilsvarende kan kunder, distributionskanaler og geografiske områder være grundlag for en videre analyse.</p>
+        <p>I det følgende skal vises en analyse på kundeniveau.</p>
+        <p class="page-ref">1/7</p>
+    </section>
+    <hr>
+
+    <!-- Page 28 -->
+    <section>
+        <h4>Eksempel</h4>
+        <p>Kunderne X og Y analyseres. For nemhed skyld forudsættes det, at begge kun efterspørger produkt A, og at de begge køber lige meget. Så egentlig skulle man tro, at de var lige gode kunder, men sådan behøver det ikke være.</p>
+        <p>Opgaven er at henføre indtægterne og omkostningerne til de enkelte kunder.</p>
+        <p>På indtægtssiden er det almindeligvis rimelig nemt, idet man ud fra faktureringen kan se, hvilke varer der er solgt til de enkelte kunder. Eventuelle rabatter fremgår også, således at nettoomsætningen kan findes.</p>
+        <p>Omkostningssiden er betydeligt vanskeligere at opdele, specielt for virksomheder med høje faste omkostninger. Omkostningerne til en salgsbrochure, der beskriver alle virksomhedens produkter, kan være vanskelige at fordele ud på virksomhedens kunder.</p>
+        <p>I <a href="#tabel8.8">tabel 8.8</a> ses, hvorledes ABC-teknikken kan supplere den almindelige dækningsbidragsanalyse med en beregning, som viser kundernes forskellige træk på de leveringsydelser, som typisk ydes i forbindelse med den samlede levering.</p>
+
+        <table id="tabel8.8" class="cost-table">
+            <caption>Tabel 8.8 Kunderentabilitetsanalyse ved hjælp af ABC-systemet</caption>
+             <thead>
+                <tr><th colspan="2">Produkt A</th><th></th><th></th><th></th><th></th></tr>
+                <tr><td>Salgspris</td><td>1.200,00</td><td>kr. pr. stk.</td><td></td><td></td><td></td></tr>
+                <tr><td>Produktionsomkostninger i alt</td><td>785,72</td><td>kr. pr. stk.</td><td></td><td></td><td></td></tr>
+                <tr><td>Dækningsbidrag</td><td>414,28</td><td>kr. pr. stk.</td><td></td><td></td><td></td></tr>
+                <tr><th></th><th></th><th></th><th>Kunde X</th><th>Kunde Y</th><th>I alt</th></tr>
+                <tr><td>Afsætning i stk.</td><td></td><td></td><td>2.000</td><td>2.000</td><td></td></tr>
+             </thead>
+             <tbody>
+                 <tr><td>Omsætning</td><td></td><td></td><td>2.400.000</td><td>2.400.000</td><td>4.800.000</td></tr>
+                 <tr><td>Produktionsomkostninger i alt</td><td></td><td></td><td>1.571.442</td><td>1.571.442</td><td>3.142.883</td></tr>
+                 <tr><td><strong>Dækningsbidrag I</strong></td><td></td><td></td><td><strong>828.558</strong></td><td><strong>828.558</strong></td><td><strong>1.657.117</strong></td></tr>
+                 <tr><td><strong>Dækningsgrad I</strong></td><td></td><td></td><td><strong>34,5%</strong></td><td><strong>34,5%</strong></td><td><strong>34,5%</strong></td></tr>
+                 <tr><th>Kundeomkostninger</th><th>Cost driver</th><th>Sats pr. enhed</th><th>Forbrug Kunde X</th><th>Forbrug Kunde Y</th><th></th><th></th></tr>
+                 <tr><td>Ordrebehandling</td><td>Antal ordrer</td><td>950</td><td>12</td><td>52</td><td>11.400</td><td>49.400</td><td>60.800</td></tr>
+                 <tr><td>Ordreplukning og emballering</td><td>Antal ordrer</td><td>750</td><td>12</td><td>52</td><td>9.000</td><td>39.000</td><td>48.000</td></tr>
+                 <tr><td>Transport/udlevering</td><td>Km pr. tur</td><td></td><td>100</td><td>200</td><td></td><td></td><td></td></tr>
+                 <tr><td></td><td>Antal ordrer</td><td>km pr. tur</td><td>15</td><td>1.200</td><td>10.400</td><td>18.000</td><td>156.000</td><td>174.000</td></tr>
+                 <tr><td>Renter (kreditomkostninger)</td><td>Kredittid i mdr.</td><td></td><td>1</td><td>2</td><td></td><td></td><td></td></tr>
+                 <tr><td></td><td>Ydet kredit i kr.</td><td>2%</td><td>200.000</td><td>400.000</td><td>4.000</td><td>8.000</td><td>12.000</td></tr>
+                 <tr><td><strong>Kundeomkostninger i alt</strong></td><td></td><td></td><td></td><td></td><td><strong>42.400</strong></td><td><strong>252.400</strong></td><td><strong>294.800</strong></td></tr>
+                 <tr><td><strong>Dækningsbidrag II</strong></td><td></td><td></td><td></td><td></td><td><strong>786.158</strong></td><td><strong>576.158</strong></td><td><strong>1.362.317</strong></td></tr>
+                 <tr><td><strong>Dækningsgrad II</strong></td><td></td><td></td><td></td><td></td><td><strong>32,8%</strong></td><td><strong>24,0%</strong></td><td><strong>28,4%</strong></td></tr>
+            </tbody>
+        </table>
+
+        <p>Det ses, at det samlede dækningsbidrag I efter produktionsomkostninger er på 1.657.117 kr., og at begge kunder køber og bidrager lige meget og derfor umiddelbart anses for at være lige rentable.</p>
+        <p>Når kundeomkostninger til ordrebehandling, lagerhåndtering, transport og finansiering er fratrukket, er det oprindelige dækningsbidrag I på 1.657.117 kr. imidlertid reduceret med kundeomkostningerne på i alt 294.800 kr. til 1.362.317 kr. i dækningsbidrag II.</p>
+
+        <h4>Omkostningstræk</h4>
+        <!-- Text continues on next page -->
+         <p class="page-ref">2/7</p>
+    </section>
+    <hr>
+
+    <!-- Page 29 -->
+    <section>
+        <p>Spørgsmålet er nu, om de to kunder også har et ens træk på kundeomkostningerne. Da de to kunder er meget forskellige, er det ikke sandsynligt.</p>
+        <p>Ud over at købe virksomhedens produkt modtager kunderne også en service i forbindelse med deres køb. Servicen trækker på virksomhedens ressourcer og koster derfor penge.</p>
+        <p>Af eksemplet ses, at kunde X bestiller og får leveret varer 12 gange om året. Kørselsafstanden til kunde X er 100 km, og der ydes en måneds kredit.</p>
+        <p>Kunde Y bestiller hver uge og kræver ugentlige leveringer til sin adresse, som ligger 200 km borte. Kunde Y får to måneders kredit.</p>
+        <p>Umiddelbart ses, at de to kunder har en meget forskellig leverings- og kreditprofil. Virksomhedens omkostninger i forbindelse med de to kunder kan opgøres ved anvendelse af ABC-metoden.</p>
+        <p>Først identificeres de aktiviteter, kunderne trækker på, fx administrativ ordrebehandling. Derefter identificeres, hvad der driver de administrative omkostninger til ordrebehandling, altså de såkaldte cost drivere. Det kan være antallet af ordrer, ordrernes størrelse, ordretidspunktet osv., der er afgørende for ressourcetrækket. I eksemplet er det antallet af ordrer.</p>
+        <p>Dernæst estimeres, hvad ordrebehandlingen i gennemsnit koster pr. ordre. Beløbet er her 950 kroner pr. ordre, som er beregnet ved, at virksomhedens samlede årlige ordrebehandlingsomkostning er divideret med årets forventede antal kundeordrer.</p>
+        <p>Med udgangspunkt i, at kunde X har månedlig levering, bliver den årlige omkostning for kunde X 12 * 950 kr. = 11.400 kr.</p>
+        <p>Eksemplet illustrerer, hvordan forskelle med hensyn til ordrehåndtering/lagerhåndtering/transport/kreditgivning kan indvirke kraftigt på den endelige rentabilitet i de to kundeforhold.</p>
+        <p>I eksemplet her er kunde X og Y lige rentable, når der ses på dækningsbidrag I alene. Men de er meget forskellige, når der ses på dækningsbidrag II.</p>
+        <p>For virksomheden kan kalkulationen have betydning for:</p>
+        <ul>
+            <li>Styring af kundesammensætningen</li>
+            <li>Omkostningsstyringen – den større omkostningsgennemsigtighed giver viden om, hvordan omkostninger opstår og kan påvirkes.</li>
+        </ul>
+        <p>Betydning af forskellige rabatforhold og forskelligt produktmiks hos de to kunder er ikke inddraget i ovennævnte analyse.</p>
+        <p>I ovennævnte eksempel blev det forudsat, at begge kunder kun køber et og samme produkt, nemlig produkt A. Havde de fx købt både produkt A og B i forskellige mængder, dvs. haft et forskelligt produktmiks, ville dette forhold spille ind på vurderingen af, hvor</p>
+        <p class="page-ref">3/7</p>
+    </section>
+    <hr>
+
+    <!-- Page 30 -->
+    <section>
+        <p>rentable kunderne er i forhold til hinanden.</p>
+
+        <h3>8.4.2 Kunderentabilitet og 80/20-reglen</h3>
+        <p>Eltron A/S ønsker nu at skabe sig et samlet overblik over kundernes profitabilitet. Regnskabsafdelingen har udskrevet en kundestatistik som vist i <a href="#tabel8.9">tabel 8.9</a>. Her ses en alfabetisk kundeliste, hvoraf periodens indtjening (dækningsbidrag) på de respektive kunder fremgår.</p>
+
+        <table id="tabel8.9" class="cost-table">
+             <caption>Tabel 8.9 Eksempel på kundestatistik over dækningsbidrag II</caption>
+             <thead>
+                <tr>
+                    <th>Kunde</th><th>DB II 1.000 kr.</th>
+                    <th>Kunde</th><th>DB II 1.000 kr.</th>
+                </tr>
+             </thead>
+             <tbody>
+                <tr><td>Andersen</td><td>742</td><td>Isaksen</td><td>70</td></tr>
+                <tr><td>Bendtsen</td><td>50</td><td>Jansen</td><td>34</td></tr>
+                <tr><td>Christiansen</td><td>488</td><td>Keops</td><td>1</td></tr>
+                <tr><td>Drewsen</td><td>125</td><td>Larsen</td><td>60</td></tr>
+                <tr><td>Enoksen</td><td>119</td><td>Markus</td><td>-113</td></tr>
+                <tr><td>Frandsen</td><td>110</td><td>Nielsen</td><td>-53</td></tr>
+                <tr><td>Garner</td><td>-180</td><td>Olsen</td><td>102</td></tr>
+                <tr><td>Hansen</td><td>45</td><td><strong>I alt</strong></td><td><strong>1600</strong></td></tr>
+            </tbody>
+        </table>
+
+        <p>Det forudsættes, at virksomheden har anvendt ABC-systemet som vist i det foranstående til fordeling af de indirekte omkostninger.</p>
+        <p>Virksomheden ønsker at få et systematisk overblik over, hvilke kunder der er gode henholdsvis dårlige kunder. Man rangordner derfor kunderne i faldende orden ud fra indtjeningen (dækningsbidrag II).</p>
+        <p>I <a href="#tabel8.10">tabel 8.10</a> ses, at den mest profitable kunde er Andersen med en indtjening på 742.000 kroner. Dernæst kommer kunderne Christiansen og Drewsen. Ved inddragelse af de to kolonner til højre ses, at de tre mest fordelagtige kunder udgør 20 procent af kundemassen, men indbringer 85 procent af den samlede indtjening.</p>
+
+        <table id="tabel8.10" class="cost-table">
+            <thead>
+                 <tr>
+                    <th>Nr.</th><th>Kunde</th>
+                    <th>DB II 1.000 kr.</th>
+                    <th>DB II Akkumuleret 1.000 kr.</th>
+                    <th>DB II Akkumuleret %</th>
+                    <th>Kundeandel %</th>
+                 </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td><td>Andersen</td><td>742</td><td>742</td><td>46 %</td><td>7 %</td>
+                 </tr>
+        <!-- Table continues on next page -->
+         <p class="page-ref">4/7</p>
+    </section>
+    <hr>
+
+     <!-- Page 31 -->
+    <section>
+        <!-- Continuation of Tabel 8.10 -->
+                <tr><td>2</td><td>Christiansen</td><td>488</td><td>1.230</td><td>77 %</td><td>13 %</td></tr>
+                <tr><td>3</td><td>Drewsen</td><td>125</td><td>1.355</td><td>85 %</td><td>20 %</td></tr>
+                <tr><td>4</td><td>Enoksen</td><td>119</td><td>1.474</td><td>92 %</td><td>27 %</td></tr>
+                <tr><td>5</td><td>Frandsen</td><td>110</td><td>1.584</td><td>99 %</td><td>33 %</td></tr>
+                <tr><td>6</td><td>Olsen</td><td>102</td><td>1.686</td><td>105 %</td><td>40 %</td></tr>
+                <tr><td>7</td><td>Isaksen</td><td>70</td><td>1.756</td><td>110 %</td><td>47 %</td></tr>
+                <tr><td>8</td><td>Larsen</td><td>60</td><td>1.816</td><td>114 %</td><td>53 %</td></tr>
+                <tr><td>9</td><td>Bendtsen</td><td>50</td><td>1.866</td><td>117 %</td><td>60 %</td></tr>
+                <tr><td>10</td><td>Hansen</td><td>45</td><td>1.911</td><td>119 %</td><td>67 %</td></tr>
+                <tr><td>11</td><td>Jansen</td><td>34</td><td>1.945</td><td>122 %</td><td>73 %</td></tr>
+                <tr><td>12</td><td>Keops</td><td>1</td><td>1.946</td><td>122 %</td><td>80 %</td></tr>
+                <tr><td>13</td><td>Nielsen</td><td>-53</td><td>1.893</td><td>118 %</td><td>87 %</td></tr>
+                <tr><td>14</td><td>Markus</td><td>-113</td><td>1.780</td><td>111 %</td><td>93 %</td></tr>
+                <tr><td>15</td><td>Garner</td><td>-180</td><td>1.600</td><td>100 %</td><td>100 %</td></tr>
+            </tbody>
+        </table>
+         <p class="caption">Tabel 8.10 Eksempel på sorteret kundestatistik over dækningsbidrag II</p>
+
+        <p>Dette forhold ser man i mange sammenhænge. Forholdet har fået navnet 80/20-reglen, undertiden også kaldet Paretofordelingen. Analyseformen gør, at virksomheden på en hurtig og effektiv måde kan identificere, hvilke kunder den tjener på, og hvor den sætter penge til.</p>
+        <p>Grafen, som afbilder forholdet, er vist i <a href="#figur8.8">figur 8.8</a>. Den kaldes undertiden en whale curve.</p>
+         <p class="page-ref">5/7</p>
+    </section>
+    <hr>
+
+    <!-- Page 32 -->
+    <section>
+        <figure id="figur8.8">
+            <!-- Description of the graph -->
+            <p>Grafen viser den akkumulerede andel af dækningsbidrag II (y-aksen, fra 0% til ca. 120% og ned til 100%) mod den akkumulerede kundeandel (x-aksen, fra 0% til 100%). Kurven stiger stejlt i starten (de mest profitable kunder bidrager meget), flader ud og når et toppunkt over 100%, hvorefter den falder ned til 100% (de mindst profitable/tabsgivende kunder trækker ned).</p>
+            <figcaption>Figur 8.8 Eksempel på sorteret kundestatistik vist i whale curve</figcaption>
+        </figure>
+
+        <p>Når virksomheden ved hjælp af ABC-kundelønsomhedsberegningerne har fået identificeret de gode og dårlige kunder, kan den tage stilling til, om den vil droppe de dårlige kunder, eller om den vil forsøge at gøre de dårlige kunder til gode kunder.</p>
+        <p>Før man dropper de dårlige kunder, er der dog en række tiltag, som virksomheden kan gøre for at forbedre lønsomheden, eksempelvis følgende:</p>
+        <ul>
+            <li>Introducere ekstra betaling for dyrere aktiviteter</li>
+            <li>Styre hver enkelt kundes træk på ressourcer og omkostninger på et mere detaljeret niveau</li>
+            <li>Reducere eventuelle serviceydelser</li>
+            <li>Ændre på kundens ordremiks mod dyrere produkter og serviceydelser med højere marginal indtjening</li>
+            <li>Give rabatter for at opnå større ordrevolumen til kunder med lavt træk på ressourcer og omkostninger</li>
+            <li>Stramme op på betalingsbetingelserne</li>
+            <li>Øge prisen</li>
+        </ul>
+        <p>På trods af mulighederne for at gøre en række tiltag over for uprofitable kunder, så kan der være kunder, som det ikke er muligt at opnå en positiv indtjening på. I så fald bør man skille sig af med kunden.</p>
+        <p>Med hensyn til de gode kunder så er det vigtigt, at man overvejer, hvorledes man kan tjene yderligere på disse. Her er det relevant at afdække områder, hvor man kan øge samarbejdet yderligere og dermed skabe mersalg. Ligeledes bør virksomheden være meget opmærksom på kvalitet og service, da kunden ofte opsøges af konkurrenter.</p>
+        <p>Præcis information om kundelønsomhed er meget afgørende for at styre sin indtjening.</p>
+        <p class="page-ref">6/7</p>
+    </section>
+    <hr>
+
+    <!-- Page 33 -->
+    <section>
+        <p>Det er også væsentligt at have fokus på kundernes adfærd, hvis de er i færd med at forlade virksomheden. Tegn på dette kan fx være følgende:</p>
+        <ul>
+            <li>Den årlige omsætning til kunden er faldende</li>
+            <li>Kunden er stoppet med at købe et eller flere af virksomhedens produkter eller services</li>
+            <li>Kunden er blevet længere om at acceptere virksomhedens tilbud</li>
+            <li>Kontakten med kundens ledelse er blevet mindre</li>
+        </ul>
+        <p>I sådanne tilfælde er det vigtigt, at virksomheden får lokaliseret, hvad årsagen er til kundens ændrede adfærd.</p>
+        <p class="page-ref">7/7</p>
+    </section>
+    <hr>
+
+    <!-- Page 34 -->
+    <section>
+        <h2>8.5. Target costing/pricing</h2>
+        <p class="breadcrumb">HR driftsoekonomi-4udg.digi.hansreitzel.dk</p>
+
+        <p>Stigende konkurrence har bl.a. pga. globaliseringen af markederne betydet, at mange virksomheder har skullet fokusere på en bedre styring af deres omkostninger. Når prisen bliver bestemt af markedet og konkurrenterne, kan virksomheden kun sikre sin indtjening gennem styring af omkostningerne.</p>
+        <p>Virksomheden står over for en baglæns kalkulation.</p>
+        <p>
+            Forventet salgspris<br>
+            - Ønsket overskud<br>
+            = Overgrænse for omkostninger
+        </p>
+
+        <p>Target costing er en prissætningsmetode, som er udviklet i japanske virksomheder og derfra er spredt til den øvrige verden. Target costing defineres som et ledelsesværktøj, der anvendes med henblik på at reducere et produkts samlede omkostninger. Det sker ved hjælp af involvering af medarbejderne fra produktion, produktudvikling, logistik, research, design etc.</p>
+        <p>Target cost er den overgrænse for omkostningerne for et produkt, der sikrer, at virksomheden kan tjene en ønsket profit. Target cost fastsættes, så virksomheden kan konkurrere og overleve i markedet på længere sigt.</p>
+        <p>Nedenfor er et simpelt eksempel på metodens anvendelse.</p>
+
+        <h4>Eksempel</h4>
+        <p>I Eltron A/S oplever man stigende konkurrence, både fra gamle konkurrenter, men også fra en række nytilkomne virksomheder, som forsøger at trænge ind på markedet.</p>
+        <p>Eltrons salgsafdeling har råbt vagt i gevær. Hvis virksomheden skal opretholde den nuværende aktivitet fremover, må man acceptere et prisfald på 5 % på produkterne A og B.</p>
+        <p>Ledergruppen finder sagen meget alvorlig. Man lægger stor vægt på at opretholde det aktivitetsniveau (den afsætning), som man efter mange år har kæmpet sig frem til. Eltron har nedsat en tværorganisatorisk arbejdsgruppe, som skal komme med forslag til løsninger. Ud over at afsætningen ønskes fastholdt, ønsker man den nuværende dækningsgrad på produkterne A og B på hhv. 34,5 % og 18,5 % fastholdt. Det er således omkostningerne, som skal reduceres.</p>
+        <p class="page-ref">1/5</p>
+    </section>
+    <hr>
+
+    <!-- Page 35 -->
+    <section>
+        <p>Som det fremgår af <a href="#tabel8.11">tabel 8.11</a>, er de samlede tilladte omkostninger (target costs) 4.428.900 kr. mod tidligere ved samme aktivitetsniveau 4.662.000 kr. (se <a href="#tabel8.5">tabel 8.5</a>). Man skal således finde omkostningsbesparelser for 233.100 kr.</p>
+
+        <table id="tabel8.11" class="cost-table">
+             <caption>Tabel 8.11 Eksempel på target costing</caption>
+             <thead>
+                <tr>
+                     <th></th>
+                     <th>Produkt A</th><th>Produkt B</th>
+                     <th>Produkt A</th><th>Produkt B</th>
+                     <th>Året i alt</th>
+                </tr>
+             </thead>
+             <tbody>
+                 <tr><td>Forventet afsætning (uændret)</td><td>1</td><td>1</td><td>5.000</td><td>1.000</td><td></td></tr>
+                 <tr><td>Tidligere salgspris</td><td>1200</td><td>900</td><td></td><td></td><td></td></tr>
+                 <tr><td>Tidligere dækningsgrad</td><td>34,5 %</td><td>18,5 %</td><td></td><td></td><td></td></tr>
+                 <tr><td>Ny forventet salgspris</td><td>1140</td><td>855</td><td>5.700.000</td><td>855.000</td><td>6.555.000</td></tr>
+                 <tr><td>Ønsket dækningsbidrag (uændret DG)</td><td>394</td><td>158</td><td>1.967.826</td><td>158.274</td><td>2.126.100</td></tr>
+                 <tr><td><strong>Target omkostninger</strong></td><td><strong>746</strong></td><td><strong>697</strong></td><td><strong>3.732.174</strong></td><td><strong>696.726</strong></td><td><strong>4.428.900</strong></td></tr>
+                 <tr><td>Tidligere omkostninger</td><td>786</td><td>733</td><td>3.928.604</td><td>733.396</td><td>4.662.000</td></tr>
+                 <tr><td><strong>Ønsket omkostningsbesparelse</strong></td><td><strong>39</strong></td><td><strong>37</strong></td><td><strong>196.430</strong></td><td><strong>36.670</strong></td><td><strong>233.100</strong></td></tr>
+             </tbody>
+        </table>
+
+        <p>Den nedsatte arbejdsgruppe består af personale fra salg, indkøb og logistik, økonomi, lager og produktion, herunder udviklingsafdelingen. Arbejdsgruppen følger produkternes vej gennem virksomheden. Forløbet udvides til også at omfatte underleverandørerne. Ligesom man naturligvis også inddrager kundernes situation.</p>
+        <p>Formålet er at finde besparelser på hele forsynings- og værdikæden som vist i <a href="#figur8.9">figur 8.9</a>.</p>
+
+        <figure id="figur8.9">
+            <!-- Simplified flow representation -->
+            <p style="text-align: center; font-weight: bold;">
+                Under-leverandører &rarr; Materiale-håndtering &rarr; Automatisk produktion &rarr; Manuel montage &rarr; Test &rarr; Emballering &rarr; Kunder
+            </p>
+            <figcaption>Figur 8.9 Forsynings- og værdikæde</figcaption>
+        </figure>
+
+        <p>Først ses der på de fem aktivitetsområder, der skaber de indirekte produktionsomkostninger. Ændringerne vises i <a href="#tabel8.12">tabel 8.12</a>.</p>
+        <p class="page-ref">2/5</p>
+    </section>
+    <hr>
+
+    <!-- Page 36 -->
+    <section>
+        <table id="tabel8.12" class="cost-table">
+             <caption>Tabel 8.12 Indirekte produktionsomkostninger i alt og pr. produkt efter besparelser</caption>
+             <thead>
+                 <tr><th colspan="6">Samlet opgørelse</th></tr>
+                 <tr><th>Aktivitetsområder:</th><th>Cost driver</th><th>Årlig omkostning</th><th>Årligt forbrug af cost driver</th><th>Sats</th><th>Besparelse</th></tr>
+             </thead>
+             <tbody>
+                 <tr><td>Materialehåndtering</td><td>Antal dele</td><td>984.000</td><td>264.000</td><td>3,73</td><td>20 % i antal dele</td></tr>
+                 <tr><td>Automatisk produktion</td><td>Antal dele</td><td>218.700</td><td>189.000</td><td>1,16</td><td>10 % i antal dele</td></tr>
+                 <tr><td>Manuel montage</td><td>Montagetimer</td><td>243.000</td><td>600</td><td>405,00</td><td>0%</td></tr>
+                 <tr><td>Test</td><td>Testtid</td><td>81.000</td><td>350</td><td>231,43</td><td>50 % på testtid</td></tr>
+                 <tr><td>Emballering</td><td>Antal enheder</td><td>132.000</td><td>6.000</td><td>22,00</td><td>30.000 kr. på årlige embal.omk.</td></tr>
+                 <tr><td><strong>Indirekte produktionsomk. i alt</strong></td><td></td><td><strong>1.658.700</strong></td><td></td><td><strong>663,31</strong></td><td></td></tr>
+                 <tr><th colspan="6">Opgjort pr. produkt</th></tr>
+                 <tr><th></th><th>Cost driver</th><th>Sats pr. enhed</th><th>Forbrug Produkt A</th><th>Forbrug Produkt B</th><th></th></tr>
+                 <tr><td>Materialehåndtering</td><td>Antal dele</td><td>3,73</td><td>40</td><td>64</td><td></td></tr>
+                 <tr><td>Automatisk produktion</td><td>Antal dele</td><td>1,16</td><td>27</td><td>54</td><td></td></tr>
+                 <tr><td>Manuel montage</td><td>Montagetimer</td><td>405,00</td><td>0,1</td><td>0,1</td><td></td></tr>
+                 <tr><td>Test</td><td>Testtid</td><td>231,43</td><td>0,05</td><td>0,1</td><td></td></tr>
+                 <tr><td>Emballering</td><td>Antal enheder</td><td>22,00</td><td>1</td><td>1</td><td></td></tr>
+             </tbody>
+        </table>
+
+        <h4>Materialehåndtering og automatisk produktion</h4>
+        <p>Da disse er de store omkostningsposter, starter arbejdsgruppen her. Man konstaterer, at antal dele er det, som driver omkostningerne. Hver del/komponent koster 3,73 kr. at håndtere. Dele, som indgår i den automatiske produktion, koster yderligere 1,16 kr. pr. stk.</p>
+        <p>Produktudviklingsafdelingens repræsentant nævner, at man ved at outsource, dvs. overlade det til underleverandørerne at foretage delsamlinger, vil kunne nedbringe antal dele betydeligt. Med det nuværende produktdesign kan 20 % af de hidtidige samlinger flyttes ud til leverandørerne. Det hidtidige driverforbrug for A og B på henholdsvis 50 og 80 dele falder dermed til henholdsvis 40 og 64 dele. Herved vil man spare 20 % af de årlige materialehåndteringsomkostninger, i alt 246.000 kr.</p>
+        <p>I og med at flere dele nu samles hos underleverandører, vil det også mindske antal dele, der skal igennem automatisk produktion. Det hidtidige driverforbrug for A og B på henholdsvis 30 og 60 dele falder nu til henholdsvis 27 og 54 dele. Der forventes således et fald til 10 % færre operationer og dermed en besparelse på ca. 24.000 kr. fra før 243.000 kr. til nu 218.700 kr.</p>
+
+        <h4>Manuel montage</h4>
+        <p>Timeforbrug og dermed omkostninger hertil forventes uændret. Man mener, den nye situation stiller krav til ekstra årvågenhed det første år.</p>
+
+        <h4>Test</h4>
+        <p>Et netop gennemført kvalitetssikringsprojekt forventes at betyde en halvering af testtiden og dermed også testomkostningerne. I alt en besparelse på 81.000 kr.</p>
+        <p class="page-ref">3/5</p>
+    </section>
+    <hr>
+
+    <!-- Page 37 -->
+    <section>
+        <h4>Emballage</h4>
+        <p>Her nævner indkøber og logistikchef, at man er i gang med at samle alle indkøb af emballage hos én leverandør. Dette betyder en besparelse på 30.000 kr.</p>
+        <p>Når man betragter udviklingen, vil man se, at alle omkostningssatser pr. operation er uændrede undtagen omkostningssatsen for emballage. Her har den opnåede besparelse ved leverandørsammenlægning betydet et fald fra 27 kr. til 22 kr. pr. afsat enhed.</p>
+
+        <h4>Direkte produktionsomkostninger</h4>
+        <p>Indkøberen mener, at hvis de pågældende indkøb indsnævres til færre leverandører, vil der kunne opnås besparelser i direkte materialeomkostninger. Omvendt forventes der en stigning, da underleverandørerne skal foretage ekstraarbejde i forbindelse med montage. Netto forventer indkøberen en meromkostning på 6 % eller 147.600 kr. i direkte materialeomkostninger.</p>
+        <p>Da flere montageoperationer foretages hos underleverandører, forventes de direkte lønomkostninger at falde med ca. 30 % svarende til en besparelse på 48.600 kr.</p>
+
+        <h4>Kunderne</h4>
+        <p>Arbejdsgruppen diskuterer, hvorledes kunderne vil forholde sig til operationen. Man bliver enige om, at der ikke vil være en nævneværdig effekt. Kunderne vil ikke opdage, hvad der er sket.</p>
+
+        <h4>Underleverandører</h4>
+        <p>Disse bliver berørt. Virksomheden skal udvide samarbejdsrelationerne med de få tilbageværende leverandører, som man vil koncentrere samarbejdet med. Specielt kvalitetssikring og leveringssikkerhed skal i fokus.</p>
+
+        <h4>Ny kalkulation</h4>
+        <p>Denne nye kalkulation i <a href="#tabel8.13">tabel 8.13</a> viser, at arbejdsgruppen har nået målet og lidt til. De forventede omkostninger forventes at blive 4.379.700 kr. mod target costs på 4.428.900 kr. Der er således ca. 50.000 kr. at give af, givet at alle forudsætninger holder.</p>
+        <p class="page-ref">4/5</p>
+    </section>
+    <hr>
+
+    <!-- Page 38 -->
+    <section>
+        <table id="tabel8.13" class="cost-table">
+             <caption>Tabel 8.13 Omkostningskalkule efter besparelser</caption>
+             <thead>
+                 <tr>
+                    <th></th><th></th>
+                    <th colspan="2">Stykkalkulation</th>
+                    <th colspan="2">Hele virksomheden</th>
+                    <th>Året i alt efter besparelser</th>
+                    <th>Året i alt før besparelser</th>
+                 </tr>
+                 <tr>
+                     <th></th><th>Besparelse</th>
+                     <th>Produkt A</th><th>Produkt B</th>
+                     <th>Produkt A</th><th>Produkt B</th>
+                     <th></th><th></th>
+                 </tr>
+             </thead>
+             <tbody>
+                 <tr><td>Afsætning i stk.</td><td></td><td>1</td><td>1</td><td>5.000</td><td>1.000</td><td></td><td></td></tr>
+                 <tr><td>Direkte materialer</td><td>-6 % (stigning)</td><td>477,00</td><td>222,60</td><td>2.385.000</td><td>222.600</td><td>2.607.600</td><td>2.460.000</td></tr>
+                 <tr><td>Direkte løn</td><td>30 %</td><td>16,80</td><td>29,40</td><td>84.000</td><td>29.400</td><td>113.400</td><td>162.000</td></tr>
+                 <tr><td><strong>Direkte produktionsomkostninger i alt</strong></td><td></td><td><strong>493,80</strong></td><td><strong>252,00</strong></td><td><strong>2.469.000</strong></td><td><strong>252.000</strong></td><td><strong>2.721.000</strong></td><td><strong>2.622.000</strong></td></tr>
+                 <tr><th>Indirekte produktionsomkostninger</th><th>Sats pr. enhed</th><th>Forbrug Produkt A</th><th>Forbrug Produkt B</th><th></th><th></th><th></th><th></th></tr>
+                 <tr><td>Materialehåndtering</td><td>3,73</td><td>40</td><td>64</td><td>149,09</td><td>238,55</td><td>745.455</td><td>238.545</td><td>984.000</td><td>1.230.000</td></tr>
+                 <tr><td>Automatisk produktion</td><td>1,16</td><td>27</td><td>54</td><td>31,24</td><td>62,49</td><td>156.214</td><td>62.486</td><td>218.700</td><td>243.000</td></tr>
+                 <tr><td>Manuel montage</td><td>405,00</td><td>0,10</td><td>0,10</td><td>40,50</td><td>40,50</td><td>202.500</td><td>40.500</td><td>243.000</td><td>243.000</td></tr>
+                 <tr><td>Test</td><td>231,43</td><td>0,05</td><td>0,10</td><td>11,57</td><td>23,14</td><td>57.857</td><td>23.143</td><td>81.000</td><td>162.000</td></tr>
+                 <tr><td>Emballering</td><td>22,00</td><td>1</td><td>1</td><td>22,00</td><td>22,00</td><td>110.000</td><td>22.000</td><td>132.000</td><td>162.000</td></tr>
+                 <tr><td><strong>Indirekte produktionsomkostninger i alt</strong></td><td></td><td></td><td></td><td><strong>254,41</strong></td><td><strong>386,67</strong></td><td><strong>1.272.026</strong></td><td><strong>386.674</strong></td><td><strong>1.658.700</strong></td><td><strong>2.040.000</strong></td></tr>
+                 <tr><td><strong>Produktionsomkostninger i alt</strong></td><td></td><td></td><td></td><td><strong>748,21</strong></td><td><strong>638,67</strong></td><td><strong>3.741.026</strong></td><td><strong>638.674</strong></td><td><strong>4.379.700</strong></td><td><strong>4.662.000</strong></td></tr>
+                 <tr><td>Target cost (jf. tabel 8.11)</td><td></td><td></td><td></td><td>746,43</td><td>696,73</td><td></td><td></td><td>4.428.900</td><td></td></tr>
+             </tbody>
+        </table>
+        <p class="page-ref">5/5</p>
+    </section>
+    <hr>
+
+     <!-- Page 39 -->
+    <section>
+        <h2>8.6. ABC-metoden og budgettet</h2>
+         <p class="breadcrumb">HR driftsoekonomi-4udg.digi.hansreitzel.dk</p>
+         <p class="breadcrumb">
+             1. Driftsøkonomi &gt; <br>
+             2. 8. Kalkuler og Activity Based Costing
+         </p>
+
+        <p>ABC-systemet baserer sig på budgetterede omkostningssatser for de enkelte cost drivere.</p>
+        <p>Da budgetter sjældent holder, vil man i forbindelse med regnskabsafslutningen opleve, at der gennem en periode kan have været budgetteret med satser, som enten har været for høje eller for lave. En analyse af afvigelserne bør danne grundlag for en regulering af satserne, så de nye satser modsvarer virksomhedens realistiske forventninger til de fremtidige forhold.</p>
+        <p>I det følgende vises et praktisk eksempel fra Bryggeriet Carlsberg A/S, hvor ABC-tankegangen er implementeret.</p>
+
+        <h4>Carlsberg-eksemplet</h4>
+        <p><strong>Baggrund</strong></p>
+        <p>Siden sammenlægningen af Carlsberg Danmark og Coca-Cola Tapperierne i Fredericia har Carlsberg Logistik håndteret hele logistikkæden fra produktion til kundelevering af produkter fra både Carlsberg og Coca-Cola. Salget varetages af salgsafdelingerne i Coca-Cola og Carlsberg, som derved faktisk disponerer logistikken. Men hvad koster logistikken egentlig for forskellige typer salg, og hvordan øger man afdelingernes fokus, så logistikomkostningerne indgår i rentabilitetsvurderingen af kunder og produkter?</p>
+        <p>Carlsberg Logistik har 18 lagerførende depoter, 327 lastbiler, et utal af gaffeltrucks og tæt på 1.000 medarbejdere i logistikken, som sørger for, at omkring 26.000 danske forhandlere årligt modtager cirka 900.000 ordrer med produkter fra Coca-Cola og Carlsberg. Hvad koster det enorme logistikapparat, og hvordan fordeler man omkostningerne til hele det apparat ud på de enkelte salgsordrer og salgsafdelinger?</p>
+        <p><strong>Mål (ambitionsniveau)</strong></p>
+        <p>Samdistributionen og lagerstyringen af alle produkter fra Coca-Cola Tapperierne og Carlsberg Danmark har skabt et behov for at synliggøre, hvordan forskellige salg belaster logistikomkostningerne. Formålet er at optimere logistikken ved at prisfastsætte de logistikomkostninger, som et givet salg medfører, og så fakturere logistikomkostningerne</p>
+        <p class="page-ref">1/3</p>
+    </section>
+    <hr>
+
+    <!-- Page 40 -->
+    <section>
+        <p>internt til salgsafdelingerne. Til det formål er der blevet udarbejdet en prisliste for interne logistikydelser. Viden om aktivitetstrækket på disse logistikydelser skal give salgs- og logistikafdelingerne en brugbar platform til at kommunikere og samarbejde om at reducere logistikomkostningerne.</p>
+        <p>Der er stor forskel på logistikomkostningerne ved at sælge fem paller med ét varenummer til normallevering og ti kasser med 30 forskellige varenumre til en hastelevering.</p>
+
+        <h4>Definition af logistikydelser</h4>
+        <p>Carlsberg Logistik har i kraft af en ABC-analyse udviklet en intern prisliste over relationen mellem forskellige salg og logistikomkostninger. Der er fastsat en pris pr. aktivitet, som tager højde for, hvad salgsordren trækker af ressourcer i forbindelse med fx plukning af varer på lageret og på lastbilen, antal aflæsningssteder, sammensætningen af varenumre m.m.</p>
+
+        <h4>Pris for lager</h4>
+        <p>Pris pr. opbevaret bundpalle pr. dag</p>
+
+        <h4>Priser pr. levering</h4>
+        <ul>
+            <li>Pris pr. bestilt kassesalgslevering</li>
+            <li>Pris pr. bestilt præsalgslevering</li>
+            <li>Pris pr. ekstra levering (uden for fast leveringsdag)</li>
+            <li>Pris pr. hastelevering</li>
+        </ul>
+
+        <h4>Priser til præsalgsplukning</h4>
+        <ul>
+            <li>Pris pr. palle til præsalgsplukning</li>
+            <li>Pris pr. enkelt kasse til præsalgsplukning</li>
+        </ul>
+
+        <h4>Pris til præsalgsaflæsning</h4>
+        <p>Pris pr. palle til præsalgsaflæsning</p>
+
+        <h4>Pris til kassesalg</h4>
+        <p>Pris pr. kasse til kassesalg</p>
+
+        <h4>Prisaftale/struktur (incitamentsstruktur)</h4>
+        <p class="page-ref">2/3</p>
+    </section>
+    <hr>
+
+    <!-- Page 41 -->
+    <section>
+        <p>Som grundlag for målstyring af salget etableres en månedsrapport, som viser de logistikydelser, som salgsafdelingen kan påvirke i forhold til kunden. Den interne prissætning af logistikydelserne er sket ved brug af ABC-principperne. Derfor er ydelserne baseret på det reelle aktivitetstræk i Carlsberg Logistik.</p>
+        <p>Mål for det kommende år fastlægges i et samspil mellem salgs- og logistikansvarlige. I det tænkte eksempel nedenfor er der taget udgangspunkt i en given salgsafdeling, hvor den samlede kundemasse udgør 500 kunder. Besøgsfrekvensen er to gange om måneden, og målet for planlagte leveringer er 1.000 gange. Udnyttes det planlagte antal leveringer ikke, er der fastsat en pris for Uudnyttede planlagte leveringer. Derudover kan der forekomme Ekstraordrer og Hasteordrer.</p>
+
+        <h4>Mål- og resultatstyring (opfølgning)</h4>
+        <p>En ekstraordre eller hasteordre genererer et ekstraordinært kapacitetstræk på logistikomkostningerne. Derfor har de en højere pris pr. enhed i månedsrapporten. Dette kan medvirke til en adfærdsregulering i retning af, at antallet af ekstra- og hasteordrer holdes på et minimum for ikke at belaste logistikomkostningerne for meget.</p>
+        <p>I det tænkte taleksempel i <a href="#tabel8.14">tabel 8.14</a> nedenfor viser det sig, at det realiserede antal er ti ekstraordrer og fem hasteordrer mere end budgetteret. Dermed belastes logistikafdelingen med en yderligere omkostning svarende til i alt 2.500 kr.</p>
+
+        <table id="tabel8.14" class="cost-table">
+             <caption>Tabel 8.14 Opfølgning på leveringsomkostninger</caption>
+             <thead>
+                 <tr>
+                     <th rowspan="2"></th><th rowspan="2">Kr. pr. enhed</th>
+                     <th colspan="3">Antal aktiviteter</th>
+                     <th colspan="3">Omkostninger</th>
+                 </tr>
+                 <tr>
+                     <th>Budget</th><th>Aktuel</th><th>Afvigelse</th>
+                     <th>Budget</th><th>Aktuel</th><th>Afvigelse</th>
+                 </tr>
+             </thead>
+             <tbody>
+                 <tr><td><strong>Leveringer</strong></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                 <tr><td>Udnyttede planlagte</td><td>100</td><td>1.000</td><td>600</td><td>400</td><td>100.000</td><td>60.000</td><td>40.000</td></tr>
+                 <tr><td>Uudnyttede planlagte</td><td>100</td><td>0</td><td>400</td><td>-400</td><td>0</td><td>40.000</td><td>-40.000</td></tr>
+                 <tr><td>Ekstra ordrer</td><td>150</td><td>40</td><td>50</td><td>-10</td><td>6.000</td><td>7.500</td><td>-1.500</td></tr>
+                 <tr><td>Hasteordrer</td><td>200</td><td>10</td><td>15</td><td>-5</td><td>2.000</td><td>3.000</td><td>-1.000</td></tr>
+                 <tr><td><strong>I alt</strong></td><td></td><td></td><td></td><td></td><td><strong>108.000</strong></td><td><strong>110.500</strong></td><td><strong>-2.500</strong></td></tr>
+                 <tr><td><strong>Plukning og aflæsning</strong></td><td>11</td><td>13.000</td><td>19.000</td><td>-6.000</td><td>143.000</td><td>209.000</td><td>-66.000</td></tr>
+                 <tr><td><strong>I alt</strong></td><td></td><td></td><td></td><td></td><td><strong>251.000</strong></td><td><strong>319.500</strong></td><td><strong>-68.500</strong></td></tr>
+            </tbody>
+        </table>
+
+        <p><em>Kilde: Uddrag af artikel i Dilforientering, oktober 2003 Aktivitetsbaseret omkostningsstyring i Carlsberg Logistik, Søren Holm Jensen og Ole Hjort Krarup.</em></p>
+        <p class="page-ref">3/3</p>
+    </section>
+    <hr>
+
+    <!-- Page 42 -->
+    <section>
+        <h2>8.7. Fordele og ulemper ved ABC-systemet contra traditionelle fordelingsmetoder</h2>
+        <p class="breadcrumb">HR driftsoekonomi-4udg.digi.hansreitzel.dk</p>
+        <p class="breadcrumb">
+            1. Driftsøkonomi &gt; <br>
+            2. 8. Kalkuler og Activity Based Costing
+        </p>
+
+        <p>Activity Based Costing søger at løse den vanskelige fordeling af indirekte omkostninger, som enhver virksomhed står over for. Det betyder dog ikke, at ABC er ideelt i alle situationer. Efterfølgende er skitseret forskellige fordele og ulemper ved de to systemer.</p>
+
+        <table class="comparison-table">
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>Fordele</th>
+                    <th>Ulemper</th>
+                 </tr>
+            </thead>
+             <tbody>
+                 <tr>
+                     <td>
+                        <strong>Activity Based Costing</strong><br>
+                        (fordeling sker efter et antal cost drivere, der angiver konkrete ressourcetræk)
+                     </td>
+                     <td>
+                        Der opnås en meget præcis beregning af virksomhedens indtjening pr. produkt, forudsat virksomheden er i stand til at måle og finde de nøjagtige data.<br><br>
+                        Godt redskab til: prissætning, tilbudsgivning, omkostningsstyring, budgetkontrol, vurdering af budgetsatser contra realiseret forbrug, rentabilitetsvurdering.<br><br>
+                        Godt grundlag til at træffe strategiske beslutninger på.
+                     </td>
+                     <td>
+                        Komplicerede beregninger.<br><br>
+                        Tidskrævende at opbygge og implementere systemet. Kræver ofte en høj grad af medarbejderinvolvering.<br><br>
+                        Kan være vanskeligt at motivere medarbejderne, da systemet er komplekst, og der kræves forholdsvis mange registreringer.<br><br>
+                        Risiko for, at registreringerne er upræcise.<br><br>
+                        Er omkostningskrævende at udvikle og vedligeholde.
+                     </td>
+                 </tr>
+        <!-- Table continues on next page -->
+          <p class="page-ref">1/2</p>
+    </section>
+    <hr>
+
+    <!-- Page 43 -->
+    <section>
+        <!-- Continuation of comparison table -->
+                 <tr>
+                     <td>
+                        <strong>Traditionel fordelingsmetode</strong><br>
+                        (fx full-cost-fordeling)<br>
+                        (fordeling sker ud fra typisk en enkelt eller to fordelingsnøgler)
+                     </td>
+                     <td>
+                        Simpel og kræver forholdsvis få registreringer.
+                     </td>
+                     <td>
+                        Problematisk at finde en eller evt. lidt flere fordelingsnøgler, der fordeler de indirekte omkostninger korrekt.<br><br>
+                        Risiko for at få et forkert billede af, hvad de reelle omkostninger på et produkt er.<br><br>
+                        Kan derfor være problematisk at anvende til prissætning af produktet (priskalkulation).
+                     </td>
+                 </tr>
+             </tbody>
+        </table>
+        <p class="page-ref">2/2</p>
+    </section>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- MDB JS -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
+    <!-- Menu script -->
+    <script src="menu.js"></script>
+    <script src="info.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>

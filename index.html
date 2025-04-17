@@ -9,7 +9,11 @@
     <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:300i&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,100&display=swap" rel="stylesheet">
+    <!-- MDB CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" type="image/x-icon" href="favicon.ico">
@@ -451,132 +455,18 @@
 
                 <!-- Knap Kapacitet -->
                 <h3>Knap Kapacitet</h3>
-                <p>Virksomheder vil ofte opleve at de ikke kan producere den mængde de kunne ønske sig for at maksimere
-                    dækningsbidraget. Knap kapacitet refererer til situationer, hvor en virksomheds ressourcer er
-                    begrænsede, og der skal prioriteres mellem forskellige muligheder for at maksimere overskuddet.
-                    Dette kan være relevant i forbindelse med begrænset produktionskapacitet, tidsbegrænsninger eller
-                    andre knappe ressourcer.</p>
+                <p>Virksomheder har ofte begrænsede ressourcer, som sætter grænser for produktionen. Knap kapacitet opstår, når en eller flere ressourcer (produktionsudstyr, maskintid, råvarer, arbejdskraft, etc.) begrænser virksomhedens mulighed for at producere den ønskede mængde.</p>
 
                 <div class="info-box">
-                    <p><b>Vigtige aspekter ved knap kapacitet:</b></p>
+                    <p><b>Hvad er knap kapacitet?</b></p>
+                    <p>Knap kapacitet refererer til en situation, hvor virksomhedens produktionsressourcer er begrænsede, og der derfor må prioriteres mellem forskellige produktmuligheder for at maksimere overskuddet.</p>
+                    
+                    <p><b>Centrale begreber ved knap kapacitet:</b></p>
                     <ul>
-                        <li>Identifikation af den knappe ressource</li>
-                        <li>Beregning af dækningsbidrag pr. knap ressourceenhed</li>
-                        <li>Prioritering af produkter baseret på dækningsbidrag pr. knap ressourceenhed</li>
-                        <li>Optimering af produktionsplanlægning</li>
-                    </ul>
-                </div>
-
-                <table class="table table-striped table-hover">
-                    <thead class="table-dark">
-                        <tr>
-                            <th>Produkt</th>
-                            <th>Dækningsbidrag</th>
-                            <th>Knap Ressource</th>
-                            <th>Dækningsbidrag pr. Ressourceenhed</th>
-                            <th>Prioritering</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Produkt A</td>
-                            <td>1.000 kr.</td>
-                            <td>2 timer maskintid</td>
-                            <td>500 kr./time</td>
-                            <td>1. prioritet</td>
-                        </tr>
-                        <tr>
-                            <td>Produkt B</td>
-                            <td>1.500 kr.</td>
-                            <td>4 timer maskintid</td>
-                            <td>375 kr./time</td>
-                            <td>2. prioritet</td>
-                        </tr>
-                        <tr>
-                            <td>Produkt C</td>
-                            <td>800 kr.</td>
-                            <td>1 time maskintid</td>
-                            <td>800 kr./time</td>
-                            <td>3. prioritet</td>
-                        </tr>
-                    </tbody>
-                </table>
-
-                <div class="info-box">
-                    <p><b>Strategier for håndtering af knap kapacitet:</b></p>
-                    <ul>
-                        <li><b>Prioritering:</b> Fokus på produkter med højest dækningsbidrag pr. knap ressourceenhed
-                        </li>
-                        <li><b>Kapacitetsudvidelse:</b> Investering i ny maskineri eller udvidelse af
-                            produktionskapacitet</li>
-                        <li><b>Effektivisering:</b> Optimering af produktionsprocesser for at reducere
-                            ressourceforbruget</li>
-                        <li><b>Outsourcing:</b> Overvejelse af at outsource dele af produktionen</li>
-                        <li><b>Prisstrategi:</b> Justering af priser for at optimere efterspørgslen i forhold til
-                            kapaciteten</li>
-                    </ul>
-                </div>
-
-                <div class="example-box">
-                    <p><b>Eksempel på praktisk anvendelse:</b></p>
-                    <p>En møbelfabrik har en begrænset kapacitet på 1.000 maskintimer om måneden. De producerer tre
-                        forskellige stole:</p>
-                    <ul>
-                        <li>Kontorstol: 2 timer maskintid, dækningsbidrag 1.000 kr., maksimal afsætning 150 stk.</li>
-                        <li>Spisestol: 1 time maskintid, dækningsbidrag 400 kr., maksimal afsætning 500 stk.</li>
-                        <li>Lænestol: 4 timer maskintid, dækningsbidrag 1.500 kr., maksimal afsætning 100 stk.</li>
-                    </ul>
-                    <p>For at maksimere overskuddet skal virksomheden prioritere produktionen baseret på dækningsbidrag
-                        pr. maskintime:</p>
-                    <ul>
-                        <li>Kontorstol: 500 kr./time (1.000 kr. / 2 timer)</li>
-                        <li>Spisestol: 400 kr./time (400 kr. / 1 time)</li>
-                        <li>Lænestol: 375 kr./time (1.500 kr. / 4 timer)</li>
-                    </ul>
-
-                    <p><b>Optimal produktionsplan:</b></p>
-                    <p>Baseret på prioriteterne, den tilgængelige kapacitet på 1.000 timer og de maksimale
-                        afsætningsmuligheder:</p>
-                    <ol>
-                        <li>Kontorstole: 300 timer (150 stk. × 2 timer) = 150.000 kr. dækningsbidrag</li>
-                        <li>Spisestole: 500 timer (500 stk. × 1 time) = 200.000 kr. dækningsbidrag</li>
-                        <li>Lænestole: 200 timer (50 stk. × 4 timer) = 75.000 kr. dækningsbidrag</li>
-                    </ol>
-
-                    <p><b>Samlet resultat:</b></p>
-                    <ul>
-                        <li>Total maskintid brugt: 1.000 timer</li>
-                        <li>Samlet dækningsbidrag: 425.000 kr.</li>
-                        <li>Antal producerede stole: 700 stk.</li>
-                        <li>Gennemsnitligt dækningsbidrag pr. stol: 607 kr.</li>
-                    </ul>
-
-                    <p><b>Alternativ scenarie:</b></p>
-                    <p>Hvis virksomheden havde produceret lige mange af hver stol uden at tage hensyn til dækningsbidrag
-                        pr. time:</p>
-                    <ul>
-                        <li>333 timer til kontorstole (166 stk.) = 166.000 kr.</li>
-                        <li>333 timer til spisestole (333 stk.) = 133.200 kr.</li>
-                        <li>334 timer til lænestole (83 stk.) = 124.500 kr.</li>
-                        <li>Samlet dækningsbidrag: 423.700 kr.</li>
-                    </ul>
-
-                    <p><b>Konklusion:</b></p>
-                    <p>Ved at prioritere produktionen baseret på dækningsbidrag pr. maskintime og respektere de
-                        maksimale afsætningsmuligheder opnår virksomheden:</p>
-                    <ul>
-                        <li>En optimal balance mellem dækningsbidrag og afsætningsmuligheder</li>
-                        <li>En realistisk produktionsplan der tager højde for markedets begrænsninger</li>
-                        <li>En stabil produktionsmix der sikrer kontinuerlig afsætning</li>
-                    </ul>
-
-                    <p><b>Handlingsmuligheder for fremtiden:</b></p>
-                    <ul>
-                        <li>Overveje investering i ekstra maskineri for at øge kapaciteten</li>
-                        <li>Optimere produktionsprocessen for lænestole for at reducere maskintiden</li>
-                        <li>Justere priser for at forbedre dækningsbidraget på spisestole</li>
-                        <li>Overveje outsourcing af dele af produktionen</li>
-                        <li>Udvide markedet for kontorstole gennem markedsføring for at øge den maksimale afsætning</li>
+                        <li><b>Produktionsplanlægning:</b> Prioritering af produktion baseret på dækningsbidrag pr. ressourceenhed</li>
+                        <li><b>Flaskehals:</b> Den ressource der begrænser den samlede produktion</li>
+                        <li><b>Dækningsbidrag pr. ressourceenhed:</b> Nøgletal til prioritering af produkter her og nu</li>
+                        <li><b>Kapacitetsudnyttelse:</b> Optimal udnyttelse af den begrænsende ressource med de nuværende begrænsninger</li>
                     </ul>
                 </div>
 
@@ -586,49 +476,33 @@
                             <th>Virksomhed</th>
                             <th>Knap Ressource</th>
                             <th>Påvirkning</th>
-                            <th>Handling</th>
-                            <th>Resultat</th>
+                            <th>Kortsigtet produktionsplan</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
                             <td>Tesla</td>
                             <td>Batterikapacitet</td>
-                            <td>Begrænset produktion af Model 3 og Y på grund af batterimangel</td>
-                            <td>Bygget nye batterifabrikker (Gigafactory) og optimeret batteriproduktion</td>
-                            <td>Øget produktion med 50% og forbedret dækningsbidrag pr. bil</td>
+                            <td>Begrænset produktion af elbiler</td>
+                            <td>Prioritering af højmargin-modeller, fokus på Model S/X frem for Model 3/Y</td>
                         </tr>
                         <tr>
                             <td>LEGO</td>
                             <td>Produktionskapacitet</td>
-                            <td>Manglende kapacitet til at møde stigende efterspørgsel efter Star Wars og Harry Potter
-                                sets</td>
-                            <td>Investeret 1 milliard kr. i ny fabrik i Vietnam og udvidet eksisterende fabrikker</td>
-                            <td>Øget produktionskapacitet med 25% og sikret markedslederskab</td>
-                        </tr>
-                        <tr>
-                            <td>Pandora</td>
-                            <td>Kvalificeret arbejdskraft</td>
-                            <td>Manglende specialiserede guldsmede til produktion af fine smykker</td>
-                            <td>Etableret egen uddannelsesordning og forbedret arbejdsforhold</td>
-                            <td>Reduceret medarbejderomsætning og øget produktionskvalitet</td>
-                        </tr>
-                        <tr>
-                            <td>Vestas</td>
-                            <td>Vindmøllekomponenter</td>
-                            <td>Lange leveringstider på gearkasser og generatorer</td>
-                            <td>Diversificeret leverandørbase og opbygget større lager</td>
-                            <td>Reduceret leveringstider med 30% og sikret kontinuerlig produktion</td>
+                            <td>Manglende kapacitet til at møde efterspørgsel</td>
+                            <td>Prioritering af produktserier med højest DB pr. maskintimetime</td>
                         </tr>
                         <tr>
                             <td>Novo Nordisk</td>
                             <td>Produktionskapacitet for Wegovy</td>
-                            <td>Manglende kapacitet til at møde eksplosiv efterspørgsel efter vægttabsmedicin</td>
-                            <td>Investeret 16 milliarder kr. i ny fabrik i Kalundborg</td>
-                            <td>Forventet fordobling af produktionskapacitet inden 2025</td>
+                            <td>Kan ikke imødekomme global efterspørgsel</td>
+                            <td>Prioritering af højpris-markeder og strategisk vigtige kundegrupper</td>
                         </tr>
                     </tbody>
                 </table>
+
+                <p>Læs mere om håndtering af knap kapacitet, optimale produktionsplaner og hvordan man bedst prioriterer produktion under ressourcebegrænsninger i kapitlet om <a href="knapkapacitet.html">Knap Kapacitet</a>.</p>
+
                 <br>
                 <h2>Quiz</h2>
                 <a href="https://fin2.tepedu.dk/eo1" class="effectLinks" data-replace="Åben quiz" target="_blank">
@@ -647,6 +521,10 @@
     <!-- External JavaScript Files -->
     <script src="menu.js"></script>
     <script src="script.js"></script>
+    <script src="info.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- MDB JS -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
 
 </body>
 
