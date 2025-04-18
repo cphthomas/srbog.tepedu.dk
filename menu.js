@@ -14,7 +14,7 @@ const menuItems = [
     { href: 'knapkapacitet.html', text: 'Knap Kapacitet' },
     { href: 'bidragskalkulation.html', text: 'Bidragskalkulation' },
     { href: 'fordelingskalkulation.html', text: 'Fordelingskalkulation' },
-    { href: 'ABC.html', text: 'Activity Based Costing ABC' },
+    { href: 'activity.html', text: 'Activity Based Costing ABC' },
     { href: 'video.html', text: 'Video' }
 ];
 
