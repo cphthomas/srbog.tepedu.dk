@@ -73,7 +73,7 @@ document.addEventListener('DOMContentLoaded', function() {
         infoPopup.innerHTML = `
             <h5>Om denne bog</h5>
             <p>Denne bog er udviklet af: </p>
-            <img src="images/mig_moebius.png" alt="Thomas Petersen">
+            <img src="images/mig.jpg" alt="Thomas Petersen">
             <br><small>Thomas Petersen</small>
             <br><br>
             <p>I udviklingen er der benyttet kunstig intelligens både til at kodningen af selve strukturen i form af navigation, js-, html- og css-filer, samt indhold og eksempler. <br>Der er benyttet følgende LLM-modeller:</p>
