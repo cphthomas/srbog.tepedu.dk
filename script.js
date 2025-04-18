@@ -7,8 +7,10 @@ document.addEventListener("DOMContentLoaded", function() {
   let currentUrl = window.location.href;
   currentUrl = currentUrl.split('?')[0].split('#')[0];
   let currentPage = currentUrl.substring(currentUrl.lastIndexOf('/') + 1).toLowerCase();
-  if (!currentPage.includes('.')) {
+  if (!currentPage) {
     currentPage = 'index.html';
+  } else if (!currentPage.includes('.')) {
+    currentPage += '.html';
   }
 
   // Get current page number from menuItems
