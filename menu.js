@@ -1,21 +1,7 @@
 // Menu configuration
 const menuItems = [
     { href: 'index.html', text: 'Virksomhedens Målsætning' },
-    { href: 'costs.html', text: 'Omkostninger' },
-    { href: 'price.html', text: 'Prisafsætningsfunktionen' },
-    { href: 'elasticity.html', text: 'Elasticitet' },
-    { href: 'market.html', text: 'Markedsformer' },
-    { href: 'fuld.html', text: 'Fuldkommen Konkurrence' },
-    { href: 'monopol.html', text: 'Monopol' },
-    { href: 'monopolistisk.html', text: 'Monopolistisk Konkurrence' },
-    { href: 'oligopol.html', text: 'Oligopol' },
-    { href: 'ordre.html', text: 'Ordre og Marked' },
-    { href: 'mfb.html', text: 'Markedsføring' },
-    { href: 'knapkapacitet.html', text: 'Knap Kapacitet' },
-    { href: 'bidragskalkulation.html', text: 'Bidragskalkulation' },
-    { href: 'fordelingskalkulation.html', text: 'Fordelingskalkulation' },
-    { href: 'activity.html', text: 'Activity Based Costing ABC' },
-    { href: 'video.html', text: 'Video' }
+    { href: 'market.html', text: 'Markedsformer' }
 ];
 
 // Function to generate dropdown menu HTML
