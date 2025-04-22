@@ -4,7 +4,7 @@ const menuItems = [
     { href: 'klassisk.html', text: 'Klassisk Salg' },
     { href: 'losning.html', text: 'Løsningssalg' },
     { href: 'kommunikation.html', text: 'Kommunikation i Finansiel Rådgivning' },
-    { href: 'udfordrende.html', text: 'Udfordrende Salg' },
+    { href: 'challenger.html', text: 'Challenger Salg' },
     { href: 'pitching.html', text: 'Pitching' },
     { href: 'pipeline.html', text: 'Pipeline' },
     { href: 'portefolje.html', text: 'Porteføljesalg' },
