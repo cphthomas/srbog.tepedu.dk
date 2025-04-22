@@ -1,7 +1,14 @@
 // Menu configuration
 const menuItems = [
-    { href: 'index.html', text: 'Virksomhedens Målsætning' },
-    { href: 'market.html', text: 'Markedsformer' }
+    { href: 'index.html', text: 'Introduktion til Finansielt Salg' },
+    { href: 'klassisk.html', text: 'Klassisk Salg' },
+    { href: 'losning.html', text: 'Løsningssalg' },
+    { href: 'kommunikation.html', text: 'Kommunikation i Finansiel Rådgivning' },
+    { href: 'udfordrende.html', text: 'Udfordrende Salg' },
+    { href: 'pitching.html', text: 'Pitching' },
+    { href: 'pipeline.html', text: 'Pipeline' },
+    { href: 'portefolje.html', text: 'Porteføljesalg' },
+    { href: 'salgsteknikker.html', text: 'Sammenligning af Salgsteknikker' }
 ];
 
 // Function to generate dropdown menu HTML

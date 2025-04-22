@@ -368,6 +368,12 @@ kbd {
     margin: 20px 0;
 }
 
+/* Style for negative examples in tables */
+.bad-example td {
+    background-color: #dc3545; /* Bootstrap danger color */
+    color: white;
+}
+
 .table {
     width: 100%;
     margin-bottom: 1rem;
