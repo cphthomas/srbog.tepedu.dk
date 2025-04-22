@@ -76,7 +76,7 @@ document.addEventListener('DOMContentLoaded', function() {
             <img src="images/mig.jpg" alt="Thomas Petersen">
             <br><small>Thomas Petersen</small>
             <br><br>
-            <p>I udviklingen er der benyttet kunstig intelligens både til at kodningen af selve strukturen i form af navigation, js-, html- og css-filer, samt indhold og eksempler. <br>Der er benyttet følgende LLM-modeller:</p>
+            <p>I udviklingen er der benyttet kunstig intelligens både til kodningen af selve strukturen i form af navigation, js-, html- og css-filer, samt indhold og eksempler. <br>Der er benyttet følgende LLM-modeller:</p>
             <ul>
                 <li>Google Gemini</li>
                 <li>Anthropic Claude</li>
