@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+     <title>Quiz Sammenligning af Salgsteknikker</title>
+     <link rel="stylesheet"
+           href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+     <link rel="stylesheet"
+           href="styles.css">
+     <link rel="icon"
+           href="favicon.svg">
+     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+     <script id="MathJax-script"
+             async
+             src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+     <script>
+          window.MathJax = {
+               tex: {
+                    inlineMath: [['$', '$']],
+                    displayMath: [['$$', '$$']]
+               },
+               svg: {
+                    scale: 0.9,
+               },
+               chtml: {
+                    scale: 0.9,
+               }
+          };
+     </script>
+     <link rel="stylesheet"
+           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+     <style>
+          .card-body {
+               font-size: 1em;
+          }
+
+          .card img {
+               max-width: 100%;
+               height: auto;
+          }
+     </style>
+</head>
+
+<body data-formål="Forståelse af strategisk salgsudvikling og markedsanalyse."
+     data-forudsætning="Kendskab til performance management og salgsmåling.">
+     <header> <a href="index.html"
+             target="_blank"><img src="tepedulogoanim.svg"
+                    alt="Logo"
+                    width="8%"></a>
+          <h2>Quiz Sammenligning af Salgsteknikker</h2>
+     </header>
+
+
+     <div class="container">
+          <div class="row justify-content-center">
+               <div class="col-12 col-md-12 col-lg-12">
+                    <div class="card mt-5">
+                         <div class="card-body">
+
+                              <div id="postProgressContent" class="mt-4" style="color: rgb(255, 255, 255);">
+                                   <div>
+                                        <h1>
+                                             Salgsteknikker: Sammenligning af Salgsteknikker
+                                        </h1>
+                                   </div>
+                              </div>
+
+                              <br>
+                              <br>
+
+                              <h1 id="question"
+                                  class="card-title"></h1>
+                              <div id="options"
+                                   class="mt-4"></div>
+                              <div id="progress-bar"
+                                   class="progress-bar-container"></div>
+
+                                <!-- 1 -->
+                                <div class="question"
+                                     data-question="Hvilken salgsteknik fokuserer primært på tillidsopbygning, behovsafdækning og produktpræsentation,<br>og egner sig godt til kunder med begrænset forhåndsviden (f.eks. førstegangskøbere)?"
+                                     data-answer="0"
+                                     data-explanation="Klassisk salg bygger på at skabe tillid og forstå kundens grundlæggende behov for derefter at præsentere et passende produkt.<br><br>Det er effektivt, når kunden søger vejledning og tryghed i beslutningsprocessen.">
+                                     <div class="option" data-option="Klassisk salg"></div>
+                                     <div class="option" data-option="Løsningssalg"></div>
+                                     <div class="option" data-option="Challenger-salg"></div>
+                                     <div class="option" data-option="Pitching"></div>
+                                </div>
+
+                                <!-- 2 -->
+                                <div class="question"
+                                     data-question="Hvilken teknik er bedst egnet til erhvervskunder med komplekse finansielle situationer,<br>hvor man bruger SPIN-teknikken til dybdegående problemidentifikation?"
+                                     data-answer="1"
+                                     data-explanation="Løsningssalg, med brug af SPIN (Situation, Problem, Implikation, Nytte), er designet til at afdække og adressere komplekse problemer og deres konsekvenser.<br><br>Det fokuserer på at sælge en løsning på et identificeret problem, ikke bare et produkt.">
+                                     <div class="option" data-option="Klassisk salg"></div>
+                                     <div class="option" data-option="Løsningssalg"></div>
+                                     <div class="option" data-option="Pipeline salg"></div>
+                                     <div class="option" data-option="Portefølje salg"></div>
+                                </div>
+
+                                <!-- 3 -->
+                                <div class="question"
+                                     data-question="Hvilken salgsteknik involverer aktivt at udfordre kundens status quo og dele unik viden<br>for at præsentere alternative løsninger, kunden måske ikke selv har overvejet?"
+                                     data-answer="2"
+                                     data-explanation="Challenger-salg handler netop om at udfordre kundens nuværende tænkning ved at præsentere ny indsigt og alternative perspektiver.<br><br>Målet er at lære kunden noget nyt og skabe værdi gennem provokerende, men relevant, indsigt.">
+                                     <div class="option" data-option="Klassisk salg"></div>
+                                     <div class="option" data-option="Løsningssalg"></div>
+                                     <div class="option" data-option="Challenger-salg"></div>
+                                     <div class="option" data-option="Pitching"></div>
+                                </div>
+
+                                <!-- 4 -->
+                                <div class="question"
+                                     data-question="Hvilken teknik egner sig bedst til premium produkter og high-net-worth kunder<br>ved at fokusere på eksklusivitet, positionering og at skabe en 'pull'-effekt?"
+                                     data-answer="3"
+                                     data-explanation="Pitching-tilgangen bruges til at positionere et produkt eller en ydelse som eksklusiv og eftertragtet, hvilket appellerer til segmenter som high-net-worth kunder eller ved salg af premium ydelser.<br><br>Man skaber en aura af begrænset adgang og høj værdi.">
+                                     <div class="option" data-option="Klassisk salg"></div>
+                                     <div class="option" data-option="Pipeline salg"></div>
+                                     <div class="option" data-option="Portefølje salg"></div>
+                                     <div class="option" data-option="Pitching"></div>
+                                </div>
+
+                                <!-- 5 -->
+                                <div class="question"
+                                     data-question="Hvilken salgsmetode er mest fokuseret på systematisk håndtering af en stor mængde leads<br>gennem definerede faser og optimering af konverteringsrater via CRM?"
+                                     data-answer="1"
+                                     data-explanation="Pipeline salg handler om at styre en stor volumen af leads gennem en struktureret salgstragt (pipeline) og løbende optimere processen ved at måle og forbedre konverteringsrater mellem faserne.<br><br>Det er en datadrevet tilgang til at sikre et konstant flow af salg.">
+                                     <div class="option" data-option="Løsningssalg"></div>
+                                     <div class="option" data-option="Pipeline salg"></div>
+                                     <div class="option" data-option="Challenger-salg"></div>
+                                     <div class="option" data-option="Portefølje salg"></div>
+                                </div>
+
+                                <!-- 6 -->
+                                <div class="question"
+                                     data-question="Hvilken teknik er mest relevant, når målet primært er at øge 'Share-of-Wallet' hos eksisterende kunder<br>ved at udnytte dybdegående kundekendskab og relationer?"
+                                     data-answer="3"
+                                     data-explanation="Portefølje salg fokuserer på at pleje og udvikle relationen til den eksisterende kundebase for at maksimere deres livstidsværdi, bl.a. gennem mersalg baseret på dybdegående kundekendskab.<br><br>Man arbejder med at dække flere af kundens behov over tid.">
+                                     <div class="option" data-option="Klassisk salg"></div>
+                                     <div class="option" data-option="Løsningssalg"></div>
+                                     <div class="option" data-option="Pipeline salg"></div>
+                                     <div class="option" data-option="Portefølje salg"></div>
+                                </div>
+
+                                <!-- 7 -->
+                                <div class="question"
+                                     data-question="Hvad er en typisk faldgrube ved brug af Klassisk salg i finansiel rådgivning?"
+                                     data-answer="0"
+                                     data-explanation="En almindelig faldgrube ved klassisk salg er at fokusere for meget på selve produktet og dets egenskaber (produkt-push) i stedet for at lytte til og adressere kundens specifikke behov og situation.<br><br>Man glemmer at stille nok åbne spørgsmål i behovsafdækningen.">
+                                     <div class="option" data-option="At fokusere for meget på produkter frem for kundens behov"></div>
+                                     <div class="option" data-option="At fremstå arrogant over for kunden"></div>
+                                     <div class="option" data-option="At overse kundens økonomiske kapacitet"></div>
+                                     <div class="option" data-option="At tage eksisterende kunder for givet"></div>
+                                </div>
+
+                                <!-- 8 -->
+                                <div class="question"
+                                     data-question="Hvad er en risiko ved at bruge Challenger-salg for aggressivt eller uden tilstrækkelig forberedelse?"
+                                     data-answer="2"
+                                     data-explanation="Hvis udfordringen leveres uden empati, uden solid indsigt eller på et forkert grundlag, kan Challenger-tilgangen nemt opfattes som arrogant, belærende eller direkte forkert.<br><br>Dette skader relationen og troværdigheden markant.">
+                                     <div class="option" data-option="At bruge for meget tid på smalltalk"></div>
+                                     <div class="option" data-option="At fokusere for meget på kundens problemer"></div>
+                                     <div class="option" data-option="At fremstå arrogant eller belærende"></div>
+                                     <div class="option" data-option="At virke for utilgængelig"></div>
+                                </div>
+
+                                <!-- 9 -->
+                                <div class="question"
+                                     data-question="Hvilken kombination af teknikker nævnes som særligt effektiv i Private Banking,<br>hvor man både skal udfordre kundens strategi og positionere sig som eksklusiv partner?"
+                                     data-answer="1"
+                                     data-explanation="Teksten nævner kombinationen af Challenger-salg (til at udfordre kundens investeringsstrategi eller risikoprofil med ny indsigt) og Pitching (til at positionere banken/rådgiveren som en eksklusiv og eftertragtet partner med begrænset adgang) som effektiv i Private Banking.">
+                                     <div class="option" data-option="Klassisk salg og Pipeline salg"></div>
+                                     <div class="option" data-option="Challenger-salg og Pitching"></div>
+                                     <div class="option" data-option="Løsningssalg og Pipeline salg"></div>
+                                     <div class="option" data-option="Portefølje salg og Klassisk salg"></div>
+                                </div>
+
+                                <!-- 10 -->
+                                <div class="question"
+                                     data-question="Hvordan er SPIN-teknikken relateret til Løsningssalg?"
+                                     data-answer="0"
+                                     data-explanation="SPIN-teknikken (Situation, Problem, Implication, Need-payoff/Nytte) er ikke en selvstændig salgsmetode, men et centralt og struktureret spørgeværktøj inden for Løsningssalg.<br><br>Den bruges til systematisk at afdække kundens problemer, konsekvenserne af disse problemer og værdien af at løse dem.">
+                                     <div class="option" data-option="Det er et centralt spørgeværktøj inden for Løsningssalg"></div>
+                                     <div class="option" data-option="Det er en helt separat salgsmetode"></div>
+                                     <div class="option" data-option="Det bruges primært i Klassisk salg"></div>
+                                     <div class="option" data-option="Det fokuserer kun på produktets fordele"></div>
+                                </div>
+
+
+
+
+
+
+
+                              
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                         </div>
+                    </div>
+               </div>
+          </div>
+     </div>
+
+     <script src="script.js">
+     </script>
+</body>
+
+</html> 

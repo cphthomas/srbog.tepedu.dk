@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+     <title>Quiz Løsningssalg og SPIN-teknikken</title>
+     <link rel="stylesheet"
+           href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+     <link rel="stylesheet"
+           href="styles.css">
+     <link rel="icon"
+           href="favicon.svg">
+     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+     <script id="MathJax-script"
+             async
+             src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+     <script>
+          window.MathJax = {
+               tex: {
+                    inlineMath: [['$', '$']],
+                    displayMath: [['$$', '$$']]
+               },
+               svg: {
+                    scale: 0.9,
+               },
+               chtml: {
+                    scale: 0.9,
+               }
+          };
+     </script>
+     <link rel="stylesheet"
+           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+     <style>
+          .card-body {
+               font-size: 1em;
+          }
+
+          .card img {
+               max-width: 100%;
+               height: auto;
+          }
+     </style>
+</head>
+
+<body data-formål="Forståelse af moderne og innovative salgsteknikker."
+     data-forudsætning="Kendskab til klassiske salgsteknikker.">
+     <header> <a href="index.html"
+             target="_blank"><img src="tepedulogoanim.svg"
+                    alt="Logo"
+                    width="8%"></a>
+          <h2>Quiz Løsningssalg og SPIN-teknikken</h2>
+     </header>
+
+
+     <div class="container">
+          <div class="row justify-content-center">
+               <div class="col-12 col-md-12 col-lg-12">
+                    <div class="card mt-5">
+                         <div class="card-body">
+
+                              <div id="postProgressContent" class="mt-4" style="color: rgb(255, 255, 255);">
+                                   <div>
+                                        <h1>
+                                             Salgsteknikker: Løsningssalg og SPIN-teknikken
+                                        </h1>
+                                   </div>
+                              </div>
+
+                              <br>
+                              <br>
+
+                              <h1 id="question"
+                                  class="card-title"></h1>
+                              <div id="options"
+                                   class="mt-4"></div>
+                              <div id="progress-bar"
+                                   class="progress-bar-container"></div>
+
+                                   <!-- 1 -->
+                                <div class="question"
+                                data-question="Hvad adskiller primært løsningssalg fra klassisk produktsalg?"
+                                data-answer="1"
+                                data-explanation="Løsningssalg fokuserer på at identificere og løse kundens underliggende problemer og skabe langsigtet værdi, frem for blot at præsentere et produkts funktioner og pris.">
+                                <div class="option" data-option="Fokus på laveste pris"></div>
+                                <div class="option" data-option="Fokus på problemidentifikation og værdiskabelse"></div>
+                                <div class="option" data-option="Hurtig afslutning af salget"></div>
+                                <div class="option" data-option="Standardiserede løsninger"></div>
+                           </div>
+
+                           <!-- 1 -->
+                           <div class="question"
+                           data-question="Hvad står SPIN for i SPIN-teknikken?"
+                           data-answer="2"
+                           data-explanation="SPIN står for Situation, Problem, Implikation og Nytte (på engelsk: Situation, Problem, Implication, Need-payoff). Disse fire elementer udgør en systematisk tilgang til behovsafdækning i løsningssalg.<br><br>
+                                <ul>
+                                     <li><strong>Situation:</strong> Spørgsmål der afdækker kundens nuværende situation</li>
+                                     <li><strong>Problem:</strong> Spørgsmål der identificerer udfordringer og problemer</li>
+                                     <li><strong>Implikation:</strong> Spørgsmål der udforsker konsekvenserne af problemerne</li>
+                                     <li><strong>Nytte:</strong> Spørgsmål om værdien af at løse problemerne</li>
+                                </ul><br>
+                                <table class='info-table'w-100'>
+                                     <tr><th>SPIN Element</th><th>Formål</th><th>Eksempel fra finanssektoren</th></tr>
+                                     <tr><td>Situation</td><td>Forstå kundens nuværende situation</td><td>'Hvordan ser jeres nuværende pensionsopsparing ud?'</td></tr>
+                                     <tr><td>Problem</td><td>Identificere udfordringer</td><td>'Hvilke bekymringer har I omkring jeres pension?'</td></tr>
+                                     <tr><td>Implikation</td><td>Udforske konsekvenser</td><td>'Hvordan påvirker det jeres fremtidsplaner?'</td></tr>
+                                     <tr><td>Nytte</td><td>Værdien af løsningen</td><td>'Hvilken betydning ville det have, hvis...?'</td></tr>
+                                </table><br><br>
+                                Denne strukturerede spørgeteknik hjælper rådgiveren med at afdække kundens reelle behov og opbygge værdien af den løsning, der senere præsenteres.">
+                           <div class="option"
+                                data-option="Salg, Præsentation, Indvending, Nedlukning"></div>
+                           <div class="option"
+                                data-option="Service, Produkt, Information, Nytte"></div>
+                           <div class="option"
+                                data-option="Situation, Problem, Implikation, Nytte"></div>
+                           <div class="option"
+                                data-option="Strategi, Planlægning, Implementering, Navigering"></div>
+                      </div>
+
+                      <!-- 2 -->
+                      <div class="question"
+                           data-question="Hvem udviklede SPIN-teknikken, og hvornår skete det?"
+                           data-answer="3"
+                           data-explanation="SPIN-teknikken blev udviklet af Neil Rackham og hans firma Huthwaite i 1980'erne. Udviklingen var baseret på et omfattende studie af over 35.000 salgssamtaler.<br><br>
+                                Rackham og hans team studerede, hvad der adskilte succesfulde sælgere fra mindre succesfulde, særligt i komplekse salg. De observerede, at de mest succesfulde sælgere stillede markant flere Implikations- og Nytte-spørgsmål end deres mindre succesfulde kolleger.<br><br>
+                                <table class='info-table'w-100'>
+                                     <tr><th>Aspekt</th><th>Detalje</th></tr>
+                                     <tr><td>Udvikler</td><td>Neil Rackham</td></tr>
+                                     <tr><td>Firma</td><td>Huthwaite</td></tr>
+                                     <tr><td>Periode</td><td>1980'erne</td></tr>
+                                     <tr><td>Forskningsgrundlag</td><td>Studie af over 35.000 salgssamtaler</td></tr>
+                                </table><br><br>
+                                Rackhams forskning viste også, at succesfulde sælgere ikke fokuserede på at 'lukke' salget hurtigt, men i stedet på at opbygge værdien af deres løsning ved grundigt at afdække konsekvenserne af kundens problemer. Dette var et paradigmeskift i forhold til traditionelle salgsteknikker, der ofte fokuserede på hurtig afslutning af salget.">
+                           <div class="option"
+                                data-option="Peter Drucker i 1950'erne"></div>
+                           <div class="option"
+                                data-option="Philip Kotler i 1990'erne"></div>
+                           <div class="option"
+                                data-option="Dale Carnegie i 1960'erne"></div>
+                           <div class="option"
+                                data-option="Neil Rackham i 1980'erne"></div>
+                      </div>
+
+                      <!-- 3 -->
+                      <div class="question"
+                           data-question="Hvad er hovedformålet med Implikations-spørgsmål i SPIN-teknikken?"
+                           data-answer="1"
+                           data-explanation="Hovedformålet med Implikations-spørgsmål er at udforske konsekvenserne af kundens problemer. Dette hjælper kunden med at forstå alvoren og omfanget af deres problemer.<br><br>
+                                Implikations-spørgsmål får kunden til at tænke over, hvordan deres problemer påvirker dem på forskellige måder - økonomisk, tidsmæssigt, følelsesmæssigt, osv.<br><br>
+                                Eksempler på Implikations-spørgsmål fra finanssektoren:<br>
+                                <ul>
+                                     <li>'Hvis en central maskine bryder ned i en uge, hvad vil det betyde for jeres leveringsevne og omsætning?'</li>
+                                     <li>'Hvad betyder det for din pensionsalder, hvis din opsparing fortsætter på samme niveau?'</li>
+                                     <li>'Hvis I ikke har fuldt opdateret viden om lovgivningen, hvilken risiko løber I så for forkert feriepengeberegning eller momsfradrag?'</li>
+                                </ul><br>
+                                <table class='info-table'w-100'>
+                                     <tr><th>Uden Implikations-spørgsmål</th><th>Med Implikations-spørgsmål</th></tr>
+                                     <tr><td>Kunden ser måske problemet som lille</td><td>Kunden forstår problemets fulde omfang</td></tr>
+                                     <tr><td>Lav motivation for at handle</td><td>Øget motivation for at søge en løsning</td></tr>
+                                     <tr><td>Sælger må 'skubbe' løsningen</td><td>Kunden 'trækker' efter løsningen</td></tr>
+                                </table><br><br>
+                                Rackhams forskning viste, at succesfulde sælgere stillede markant flere Implikations-spørgsmål end mindre succesfulde sælgere. Ved at forstå konsekvenserne fuldt ud, bliver kunden mere motiveret for at søge en løsning.">
+                           <div class="option"
+                                data-option="At præsentere produktegenskaber"></div>
+                           <div class="option"
+                                data-option="At udforske konsekvenserne af kundens problemer"></div>
+                           <div class="option"
+                                data-option="At afslutte salget hurtigt"></div>
+                           <div class="option"
+                                data-option="At forklare prisstrukturen"></div>
+                      </div>
+
+
+                           <!-- 3 -->
+                           <div class="question"
+                                data-question="Hvad er formålet med Problem-spørgsmål (P i SPIN)?"
+                                data-answer="2"
+                                data-explanation="Problem-spørgsmål har til formål at afdække kundens udfordringer, utilfredsheder eller problemer i deres nuværende situation.">
+                                <div class="option" data-option="At præsentere løsningen"></div>
+                                <div class="option" data-option="At forstå kundens positive erfaringer"></div>
+                                <div class="option" data-option="At identificere kundens udfordringer og problemer"></div>
+                                <div class="option" data-option="At spørge til kundens budget"></div>
+                           </div>
+
+                           <!-- 4 -->
+                           <div class="question"
+                                data-question="Hvilken type spørgsmål udforsker konsekvenserne af de identificerede problemer?"
+                                data-answer="1"
+                                data-explanation="Implikationsspørgsmål (I i SPIN) bruges til at få kunden til at indse alvoren og de bredere konsekvenser af deres problemer.">
+                                <div class="option" data-option="Situationsspørgsmål (S)"></div>
+                                <div class="option" data-option="Implikationsspørgsmål (I)"></div>
+                                <div class="option" data-option="Problem-spørgsmål (P)"></div>
+                                <div class="option" data-option="Nyttespørgsmål (N)"></div>
+                           </div>
+
+                           <!-- 5 -->
+                           <div class="question"
+                                data-question="Hvad fokuserer Nyttespørgsmål (N i SPIN) på?"
+                                data-answer="3"
+                                data-explanation="Nyttespørgsmål fokuserer på værdien, fordelene eller nytten ved at løse kundens problem. De hjælper kunden med selv at formulere fordelene ved en løsning.">
+                                <div class="option" data-option="På omkostningerne ved problemet"></div>
+                                <div class="option" data-option="På kundens nuværende situation"></div>
+                                <div class="option" data-option="På de tekniske detaljer i løsningen"></div>
+                                <div class="option" data-option="På værdien og fordelene ved at løse problemet"></div>
+                           </div>
+
+                          
+
+                           <!-- 7 -->
+                           <div class="question"
+                                data-question="Hvad viste Neil Rackhams forskning om succesfulde sælgere i komplekse salg?"
+                                data-answer="0"
+                                data-explanation="Rackhams forskning viste, at topsælgere stillede markant flere Implikations- og Nyttespørgsmål. De fokuserede på at opbygge værdien af løsningen ved at afdække konsekvenserne af problemerne, frem for at fokusere på hurtige lukketeknikker.">
+                                <div class="option" data-option="De stillede flere Implikations- og Nyttespørgsmål"></div>
+                                <div class="option" data-option="De stillede flest Situationsspørgsmål"></div>
+                                <div class="option" data-option="De fokuserede primært på at præsentere produktet"></div>
+                                <div class="option" data-option="De brugte mange lukkede spørgsmål"></div>
+                           </div>
+
+                        
+
+                           <!-- 9 -->
+                           <div class="question"
+                                data-question="Hvad er formålet med at bruge åbne spørgsmål i Situations-fasen (S)?"
+                                data-answer="0"
+                                data-explanation="Åbne spørgsmål (fx 'Hvordan...? Fortæl mig om...') i Situations-fasen inviterer kunden til at dele mere information og giver rådgiveren en dybere forståelse af konteksten, modsat lukkede ja/nej-spørgsmål.">
+                                <div class="option" data-option="At få en dybere forståelse og invitere til dialog"></div>
+                                <div class="option" data-option="At få hurtige ja/nej-svar"></div>
+                                <div class="option" data-option="At afdække specifikke problemer"></div>
+                                <div class="option" data-option="At styre samtalen mod en bestemt løsning"></div>
+                           </div>
+
+                           <!-- 10 -->
+                           <div class="question"
+                                data-question="Hvilken typisk fejl nævnes i forbindelse med Problem-fasen (P)?"
+                                data-answer="1"
+                                data-explanation="En typisk fejl i Problem-fasen er at springe direkte til løsninger, så snart et problem nævnes, i stedet for at udforske problemet grundigt først. Dette kan føre til, at man misser det egentlige underliggende problem.">
+                                <div class="option" data-option="At stille for mange spørgsmål"></div>
+                                <div class="option" data-option="At springe direkte til løsninger uden at udforske problemet"></div>
+                                <div class="option" data-option="At bruge for lang tid på at tale om situationen"></div>
+                                <div class="option" data-option="At fokusere for meget på konsekvenserne"></div>
+                           </div>
+
+                           <!-- 11 -->
+                           <div class="question"
+                                data-question="Hvorfor er det vigtigt ikke at overdrive fordelene i Nytte-fasen (N)?"
+                                data-answer="3"
+                                data-explanation="At overdrive fordelene (Nytten) af en løsning kan virke utroværdigt og skade rådgiverens troværdighed. Det er bedre at fokusere på realistiske og målbare fordele, som kunden kan relatere til.">
+                                <div class="option" data-option="Fordi kunden måske ikke forstår dem"></div>
+                                <div class="option" data-option="Fordi det tager for lang tid"></div>
+                                <div class="option" data-option="Fordi det kan gøre kunden forvirret"></div>
+                                <div class="option" data-option="Fordi det kan føre til tab af troværdighed"></div>
+                           </div>
+
+                         
+
+
+
+                             
+
+                              <!-- 7 -->
+                              <div class="question"
+                                   data-question="Hvilken typisk fejl begås ved Problem-spørgsmål?"
+                                   data-answer="1"
+                                   data-explanation="En typisk fejl ved Problem-spørgsmål er at springe direkte til løsninger uden at udforske problemet grundigt, hvilket kan føre til, at man misser underliggende problemer.<br><br>
+                                        Når rådgiveren springer for hurtigt til løsninger, risikerer man at adressere symptomer snarere end de grundlæggende årsager til kundens problemer. Dette kan resultere i løsninger, der ikke fuldt ud imødekommer kundens reelle behov.<br><br>
+                                        <table class='info-table'w-100'>
+                                             <tr><th>SPIN Fase</th><th>Typisk Fejl</th><th>Konsekvens</th><th>Bedre Tilgang</th></tr>
+                                             <tr><td>Problem</td><td>Spring direkte til løsninger</td><td>Misser underliggende problemer</td><td>Udforsk problemet grundigt før løsningsforslag</td></tr>
+                                        </table><br><br>
+                                        For eksempel: En kunde nævner, at deres virksomhed har likviditetsproblemer. En utålmodig rådgiver foreslår måske straks en kassekredit, men ved at udforske problemet grundigere (f.eks. med spørgsmål som 'Hvordan opstår likviditetsproblemerne?' eller 'Hvilke mønstre ser I i jeres pengestrøm?') kan det vise sig, at det egentlige problem er lange betalingsfrister fra kunder eller ineffektiv lagerstyring, hvilket kræver helt andre løsninger end blot en kassekredit.<br><br>
+                                        Den bedre tilgang er at udforske problemet grundigt, før man præsenterer løsningsforslag. Dette giver en dybere forståelse af kundens situation og sikrer, at den endelige løsning adresserer de reelle årsager til problemet.">
+                                   <div class="option"
+                                        data-option="At stille for personlige spørgsmål"></div>
+                                   <div class="option"
+                                        data-option="At springe direkte til løsninger"></div>
+                                   <div class="option"
+                                        data-option="At være for negativ om kundens situation"></div>
+                                   <div class="option"
+                                        data-option="At stille for tekniske spørgsmål"></div>
+                              </div>
+
+                              <!-- 8 -->
+                              <div class="question"
+                                   data-question="Hvad er formålet med Nytte-spørgsmål (Need-payoff) i SPIN-teknikken?"
+                                   data-answer="2"
+                                   data-explanation="Formålet med Nytte-spørgsmål (Need-payoff) er at få kunden til at udtrykke værdien af at løse problemerne, hvilket hjælper med at skabe motivation for løsningen.<br><br>
+                                        Nytte-spørgsmål får kunden til selv at formulere fordelene ved en potentiel løsning, i stedet for at rådgiveren præsenterer dem. Dette skaber et stærkere ejerskab og engagement hos kunden.<br><br>
+                                        <table class='info-table'w-100'>
+                                             <tr><th>SPIN Element</th><th>Formål</th><th>Gode Eksempler</th></tr>
+                                             <tr><td>Nytte (Need-payoff)</td><td>Værdien af at løse problemerne</td><td>'Hvilken betydning ville det have, hvis...?'<br>
+                                             'Hvor vigtigt ville det være for jer at...?'<br>
+                                             'Hvad ville det betyde for jeres tryghed at...?'</td></tr>
+                                        </table><br><br>
+                                        Konkrete eksempler på Nytte-spørgsmål fra finanssektoren:<br>
+                                        <ul>
+                                             <li>'Hvilken værdi ville det have for jer at have en driftstabsforsikring, der dækker jeres faste omkostninger og tabt fortjeneste under et produktionsstop?'</li>
+                                             <li>'Hvad ville det betyde for jeres fokus på kerneforretningen, hvis I kunne frigøre X antal timer om måneden fra administration?'</li>
+                                             <li>'Hvilken værdi ville det have for dig at have en klar, langsigtet plan for formuen, der sikrer din ønskede levestandard og tager højde for inflation og skat?'</li>
+                                        </ul><br>
+                                        Når kunden selv formulerer værdien, bliver argumenterne for at implementere løsningen langt stærkere, end hvis rådgiveren præsenterer dem. Det skaber også en naturlig overgang til løsningspræsentationen, da kunden allerede har udtrykt behov for de fordele, som løsningen tilbyder.">
+                                   <div class="option"
+                                        data-option="At introducere produktets pris"></div>
+                                   <div class="option"
+                                        data-option="At diskutere tekniske detaljer"></div>
+                                   <div class="option"
+                                        data-option="At få kunden til at udtrykke værdien af at løse problemerne"></div>
+                                   <div class="option"
+                                        data-option="At afslutte samtalen på en positiv måde"></div>
+                              </div>
+
+                              <!-- 9 -->
+                              <div class="question"
+                                   data-question="Hvilken typisk fejl begås ved Implikations-spørgsmål?"
+                                   data-answer="0"
+                                   data-explanation="En typisk fejl ved Implikations-spørgsmål er at skabe unødig frygt, hvilket kan føre til, at kunden bliver defensiv.<br><br>
+                                        Implikations-spørgsmål skal udforske konsekvenserne af kundens problemer, men hvis de formuleres for drastisk eller skræmmende, kan det få kunden til at gå i forsvarsposition eller føle, at rådgiveren overdriver problemerne for at sælge en løsning.<br><br>
+                                        <table class='info-table'w-100'>
+                                             <tr><th>SPIN Fase</th><th>Typisk Fejl</th><th>Konsekvens</th><th>Bedre Tilgang</th></tr>
+                                             <tr><td>Implikation</td><td>Skabe unødig frygt</td><td>Kunden bliver defensiv</td><td>Balance mellem realisme og konstruktiv dialog</td></tr>
+                                        </table><br><br>
+                                        Eksempel på overdrevet Implikations-spørgsmål: 'Hvis I fortsætter uden denne cyberforsikring, risikerer I at hele virksomheden går konkurs ved det første hackerangreb, er I virkelig klar til at tage den risiko?'<br><br>
+                                        Mere balanceret tilgang: 'Hvordan ville et cybersikkerhedsbrud påvirke jeres daglige drift? Hvilke systemer er mest kritiske for jeres forretning, og hvad ville konsekvenserne være, hvis de var utilgængelige i en periode?'<br><br>
+                                        Den bedre tilgang er at finde en balance mellem at belyse realistiske konsekvenser og opretholde en konstruktiv dialog. Implikations-spørgsmål skal hjælpe kunden med at se konsekvenserne klart, uden at skabe unødig frygt eller pres.">
+                                   <div class="option"
+                                        data-option="At skabe unødig frygt"></div>
+                                   <div class="option"
+                                        data-option="At stille for få spørgsmål"></div>
+                                   <div class="option"
+                                        data-option="At bruge for teknisk sprog"></div>
+                                   <div class="option"
+                                        data-option="At fokusere for meget på økonomiske aspekter"></div>
+                              </div>
+
+                             
+                         </div>
+                    </div>
+               </div>
+          </div>
+     </div>
+
+     <script src="script.js">
+     </script>
+</body>
+
+</html> 

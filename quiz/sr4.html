@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+     
+     <title>Quiz Kommunikation i Finansiel Rådgivning</title>
+     <link rel="stylesheet"
+           href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+     <link rel="stylesheet"
+           href="styles.css">
+     <link rel="icon"
+           href="favicon.svg">
+     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+     <script id="MathJax-script"
+             async
+             src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+     <script>
+          window.MathJax = {
+               tex: {
+                    inlineMath: [['$', '$']],
+                    displayMath: [['$$', '$$']]
+               },
+               svg: {
+                    scale: 0.9,
+               },
+               chtml: {
+                    scale: 0.9,
+               }
+          };
+     </script>
+     <link rel="stylesheet"
+           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+     <style>
+          .card-body {
+               font-size: 1em;
+          }
+
+          .card img {
+               max-width: 100%;
+               height: auto;
+          }
+     </style>
+</head>
+
+<body data-formål="Forståelse af kundeservice og relationsstyring i finanssektoren."
+     data-forudsætning="Kendskab til moderne salgsteknikker.">
+     <header> <a href="index.html"
+             target="_blank"><img src="tepedulogoanim.svg"
+                    alt="Logo"
+                    width="8%"></a>
+          <h2>Quiz Kommunikation i Finansiel Rådgivning</h2>
+     </header>
+
+
+     <div class="container">
+          <div class="row justify-content-center">
+               <div class="col-12 col-md-12 col-lg-12">
+                    <div class="card mt-5">
+                         <div class="card-body">
+
+                              <div id="postProgressContent" class="mt-4" style="color: rgb(255, 255, 255);">
+                                   <div>
+                                        <h1>
+                                             Salgsteknikker: Kommunikation i Finansiel Rådgivning
+                                        </h1>
+                                   </div>
+                              </div>
+
+                              <br>
+                              <br>
+
+                              <h1 id="question"
+                                  class="card-title"></h1>
+                              <div id="options"
+                                   class="mt-4"></div>
+                              <div id="progress-bar"
+                                   class="progress-bar-container"></div>
+
+                                <!-- 1 -->
+                                <div class="question"
+                                     data-question="Hvad er Transaktionsanalyse (TA) primært et værktøj til?"
+                                     data-answer="1"
+                                     data-explanation="TA, udviklet af Eric Berne, bruges til at forstå de 'transaktioner' (udvekslinger) i en samtale ved at analysere de jeg-tilstande (Forælder, Voksen, Barn), som parterne kommunikerer fra.<br><br>Det hjælper med at identificere mønstre og potentielle konflikter i dialogen.">
+                                     <div class="option" data-option="At analysere en virksomheds finansielle transaktioner"></div>
+                                     <div class="option" data-option="At forstå og analysere kommunikationen mellem mennesker"></div>
+                                     <div class="option" data-option="At måle kundetilfredshed"></div>
+                                     <div class="option" data-option="At udvikle nye finansielle produkter"></div>
+                                </div>
+
+                                <!-- 2 -->
+                                <div class="question"
+                                     data-question="Hvilke tre jeg-tilstande opererer Transaktionsanalysen med?"
+                                     data-answer="3"
+                                     data-explanation="TA opererer med tre grundlæggende jeg-tilstande: Forælder-Jeg (baseret på erfaringer med autoritetsfigurer), Voksen-Jeg (rationel, objektiv), og Barne-Jeg (baseret på barndommens følelser og reaktioner).">
+                                     <div class="option" data-option="Chef, Medarbejder, Kunde"></div>
+                                     <div class="option" data-option="Logisk, Følelsesmæssig, Intuitiv"></div>
+                                     <div class="option" data-option="Submissiv, Assertiv, Aggressiv"></div>
+                                     <div class="option" data-option="Forælder, Voksen, Barn"></div>
+                                </div>
+
+                                <!-- 3 -->
+                                <div class="question"
+                                     data-question="Hvilken jeg-tilstand kendetegnes ved rationel, objektiv og faktabaseret kommunikation her og nu?"
+                                     data-answer="1"
+                                     data-explanation="Voksen-Jeg er den tilstand, hvor vi tænker og kommunikerer logisk, analytisk og objektivt baseret på den aktuelle situation og tilgængelige fakta.<br><br>Eksempel: 'Baseret på de seneste markedsdata ser vi en tendens til...' eller 'Lad os gennemgå budgettet punkt for punkt.'">
+                                     <div class="option" data-option="Forælder-Jeg"></div>
+                                     <div class="option" data-option="Voksen-Jeg"></div>
+                                     <div class="option" data-option="Barne-Jeg"></div>
+                                     <div class="option" data-option="Kritisk Forælder-Jeg"></div>
+                                </div>
+
+                                <!-- 4 -->
+                                <div class="question"
+                                     data-question="En kunde siger: 'Det er jo fuldstændig uansvarligt at foreslå aktier nu!'<br>Hvilken jeg-tilstand kommunikerer kunden sandsynligvis fra?"
+                                     data-answer="2"
+                                     data-explanation="Udsagnet er dømmende og autoritært ('uansvarligt!'), hvilket er typisk for den Kritiske Forælder-jeg-tilstand.<br><br>Den Kritiske Forælder udtrykker ofte regler, normer og kritik baseret på tidligere erfaringer eller overbevisninger.">
+                                     <div class="option" data-option="Omsorgsfuld Forælder"></div>
+                                     <div class="option" data-option="Voksen"></div>
+                                     <div class="option" data-option="Kritisk Forælder"></div>
+                                     <div class="option" data-option="Tilpasset Barn"></div>
+                                </div>
+
+                                <!-- 5 -->
+                                <div class="question"
+                                     data-question="Hvordan kan en rådgiver bedst reagere på en kunde, der kommunikerer fra Kritisk Forælder?<br>(f.eks. ved at kritisere bankens gebyrer)"
+                                     data-answer="0"
+                                     data-explanation="Den bedste reaktion er ofte at svare fra Voksen-Jeg ved at anerkende frustrationen (uden at tage skylden) og fokusere på fakta og løsninger for at invitere kunden tilbage til en Voksen-Voksen dialog.<br><br>Eksempel: 'Jeg kan høre, du er frustreret over gebyrerne. Lad os kigge på den konkrete opgørelse sammen og se, hvad de dækker over.'">
+                                     <div class="option" data-option="Ved at svare fra Voksen-Jeg (fokus på fakta og løsning)"></div>
+                                     <div class="option" data-option="Ved at svare fra Kritisk Forælder (gå i forsvar/angreb)"></div>
+                                     <div class="option" data-option="Ved at svare fra Tilpasset Barn (undskylde overdrevent)"></div>
+                                     <div class="option" data-option="Ved at ignorere kritikken"></div>
+                                </div>
+
+                                <!-- 6 -->
+                                <div class="question"
+                                     data-question="Hvad kendetegner assertiv kommunikation?"
+                                     data-answer="1"
+                                     data-explanation="Assertiv kommunikation er en balance, hvor man udtrykker egne behov og meninger klart og respektfuldt, samtidig med at man anerkender og respekterer den anden parts synspunkter og grænser.">
+                                     <div class="option" data-option="At man altid får sin vilje"></div>
+                                     <div class="option" data-option="At udtrykke sig klart og respektfuldt med hensyn til andre"></div>
+                                     <div class="option" data-option="At undgå konflikter for enhver pris (submissiv)"></div>
+                                     <div class="option" data-option="At dominere samtalen og ignorere andres input (aggressiv)"></div>
+                                </div>
+
+                                <!-- 7 -->
+                                <div class="question"
+                                     data-question="Hvilken kommunikationsstil er kendetegnet ved lav stemme, undgåelse af øjenkontakt og tendens til at sige 'måske' eller 'undskyld'?"
+                                     data-answer="2"
+                                     data-explanation="Disse træk er typiske for submissiv kommunikation, hvor personen undlader at udtrykke egne behov og grænser af frygt for konflikt eller afvisning.<br><br>Personen sætter ofte andres behov over sine egne.">
+                                     <div class="option" data-option="Aggressiv"></div>
+                                     <div class="option" data-option="Assertiv"></div>
+                                     <div class="option" data-option="Submissiv"></div>
+                                     <div class="option" data-option="Voksen-Jeg"></div>
+                                </div>
+
+                                <!-- 8 -->
+                                <div class="question"
+                                     data-question="Hvad er en ulempe ved aggressiv kommunikation i finansiel rådgivning?"
+                                     data-answer="0"
+                                     data-explanation="Aggressiv kommunikation (høj stemme, afbrydelser, bebrejdelser) skaber konflikter, skader relationer, kan føre til kundetab og give rådgiveren/virksomheden et dårligt omdømme.">
+                                     <div class="option" data-option="Skaber konflikter og skader relationer"></div>
+                                     <div class="option" data-option="Får rådgiveren til at fremstå usikker"></div>
+                                     <div class="option" data-option="Fører ofte til de bedste løsninger for kunden"></div>
+                                     <div class="option" data-option="Er den mest effektive måde at lukke et salg på"></div>
+                                </div>
+
+                                <!-- 9 -->
+                                <div class="question"
+                                     data-question="En rådgiver siger: 'Jeg forstår, du er bekymret for risikoen, men lad os se på den langsigtede historiske afkast for denne type investering.'<br>Hvilken kommunikationsstil er dette et eksempel på?"
+                                     data-answer="3"
+                                     data-explanation="Rådgiveren anerkender kundens bekymring ('Jeg forstår...') og præsenterer derefter fakta og inviterer til dialog ('lad os se på...'). Dette er typisk for assertiv kommunikation og Voksen-Jeg.<br><br>Det viser respekt for kunden, samtidig med at rådgiveren står fast på sin faglige vurdering.">
+                                     <div class="option" data-option="Submissiv"></div>
+                                     <div class="option" data-option="Aggressiv"></div>
+                                     <div class="option" data-option="Kritisk Forælder"></div>
+                                     <div class="option" data-option="Assertiv (og Voksen-Jeg)"></div>
+                                </div>
+
+                                <!-- 10 -->
+                                <div class="question"
+                                     data-question="Hvad betyder det at bruge 'Jeg-budskaber' i assertiv kommunikation?"
+                                     data-answer="1"
+                                     data-explanation="At bruge 'Jeg-budskaber' (f.eks. 'Jeg mener', 'Jeg oplever', 'Jeg har brug for') fokuserer på egen oplevelse og egne argumenter, hvilket er mindre konfrontatorisk end 'Du-budskaber' (f.eks. 'Du gør altid', 'Du forstår ikke').<br><br>Det tager ejerskab for egne følelser og synspunkter.">
+                                     <div class="option" data-option="At tale mest om sig selv"></div>
+                                     <div class="option" data-option="At formulere sig ud fra egen oplevelse frem for at anklage"></div>
+                                     <div class="option" data-option="At starte alle sætninger med 'Jeg'"></div>
+                                     <div class="option" data-option="At undgå at udtrykke egne meninger"></div>
+                                </div>
+
+                                <!-- 11 -->
+                                <div class="question"
+                                     data-question="Hvorfor er det vigtigt at anerkende den andens perspektiv i assertiv kommunikation, selvom man er uenig?"
+                                     data-answer="0"
+                                     data-explanation="At anerkende den andens perspektiv ('Jeg kan forstå, du ser det sådan...') viser, at man lytter og respekterer den anden, hvilket kan nedtrappe konflikter og åbne op for en mere konstruktiv dialog, selvom man fastholder sit eget synspunkt.">
+                                     <div class="option" data-option="Det viser, at man lytter og kan nedtrappe konflikter"></div>
+                                     <div class="option" data-option="Det betyder, at man giver den anden ret"></div>
+                                     <div class="option" data-option="Det er en måde at undgå at sige sin egen mening"></div>
+                                     <div class="option" data-option="Det er et tegn på submissiv adfærd"></div>
+                                </div>
+
+                                <!-- 12 -->
+                                <div class="question"
+                                     data-question="Hvad er en 'krydsende transaktion' i TA?"
+                                     data-answer="2"
+                                     data-explanation="En krydsende transaktion opstår, når svaret i en samtale kommer fra en anden jeg-tilstand end den, der blev talt til (f.eks. Voksen-Jeg sender, men modtager svar fra Kritisk Forælder-Jeg). Dette bryder kommunikationsflowet og fører ofte til misforståelser eller konflikt.<br><br>Eksempel: Rådgiver (Voksen): 'Hvornår passer det at se på budgettet?' Kunde (Kritisk Forælder): 'Du presser altid på!'">
+                                     <div class="option" data-option="Når begge parter taler fra Voksen-Jeg"></div>
+                                     <div class="option" data-option="Når der er et skjult budskab i kommunikationen"></div>
+                                     <div class="option" data-option="Når svaret kommer fra en uventet jeg-tilstand og skaber konflikt"></div>
+                                     <div class="option" data-option="Når kommunikationen er assertiv"></div>
+                                </div>
+
+                                <!-- 13 -->
+                                <div class="question"
+                                     data-question="En kunde siger usikkert: 'Jeg ved ikke rigtigt, om jeg tør investere... Hvad synes du jeg skal gøre?'<br>Hvilken jeg-tilstand er sandsynlig?"
+                                     data-answer="3"
+                                     data-explanation="Usikkerhed, tvivl og behov for andres mening eller godkendelse ('Hvad synes du?') er typiske tegn på det Tilpassede Barne-Jeg, der søger vejledning eller forsøger at undgå at tage ansvar.">
+                                     <div class="option" data-option="Voksen"></div>
+                                     <div class="option" data-option="Naturligt Barn"></div>
+                                     <div class="option" data-option="Kritisk Forælder"></div>
+                                     <div class="option" data-option="Tilpasset Barn"></div>
+                                </div>
+
+                                <!-- 14 -->
+                                <div class="question"
+                                     data-question="Hvad er et centralt mål ved at bruge TA og assertivitet i finansiel rådgivning?"
+                                     data-answer="1"
+                                     data-explanation="Målet er at forbedre kommunikationen ved at forstå dynamikkerne (TA) og udtrykke sig klart og respektfuldt (assertivitet) for at opbygge tillid, undgå unødige konflikter og skabe stærke, langvarige kunderelationer.">
+                                     <div class="option" data-option="At vinde enhver diskussion med kunden"></div>
+                                     <div class="option" data-option="At opbygge tillid og stærke kunderelationer gennem bedre kommunikation"></div>
+                                     <div class="option" data-option="At få kunden til altid at følge rådgiverens anbefaling"></div>
+                                     <div class="option" data-option="At diagnosticere kundens psykologiske profil"></div>
+                                </div>
+
+
+
+
+
+
+
+                              
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                         </div>
+                    </div>
+               </div>
+          </div>
+     </div>
+
+     <script src="script.js">
+     </script>
+</body>
+
+</html> 

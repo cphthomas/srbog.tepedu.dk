@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+     <title>Quiz Pipeline Salg</title>
+     <link rel="stylesheet"
+           href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+     <link rel="stylesheet"
+           href="styles.css">
+     <link rel="icon"
+           href="favicon.svg">
+     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+     <script id="MathJax-script"
+             async
+             src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+     <script>
+          window.MathJax = {
+               tex: {
+                    inlineMath: [['$', '$']],
+                    displayMath: [['$$', '$$']]
+               },
+               svg: {
+                    scale: 0.9,
+               },
+               chtml: {
+                    scale: 0.9,
+               }
+          };
+     </script>
+     <link rel="stylesheet"
+           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+     <style>
+          .card-body {
+               font-size: 1em;
+          }
+
+          .card img {
+               max-width: 100%;
+               height: auto;
+          }
+     </style>
+</head>
+
+<body data-formål="Forståelse af avanceret salgsledelse og team-coaching."
+     data-forudsætning="Kendskab til salgsetik og compliance.">
+     <header> <a href="index.html"
+             target="_blank"><img src="tepedulogoanim.svg"
+                    alt="Logo"
+                    width="8%"></a>
+          <h2>Quiz Pipeline Salg</h2>
+     </header>
+
+
+     <div class="container">
+          <div class="row justify-content-center">
+               <div class="col-12 col-md-12 col-lg-12">
+                    <div class="card mt-5">
+                         <div class="card-body">
+
+                              <div id="postProgressContent" class="mt-4" style="color: rgb(255, 255, 255);">
+                                   <div>
+                                        <h1>
+                                             Salgsteknikker: Pipeline Salg
+                                        </h1>
+                                   </div>
+                              </div>
+
+                              <br>
+                              <br>
+
+                              <h1 id="question"
+                                  class="card-title"></h1>
+                              <div id="options"
+                                   class="mt-4"></div>
+                              <div id="progress-bar"
+                                   class="progress-bar-container"></div>
+
+                                <!-- 1 -->
+                                <div class="question"
+                                     data-question="Hvad er hovedformålet med pipeline salg?"
+                                     data-answer="2"
+                                     data-explanation="Pipeline salg fokuserer på at skabe og vedligeholde en systematisk og forudsigelig strøm af potentielle kunder (leads) gennem definerede faser i salgsprocessen.<br><br>Målet er at sikre et kontinuerligt flow af salgsmuligheder og gøre salgsresultaterne mere forudsigelige.">
+                                     <div class="option" data-option="At fokusere på få, store kunder"></div>
+                                     <div class="option" data-option="At bruge pitching-teknikker"></div>
+                                     <div class="option" data-option="At skabe en systematisk og forudsigelig strøm af leads"></div>
+                                     <div class="option" data-option="At undgå brugen af CRM-systemer"></div>
+                                </div>
+
+                                <!-- 2 -->
+                                <div class="question"
+                                     data-question="Hvad er et 'Lead' i pipeline salg?"
+                                     data-answer="0"
+                                     data-explanation="Et lead er en potentiel kunde, der har vist en eller anden form for interesse, f.eks. ved at udfylde en formular eller klikke på en annonce, men som endnu ikke er fuldt kvalificeret.">
+                                     <div class="option" data-option="En potentiel kunde, der har vist interesse"></div>
+                                     <div class="option" data-option="En eksisterende kunde, der køber igen"></div>
+                                     <div class="option" data-option="En konkurrents kunde"></div>
+                                     <div class="option" data-option="En medarbejder i salgsafdelingen"></div>
+                                </div>
+
+                                <!-- 3 -->
+                                <div class="question"
+                                     data-question="Hvad beskriver begrebet 'Kvalificering' i en salgspipeline?"
+                                     data-answer="1"
+                                     data-explanation="Kvalificering er processen, hvor man vurderer, om et lead passer til målgruppen, har et reelt behov, budget og beslutningskompetence til at blive en kunde.<br><br>Det handler om at sortere og prioritere leads for at fokusere salgsindsatsen, hvor den giver mest værdi.">
+                                     <div class="option" data-option="Processen med at sende et tilbud"></div>
+                                     <div class="option" data-option="Processen med at vurdere et leads potentiale og relevans"></div>
+                                     <div class="option" data-option="Processen med at lukke salget"></div>
+                                     <div class="option" data-option="Processen med at generere nye leads"></div>
+                                </div>
+
+                                <!-- 4 -->
+                                <div class="question"
+                                     data-question="Hvad er en 'Konverteringsrate' i pipeline-sammenhæng?"
+                                     data-answer="3"
+                                     data-explanation="Konverteringsraten angiver, hvor mange procent af leads/kunder der bevæger sig fra én fase i salgspipelinen til den næste (f.eks. fra Lead til Møde, eller fra Tilbud til Salg).<br><br>Den bruges til at måle effektiviteten af de enkelte faser og identificere flaskehalse.">
+                                     <div class="option" data-option="Den samlede værdi af salg i pipelinen"></div>
+                                     <div class="option" data-option="Antallet af nye leads genereret"></div>
+                                     <div class="option" data-option="Omkostningen pr. genereret lead (CPL)"></div>
+                                     <div class="option" data-option="Procentdelen, der går fra én fase til den næste"></div>
+                                </div>
+
+                                <!-- 5 -->
+                                <div class="question"
+                                     data-question="Hvilket værktøj bruges typisk til systematisk at tracke kunder, aktiviteter og status i en salgspipeline?"
+                                     data-answer="0"
+                                     data-explanation="Et CRM-system (Customer Relationship Management) er designet til at administrere kundeinteraktioner og data gennem salgsprocessen, herunder pipeline management.">
+                                     <div class="option" data-option="CRM-system (f.eks. Salesforce, HubSpot)"></div>
+                                     <div class="option" data-option="Regneark alene (f.eks. Excel)"></div>
+                                     <div class="option" data-option="E-mail marketing software"></div>
+                                     <div class="option" data-option="Projektstyringsværktøj (f.eks. Asana)"></div>
+                                </div>
+
+                                <!-- 6 -->
+                                <div class="question"
+                                     data-question="Hvad er en typisk udfordring ved pipeline management?"
+                                     data-answer="2"
+                                     data-explanation="Der er tre typiske udfordringer: Manglende opdatering (up præcis pipeline), for mange leads (overbelastning), og lange salgscyklusser (pipeline blokeret).<br><br>Manglende opdatering gør pipelinen upålidelig som styringsværktøj og kan føre til spildte ressourcer.">
+                                     <div class="option" data-option="For få leads i toppen"></div>
+                                     <div class="option" data-option="For hurtige salgscyklusser"></div>
+                                     <div class="option" data-option="Manglende opdatering af pipeline-status"></div>
+                                     <div class="option" data-option="For simpel kvalificeringsproces"></div>
+                                </div>
+
+                              
+
+                                <!-- 8 -->
+                                <div class="question"
+                                     data-question="Hvad måler KPI'en 'CPL' (Cost Per Lead)?"
+                                     data-answer="2"
+                                     data-explanation="CPL måler den gennemsnitlige omkostning ved at anskaffe ét nyt lead gennem marketing- eller salgsaktiviteter. Det hjælper med at vurdere effektiviteten af leadgenererende kampagner.">
+                                     <div class="option" data-option="Den samlede omsætning pr. lead"></div>
+                                     <div class="option" data-option="Konverteringsraten fra lead til kunde"></div>
+                                     <div class="option" data-option="Den gennemsnitlige omkostning for at skaffe ét lead"></div>
+                                     <div class="option" data-option="Antallet af leads pr. sælger"></div>
+                                </div>
+
+                             
+
+                              
+
+                                <!-- 11 -->
+                                <div class="question"
+                                     data-question="Hvad kendetegner den salgsproces, som pipeline salg egner sig særligt godt til?"
+                                     data-answer="1"
+                                     data-explanation="Pipeline salg er især effektivt for mere standardiserede produkter/løsninger (f.eks. simple forsikringer, standard lån), hvor salgsprocessen kan opdeles i klare, gentagelige faser, og hvor der ofte er et større antal leads at håndtere systematisk.<br><br>Det er mindre egnet til meget komplekse, skræddersyede løsninger.">
+                                     <div class="option" data-option="Meget komplekse, unikke løsninger pr. kunde"></div>
+                                     <div class="option" data-option="Standardiserede produkter med gentagelige salgsfaser"></div>
+                                     <div class="option" data-option="Salg der kræver dybdegående, langvarig rådgivning"></div>
+                                     <div class="option" data-option="Salg baseret primært på relationer"></div>
+                                </div>
+
+                                <!-- 12 -->
+                                <div class="question"
+                                     data-question="Hvad kan en analyse af konverteringsrater mellem pipeline-faserne hjælpe en virksomhed med?"
+                                     data-answer="0"
+                                     data-explanation="Ved at analysere, hvor mange procent der falder fra mellem hver fase, kan virksomheden identificere flaskehalse i processen.<br><br>F.eks. hvis mange falder fra efter tilbudsfasen, kan det indikere et problem med prisen, tilbuddets klarhed, eller at kvalificeringen tidligere i processen ikke var god nok.">
+                                     <div class="option" data-option="Identificere flaskehalse og optimere salgsprocessen"></div>
+                                     <div class="option" data-option="Beregne den samlede værdi af alle leads"></div>
+                                     <div class="option" data-option="Fastlægge den ideelle pris på produktet"></div>
+                                     <div class="option" data-option="Måle den enkelte sælgers performance"></div>
+                                </div>
+
+                                
+
+                                <!-- 14 -->
+                                <div class="question"
+                                     data-question="Hvad er formålet med at bruge KPI'er (Key Performance Indicators) i pipeline salg?"
+                                     data-answer="1"
+                                     data-explanation="KPI'er er specifikke, målbare nøgletal (f.eks. antal møder, konverteringsrate), der bruges til at vurdere succesen af de enkelte faser og aktiviteter i pipelinen og identificere områder for optimering.">
+                                     <div class="option" data-option="At gøre salgsprocessen mere kompliceret"></div>
+                                     <div class="option" data-option="At måle succesen af aktiviteter og identificere optimeringsområder"></div>
+                                     <div class="option" data-option="At erstatte behovet for et CRM-system"></div>
+                                     <div class="option" data-option="At give sælgerne flere administrative opgaver"></div>
+                                </div>
+
+
+
+
+
+
+
+                              
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                         </div>
+                    </div>
+               </div>
+          </div>
+     </div>
+
+     <script src="script.js">
+     </script>
+</body>
+
+</html> 

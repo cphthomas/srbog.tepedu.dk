@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+     <title>Quiz Challenger Salg</title>
+     <link rel="stylesheet"
+           href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+     <link rel="stylesheet"
+           href="styles.css">
+     <link rel="icon"
+           href="favicon.svg">
+     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+     <script id="MathJax-script"
+             async
+             src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+     <script>
+          window.MathJax = {
+               tex: {
+                    inlineMath: [['$', '$']],
+                    displayMath: [['$$', '$$']]
+               },
+               svg: {
+                    scale: 0.9,
+               },
+               chtml: {
+                    scale: 0.9,
+               }
+          };
+     </script>
+     <link rel="stylesheet"
+           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+     <style>
+          .card-body {
+               font-size: 1em;
+          }
+
+          .card img {
+               max-width: 100%;
+               height: auto;
+          }
+     </style>
+</head>
+
+<body data-formål="Forståelse af digital markedsføring og online salg."
+     data-forudsætning="Kendskab til kundeservice og relationsstyring.">
+     <header> <a href="index.html"
+             target="_blank"><img src="tepedulogoanim.svg"
+                    alt="Logo"
+                    width="8%"></a>
+          <h2>Quiz Challenger Salg</h2>
+     </header>
+
+
+     <div class="container">
+          <div class="row justify-content-center">
+               <div class="col-12 col-md-12 col-lg-12">
+                    <div class="card mt-5">
+                         <div class="card-body">
+
+                              <div id="postProgressContent" class="mt-4" style="color: rgb(255, 255, 255);">
+                                   <div>
+                                        <h1>
+                                             Salgsteknikker: Challenger Salg
+                                        </h1>
+                                   </div>
+                              </div>
+
+                              <br>
+                              <br>
+
+                              <h1 id="question"
+                                  class="card-title"></h1>
+                              <div id="options"
+                                   class="mt-4"></div>
+                              <div id="progress-bar"
+                                   class="progress-bar-container"></div>
+
+                                <!-- 1 -->
+                                <div class="question"
+                                     data-question="Hvad er hovedformålet med Challenger Salg-tilgangen?"
+                                     data-answer="1"
+                                     data-explanation="Challenger Salg fokuserer på at udfordre kundens tænkning ved at levere unik indsigt og guide dem mod nye løsninger, snarere end blot at opbygge relationer eller fokusere på produktfunktioner.<br><br>Målet er at lære kunden noget nyt og værdifuldt om deres egen situation eller marked, som de ikke selv havde set.">
+                                     <div class="option" data-option="At opbygge langvarige relationer"></div>
+                                     <div class="option" data-option="Aktivt at udfordre kundens antagelser"></div>
+                                     <div class="option" data-option="Kun at fokusere på produktets funktioner"></div>
+                                     <div class="option" data-option="At reducere salgscyklussens længde"></div>
+                                </div>
+
+                                <!-- 2 -->
+                                <div class="question"
+                                     data-question="Hvilket af disse er IKKE et af de fire kerneprincipper i Challenger Salg?"
+                                     data-answer="2"
+                                     data-explanation="De fire kerneprincipper er Kommerciel Indsigt (Commercial Insight), Konstruktiv Tension (Constructive Tension), Nyt Perspektiv (New Perspective) og Skalerbar Læring (Scalable Learning). Personlig historiefortælling er ikke et af dem.">
+                                     <div class="option" data-option="Kommerciel Indsigt"></div>
+                                     <div class="option" data-option="Konstruktiv Tension"></div>
+                                     <div class="option" data-option="Personlig Historiefortælling"></div>
+                                     <div class="option" data-option="Skalerbar Læring"></div>
+                                </div>
+
+                                <!-- 3 -->
+                                <div class="question"
+                                     data-question="Hvad refererer 'Kommerciel Indsigt' til i Challenger Salg?"
+                                     data-answer="1"
+                                     data-explanation="Kommerciel Indsigt handler om at dele unik viden om markedet, trends eller kundens egen forretning for at lære dem noget nyt og skabe værdi, som de ikke selv havde indset.<br><br>Det er viden, der får kunden til at tænke: 'Det har jeg ikke overvejet før!'">
+                                     <div class="option" data-option="At udfordre kundens budgetbegrænsninger"></div>
+                                     <div class="option" data-option="At dele unik markedsviden og trends"></div>
+                                     <div class="option" data-option="At forhandle lavere priser"></div>
+                                     <div class="option" data-option="At tilbyde rabatter"></div>
+                                </div>
+
+                                <!-- 4 -->
+                                <div class="question"
+                                     data-question="Hvad beskrives som Niveau 3 af kundeindsigt i Challenger Salg?"
+                                     data-answer="2"
+                                     data-explanation="Niveau 3 er Transformativ Indsigt. Det omhandler fremtidige muligheder, disruptive teknologier og nye forretningsmodeller, der kan ændre kundens forretning grundlæggende. Niveau 1 er Grundlæggende Indsigt, og Niveau 2 er Markedsindsigt.">
+                                     <div class="option" data-option="Grundlæggende Indsigt (kundens nuværende situation)"></div>
+                                     <div class="option" data-option="Markedsindsigt (markedstendenser, konkurrenter)"></div>
+                                     <div class="option" data-option="Transformativ Indsigt (fremtidige muligheder, disruption)"></div>
+                                     <div class="option" data-option="Historisk Indsigt (tidligere data)"></div>
+                                </div>
+
+                                <!-- 5 -->
+                                <div class="question"
+                                     data-question="Hvad indebærer 'Teach'-fasen i Challenger-modellen?"
+                                     data-answer="1"
+                                     data-explanation="'Teach'-fasen (Undervis) handler om at uddanne kunden med nye perspektiver baseret på unik data og indsigt, som udfordrer deres nuværende tænkning og viser dem en ny vej.<br><br>Det handler om at ændre kundens opfattelse af deres egne behov eller muligheder.">
+                                     <div class="option" data-option="At dele generel virksomhedsinformation"></div>
+                                     <div class="option" data-option="At uddanne med nye perspektiver og data"></div>
+                                     <div class="option" data-option="At spørge ind til nuværende produktbrug"></div>
+                                     <div class="option" data-option="At forhandle kontraktvilkår"></div>
+                                </div>
+
+                                <!-- 6 -->
+                                <div class="question"
+                                     data-question="Hvad er hovedfokus i 'Tailor'-fasen?"
+                                     data-answer="1"
+                                     data-explanation="'Tailor'-fasen (Skræddersy) fokuserer på at tilpasse den kommercielle indsigt og budskabet specifikt til kundens kontekst, branche, mål og de relevante interessenter i organisationen.<br><br>Indsigten skal give mening for netop denne kunde og deres specifikke udfordringer og mål.">
+                                     <div class="option" data-option="At standardisere budskabet til alle kunder"></div>
+                                     <div class="option" data-option="At tilpasse indsigt til kundens kontekst"></div>
+                                     <div class="option" data-option="At lukke salget med rabatter"></div>
+                                     <div class="option" data-option="At øge antallet af produktfunktioner"></div>
+                                </div>
+
+                                <!-- 7 -->
+                                <div class="question"
+                                     data-question="Hvad er formålet med 'Take Control'-fasen?"
+                                     data-answer="1"
+                                     data-explanation="'Take Control'-fasen (Tag Kontrol) handler om at guide samtalen bestemt mod den foreslåede løsning ved at udfordre status quo, adressere indvendinger og skabe fremdrift i salgsprocessen.<br><br>Det handler om at være komfortabel med at diskutere pris og potentielle barrierer tidligt.">
+                                     <div class="option" data-option="At lade kunden styre samtalen"></div>
+                                     <div class="option" data-option="At guide kunden mod løsningen ved at udfordre status quo"></div>
+                                     <div class="option" data-option="At tilbyde gratis prøveperioder"></div>
+                                     <div class="option" data-option="At undgå svære spørgsmål"></div>
+                                </div>
+
+                                <!-- 8 -->
+                                <div class="question"
+                                     data-question="Hvordan kan en revisor (som Challenger) bruge kommerciel indsigt?<br>F.eks. ved at præsentere data fra lignende virksomheder,<br>der viser en udbredt, men ofte overset, risiko (som svind pga. manglende funktionsadskillelse)?"
+                                     data-answer="1"
+                                     data-explanation="Ved at præsentere specifik, datadrevet indsigt om en relevant risiko, som kunden (f.eks. en CFO) måske ikke selv har identificeret i egen virksomhed, kan revisoren udfordre kundens nuværende processer og skabe grundlag for en dialog om nye løsninger (f.eks. intern kontrol).<br><br>Det flytter fokus fra standardrevision til proaktiv risikostyring.">
+                                     <div class="option" data-option="At hans revisionsfirma var billigere end det nuværende"></div>
+                                     <div class="option" data-option="At standardrevision ikke altid fanger svind pga. manglende funktionsadskillelse"></div>
+                                     <div class="option" data-option="At 60% af virksomhederne var tilfredse med deres revisor"></div>
+                                </div>
+
+                                <!-- 9 -->
+                                <div class="question"
+                                     data-question="Hvordan kan en ejendomsmægler (som Challenger) udfordre en investors porteføljestrategi?<br>F.eks. ved at påpege et skift i markedet væk fra investorens nuværende ejendomstype<br>mod nyere, mere efterspurgte typer (f.eks. moderne, bæredygtige enheder)?"
+                                     data-answer="0"
+                                     data-explanation="Ved at præsentere data og indsigt om ændrede markedstendenser (f.eks. faldende efterspørgsel på store, ældre kontorlokaler og stigende på fleksible, grønne løsninger) kan mægleren udfordre investorens nuværende strategi og fremhæve risikoen ved ikke at tilpasse sig.<br><br>Dette åbner for en dialog om omlægning eller salg.">
+                                     <div class="option" data-option="Ved at påpege faldende efterspørgsel på investorens ejendomstype og stigende efterspørgsel på moderne enheder"></div>
+                                     <div class="option" data-option="Ved at tilbyde at finde nye lejere til de eksisterende lokaler hurtigere end konkurrenterne"></div>
+                                     <div class="option" data-option="Ved at foreslå en generel forøgelse af lejen for alle ejendomme"></div>
+                                </div>
+
+                              
+                                <!-- 11 -->
+                                <div class="question"
+                                     data-question="Hvordan kan en Private Banker (som Challenger) udfordre en kundes opfattelse af en 'sikker' portefølje?<br>F.eks. ved at introducere konceptet realafkast vs. nominelt afkast<br>og vise, hvordan inflation udhuler værdien af lavrisikoaktiver (kontanter, obligationer)?"
+                                     data-answer="0"
+                                     data-explanation="Ved at skifte fokus fra nominelle udsving til realafkast (efter inflation) kan bankrådgiveren udfordre kundens definition af 'risiko'. Den reelle risiko for en langsigtet investor kan være tab af købekraft, ikke kortsigtede markedsudsving.<br><br>Dette omdefinerer 'sikkerhed' og åbner for dialog om alternative strategier.">
+                                     <div class="option" data-option="Ved at fremhæve risikoen for tab af købekraft pga. inflation i lavrisikoaktiver"></div>
+                                     <div class="option" data-option="Ved at anbefale udelukkende højrisikoaktier"></div>
+                                     <div class="option" data-option="Ved at bekræfte, at kontanter var den sikreste investering"></div>
+                                </div>
+
+                                <!-- 12 -->
+                                <div class="question"
+                                     data-question="Hvilken typisk udfordring nævnes ved implementering af Challenger Salg?"
+                                     data-answer="1"
+                                     data-explanation="En for aggressiv udfordring kan gøre kunden defensiv. Andre nævnte udfordringer er manglende forberedelse (mister troværdighed) og forkert timing (misser muligheden).">
+                                     <div class="option" data-option="At metoden er for langsom"></div>
+                                     <div class="option" data-option="At kunden kan blive defensiv ved for aggressiv udfordring"></div>
+                                     <div class="option" data-option="At metoden kræver for mange ressourcer"></div>
+                                     <div class="option" data-option="At det er svært at finde kommerciel indsigt"></div>
+                                </div>
+
+                              
+
+                                <!-- 14 -->
+                                <div class="question"
+                                     data-question="Hvad er formålet med 'Konstruktiv Tension' i Challenger Salg?"
+                                     data-answer="3"
+                                     data-explanation="Konstruktiv Tension handler om at skabe en positiv spænding hos kunden ved at udfordre deres nuværende tilgang og vise dem værdien af en ny løsning.<br><br>Det skal motivere kunden til handling ved at belyse forskellen mellem deres nuværende situation og en bedre fremtidig situation, uden at skabe negativ konflikt.">
+                                     <div class="option" data-option="At gøre kunden utilpas for at presse et salg igennem"></div>
+                                     <div class="option" data-option="At undgå enhver form for uenighed med kunden"></div>
+                                     <div class="option" data-option="At sikre, at kunden forstår alle tekniske detaljer"></div>
+                                     <div class="option" data-option="At skabe positiv spænding og motivation til forandring gennem udfordring"></div>
+                                </div>
+
+
+
+
+
+
+
+                              
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                         </div>
+                    </div>
+               </div>
+          </div>
+     </div>
+
+     <script src="script.js">
+     </script>
+</body>
+
+</html> 

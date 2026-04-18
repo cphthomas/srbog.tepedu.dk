@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+     <title>Quiz Introduktion til Finansielt Salg</title>
+     <link rel="stylesheet"
+           href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+     <link rel="stylesheet"
+           href="styles.css">
+     <link rel="icon"
+           href="favicon.svg">
+     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+     <script id="MathJax-script"
+             async
+             src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+     <script>
+          window.MathJax = {
+               tex: {
+                    inlineMath: [['$', '$']],
+                    displayMath: [['$$', '$$']]
+               },
+               svg: {
+                    scale: 0.9,
+               },
+               chtml: {
+                    scale: 0.9,
+               }
+          };
+     </script>
+     <link rel="stylesheet"
+           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+     <style>
+          .card-body {
+               font-size: 1em;
+          }
+
+          .card img {
+               max-width: 100%;
+               height: auto;
+          }
+     </style>
+</head>
+
+<body data-formål="Forståelse af salgsteknikker i finanssektoren."
+     data-forudsætning="Grundlæggende kendskab til finansielle produkter.">
+     <header> <a href="index.html"
+             target="_blank"><img src="tepedulogoanim.svg"
+                    alt="Logo"
+                    width="8%"></a>
+          <h2>Quiz Introduktion til Finansielt Salg</h2>
+     </header>
+
+
+     <div class="container">
+          <div class="row justify-content-center">
+               <div class="col-12 col-md-12 col-lg-12">
+                    <div class="card mt-5">
+                         <div class="card-body">
+
+                              <div id="postProgressContent" class="mt-4" style="color: rgb(255, 255, 255);">
+                                   <div>
+                                        <h1>
+                                             Salgsteknikker: Introduktion til Finansielt Salg
+                                        </h1>
+                                   </div>
+                              </div>
+
+                              <br>
+                              <br>
+
+                              <h1 id="question"
+                                  class="card-title"></h1>
+                              <div id="options"
+                                   class="mt-4"></div>
+                              <div id="progress-bar"
+                                   class="progress-bar-container"></div>
+
+                              <!-- 1 -->
+                              <div class="question"
+                                   data-question="Hvilken salgstilgang fokuserer primært på at bygge tillid og finde kundens behov?"
+                                   data-answer="0"
+                                   data-explanation="Klassisk salg er den salgstilgang, der primært fokuserer på at bygge tillid og finde kundens behov. Den er særligt egnet til almindelige bankkunder og pensionssamtaler, hvor rådgiveren optræder som en venlig guide, der spørger ind til kundens situation.<br><br>
+                                   Eksempel: En pensionsrådgiver bruger god tid på at forstå en ung kundes fremtidsdrømme, nuværende økonomi og tryghedsbehov, før specifikke opsparingsprodukter overhovedet nævnes.<br><br>
+                                   <table class='info-table'w-100'>
+                                        <tr><th>Salgstilgang</th><th>Hovedfokus</th></tr>
+                                        <tr><td><strong>Klassisk Salg</strong></td><td>Bygge tillid, finde behov</td></tr>
+                                        <tr><td><strong>Løsningssalg</strong></td><td>Find problemet, foreslå løsning</td></tr>
+                                        <tr><td><strong>Challenger Salg</strong></td><td>Udfordre kundens vanetænkning</td></tr>
+                                   </table><br><br>
+                                   Historisk set har klassisk salg været grundlaget for finansiel rådgivning i mange år, men er blevet mere professionaliseret siden 1990'erne og 00'erne.">
+                                   <div class="option"
+                                        data-option="Klassisk Salg"></div>
+                                   <div class="option"
+                                        data-option="Løsningssalg"></div>
+                                   <div class="option"
+                                        data-option="Pipeline-tilgangen"></div>
+                                   <div class="option"
+                                        data-option="Pitching"></div>
+                              </div>
+
+                              <!-- 2 -->
+                              <div class="question"
+                                   data-question="Hvilken moderne salgstænkning (fra ca. 2010 og frem) fokuserer på hele kundeoplevelsen,<br>inklusive digitale touchpoints, personlig kommunikation og intelligent brug af data?"
+                                   data-answer="0"
+                                   data-explanation="Perioden fra 2010 til nu kendetegnes ved <strong>Kunde-fokus</strong>, hvor virksomheder konkurrerer på den samlede oplevelse. Det handler ikke kun om produktet, men om hele rejsen og interaktionen med kunden.<br><br>
+                                   Eksempel: En moderne bank integrerer online selvbetjening, proaktiv rådgivning via app-notifikationer og personlige møder (fysisk eller virtuelt) for at skabe en sømløs og værdifuld kundeoplevelse.<br><br>
+                                   <table class='info-table'w-100'>
+                                        <tr><th>Periode</th><th>Salgstænkning</th><th>Hovedfokus</th></tr>
+                                        <tr><td>1950-1970</td><td><strong>Produkt-fokus</strong></td><td>Produktets gode egenskaber</td></tr>
+                                        <tr><td>1970-1990</td><td><strong>Behovs-fokus</strong></td><td>Kundens behov</td></tr>
+                                        <tr><td>1990-2010</td><td><strong>Løsnings-fokus</strong></td><td>Værdi og løsninger</td></tr>
+                                        <tr><td>2010-nu</td><td><strong>Kunde-fokus</strong></td><td>Hele kundeoplevelsen</td></tr>
+                                   </table><br><br>
+                                   Denne udvikling afspejler en bredere trend inden for markedsføring og salg, hvor kunden i stigende grad sættes i centrum, og hvor virksomheder konkurrerer på den samlede oplevelse snarere end blot på produkt eller pris.">
+                                   <div class="option"
+                                        data-option="Kunde-fokus"></div>
+                                   <div class="option"
+                                        data-option="Løsnings-fokus"></div>
+                                   <div class="option"
+                                        data-option="Behovs-fokus"></div>
+                                   <div class="option"
+                                        data-option="Produkt-fokus"></div>
+                              </div>
+
+                              <!-- 3 -->
+                              <div class="question"
+                                   data-question="Hvilket år blev SPIN-salgsteknikken gjort kendt af Neil Rackham?"
+                                   data-answer="3"
+                                   data-explanation="SPIN-salgsteknikken blev gjort kendt af Neil Rackham i <strong>1988</strong>. Dette var et vigtigt skridt fremad i måden, komplekse finansielle løsninger blev solgt på.<br><br>
+                                   SPIN står for:<br>
+                                   <ul>
+                                        <li><strong>S</strong>ituation - Forstå kundens nuværende situation</li>
+                                        <li><strong>P</strong>roblemer - Identificer kundens problemer</li>
+                                        <li><strong>I</strong>mplication - Udforsk konsekvenserne af disse problemer</li>
+                                        <li><strong>N</strong>eed-payoff - Tydeliggør behovet for en løsning</li>
+                                   </ul><br><br>
+                                   Denne teknik repræsenterede et skift fra at tale om produktet til at fokusere på kundens udfordringer og behov. I finansverdenen var dette særligt relevant, da finansielle produkter ofte er komplekse og løser specifikke behov eller problemer.">
+                                   <div class="option"
+                                        data-option="1970"></div>
+                                   <div class="option"
+                                        data-option="1978"></div>
+                                   <div class="option"
+                                        data-option="1982"></div>
+                                   <div class="option"
+                                        data-option="1988"></div>
+                              </div>
+
+                              <!-- 4 -->
+                              <div class="question"
+                                   data-question="Hvordan adskiller købsbeslutningsprocessen sig typisk i finansielt salg<br>sammenlignet med traditionelt salg af f.eks. forbrugsvarer?"
+                                   data-answer="1"
+                                   data-explanation="I finansielt salg er købsbeslutningen ofte længerevarende og kræver grundig overvejelse pga. kompleksitet og økonomisk betydning. Traditionelt salg kan involvere hurtigere, mere impulsive køb.<br><br>
+                                   Eksempel: Valg af realkreditlån kræver typisk research, flere møder og grundige overvejelser over uger eller måneder, mens køb af en ny smartphone kan ske på få minutter.<br><br>
+                                   <table class='info-table'w-100'>
+                                        <tr><th>Aspekt</th><th>Traditionelt Salg</th><th>Finansielt Salg</th></tr>
+                                        <tr><td><strong>Købsbeslutning</strong></td><td>Ofte hurtig, måske impulsiv</td><td>Tager tid, kræver omtanke</td></tr>
+                                        <tr><td><strong>Produkttype</strong></td><td>Fysiske produkter (sko, mobil)</td><td>Komplekse løsninger (pension, lån)</td></tr>
+                                        <tr><td><strong>Kundeforhold</strong></td><td>Kortvarigt, måske engangs</td><td>Langsigtet, bygger på tillid</td></tr>
+                                   </table><br><br>
+                                   Denne forskel er en af grundene til, at finansielle rådgivere skal være særligt dygtige til at guide kunder gennem længere beslutningsprocesser og hjælpe dem med at forstå komplekse produkter.">
+                                   <div class="option"
+                                        data-option="Finansielt salg fokuserer på hurtige, impulsive beslutninger"></div>
+                                   <div class="option"
+                                        data-option="Finansielt salg indebærer beslutninger, der tager tid og kræver omtanke"></div>
+                                   <div class="option"
+                                        data-option="Finansielt salg kræver ingen overvejelse fra kundens side"></div>
+                                   <div class="option"
+                                        data-option="Finansielt salg og traditionelt salg har identiske købsbeslutningsprocesser"></div>
+                              </div>
+
+                              <!-- 5 -->
+                              <div class="question"
+                                   data-question="Hvilken salgstilgang er bedst egnet til at udfordre kundens vanetænkning?"
+                                   data-answer="2"
+                                   data-explanation="Challenger Salg er specifikt designet til at udfordre kundens vanetænkning og få kunden til at se situationen fra et nyt perspektiv.<br><br>
+                                   Eksempel: En investeringsrådgiver, der bruger Challenger Salg, ville kunne sige til en kunde: 'Har du overvejet, at din konservative investeringsstrategi faktisk kan koste dig penge på lang sigt på grund af inflation?' Dette udfordrer kundens antagelse om, at en konservativ tilgang altid er den sikreste.<br><br>
+                                   <table class='info-table'w-100'>
+                                        <tr><th>Salgstilgang</th><th>Hovedfokus</th><th>Typiske Anvendelser</th></tr>
+                                        <tr><td><strong>Klassisk Salg</strong></td><td>Bygge tillid, finde behov</td><td>Alm. bankkunder, pensionssnak</td></tr>
+                                        <tr><td><strong>Løsningssalg</strong></td><td>Find problemet, foreslå løsning</td><td>Erhvervskunder, komplekse finansielle produkter</td></tr>
+                                        <tr><td><strong>Challenger Salg</strong></td><td>Udfordre kundens vanetænkning</td><td>Investering, strategisk rådgivning</td></tr>
+                                   </table><br><br>
+                                   Challenger Salg er særligt effektivt i situationer, hvor kunden måske ikke er bevidst om et problem eller en mulighed, og hvor rådgiveren kan tilføre værdi ved at udfordre status quo. I finansverdenen bruges dette ofte inden for områder som investering og strategisk rådgivning.">
+                                   <div class="option"
+                                        data-option="Klassisk Salg"></div>
+                                   <div class="option"
+                                        data-option="Løsningssalg"></div>
+                                   <div class="option"
+                                        data-option="Challenger Salg"></div>
+                                   <div class="option"
+                                        data-option="Pipeline-tilgangen"></div>
+                              </div>
+
+                              <!-- 6 -->
+                              <div class="question"
+                                   data-question="Hvilken salgstilgang er bedst egnet til at arbejde systematisk med mange kunder?"
+                                   data-answer="3"
+                                   data-explanation="Pipeline-tilgangen er den salgstilgang, der er bedst egnet til systematisk arbejde med mange kunder. Den anvendes typisk til standardprodukter på massemarkedet, som f.eks. simple bilforsikringer.<br><br>
+                                   Eksempel: Et forsikringsselskabs call center, der kontakter mange potentielle kunder om en standardiseret bilforsikring, vil bruge pipeline-tilgangen for at sikre et systematisk flow af kundeemner gennem salgsprocessen.<br><br>
+                                   <table class='info-table'w-100'>
+                                        <tr><th>Salgstilgang</th><th>Hovedfokus</th><th>Typiske Anvendelser</th></tr>
+                                        <tr><td><strong>Pipeline</strong></td><td>Systematisk arbejde med mange kunder</td><td>Standardprodukter, massemarkedet</td></tr>
+                                        <tr><td><strong>Porteføljesalg</strong></td><td>Udvikle nuværende kunderelationer</td><td>Private banking, store erhvervskunder</td></tr>
+                                        <tr><td><strong>Pitching</strong></td><td>Præsentere en unik mulighed</td><td>Private banking, særlige investeringer</td></tr>
+                                   </table><br><br>
+                                   Pipeline-tilgangen er kendetegnet ved en struktureret proces, hvor man følger op på mange potentielle kunder samtidigt og systematisk flytter dem gennem forskellige faser af salgsprocessen. Dette er særligt effektivt ved produkter, der ikke kræver omfattende individuel rådgivning.">
+                                   <div class="option"
+                                        data-option="Pitching"></div>
+                                   <div class="option"
+                                        data-option="Porteføljesalg"></div>
+                                   <div class="option"
+                                        data-option="Løsningssalg"></div>
+                                   <div class="option"
+                                        data-option="Pipeline-tilgangen"></div>
+                              </div>
+
+                              <!-- 7 -->
+                              <div class="question"
+                                   data-question="Hvilken salgstilgang fokuserer på at udvikle eksisterende kunderelationer?"
+                                   data-answer="1"
+                                   data-explanation="Porteføljesalg fokuserer specifikt på at udvikle nuværende kunderelationer, typisk inden for private banking eller med store erhvervskunder.<br><br>
+                                   Eksempel: En private banking-rådgiver, der allerede har en veletableret kunde med en diversificeret investeringsportefølje, vil bruge porteføljesalg for at identificere nye muligheder og produkter, der passer til kundens behov og aktuelle situation. Dette kan f.eks. være at foreslå nye investeringsmuligheder baseret på kundens nuværende portefølje og risikoprofil.<br><br>
+                                   <table class='info-table'w-100'>
+                                        <tr><th>Salgstilgang</th><th>Hovedfokus</th><th>Typiske Anvendelser</th></tr>
+                                        <tr><td><strong>Porteføljesalg</strong></td><td>Udvikle nuværende kunderelationer</td><td>Private banking, store erhvervskunder</td></tr>
+                                        <tr><td><strong>Løsningssalg</strong></td><td>Find problemet, foreslå løsning</td><td>Erhvervskunder, komplekse finansielle produkter</td></tr>
+                                        <tr><td><strong>Pipeline</strong></td><td>Systematisk arbejde med mange kunder</td><td>Standardprodukter, massemarkedet</td></tr>
+                                   </table><br><br>
+                                   Porteføljesalg er en effektiv måde at øge kundens samlede engagement og værdi. Det bygger på det tillidsforhold, der allerede er etableret, og udnytter det dybdegående kendskab til kundens situation og behov.">
+                                   <div class="option"
+                                        data-option="Klassisk Salg"></div>
+                                   <div class="option"
+                                        data-option="Porteføljesalg"></div>
+                                   <div class="option"
+                                        data-option="Pitching"></div>
+                                   <div class="option"
+                                        data-option="Challenger Salg"></div>
+                              </div>
+
+                              <!-- 8 -->
+                              <div class="question"
+                                   data-question="Hvilken faktor påvirker IKKE valget af salgstilgang?"
+                                   data-answer="2"
+                                   data-explanation="Valget af salgstilgang påvirkes af faktorer som kundetype, produktkompleksitet, kundens behov, tidsperspektiv og risikoprofil. Den sælgendes personlighed eller præference nævnes ikke som en faktor for valg af salgstilgang.<br><br>
+                                   Eksempel: Når en bank skal rådgive en ung førstegangskøber om boliglån, vælges klassisk salg fordi det passer til kundetypen (uerfaren), produktet (komplekst), kundens behov (skal afdækkes), tidsperspektivet (mellemlangt) og risikoprofilen (høj for kunden). Det er altså situationen og kundens behov, ikke rådgiverens præferencer, der afgør tilgangen.<br><br>
+                                   <table class='info-table'w-100'>
+                                        <tr><th>Faktorer for valg af salgstilgang</th></tr>
+                                        <tr><td><strong>Kundetype</strong></td></tr>
+                                        <tr><td><strong>Produktkompleksitet</strong></td></tr>
+                                        <tr><td><strong>Kundens behov</strong></td></tr>
+                                        <tr><td><strong>Tidsperspektiv</strong></td></tr>
+                                        <tr><td><strong>Risikoprofil</strong></td></tr>
+                                   </table><br><br>
+                                   Denne tilgang til valg af salgstilgang understreger, at professionel finansiel rådgivning handler om at tilpasse tilgangen til kundens situation, ikke om at følge en personlig præference fra rådgiverens side.">
+                                   <div class="option"
+                                        data-option="Produktkompleksitet"></div>
+                                   <div class="option"
+                                        data-option="Risikoprofil"></div>
+                                   <div class="option"
+                                        data-option="Den sælgendes personlighed"></div>
+                                   <div class="option"
+                                        data-option="Tidsperspektiv"></div>
+                              </div>
+
+                              <!-- 9 -->
+                              <div class="question"
+                                   data-question="Hvad er en af de vigtigste milepæle i salgshistorien fra 1970'erne?"
+                                   data-answer="0"
+                                   data-explanation="En af de vigtigste milepæle i salgshistorien fra 1970'erne var, at fokus skiftede mod at forstå kundens behov og sælge løsninger, ikke bare produkter.<br><br>
+                                   Dette markerede en betydelig ændring i salgstilgangen, hvor sælgere begyndte at fokusere mere på at identificere og imødekomme kundens reelle behov frem for kun at fremhæve produktets egenskaber.<br><br>
+                                   <table class='info-table'w-100'>
+                                        <tr><th>Periode</th><th>Vigtig Milepæl</th></tr>
+                                        <tr><td><strong>1800-tallet</strong></td><td>Første systematiske salgsteknikker med rejsende sælgere og postordrekataloger</td></tr>
+                                        <tr><td><strong>1920'erne</strong></td><td>AIDA-modellen blev populær</td></tr>
+                                        <tr><td><strong>1950'erne</strong></td><td>Moderne marketing og salgspsykologi begyndte at tage form</td></tr>
+                                        <tr><td><strong>1970'erne</strong></td><td>Fokus skiftede mod at forstå kundens behov og sælge løsninger</td></tr>
+                                        <tr><td><strong>1990'erne</strong></td><td>Computere og CRM-systemer ændrede salgsarbejdet markant</td></tr>
+                                   </table><br><br>
+                                   Dette skift i 1970'erne lagde grundlaget for senere salgstilgange som løsningssalg og var særligt relevant for finanssektoren, hvor komplekse produkter ofte kræver en forståelse af kundens specifikke behov.">
+                                   <div class="option"
+                                        data-option="Fokus skiftede mod at forstå kundens behov og sælge løsninger, ikke bare produkter"></div>
+                                   <div class="option"
+                                        data-option="Introduktionen af AIDA-modellen revolutionerede salgsarbejdet"></div>
+                                   <div class="option"
+                                        data-option="Computere og CRM-systemer ændrede salgsarbejdet markant"></div>
+                                   <div class="option"
+                                        data-option="Data blev vigtigt for målrettet og personligt salg"></div>
+                              </div>
+
+                              <!-- 10 -->
+                              <div class="question"
+                                   data-question="Hvordan adskiller finansielt salg sig fra traditionelt salg med hensyn til værdi?"
+                                   data-answer="3"
+                                   data-explanation="I finansielt salg er værdien ofte fremtidig, mere abstrakt og handler om tryghed, afkast eller problemløsning på sigt.<br><br>
+                                   Eksempel:<br>
+                                   <ul>
+                                        <li>Man får øjeblikkelig glæde af en ny sofa.</li>
+                                        <li>Værdien af en pensionsopsparing (tryghed i fremtiden) realiseres først mange år senere.</li>
+                                   </ul><br>
+                                   <table class='info-table'w-100'>
+                                        <tr><th>Aspekt</th><th>Traditionelt Salg</th><th>Finansielt Salg</th></tr>
+                                        <tr><td><strong>Værdi</strong></td><td>Konkret, her og nu</td><td>Fremtidig, mere abstrakt</td></tr>
+                                        <tr><td><strong>Risiko</strong></td><td>Begrænset</td><td>Stor økonomisk betydning</td></tr>
+                                        <tr><td><strong>Kommunikation</strong></td><td>Simpel, direkte</td><td>Kompleks, mange regler</td></tr>
+                                   </table><br><br>
+                                   Denne forskel stiller særlige krav til finansielle rådgivere om at kunne forklare og konkretisere fremtidige fordele, da kunden ikke kan 'prøve produktet' på samme måde som ved fysiske varer.">
+                                   <div class="option"
+                                        data-option="Finansielt salg har ingen værdi for kunden"></div>
+                                   <div class="option"
+                                        data-option="Finansielt salg og traditionelt salg har samme værdiopfattelse"></div>
+                                   <div class="option"
+                                        data-option="Finansielt salg giver altid højere værdi end traditionelt salg"></div>
+                                   <div class="option"
+                                        data-option="Finansielt salg har fremtidig, abstrakt værdi, mens traditionelt salg har konkret, umiddelbar værdi"></div>
+                              </div>
+
+
+                         </div>
+                    </div>
+               </div>
+          </div>
+     </div>
+
+     <script src="script.js">
+     </script>
+</body>
+
+</html> 

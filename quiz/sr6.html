@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+     <title>Quiz Pitching</title>
+     <link rel="stylesheet"
+           href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+     <link rel="stylesheet"
+           href="styles.css">
+     <link rel="icon"
+           href="favicon.svg">
+     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+     <script id="MathJax-script"
+             async
+             src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+     <script>
+          window.MathJax = {
+               tex: {
+                    inlineMath: [['$', '$']],
+                    displayMath: [['$$', '$$']]
+               },
+               svg: {
+                    scale: 0.9,
+               },
+               chtml: {
+                    scale: 0.9,
+               }
+          };
+     </script>
+     <link rel="stylesheet"
+           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+     <style>
+          .card-body {
+               font-size: 1em;
+          }
+
+          .card img {
+               max-width: 100%;
+               height: auto;
+          }
+     </style>
+</head>
+
+<body data-formål="Forståelse af salgsetik og compliance i finanssektoren."
+     data-forudsætning="Kendskab til digital markedsføring og online salg.">
+     <header> <a href="index.html"
+             target="_blank"><img src="tepedulogoanim.svg"
+                    alt="Logo"
+                    width="8%"></a>
+          <h2>Quiz Pitching</h2>
+     </header>
+
+
+     <div class="container">
+          <div class="row justify-content-center">
+               <div class="col-12 col-md-12 col-lg-12">
+                    <div class="card mt-5">
+                         <div class="card-body">
+
+                              <div id="postProgressContent" class="mt-4" style="color: rgb(255, 255, 255);">
+                                   <div>
+                                        <h1>
+                                             Salgsteknikker: Pitching
+                                        </h1>
+                                   </div>
+                              </div>
+
+                              <br>
+                              <br>
+
+                              <h1 id="question"
+                                  class="card-title"></h1>
+                              <div id="options"
+                                   class="mt-4"></div>
+                              <div id="progress-bar"
+                                   class="progress-bar-container"></div>
+
+                                <!-- 1 -->
+                                <div class="question"
+                                     data-question="Hvad er kerneideen i pitching-tilgangen i modsætning til traditionelt salg?"
+                                     data-answer="1"
+                                     data-explanation="Pitching handler om at skabe en 'pull'-effekt, hvor kunden motiveres til at tage initiativet, fordi rådgiveren/produktet fremstår værdifuldt og eksklusivt, i stedet for en traditionel 'push'-tilgang, hvor sælgeren presser produktet på kunden.<br><br>Man positionerer sig som en eftertragtet ressource.">
+                                     <div class="option" data-option="At opsøge flest mulige kunder (push)"></div>
+                                     <div class="option" data-option="At få kunden til at tage initiativet (pull)"></div>
+                                     <div class="option" data-option="At fokusere udelukkende på produktets pris"></div>
+                                     <div class="option" data-option="At give rabatter for at lukke salget hurtigt"></div>
+                                </div>
+
+                                <!-- 2 -->
+                                <div class="question"
+                                     data-question="Hvilket nøgleelement i pitching handler om at skabe en fornemmelse af begrænset adgang?"
+                                     data-answer="0"
+                                     data-explanation="Eksklusivitet er elementet, der handler om at skabe en fornemmelse af, at adgang til rådgivning eller produkter er begrænset (f.eks. via venteliste, begrænset antal pladser, specifikke adgangskriterier), hvilket øger den opfattede værdi.">
+                                     <div class="option" data-option="Eksklusivitet"></div>
+                                     <div class="option" data-option="Positionering"></div>
+                                     <div class="option" data-option="Værdidemonstration"></div>
+                                     <div class="option" data-option="Social proof"></div>
+                                </div>
+
+                                <!-- 3 -->
+                                <div class="question"
+                                     data-question="Hvad betyder 'Social proof' som et element i pitching?"
+                                     data-answer="2"
+                                     data-explanation="Social proof handler om at bruge referencer, cases og succeshistorier (med tilladelse) til at opbygge troværdighed og vise, at andre succesfulde/lignende personer/virksomheder har draget fordel af ydelsen.<br><br>Det reducerer kundens opfattede risiko ved at vise, at andre har haft succes.">
+                                     <div class="option" data-option="At vise produktets tekniske specifikationer"></div>
+                                     <div class="option" data-option="At tilbyde en lavere pris end konkurrenterne"></div>
+                                     <div class="option" data-option="At bruge referencer og cases til at bygge troværdighed"></div>
+                                     <div class="option" data-option="At kunden skal bevise sit værd"></div>
+                                </div>
+
+                                <!-- 4 -->
+                                <div class="question"
+                                     data-question="Hvor menes udtrykket 'pitch' oprindeligt at stamme fra?"
+                                     data-answer="1"
+                                     data-explanation="Udtrykket 'pitch' menes at stamme fra Hollywood, hvor manuskriptforfattere skulle præsentere (pitche) deres filmidéer kort og præcist for studiechefer.">
+                                     <div class="option" data-option="Finansverdenen (investeringsbanker)"></div>
+                                     <div class="option" data-option="Hollywood (filmindustrien)"></div>
+                                     <div class="option" data-option="Reklamebranchen"></div>
+                                     <div class="option" data-option="Startup-miljøet (elevator pitch)"></div>
+                                </div>
+
+                                <!-- 5 -->
+                                <div class="question"
+                                     data-question="Hvordan kan det at pitche en større vision eller transformation,<br>frem for blot et produkt med funktioner (som da Steve Jobs pitchede NeXT som fremtidens uddannelse),<br>være en effektiv pitching-teknik?"
+                                     data-answer="3"
+                                     data-explanation="At pitche en større vision appellerer til kundens følelser og langsigtede mål, hvilket kan være mere overbevisende end en ren produktpræsentation.<br><br>Det skaber en fortælling og en fremtidsudsigt, som kunden potentielt ønsker at være en del af, og løfter samtalen op over simple produktdetaljer.">
+                                     <div class="option" data-option="At NeXT-computeren var en stor kommerciel succes"></div>
+                                     <div class="option" data-option="Vigtigheden af at have mange tekniske detaljer med"></div>
+                                     <div class="option" data-option="At man altid skal bede om et specifikt beløb"></div>
+                                     <div class="option" data-option="Kraften i storytelling og at pitche en vision"></div>
+                                </div>
+
+                                <!-- 6 -->
+                                <div class="question"
+                                     data-question="Hvordan kan en rådgiver bruge 'Selektiv udvælgelse' i pitching?<br>F.eks. ved at antyde, at kunden skal opfylde visse kriterier,<br>eller at der er begrænset kapacitet/venteliste for nye kunder?"
+                                     data-answer="1"
+                                     data-explanation="Ved at signalere, at rådgiveren/banken er selektiv og ikke tager alle kunder ind, vendes dynamikken. Kunden motiveres til at 'kvalificere sig', hvilket øger den opfattede værdi af rådgivningen.<br><br>Det positionerer rådgiveren som en eftertragtet ekspert frem for en almindelig sælger.">
+                                     <div class="option" data-option="Ved at tilbyde en lavere pris til Karsten"></div>
+                                     <div class="option" data-option="Ved at antyde, at kunden skal kvalificere sig, og at der er venteliste"></div>
+                                     <div class="option" data-option="Ved kun at tale om produktets fordele"></div>
+                                     <div class="option" data-option="Ved at invitere Karsten til et dyrt arrangement"></div>
+                                </div>
+
+                                <!-- 7 -->
+                                <div class="question"
+                                     data-question="Hvornår virker pitching-tilgangen typisk bedst i finanssektoren?"
+                                     data-answer="0"
+                                     data-explanation="Pitching fungerer bedst for specialiserede/komplekse ydelser, hvor ekspertise er vigtig, og målgruppen er sofistikeret og værdsætter eksklusivitet (f.eks. Private Banking, Alternative Investeringer, specialiseret rådgivning), ikke for standardiserede massemarkedsprodukter, hvor pris og tilgængelighed ofte er vigtigere.">
+                                     <div class="option" data-option="Ved specialiserede ydelser og sofistikerede målgrupper"></div>
+                                     <div class="option" data-option="Ved standardiserede produkter som boliglån til massemarkedet"></div>
+                                     <div class="option" data-option="Når rådgiveren har brug for at sælge hurtigt"></div>
+                                     <div class="option" data-option="Når produktet er det billigste på markedet"></div>
+                                </div>
+
+                                <!-- 8 -->
+                                <div class="question"
+                                     data-question="Hvad er formålet med teknikken 'Omvendt kvalifikation'?"
+                                     data-answer="2"
+                                     data-explanation="Formålet er at vende den traditionelle salgsdynamik ved at stille spørgsmål, der vurderer, om kunden passer til rådgiverens profil eller ydelse (f.eks. 'Hvilke mål har du, som vores ekspertise specifikt kan hjælpe med?').<br><br>Dette positionerer rådgiveren som selektiv og fokuseret på at skabe reel værdi for de rette kunder.">
+                                     <div class="option" data-option="At sikre, at kunden har råd til produktet"></div>
+                                     <div class="option" data-option="At få kunden til at tale mest muligt"></div>
+                                     <div class="option" data-option="At vurdere, om kunden passer til rådgiverens profil/ydelse"></div>
+                                     <div class="option" data-option="At fremskynde salgsprocessen"></div>
+                                </div>
+
+                                <!-- 9 -->
+                                <div class="question"
+                                     data-question="Hvilken konkret pitching-teknik bruger en kapitalforvalter, der siger: 'Fonden er lukket for nye investorer, når vi når 100 mio. EUR'?"
+                                     data-answer="1"
+                                     data-explanation="Dette er et eksempel på at bruge 'Eksklusivitetsmarkører' og 'Kapacitetsbegrænsning' til at signalere begrænset adgang og skabe en følelse af knaphed (scarcity), hvilket kan øge attraktiviteten og tilskynde til hurtigere beslutning.">
+                                     <div class="option" data-option="Omvendt kvalifikation"></div>
+                                     <div class="option" data-option="Eksklusivitetsmarkør / Kapacitetsbegrænsning"></div>
+                                     <div class="option" data-option="Social proof"></div>
+                                     <div class="option" data-option="Værdideling Først"></div>
+                                </div>
+
+                                <!-- 10 -->
+                                <div class="question"
+                                     data-question="Hvad er en central etisk udfordring ved pitching?"
+                                     data-answer="3"
+                                     data-explanation="En central etisk udfordring er risikoen for at skabe falsk eksklusivitet eller bruge pres gennem FOMO (Fear of Missing Out) til at manipulere kunden, frem for at fokusere på reel værdi og kundens bedste interesse.<br><br>Balancen mellem at skabe tiltrækning og at undgå manipulation er hårfin.">
+                                     <div class="option" data-option="At det tager for lang tid"></div>
+                                     <div class="option" data-option="At det kræver for meget forberedelse"></div>
+                                     <div class="option" data-option="At det kun virker på visse kundetyper"></div>
+                                     <div class="option" data-option="At skabe falsk eksklusivitet eller bruge pres (FOMO)"></div>
+                                </div>
+
+                                <!-- 11 -->
+                                <div class="question"
+                                     data-question="Hvordan kan man etisk håndtere 'Social proof'?"
+                                     data-answer="0"
+                                     data-explanation="Etisk brug af social proof indebærer at bruge relevante, verificerbare og repræsentative cases/referencer (med tilladelse) og være transparent om, at resultater kan variere, i stedet for at bruge vildledende eksempler.">
+                                     <div class="option" data-option="Bruge relevante, verificerbare cases og være transparent"></div>
+                                     <div class="option" data-option="Opfinde succeshistorier for at imponere kunden"></div>
+                                     <div class="option" data-option="Kun nævne de allerbedste resultater uden kontekst"></div>
+                                     <div class="option" data-option="Bruge kendte navne uden deres tilladelse"></div>
+                                </div>
+
+                                <!-- 12 -->
+                                <div class="question"
+                                     data-question="Hvorfor er pitching mindre egnet til standardiserede produkter som almindelige boliglån?"
+                                     data-answer="2"
+                                     data-explanation="Pitching bygger på eksklusivitet og specialisering. At forsøge at pitche et bredt tilgængeligt standardprodukt som eksklusivt virker utroværdigt og ineffektivt over for kunder, der søger et simpelt, konkurrencedygtigt produkt.">
+                                     <div class="option" data-option="Fordi kunderne ikke forstår boliglån"></div>
+                                     <div class="option" data-option="Fordi bankrådgivere ikke kan lære teknikken"></div>
+                                     <div class="option" data-option="Fordi det virker utroværdigt at pitche et standardprodukt som eksklusivt"></div>
+                                     <div class="option" data-option="Fordi renten er for lav på boliglån"></div>
+                                </div>
+
+                                <!-- 13 -->
+                                <div class="question"
+                                     data-question="Hvad indebærer teknikken 'Værdideling Først'?"
+                                     data-answer="1"
+                                     data-explanation="Denne teknik handler om at tilbyde værdifuld indsigt, analyser eller viden (f.eks. en whitepaper, en markedsanalyse, et webinar) uden bindinger for at positionere sig som ekspert og vække kundens interesse, før man taler om specifikke produkter eller beder om et møde.">
+                                     <div class="option" data-option="At give kunden en gratis prøveperiode på produktet"></div>
+                                     <div class="option" data-option="At tilbyde værdifuld indsigt/viden uden bindinger for at vise ekspertise"></div>
+                                     <div class="option" data-option="At spørge til kundens værdier som det første"></div>
+                                     <div class="option" data-option="At starte med at fortælle om prisen"></div>
+                                </div>
+
+                                <!-- 14 -->
+                                <div class="question"
+                                     data-question="Hvad er en vigtig etisk huskeregel for pitching?"
+                                     data-answer="3"
+                                     data-explanation="Flere etiske huskeregler er relevante, herunder: Altid kundens bedste interesse først, vær transparent, baser eksklusivitet på reel værdi, giv kunden tid, og respekter alle. Transparens om processer, kriterier og risici er afgørende.">
+                                     <div class="option" data-option="Altid at forsøge at lukke salget på første møde"></div>
+                                     <div class="option" data-option="At skjule eventuelle risici ved produktet"></div>
+                                     <div class="option" data-option="At overdrive fordelene for at overbevise kunden"></div>
+                                     <div class="option" data-option="At være transparent om processer, kriterier og risici"></div>
+                                </div>
+
+
+
+
+
+
+
+                              
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                         </div>
+                    </div>
+               </div>
+          </div>
+     </div>
+
+     <script src="script.js">
+     </script>
+</body>
+
+</html> 
