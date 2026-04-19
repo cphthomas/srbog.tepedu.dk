@@ -369,10 +369,10 @@ code {
    INFO BOX
    ============================================ */
 .info-box {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: #1a3a5c;
     color: white;
     padding: var(--space-8);
-    border-radius: var(--radius-2xl);
+    border-radius: 0;
     margin-bottom: var(--space-8);
     box-shadow: var(--shadow-lg);
 }
@@ -397,7 +397,7 @@ code {
 .table-responsive {
     overflow-x: auto;
     margin-bottom: var(--space-6);
-    border-radius: var(--radius-lg);
+    border-radius: 0;
     box-shadow: var(--shadow-md);
 }
 
