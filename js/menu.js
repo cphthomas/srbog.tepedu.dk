@@ -8,7 +8,8 @@ const menuItems = [
     { href: 'pitching.html', text: 'Pitching' },
     { href: 'pipeline.html', text: 'Pipeline' },
     { href: 'portefolje.html', text: 'Porteføljesalg' },
-    { href: 'salgsteknikker.html', text: 'Sammenligning af Salgsteknikker' }
+    { href: 'salgsteknikker.html', text: 'Sammenligning af Salgsteknikker' },
+    { href: 'glossary.html', text: 'Ordliste' }
 ];
 
 // Function to generate dropdown menu HTML

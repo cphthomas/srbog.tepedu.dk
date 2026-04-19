@@ -46,7 +46,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     </div>
                     <div class="definition">${definition || 'Ingen definition tilgængelig.'}</div>
                     ${example ? `<div class="example"><strong>Eksempel:</strong> ${example}</div>` : ''}
-                    <div class="footer" style="cursor: pointer;" onclick="window.open('kapitel6.html#term-${slug}', '_blank')">
+                    <div class="footer" style="cursor: pointer;" onclick="window.open('glossary.html#term-${slug}', '_blank')">
                         <span>LÆS MERE I ORDLISTEN</span>
                         <i class="bi bi-arrow-right"></i>
                     </div>

@@ -1,6 +1,5 @@
 // Info popup functionality
 document.addEventListener('DOMContentLoaded', function() {
-    // Tilføj styling til head
     const style = document.createElement('style');
     style.textContent = `
         .info-icon-container {
@@ -8,37 +7,45 @@ document.addEventListener('DOMContentLoaded', function() {
             display: inline-block;
             margin-left: 10px;
         }
-        
+
         .info-popup {
             visibility: hidden;
-            width: 300px;
+            width: 260px;
             background-color: #fff;
             color: #333;
             text-align: left;
             border-radius: 0;
-            padding: 15px;
+            padding: 18px;
             position: absolute;
             z-index: 1000;
-            top: 30px;
-            left: 0;
+            top: 40px;
+            left: 50%;
+            transform: translateX(-50%);
             box-shadow: 0 5px 15px rgba(0,0,0,0.2);
             opacity: 0;
             transition: opacity 0.3s, visibility 0.3s;
-            font-size: 0.9rem;
+            font-size: 0.82rem;
+            line-height: 1.5;
             border: 1px solid #ddd;
+            max-height: 80vh;
+            overflow-y: auto;
         }
-        
+
         .info-popup img {
             width: 100%;
-            height: auto;
+            height: 120px;
+            object-fit: cover;
+            object-position: center top;
+            display: block;
+            margin: 8px auto;
         }
-        
+
         .info-icon-container:hover .info-popup,
         .info-popup.show {
             visibility: visible;
             opacity: 1;
         }
-        
+
         .info-icon {
             color: #000;
             cursor: pointer;
@@ -46,65 +53,86 @@ document.addEventListener('DOMContentLoaded', function() {
             background-color: transparent;
             border-radius: 50%;
             padding: 2px;
+            transition: color 0.3s ease;
         }
-        
+
         .info-icon:hover {
-            color: #333;
+            color: #1a3a5c;
+        }
+
+        [data-theme="dark"] .info-icon {
+            color: #ffffff !important;
+        }
+
+        [data-theme="dark"] .info-icon:hover {
+            color: #4a7fa8 !important;
+        }
+
+        [data-theme="dark"] .info-popup {
+            background-color: #111827 !important;
+            color: #f3f4f6 !important;
+            border-color: rgba(255,255,255,0.15) !important;
+        }
+
+        [data-theme="dark"] .info-popup h6 {
+            color: #ffffff !important;
+        }
+
+        [data-theme="dark"] .info-popup small,
+        [data-theme="dark"] .info-popup p {
+            color: #d1d5db !important;
         }
     `;
     document.head.appendChild(style);
-    
-    // Find navbar-brandet (home-ikonet)
+
     const navbarBrand = document.querySelector('.navbar-brand');
-    
+
     if (navbarBrand) {
-        // Opret info-ikonet og container
         const infoContainer = document.createElement('div');
         infoContainer.className = 'info-icon-container';
-        
+
         const infoIcon = document.createElement('i');
         infoIcon.className = 'bi bi-info-circle info-icon';
-        
+
         const infoPopup = document.createElement('div');
         infoPopup.className = 'info-popup';
         infoPopup.id = 'infoPopup';
-        
-        // Tilføj indhold til popup
+
         infoPopup.innerHTML = `
-            <h5>Om denne bog</h5>
-            <p>Denne bog er udviklet af: </p>
-            <img src="images/mig.jpg" alt="Thomas Petersen">
-            <br><small>Thomas Petersen</small>
-            <br><br>
-            <p>I udviklingen er der benyttet kunstig intelligens både til kodningen af selve strukturen i form af navigation, js-, html- og css-filer, samt indhold og eksempler. <br>Der er benyttet følgende LLM-modeller:</p>
-            <ul>
-                <li>Google Gemini</li>
-                <li>Anthropic Claude</li>
-                <li>OpenAI ChatGPT</li>
-            </ul>
+            <h6 style="font-family: 'Space Grotesk', sans-serif; font-weight: 700; margin-bottom: 10px; color: #1a3a5c;">Om denne bog</h6>
+            <small>
+                Faglig redaktør:<br>
+                <img src="images/henrik_image.jpg" alt="Henrik Strøyer">
+                <strong>Henrik Strøyer</strong><br>
+                Lektor, finansiel rådgivning<br>
+                <br>
+                Teknisk udvikler:<br>
+                <img src="images/mig.jpg" alt="Thomas Petersen">
+                <strong>Thomas Petersen</strong><br>
+                Lektor, CBS<br>
+                <br>
+                <p>Onlinebogen er udviklet med anvendelse af kunstig intelligens til teknisk struktur (HTML, CSS, JavaScript) og fagligt indhold.</p>
+            </small>
         `;
-        
-        // Sæt elementerne sammen
+
         infoContainer.appendChild(infoIcon);
         infoContainer.appendChild(infoPopup);
-        
-        // Indsæt efter navbar-brandet
+
         navbarBrand.parentNode.insertBefore(infoContainer, navbarBrand.nextSibling);
-        
-        // Tilføj event listeners
+
         infoIcon.addEventListener('click', function(e) {
             e.stopPropagation();
             infoPopup.classList.toggle('show');
         });
-        
+
         document.addEventListener('click', function(e) {
             if (infoPopup.classList.contains('show')) {
                 infoPopup.classList.remove('show');
             }
         });
-        
+
         infoPopup.addEventListener('click', function(e) {
             e.stopPropagation();
         });
     }
-}); 
+});

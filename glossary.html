@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ordliste — Salgsteknikker i Finansiel Rådgivning</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <!-- MDB CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <!-- Site CSS -->
+    <link rel="stylesheet" href="css/chapters-shared.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/modern-styles.css">
+    <link rel="stylesheet" href="css/glossary.css">
+    <link rel="stylesheet" href="css/theme-light.css">
+    <link rel="stylesheet" href="css/theme-dark.css">
+    <link rel="stylesheet" href="css/search.css">
+    <link rel="stylesheet" href="css/srbog-custom.css">
+    <link rel="icon" type="image/x-icon" href="favicon.svg">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand navbar-light transparent-navbar fixed-top">
+        <div class="container-fluid">
+            <a href="https://tepedu.dk/" target="_blank" rel="noopener noreferrer">
+                <img src="tepedulogoanim.svg" alt="Te Pedu Logo" style="height: 35px; margin-right: 15px;">
+            </a>
+            <a class="navbar-brand" href="index.html">
+                <i class="bi bi-house-door"></i>
+            </a>
+            <ul class="navbar-nav ml-auto align-items-center">
+                <!-- Search -->
+                <li class="nav-item">
+                    <div class="search-container">
+                        <a class="nav-link search-toggle" id="search-toggle" href="#" role="button" aria-label="Søg">
+                            <i class="bi bi-search"></i>
+                        </a>
+                        <div class="search-dropdown" id="search-dropdown">
+                            <div class="search-input-wrapper">
+                                <input type="text" class="search-input" id="search-input"
+                                    placeholder="Søg i alle kapitler..." autocomplete="off">
+                            </div>
+                            <div class="search-results" id="search-results">
+                                <div class="search-no-results">Indtast søgeord foroven</div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <!-- Theme toggle -->
+                <li class="nav-item">
+                    <a class="nav-link" id="theme-toggle" href="#" role="button" aria-label="Skift tema">
+                        <div class="theme-icon-wrapper">
+                            <svg class="theme-icon-sun active" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="5"></circle>
+                                <line x1="12" y1="1" x2="12" y2="3"></line>
+                                <line x1="12" y1="21" x2="12" y2="23"></line>
+                                <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                                <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                                <line x1="1" y1="12" x2="3" y2="12"></line>
+                                <line x1="21" y1="12" x2="23" y2="12"></line>
+                                <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                                <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                            </svg>
+                            <svg class="theme-icon-moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                            </svg>
+                        </div>
+                    </a>
+                </li>
+                <!-- Dropdown -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="bi bi-list icon-margin"></i>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink"></div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="prev-page-link" href="#">
+                        <i class="bi bi-arrow-left"></i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="next-page-link" href="#">
+                        <i class="bi bi-arrow-right"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Menu Icon -->
+    <div id="menu-icon">
+        <i class="bi bi-list"></i>
+    </div>
+
+    <!-- Page Menu -->
+    <div id="page-menu"></div>
+
+    <!-- Page Content -->
+    <div class="content">
+        <div class="container mt-4">
+            <article>
+                <h1>Ordliste — vigtige begreber i finansielt salg</h1>
+
+                <div class="info-box">
+                    <p>Her finder du en samlet oversigt over de vigtigste begreber inden for salgsteknikker og finansiel rådgivning, som gennemgås i denne bog.</p>
+                </div>
+
+                <div id="glossary-container" class="mt-4">
+
+                    <!-- A -->
+                    <div class="info-box glossary-letter-section" id="letter-A">
+                        <div class="letter-header-wrapper">
+                            <h2 class="letter-header">A</h2>
+                        </div>
+                        <div class="glossary-term-item">
+                            <h4 id="term-afslutningsteknik" class="term-title">Afslutningsteknik</h4>
+                            <p class="term-definition">En metode som sælgeren anvender for at lukke en handel og få kundens endelige accept. Eksempler inkluderer spørgeafslutning, alternativafslutning og forudsætningsafslutning.</p>
+                            <div class="term-example">
+                                <i class="bi bi-info-circle text-primary mr-2"></i>
+                                <small><strong>Eksempel:</strong> "Skal vi aftale mødet til mandag eller onsdag?" er en alternativafslutning, der forudsætter kundens accept og blot afklarer tidspunktet.</small>
+                            </div>
+                        </div>
+                        <div class="glossary-term-item">
+                            <h4 id="term-assertiv-kommunikation" class="term-title">Assertiv kommunikation</h4>
+                            <p class="term-definition">En kommunikationsform, der er direkte, ærlig og respektfuld over for begge parter. Assertiv kommunikation handler om at udtrykke egne behov og synspunkter klart, uden at undertrykke den anden parts behov.</p>
+                            <div class="term-example">
+                                <i class="bi bi-info-circle text-primary mr-2"></i>
+                                <small><strong>Eksempel:</strong> En rådgiver siger: "Jeg forstår dit synspunkt, men jeg er nødt til at fortælle dig, at dette produkt ikke matcher dine behov, selvom det er populært." Dette er assertivt frem for passivt eller aggressivt.</small>
+                            </div>
+                        </div>
+                        <div class="glossary-term-item">
+                            <h4 id="term-aida" class="term-title">AIDA-modellen</h4>
+                            <p class="term-definition">En klassisk markedsføringsmodel, der beskriver kunderejsen i fire faser: Attention (opmærksomhed), Interest (interesse), Desire (ønske) og Action (handling).</p>
+                            <div class="term-example">
+                                <i class="bi bi-info-circle text-primary mr-2"></i>
+                                <small><strong>Eksempel:</strong> En reklame tiltrækker opmærksomhed (A), skaber interesse for produktet (I), fremkalder et ønske om at eje det (D), og opfordrer til handling med et call-to-action (A).</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- B -->
+                    <div class="info-box glossary-letter-section" id="letter-B">
+                        <div class="letter-header-wrapper">
+                            <h2 class="letter-header">B</h2>
+                        </div>
+                        <div class="glossary-term-item">
+                            <h4 id="term-behovsafdaekning" class="term-title">Behovsafdækning</h4>
+                            <p class="term-definition">En systematisk proces, hvor rådgiveren kortlægger kundens reelle behov, ønsker og situation inden en rådgivningssession. Fundamentalt i alle moderne salgsteknikker og et lovkrav i finansiel rådgivning.</p>
+                            <div class="term-example">
+                                <i class="bi bi-info-circle text-primary mr-2"></i>
+                                <small><strong>Eksempel:</strong> Inden en rådgiver præsenterer et boliglån, spørger han til kundens indkomst, gæld, familiesituation og fremtidsplaner for at sikre, at løsningen passer til kundens samlede situation.</small>
+                            </div>
+                        </div>
+                        <div class="glossary-term-item">
+                            <h4 id="term-barne-jeg" class="term-title">Barne-jeg (Transaktionsanalyse)</h4>
+                            <p class="term-definition">En af de tre ego-tilstande i transaktionsanalyse. Barne-jeg reagerer følelsesmæssigt og spontant, som et barn ville. I salgssituationer kan det føre til impulsive beslutninger eller usikkerhed.</p>
+                            <div class="term-example">
+                                <i class="bi bi-info-circle text-primary mr-2"></i>
+                                <small><strong>Eksempel:</strong> En kunde, der siger "Ja, jeg køber bare – det ser fedt ud!" handler fra sit Barne-jeg. Rådgiveren bør forsigtigt aktivere Voksen-jeg ved at introducere fakta og konsekvenser.</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- C -->
+                    <div class="info-box glossary-letter-section" id="letter-C">
+                        <div class="letter-header-wrapper">
+                            <h2 class="letter-header">C</h2>
+                        </div>
+                        <div class="glossary-term-item">
+                            <h4 id="term-challenger-salg" class="term-title">Challenger Salg</h4>
+                            <p class="term-definition">En salgsstrategi, hvor sælgeren udfordrer kundens eksisterende opfattelse ved at tilbyde ny indsigt og perspektiver. Challenger-sælgeren underviser, tilpasser og tager kontrol over salgsprocessen frem for blot at reagere på kundens ønsker.</p>
+                            <div class="term-example">
+                                <i class="bi bi-info-circle text-primary mr-2"></i>
+                                <small><strong>Eksempel:</strong> En rådgiver siger: "Mange kunder tror, de har brug for X, men vores data viser, at de faktisk opnår bedre resultater med Y — lad mig forklare hvorfor."</small>
+                            </div>
+                        </div>
+                        <div class="glossary-term-item">
+                            <h4 id="term-crm" class="term-title">CRM-system (Customer Relationship Management)</h4>
+                            <p class="term-definition">Et IT-system til styring af kunderelationer og salgsaktiviteter. CRM-systemer registrerer kontakter, aftaler, opgaver og pipeline-status, og giver overblik over hele kundens livscyklus.</p>
+                            <div class="term-example">
+                                <i class="bi bi-info-circle text-primary mr-2"></i>
+                                <small><strong>Eksempel:</strong> Salesforce og Microsoft Dynamics er populære CRM-systemer. En rådgiver registrerer alle kundeinteraktioner, opfølgningsopgaver og tilbud i CRM-systemet for at sikre systematisk opfølgning.</small>
+                            </div>
+                        </div>
+                        <div class="glossary-term-item">
+                            <h4 id="term-cross-sell" class="term-title">Cross-selling (Krydssalg)</h4>
+                            <p class="term-definition">Salg af relaterede eller supplerende produkter til en eksisterende kunde, som allerede køber ét produkt. Målet er at øge kundens samlede engagement og bankens/virksomhedens andel af kundens samlede forbrug.</p>
+                            <div class="term-example">
+                                <i class="bi bi-info-circle text-primary mr-2"></i>
+                                <small><strong>Eksempel:</strong> En kunde, der optager et boliglån, tilbydes også en indboforsikring og en pensionsordning — dette er cross-selling af relaterede finansielle produkter.</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- E -->
+                    <div class="info-box glossary-letter-section" id="letter-E">
+                        <div class="letter-header-wrapper">
+                            <h2 class="letter-header">E</h2>
+                        </div>
+                        <div class="glossary-term-item">
+                            <h4 id="term-elevator-pitch" class="term-title">Elevator Pitch</h4>
+                            <p class="term-definition">En kort, overbevisende præsentation af en idé, et produkt eller en tjeneste — normalt 30–120 sekunder, svarende til en elevatortur. Indeholder typisk problem, løsning, unikke fordele og en opfordring til handling.</p>
+                            <div class="term-example">
+                                <i class="bi bi-info-circle text-primary mr-2"></i>
+                                <small><strong>Eksempel:</strong> "Vi hjælper familier, der er bekymrede for at miste deres hjem ved sygdom, med en kombination af livs- og kritisk sygdomsforsikring, der sikrer betalingen i op til 24 måneder."</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- F -->
+                    <div class="info-box glossary-letter-section" id="letter-F">
+                        <div class="letter-header-wrapper">
+                            <h2 class="letter-header">F</h2>
+                        </div>
+                        <div class="glossary-term-item">
+                            <h4 id="term-fem-faser" class="term-title">Fem faser i klassisk salg</h4>
+                            <p class="term-definition">Den klassiske salgsmodel, der opdeler salgsprocessen i: 1) Kontakt og relation, 2) Behovsafdækning, 3) Præsentation af løsning, 4) Håndtering af indvendinger, 5) Afslutning og opfølgning.</p>
+                            <div class="term-example">
+                                <i class="bi bi-info-circle text-primary mr-2"></i>
+                                <small><strong>Eksempel:</strong> En bankrådgiver følger alle fem faser i et kundemøde: starter med small-talk (kontakt), stiller åbne spørgsmål (behovsafdækning), præsenterer tre produktmuligheder (løsning), besvarer bekymringer om pris (indvendinger), og aftaler næste skridt (afslutning).</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- I -->
+                    <div class="info-box glossary-letter-section" id="letter-I">
+                        <div class="letter-header-wrapper">
+                            <h2 class="letter-header">I</h2>
+                        </div>
+                        <div class="glossary-term-item">
+                            <h4 id="term-indvending" class="term-title">Indvending</h4>
+                            <p class="term-definition">En modstand eller bekymring, som kunden udtrykker under salgsprocessen. Indvendinger er ikke afslag — de er ofte udtryk for interesse kombineret med usikkerhed, som rådgiveren skal adressere professionelt.</p>
+                            <div class="term-example">
+                                <i class="bi bi-info-circle text-primary mr-2"></i>
+                                <small><strong>Eksempel:</strong> Kunden siger "Det er for dyrt." Rådgiveren svarer: "Jeg forstår det. Lad os se på, hvad det koster dig IKKE at have denne forsikring, hvis det sker." Dette vendt indvendingen til en fordel.</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- K -->
+                    <div class="info-box glossary-letter-section" id="letter-K">
+                        <div class="letter-header-wrapper">
+                            <h2 class="letter-header">K</h2>
+                        </div>
+                        <div class="glossary-term-item">
+                            <h4 id="term-key-account" class="term-title">Key Account (nøglekunde)</h4>
+                            <p class="term-definition">En særlig vigtig kunde, der bidrager uforholdsmæssigt meget til virksomhedens omsætning eller strategiske position. Key Accounts håndteres typisk af dedikerede rådgivere med særlig opmærksomhed.</p>
+                            <div class="term-example">
+                                <i class="bi bi-info-circle text-primary mr-2"></i>
+                                <small><strong>Eksempel:</strong> En bank har 500 erhvervskunder, men 20 af dem (Key Accounts) tegner sig for 60% af omsætningen. Disse 20 kunder får en dedikeret erhvervsrådgiver og kvartalsvise strategimøder.</small>
+                            </div>
+                        </div>
+                        <div class="glossary-term-item">
+                            <h4 id="term-konverteringsrate" class="term-title">Konverteringsrate</h4>
+                            <p class="term-definition">Andelen af potentielle kunder (leads), der ender med at købe. Beregnes som: antal salg / antal leads × 100. En central KPI i pipeline-management.</p>
+                            <div class="term-example">
+                                <i class="bi bi-info-circle text-primary mr-2"></i>
+                                <small><strong>Eksempel:</strong> Af 100 leads i pipeline-fase 2 (behovsafdækning) rykker 40 videre til fase 3. Konverteringsraten er 40%. Virksomheden arbejder på at hæve denne til 50% ved bedre kvalificering.</small>
+                            </div>
+                        </div>
+                        <div class="glossary-term-item">
+                            <h4 id="term-kundeprofil" class="term-title">Kundeprofil</h4>
+                            <p class="term-definition">En detaljeret beskrivelse af en typisk eller ideel kunde, herunder demografiske data, behov, adfærd, præferencer og finansiel situation. Bruges til at målrette rådgivning og marketing.</p>
+                            <div class="term-example">
+                                <i class="bi bi-info-circle text-primary mr-2"></i>
+                                <small><strong>Eksempel:</strong> En banks kundeprofil for "Førstegangskøber" kan være: 28–35 år, par med fast indkomst, ønsker at købe bolig til max. 3 mio. kr., har begrænset investeringserfaring.</small>
+                            </div>
+                        </div>
+                        <div class="glossary-term-item">
+                            <h4 id="term-kpi" class="term-title">KPI (Key Performance Indicator)</h4>
+                            <p class="term-definition">Nøgletal, der måler performance i relation til specifikke mål. I salg kan KPI'er være antal møder, konverteringsrate, gennemsnitlig salgsværdi, pipeline-størrelse eller kundetilfredshed.</p>
+                            <div class="term-example">
+                                <i class="bi bi-info-circle text-primary mr-2"></i>
+                                <small><strong>Eksempel:</strong> En rådgivers månedlige KPI'er: 20 kundemøder, 8 nye tilbud, 5 afsluttede salg og en NPS-score over 8.</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- L -->
+                    <div class="info-box glossary-letter-section" id="letter-L">
+                        <div class="letter-header-wrapper">
+                            <h2 class="letter-header">L</h2>
+                        </div>
+                        <div class="glossary-term-item">
+                            <h4 id="term-lead" class="term-title">Lead</h4>
+                            <p class="term-definition">En potentiel kunde, der har vist interesse for et produkt eller en tjeneste, men endnu ikke har købt. Leads kvalificeres gradvist i pipeline-modellen, inden de bliver til betalende kunder.</p>
+                            <div class="term-example">
+                                <i class="bi bi-info-circle text-primary mr-2"></i>
+                                <small><strong>Eksempel:</strong> En person, der tilmelder sig bankens nyhedsbrev om boligfinansiering, er et lead. Rådgiveren kontakter dem proaktivt for at booke et møde og starte behovsafdækningen.</small>
+                            </div>
+                        </div>
+                        <div class="glossary-term-item">
+                            <h4 id="term-losningssalg" class="term-title">Løsningssalg</h4>
+                            <p class="term-definition">En salgsstrategi, der fokuserer på at identificere og løse kundens specifikke problemer frem for blot at præsentere produktets funktioner. Løsningssalg kræver dyb forståelse af kundens situation og behov.</p>
+                            <div class="term-example">
+                                <i class="bi bi-info-circle text-primary mr-2"></i>
+                                <small><strong>Eksempel:</strong> I stedet for at sige "Vi tilbyder en ratepension med 5% afkast", siger rådgiveren: "Baseret på din situation vil du mangle X kr. ved pension — vores ratepension kan lukke dette gap specifikt for dig."</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- N -->
+                    <div class="info-box glossary-letter-section" id="letter-N">
+                        <div class="letter-header-wrapper">
+                            <h2 class="letter-header">N</h2>
+                        </div>
+                        <div class="glossary-term-item">
+                            <h4 id="term-nps" class="term-title">NPS (Net Promoter Score)</h4>
+                            <p class="term-definition">Et mål for kundeloyalitet baseret på spørgsmålet: "Hvor sandsynligt er det, at du vil anbefale os til en ven eller kollega?" på en skala fra 0–10. NPS = % promoters (9–10) minus % kritikere (0–6).</p>
+                            <div class="term-example">
+                                <i class="bi bi-info-circle text-primary mr-2"></i>
+                                <small><strong>Eksempel:</strong> Af 100 kunder giver 60 en score på 9–10 (promoters) og 20 en score på 0–6 (kritikere). NPS = 60 - 20 = 40. En NPS over 0 er positiv; over 50 er fremragende.</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- P -->
+                    <div class="info-box glossary-letter-section" id="letter-P">
+                        <div class="letter-header-wrapper">
+                            <h2 class="letter-header">P</h2>
+                        </div>
+                        <div class="glossary-term-item">
+                            <h4 id="term-pipeline" class="term-title">Pipeline (salgspipeline)</h4>
+                            <p class="term-definition">En visuel model over alle potentielle salg på tværs af salgsprocessens faser. Pipeline-management giver overblik over antal leads, forventet omsætning og flaskehalse i salgsprocessen.</p>
+                            <div class="term-example">
+                                <i class="bi bi-info-circle text-primary mr-2"></i>
+                                <small><strong>Eksempel:</strong> En banks pipeline viser: 50 leads i fase 1, 20 i behovsafdækning, 10 med tilbud ude, og 5 klar til underskrift. Rådgiveren fokuserer på at flytte leads fra fase til fase.</small>
+                            </div>
+                        </div>
+                        <div class="glossary-term-item">
+                            <h4 id="term-pitching" class="term-title">Pitching</h4>
+                            <p class="term-definition">Kunsten at præsentere en idé, et produkt eller en service overbevisende på kort tid. En god pitch har en klar struktur: problem, løsning, fordele og call-to-action.</p>
+                            <div class="term-example">
+                                <i class="bi bi-info-circle text-primary mr-2"></i>
+                                <small><strong>Eksempel:</strong> En rådgiver pitcher på 2 minutter: "De fleste familier undervurderer risikoen ved sygdom. Vores kombinationsprodukt sikrer dig og din familie i op til 5 år — uden helbredsattest. Lad os booke 30 minutter til en gennemgang?"</small>
+                            </div>
+                        </div>
+                        <div class="glossary-term-item">
+                            <h4 id="term-portefoeljestrategi" class="term-title">Porteføljestrategi (kundeportefølje)</h4>
+                            <p class="term-definition">En systematisk tilgang til styring og segmentering af en virksomheds samlede kundebase. Kunder inddeles typisk i A-, B- og C-kunder baseret på omsætning, potentiale og strategisk vigtighed.</p>
+                            <div class="term-example">
+                                <i class="bi bi-info-circle text-primary mr-2"></i>
+                                <small><strong>Eksempel:</strong> A-kunder (top 20% af kunder = 80% af omsætning) modtager dedikeret rådgiver og kvartalsmøder. B-kunder modtager halvårlige opkald. C-kunder håndteres primært digitalt.</small>
+                            </div>
+                        </div>
+                        <div class="glossary-term-item">
+                            <h4 id="term-foraeldrejeg" class="term-title">Forældre-jeg (Transaktionsanalyse)</h4>
+                            <p class="term-definition">En af de tre ego-tilstande i transaktionsanalyse. Forældre-jeg er styrende og vejledende — enten omsorgfuldt eller kritisk. I salg kan det bruges til at skabe tryghed, men overanvendelse kan virke nedladende.</p>
+                            <div class="term-example">
+                                <i class="bi bi-info-circle text-primary mr-2"></i>
+                                <small><strong>Eksempel:</strong> En rådgiver siger: "Du skal bare stole på mig, dette er det rigtige valg." Dette er en Forældre-jeg kommunikation. Det kan skabe tillid, men risikerer at infantilisere kunden.</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- R -->
+                    <div class="info-box glossary-letter-section" id="letter-R">
+                        <div class="letter-header-wrapper">
+                            <h2 class="letter-header">R</h2>
+                        </div>
+                        <div class="glossary-term-item">
+                            <h4 id="term-relationsssalg" class="term-title">Relationssalg</h4>
+                            <p class="term-definition">En salgsstrategi, der fokuserer på at opbygge langsigtede, tillidsbaserede relationer med kunden frem for enkeltstående transaktioner. Særlig vigtig i finansiel rådgivning, hvor kunden har behov over tid.</p>
+                            <div class="term-example">
+                                <i class="bi bi-info-circle text-primary mr-2"></i>
+                                <small><strong>Eksempel:</strong> En rådgiver ringer en kunde op på sin fødselsdag, minder om den kommende rentetilpasning og tilbyder en opdateret budgetgennemgang. Relationen holder kunden i banken i 10+ år.</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- S -->
+                    <div class="info-box glossary-letter-section" id="letter-S">
+                        <div class="letter-header-wrapper">
+                            <h2 class="letter-header">S</h2>
+                        </div>
+                        <div class="glossary-term-item">
+                            <h4 id="term-segmentering" class="term-title">Segmentering</h4>
+                            <p class="term-definition">Opdeling af en kundebase i grupper med fælles karakteristika (demografi, behov, adfærd eller økonomi). Segmentering muliggør målrettet kommunikation og tilpassede rådgivningsmodeller.</p>
+                            <div class="term-example">
+                                <i class="bi bi-info-circle text-primary mr-2"></i>
+                                <small><strong>Eksempel:</strong> En bank segmenterer kunder i: "Unge under 30", "Familier med boliglån", "Pre-pensionister 55+" og "Erhvervsdrivende". Hvert segment modtager skræddersyede tilbud og kommunikation.</small>
+                            </div>
+                        </div>
+                        <div class="glossary-term-item">
+                            <h4 id="term-share-of-wallet" class="term-title">Share-of-Wallet</h4>
+                            <p class="term-definition">Andelen af en kundes samlede finansielle forbrug, der er placeret hos én udbyder. Højere share-of-wallet betyder, at kunden bruger en større del af sine finansielle behov hos den pågældende bank eller rådgiver.</p>
+                            <div class="term-example">
+                                <i class="bi bi-info-circle text-primary mr-2"></i>
+                                <small><strong>Eksempel:</strong> En kunde har boliglån i Danske Bank (share-of-wallet 40%), opsparing i Nordea (30%) og pension i SEB (30%). Målet er at flytte pension til Danske Bank og øge share-of-wallet til 70%.</small>
+                            </div>
+                        </div>
+                        <div class="glossary-term-item">
+                            <h4 id="term-spin" class="term-title">SPIN-teknikken</h4>
+                            <p class="term-definition">En spørgeteknik udviklet af Neil Rackham, der bruger fire spørgsmålstyper: Situation (nuværende tilstand), Problem (udfordringer), Implikation (konsekvenser af problemet) og Nytte (værdien af løsningen).</p>
+                            <div class="term-example">
+                                <i class="bi bi-info-circle text-primary mr-2"></i>
+                                <small><strong>Eksempel:</strong> S: "Hvad er din nuværende pensionsopsparing?" P: "Har du oplevet bekymring om pensionsalderen?" I: "Hvad sker der med din økonomi, hvis du ikke kan arbejde?" N: "Ville det give dig ro, at vide du har dækket det gap?"</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- T -->
+                    <div class="info-box glossary-letter-section" id="letter-T">
+                        <div class="letter-header-wrapper">
+                            <h2 class="letter-header">T</h2>
+                        </div>
+                        <div class="glossary-term-item">
+                            <h4 id="term-transaktionsanalyse" class="term-title">Transaktionsanalyse (TA)</h4>
+                            <p class="term-definition">En psykologisk teori og kommunikationsmodel udviklet af Eric Berne. TA beskriver menneskelige interaktioner som "transaktioner" mellem tre ego-tilstande: Forældre-jeg, Voksen-jeg og Barne-jeg. I salg bruges TA til at forstå og styre kommunikationen.</p>
+                            <div class="term-example">
+                                <i class="bi bi-info-circle text-primary mr-2"></i>
+                                <small><strong>Eksempel:</strong> En rådgiver stiler mod Voksen-til-Voksen kommunikation: faktabaseret, respektfuld og rationel. Hvis kunden agerer fra Barne-jeg (emotionel), søger rådgiveren at bringe kunden tilbage til Voksen-jeg med konkrete tal og fakta.</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- U -->
+                    <div class="info-box glossary-letter-section" id="letter-U">
+                        <div class="letter-header-wrapper">
+                            <h2 class="letter-header">U</h2>
+                        </div>
+                        <div class="glossary-term-item">
+                            <h4 id="term-upsell" class="term-title">Up-selling (Mersalg)</h4>
+                            <p class="term-definition">Salg af en opgraderingd, en premium-version eller et tilsvarende produkt til en højere pris til en eksisterende kunde. Formålet er at øge omsætningen pr. kunde ved at tilbyde mere værdi.</p>
+                            <div class="term-example">
+                                <i class="bi bi-info-circle text-primary mr-2"></i>
+                                <small><strong>Eksempel:</strong> En kunde ønsker et basispensionsprodukt til 500 kr./md. Rådgiveren viser, at for 650 kr./md. får kunden dobbelt invalidedækning — op-salg på 30% mere, men markant øget dækning.</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- V -->
+                    <div class="info-box glossary-letter-section" id="letter-V">
+                        <div class="letter-header-wrapper">
+                            <h2 class="letter-header">V</h2>
+                        </div>
+                        <div class="glossary-term-item">
+                            <h4 id="term-voksen-jeg" class="term-title">Voksen-jeg (Transaktionsanalyse)</h4>
+                            <p class="term-definition">En af de tre ego-tilstande i transaktionsanalyse. Voksen-jeg er rationel, fakta-orienteret og objektiv. I salg er Voksen-til-Voksen kommunikation ideel, da den skaber ligeværdige og tillidsbaserede interaktioner.</p>
+                            <div class="term-example">
+                                <i class="bi bi-info-circle text-primary mr-2"></i>
+                                <small><strong>Eksempel:</strong> Rådgiveren præsenterer tre muligheder med faktabaserede fordele og ulemper, og kunden analyserer rationelt. Begge er i Voksen-jeg — dette er det optimale grundlag for en rådgivningsbeslutning.</small>
+                            </div>
+                        </div>
+                        <div class="glossary-term-item">
+                            <h4 id="term-value-proposition" class="term-title">Value Proposition (Værditilbud)</h4>
+                            <p class="term-definition">En klar og overbevisende beskrivelse af den specifikke værdi, et produkt eller en ydelse skaber for kunden. Et stærkt value proposition forklarer: hvad det er, hvem det er for, og hvorfor kunden skal vælge det.</p>
+                            <div class="term-example">
+                                <i class="bi bi-info-circle text-primary mr-2"></i>
+                                <small><strong>Eksempel:</strong> "Vi hjælper seniorer med at frigøre kapital fra deres bolig, så de kan leve det liv, de ønsker i pensionsalderen — uden at sælge huset." Dette er et klart value proposition for et friværdiprodukt.</small>
+                            </div>
+                        </div>
+                    </div>
+
+                </div><!-- /glossary-container -->
+
+                <br>
+                <a href="salgsteknikker.html" class="effectLinks" data-replace="Gå til Sammenligning af Salgsteknikker">
+                    <span>← Sammenligning af Salgsteknikker</span>
+                </a>
+                <br><br>
+
+            </article>
+        </div>
+    </div>
+
+    <!-- jQuery and Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- MDB JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
+    <!-- Site Scripts -->
+    <script src="js/theme-toggle.js"></script>
+    <script src="js/glossary.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/info.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/search.js"></script>
+</body>
+
+</html>

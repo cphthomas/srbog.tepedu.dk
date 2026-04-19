@@ -136,8 +136,48 @@ body.menu-hidden .content {
 .pl-5 { padding-left: 1.5rem !important; }
 .pl-7 { padding-left: 2rem !important; }
 
+/* -------- Info-box: always navy background, white text -------- */
+/* theme-light.css resets background-color to white; override here (loads last) */
+.info-box,
+:root:not([data-theme="dark"]) .info-box,
+[data-theme="light"] .info-box {
+    background: #1a3a5c !important;
+    background-color: #1a3a5c !important;
+    color: #ffffff !important;
+}
+
+.info-box h2,
+.info-box h3,
+.info-box h4,
+.info-box h5,
+.info-box p,
+.info-box li,
+.info-box b,
+.info-box strong {
+    color: #ffffff !important;
+}
+
+/* -------- Table hover -------- */
+.table tbody tr:hover td,
+.table tbody tr:hover th {
+    background-color: rgba(26, 58, 92, 0.08) !important;
+    cursor: default;
+}
+
+/* Remove stray bottom margin inside table wrappers */
+.table-responsive .table {
+    margin-bottom: 0;
+}
+
 /* -------- Dark-mode adjustments for srbog-specific surfaces -------- */
 [data-theme="dark"] .transparent-navbar,
 [data-theme="dark"] #page-menu {
     background-color: rgba(20, 30, 45, 0.85);
+}
+
+[data-theme="dark"] .info-box,
+[data-theme="dark"] :root:not([data-theme="light"]) .info-box {
+    background: #0f2237 !important;
+    background-color: #0f2237 !important;
+    color: #ffffff !important;
 }
