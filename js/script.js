@@ -76,7 +76,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
   // Menu toggle functionality
   const menuToggle = document.querySelector('#page-menu .menu-toggle');
-  
+
   menuToggle?.addEventListener('click', function() {
     document.body.classList.add('menu-hidden');
   });
@@ -84,4 +84,12 @@ document.addEventListener("DOMContentLoaded", function() {
   menuIcon?.addEventListener('click', function() {
     document.body.classList.remove('menu-hidden');
   });
+
+  // Auto-show on load, auto-hide after 5 seconds (like skills project)
+  document.body.classList.remove('menu-hidden');
+  setTimeout(() => {
+    if (!document.body.classList.contains('menu-hidden')) {
+      document.body.classList.add('menu-hidden');
+    }
+  }, 5000);
 });

@@ -27,17 +27,21 @@ body {
     vertical-align: middle;
 }
 
-/* -------- Side page menu (TOC) -------- */
+/* -------- Side page menu (TOC): slide-in/out animation -------- */
 #page-menu {
     position: fixed;
     top: 56px;
     left: 0;
     width: 200px;
     height: calc(100% - 56px);
-    background-color: rgba(248, 249, 250, 0.8);
+    background-color: rgba(248, 249, 250, 0.95);
+    border-right: 1px solid rgba(26, 58, 92, 0.12);
     overflow-y: auto;
     padding: 1rem;
-    display: block;
+    /* Slide transition instead of display:none */
+    transform: translateX(0);
+    transition: transform 0.5s cubic-bezier(0.77, 0, 0.175, 1);
+    z-index: 1029;
 }
 
 #page-menu ul li a {
@@ -45,10 +49,14 @@ body {
     color: inherit;
     display: block;
     text-align: left;
+    padding: 3px 0;
+    font-size: 0.85rem;
+    transition: color 0.2s ease;
 }
 
 #page-menu ul li a:hover {
     color: var(--accent-marine, #1a3a5c);
+    font-weight: 600;
 }
 
 #page-menu .menu-toggle {
@@ -60,34 +68,47 @@ body {
 
 #menu-icon {
     position: fixed;
-    top: 56px;
+    top: 62px;
     left: 0;
-    padding: 10px;
+    padding: 8px 10px;
     cursor: pointer;
-    display: none;
+    background: rgba(248, 249, 250, 0.9);
+    border: 1px solid rgba(26, 58, 92, 0.15);
+    border-left: none;
+    border-radius: 0 4px 4px 0;
+    z-index: 1028;
+    /* Hidden by default — shown when menu is hidden */
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
 }
 
 #menu-icon .bi {
-    font-size: 1.6em;
+    font-size: 1.4em;
     vertical-align: middle;
+    color: #1a3a5c;
+}
+
+/* When menu is hidden: slide menu out, show hamburger */
+body.menu-hidden #page-menu {
+    transform: translateX(-110%);
+    pointer-events: none;
 }
 
 body.menu-hidden #menu-icon {
-    display: block;
+    opacity: 1;
+    pointer-events: auto;
 }
 
-body.menu-hidden #page-menu {
-    display: none;
+/* Content offset transitions */
+.content {
+    margin-left: 200px;
+    padding-top: 40px;
+    transition: margin-left 0.5s cubic-bezier(0.77, 0, 0.175, 1);
 }
 
 body.menu-hidden .content {
     margin-left: 0;
-}
-
-/* -------- Content offset to match page menu -------- */
-.content {
-    margin-left: 200px;
-    padding-top: 40px;
 }
 
 .content h1,
@@ -105,10 +126,10 @@ body.menu-hidden .content {
 
 @media (min-width: 992px) {
     #page-menu {
-        width: 380px;
+        width: 280px;
     }
     .content {
-        margin-left: 380px;
+        margin-left: 280px;
     }
 }
 
@@ -136,8 +157,8 @@ body.menu-hidden .content {
 .pl-5 { padding-left: 1.5rem !important; }
 .pl-7 { padding-left: 2rem !important; }
 
-/* -------- Info-box: always navy background, white text -------- */
-/* theme-light.css resets background-color to white; override here (loads last) */
+/* -------- Info-box: navy background for text/content sections -------- */
+/* theme-light.css resets background-color to white — override here (loads last) */
 .info-box,
 :root:not([data-theme="dark"]) .info-box,
 [data-theme="light"] .info-box {
@@ -157,6 +178,43 @@ body.menu-hidden .content {
     color: #ffffff !important;
 }
 
+/* -------- Info-box containing a table: white background -------- */
+/* Sections like 5.6, 7.6, 8.3, 9.2 should not have navy bg when they hold a table */
+.info-box:has(table),
+.info-box:has(.table-responsive),
+:root:not([data-theme="dark"]) .info-box:has(table),
+[data-theme="light"] .info-box:has(table) {
+    background: #ffffff !important;
+    background-color: #ffffff !important;
+    color: #1a3a5c !important;
+    border: 1px solid rgba(26, 58, 92, 0.15) !important;
+    border-left: 5px solid #1a3a5c !important;
+}
+
+.info-box:has(table) h2,
+.info-box:has(table) h3,
+.info-box:has(table) h4,
+.info-box:has(table) h5,
+.info-box:has(table) p,
+.info-box:has(table) li,
+.info-box:has(table) b,
+.info-box:has(table) strong {
+    color: #1a3a5c !important;
+}
+
+/* Table cells inside formerly-navy info-box: dark text */
+.info-box:has(table) .table tbody td,
+.info-box:has(table) .table tbody th {
+    color: #212529 !important;
+}
+
+/* Keep thead white text on navy */
+.info-box:has(table) .table thead th,
+.info-box:has(table) .table thead td {
+    color: #ffffff !important;
+    background-color: #1a3a5c !important;
+}
+
 /* -------- Table hover -------- */
 .table tbody tr:hover td,
 .table tbody tr:hover th {
@@ -173,6 +231,7 @@ body.menu-hidden .content {
 [data-theme="dark"] .transparent-navbar,
 [data-theme="dark"] #page-menu {
     background-color: rgba(20, 30, 45, 0.85);
+    border-right-color: rgba(255, 255, 255, 0.08);
 }
 
 [data-theme="dark"] .info-box,
@@ -180,4 +239,19 @@ body.menu-hidden .content {
     background: #0f2237 !important;
     background-color: #0f2237 !important;
     color: #ffffff !important;
+}
+
+[data-theme="dark"] .info-box:has(table) {
+    background: #1a1a2e !important;
+    background-color: #1a1a2e !important;
+    color: #e0e0e0 !important;
+    border-left-color: #4a7fa8 !important;
+}
+
+[data-theme="dark"] .info-box:has(table) h2,
+[data-theme="dark"] .info-box:has(table) h3,
+[data-theme="dark"] .info-box:has(table) h4,
+[data-theme="dark"] .info-box:has(table) p,
+[data-theme="dark"] .info-box:has(table) li {
+    color: #e0e0e0 !important;
 }

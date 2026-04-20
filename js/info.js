@@ -33,11 +33,15 @@ document.addEventListener('DOMContentLoaded', function() {
 
         .info-popup img {
             width: 100%;
-            height: 120px;
+            height: 140px;
             object-fit: cover;
-            object-position: center top;
+            object-position: center 20%;
             display: block;
             margin: 8px auto;
+        }
+
+        .info-popup img[alt="Thomas Petersen"] {
+            object-position: center 30%;
         }
 
         .info-icon-container:hover .info-popup,
