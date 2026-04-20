@@ -1,6 +1,15 @@
 document.addEventListener("DOMContentLoaded", function() {
-  const menuIcon = document.getElementById('menu-icon');
+  let menuIcon = document.getElementById('menu-icon');
   const pageMenu = document.getElementById('page-menu');
+
+  // Rebuild menu-icon as animated circular toggle button (like skills #sidebar-toggle-button)
+  if (menuIcon) {
+    menuIcon.innerHTML = `
+      <i class="bi bi-list icon-open"></i>
+      <i class="bi bi-x icon-close"></i>
+    `;
+    menuIcon.classList.add('open'); // starts open
+  }
   
   // Only select headings within the article content
   const article = document.querySelector('article');
@@ -77,19 +86,31 @@ document.addEventListener("DOMContentLoaded", function() {
   // Menu toggle functionality
   const menuToggle = document.querySelector('#page-menu .menu-toggle');
 
-  menuToggle?.addEventListener('click', function() {
+  function hideMenu() {
     document.body.classList.add('menu-hidden');
-  });
+    menuIcon?.classList.remove('open');
+  }
+
+  function showMenu() {
+    document.body.classList.remove('menu-hidden');
+    menuIcon?.classList.add('open');
+  }
+
+  menuToggle?.addEventListener('click', hideMenu);
 
   menuIcon?.addEventListener('click', function() {
-    document.body.classList.remove('menu-hidden');
+    if (document.body.classList.contains('menu-hidden')) {
+      showMenu();
+    } else {
+      hideMenu();
+    }
   });
 
   // Auto-show on load, auto-hide after 5 seconds (like skills project)
-  document.body.classList.remove('menu-hidden');
+  showMenu();
   setTimeout(() => {
     if (!document.body.classList.contains('menu-hidden')) {
-      document.body.classList.add('menu-hidden');
+      hideMenu();
     }
   }, 5000);
 });
